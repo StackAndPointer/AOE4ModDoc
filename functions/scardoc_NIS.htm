@@ -1,0 +1,174 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;NIS</title>
+</head>
+<body>
+<span class="subtitle">scardoc;NIS</span><p>
+<a name="Group_scardoc;NIS"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;NIS</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="NIS_CameraCheckpoint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 NIS_CameraCheckpoint(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>仅在NIS事件中使用。等待NIS摄像机到达对应的检查点。【功能：等待摄像机到达检查点】</p>
+                <p>Makes the script pause and wait until the camera portion hits "nis_pause()" (the counterpart checkpoint) on it's timeline. With these two functions, you can have the event script and camera sync up - i.e. make one wait for the other - at various points in the NIS and avoid all sorts of timing issues.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\nis.scar] (92) </b></td>
+            </tr>
+          </table>
+        </p><a name="NIS_END"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 NIS_END( <span class="arg">Table</span> OPT_details )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>仅在NIS事件中使用。从NIS过渡回游戏。【功能：结束NIS并返回游戏】</p>
+                <p>You can safely do any cleanup after calling this, and it will occur once the screen is black.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\nis.scar] (242) </b></td>
+            </tr>
+          </table>
+        </p><a name="NIS_FadeCameraCut"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 NIS_FadeCameraCut(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>用于在NIS中创建淡入淡出剪辑。【功能：创建淡入淡出剪辑】</p>
+                <p>Call this in your NIS Event.  This will require an nis_pause() frame in your NIS file in order to work.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\nis.scar] (107) </b></td>
+            </tr>
+          </table>
+        </p><a name="NIS_PREAMBLE"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 NIS_PREAMBLE( <span class="arg">Table</span> details )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>仅在NIS事件中使用。从游戏过渡到NIS序章——正式NIS开始前的简短部分。序章是完全可选的，如果你想直接进入NIS，跳过此函数并使用NIS_START代替。【功能：进入NIS序章】</p>
+                <p>See NIS_START for information about the details table.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\nis.scar] (141) </b></td>
+            </tr>
+          </table>
+        </p><a name="NIS_START"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 NIS_START( <span class="arg">Table</span> OPT_details )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>仅在NIS事件中使用。从游戏（或序章）过渡到NIS。【功能：正式开始NIS】</p>
+                <p>You can do any setup after calling this, as that will occur once the screen has faded to black on the transition in. The game will fade back in to the NIS over the next half second or so (apart from opening cinematics, which is two seconds), so you may want to delay your first action accordingly. The details table should include, at the very least, the following items: style (NIS_OPENING, NIS_MID, or NIS_CLOSING), revealFOW (a Boolean). If you included details in a preamble, you don't need to supply them again here.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\nis.scar] (180) </b></td>
+            </tr>
+          </table>
+        </p><a name="NIS_StartDrift"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 NIS_StartDrift( <span class="arg">Real</span> OPT_totalTime, <span class="arg">Real</span> OPT_driftScale )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>仅在带有NIS摄像机的NIS事件中使用。开始NIS摄像机的漂移。【功能：启动摄像机漂移】</p>
+                <p>"Drifting" moves the camera around in the shape of an infinity symbol, so it doesn't look quite so static.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\nis.scar] (68) </b></td>
+            </tr>
+          </table>
+        </p><a name="NIS_StopDrift"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 NIS_StopDrift(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>仅在带有NIS摄像机的NIS事件中使用。停止NIS摄像机的漂移。【功能：停止摄像机漂移】</p>
+                <p>"Drifting" moves the camera around in the shape of an infinity symbol, so it doesn't look quite so static.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\nis.scar] (84) </b></td>
+            </tr>
+          </table>
+        </p><a name="NIS_StoreCurrentCameraPos"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 NIS_StoreCurrentCameraPos(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将当前摄像机位置存储为NIS的结束摄像机位置。【功能：存储摄像机结束位置】</p>
+                <p>Useful if you want the camera to always end where the player was last looking. If it does not return a position, nothing will be stored.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\nis.scar] (121) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

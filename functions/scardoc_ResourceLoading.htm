@@ -1,0 +1,296 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;ResourceLoading</title>
+</head>
+<body>
+<span class="subtitle">scardoc;ResourceLoading</span><p>
+<a name="Group_scardoc;ResourceLoading"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;ResourceLoading</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="Decal_Create"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Decal_Create( <span class="arg">String</span> decalName, <span class="arg">Position</span> position, <span class="arg">Real</span> xScale, <span class="arg">Real</span> yScale, <span class="arg">Real</span> zScale, <span class="arg">Real</span> rotationDegrees, <span class="arg">Integer</span> r, <span class="arg">Integer</span> g, <span class="arg">Integer</span> b, <span class="arg">Integer</span> a )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在地形上添加贴花。返回唯一的贴花ID，可通过Decal_Destroy移除。【功能：创建地形贴花】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\scenario\LuaLibPresentation.cpp] (338) </b></td>
+            </tr>
+          </table>
+        </p><a name="Decal_Destroy"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Decal_Destroy( <span class="arg">Integer</span> decalID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>通过唯一ID销毁贴花。【功能：销毁贴花】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\scenario\LuaLibPresentation.cpp] (359) </b></td>
+            </tr>
+          </table>
+        </p><a name="Decal_GetInvalidID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Decal_GetInvalidID(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取表示无效贴花的贴花ID（用于检查创建是否失败）。【功能：获取无效贴花ID】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\scenario\LuaLibPresentation.cpp] (322) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_Precache"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_Precache( <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">Integer</span> skinItemDefinitionID, <span class="arg">PlayerID</span> player, <span class="arg">String</span> resourceContainerCacheName, <span class="arg">String</span> source, <span class="arg">String</span> id )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>预缓存实体资源，并监听GE_EntityPrecached事件以确认完成。【功能：预缓存实体资源】</p>
+                <p>callback example: Rule_AddGlobalEvent(EntityPrecacheComplete, GE_EntityPrecached) Params: ebp - entity blueprint skinID - this is the server item id for a skin, it will precache and equip it player - the player that we want to precache the entity or squad for cacheName - name of cache where resource will be loaded into source - helps identify who requested the precaching id - id to table of data that will be used once entity/squad is loaded</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\scenario\LuaLibPresentation.cpp] (294) </b></td>
+            </tr>
+          </table>
+        </p><a name="ResourceContainer_ClearCache"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 ResourceContainer_ClearCache( <span class="arg">String</span> cacheName )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清理缓存中的资源。仅用于调试目的，不用于正式版(RTM)。【功能：清理资源缓存】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\scenario\LuaLibPresentation.cpp] (134) </b></td>
+            </tr>
+          </table>
+        </p><a name="ResourceContainer_CreateCache"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 ResourceContainer_CreateCache( <span class="arg">String</span> cacheName, <span class="arg">Integer</span> cacheSize )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建一个缓存来加载资源，指定其名称和可容纳的资源数量。【功能：创建资源缓存】</p>
+                <p>Once cache is full, the oldest resource will get removed and clean itself up</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\scenario\LuaLibPresentation.cpp] (127) </b></td>
+            </tr>
+          </table>
+        </p><a name="ResourceContainer_LogRefs"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 ResourceContainer_LogRefs(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将资源引用记录到日志。仅用于调试目的，不用于正式版(RTM)。【功能：记录资源引用】</p>
+                <p>dumps inventory information to ResourceContainerLog file</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\scenario\LuaLibPresentation.cpp] (141) </b></td>
+            </tr>
+          </table>
+        </p><a name="Splat_Create"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Splat_Create( <span class="arg">String</span> splatName, <span class="arg">Position</span> position, <span class="arg">Real</span> xScale, <span class="arg">Real</span> zScale, <span class="arg">Real</span> rotationDegrees, <span class="arg">Integer</span> r, <span class="arg">Integer</span> g, <span class="arg">Integer</span> b, <span class="arg">Integer</span> a, <span class="arg">Boolean</span> mirrorX, <span class="arg">Boolean</span> mirrorZ )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在地形上添加溅射效果。返回唯一的溅射ID，可通过Splat_Destroy移除。【功能：创建地形溅射效果】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\scenario\LuaLibPresentation.cpp] (383) </b></td>
+            </tr>
+          </table>
+        </p><a name="Splat_Destroy"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Splat_Destroy( <span class="arg">TerrainSplatObject*</span> handle )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>通过唯一ID销毁溅射效果。【功能：销毁溅射效果】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\scenario\LuaLibPresentation.cpp] (405) </b></td>
+            </tr>
+          </table>
+        </p><a name="Splat_GetInvalidID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Splat_GetInvalidID(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取表示无效溅射效果的溅射ID（用于检查创建是否失败）。【功能：获取无效溅射ID】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\scenario\LuaLibPresentation.cpp] (366) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_Precache"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_Precache( <span class="arg">ScarSquadPBG</span> sbp, <span class="arg">Integer</span> skinItemDefinitionID, <span class="arg">PlayerID</span> player, <span class="arg">String</span> resourceContainerCacheName, <span class="arg">String</span> source, <span class="arg">String</span> id )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>预缓存小队资源，并监听GE_EntityPrecached事件以确认完成。【功能：预缓存小队资源】</p>
+                <p>callback example: Rule_AddGlobalEvent(EntityPrecacheComplete, GE_SquadPrecached) Params: sbp - squad blueprint skinID - this is the server item id for a skin, it will precache and equip it player - the player that we want to precache the entity or squad for cacheName - name of cache where resource will be loaded into source - helps identify who requested the precaching id - id to table of data that will be used once entity/squad is loaded</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\scenario\LuaLibPresentation.cpp] (315) </b></td>
+            </tr>
+          </table>
+        </p><a name="Terrain_LoadHeightMap"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Terrain_LoadHeightMap(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>加载已保存的地形高度图。这将恢复地形高度图的状态。【功能：加载地形高度图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\scenario\LuaLibPresentation.cpp] (437) </b></td>
+            </tr>
+          </table>
+        </p><a name="Terrain_SaveHeightMap"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Terrain_SaveHeightMap(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>保存当前地形高度图。可通过Terrain_LoadHeightMap恢复到该状态。【功能：保存地形高度图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\scenario\LuaLibPresentation.cpp] (430) </b></td>
+            </tr>
+          </table>
+        </p><a name="TerrainHighlight_Hide"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 TerrainHighlight_Hide(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>隐藏地形上的元数据层覆盖。【功能：隐藏地形高亮】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\scenario\LuaLibPresentation.cpp] (422) </b></td>
+            </tr>
+          </table>
+        </p><a name="TerrainHighlight_Show"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 TerrainHighlight_Show( <span class="arg">String</span> metadataLayerName, <span class="arg">Real</span> opacity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在地形上显示元数据层。替换之前显示的地形高亮。【功能：显示地形高亮】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\scenario\LuaLibPresentation.cpp] (412) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

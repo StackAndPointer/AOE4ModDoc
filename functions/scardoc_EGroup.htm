@@ -1,0 +1,2085 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;EGroup</title>
+</head>
+<body>
+<span class="subtitle">scardoc;EGroup</span><p>
+<a name="Group_scardoc;EGroup"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;EGroup</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="EGroup_Add"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_Add( <span class="arg">EGroupID</span> group, <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体组中尚未包含该实体，则将其添加到组末尾。【功能：向实体组添加实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (335) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_AddAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_AddAbility( <span class="arg">EGroupID</span> egroup, <span class="arg">Integer</span> ability )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为实体组中的所有实体添加技能。【功能：为实体组添加技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1475) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_AddEGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_AddEGroup( <span class="arg">EGroupID</span> group, <span class="arg">EGroupID</span> grouptoadd )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将一个实体组中的实体追加到另一个实体组中。【功能：合并实体组】</p>
+                <p>All entities from 'grouptoadd' will be added to 'group'.\n If 'group' already contains an entity from 'grouptoadd' it will not be added.\n This function does not clear the contents of 'grouptoadd'.\n Example: Add group2 (0, 10, 11, 22) to group1 (1, 11, 20) --&gt; group1 would now be (1, 11, 20, 0, 10, 22)\n</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (303) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_AddGroups"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_AddGroups( <span class="arg">EGroupID</span> egroup, <span class="arg">Table</span> groupList )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将多个实体组添加到现有实体组中。【功能：批量合并实体组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1722) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_CanSeeEGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_CanSeeEGroup( <span class="arg">EGroupID</span> egroup, <span class="arg">EGroupID</span> targetegroup, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果组中全部或任意实体能看到目标实体组中全部或任意实体，则返回true。【功能：检测可见性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (476) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_CanSeeSGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_CanSeeSGroup( <span class="arg">EGroupID</span> egroup, <span class="arg">SGroupID</span> targetsgroup, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果组中全部或任意实体能看到目标小队组中全部或任意小队，则返回true。【功能：检测对小队的可见性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (488) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_Clear"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_Clear( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除实体组中的所有实体。【功能：清空实体组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (292) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_Compare"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_Compare( <span class="arg">EGroupID</span> group1, <span class="arg">EGroupID</span> group2 )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果两个实体组的内容相等则返回true。实体顺序不影响比较结果。【功能：比较实体组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (329) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_ContainsBlueprints"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_ContainsBlueprints( <span class="arg">EGroupID</span> egroup, <span class="arg">EBP/EntityType/Table</span> blueprint, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查实体组是否包含全部或任意指定的蓝图。【功能：检测蓝图包含】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (671) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_ContainsEGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_ContainsEGroup( <span class="arg">EGroupID</span> egroup1, <span class="arg">EGroupID</span> egroup2, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体组1包含实体组2中的任意或全部实体，则返回true。【功能：检测实体组包含关系】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1046) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_ContainsEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_ContainsEntity( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体组包含指定实体ID，则返回true。【功能：检测实体是否存在】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1013) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_ContainsEntityID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_ContainsEntityID( <span class="arg">EGroupID</span> egroup, <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体组包含指定实体ID，则返回true。【功能：检测实体ID是否存在】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1031) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_Count"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_Count( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体组中已生成和已取消生成实体的总数。【功能：统计实体总数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (274) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_CountAlive"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_CountAlive( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取存活实体的数量（包括已生成和已取消生成的实体）。【功能：统计存活实体数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (825) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_CountBlueprints"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_CountBlueprints( <span class="arg">EGroupID</span> sgroup, <span class="arg">Integer</span> ebp )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体组中具有指定蓝图的所有实体的总数。【功能：统计指定蓝图实体数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (742) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_CountDeSpawned"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_CountDeSpawned( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体组中已取消生成实体的数量。【功能：统计已取消生成实体数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (286) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_CountSpawned"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_CountSpawned( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体组中已生成实体的数量。【功能：统计已生成实体数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (280) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_Create"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_Create( <span class="arg">String</span> name )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回具有指定名称的新实体组。【功能：创建实体组】</p>
+                <p>Entity groups are used for buildings and objects such as rocks and trees.\n If you need to issue orders to a group vehicles or units you must use a SGroup.\n Note that you cannot create egroups with duplicate names.\n To be safe, you can check if the EGroup you want to create exists using EGroup_Exists( )</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (201) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_CreateIfNotFound"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_CreateIfNotFound( <span class="arg">String</span> egroupname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据名称查找实体组。如果不存在则创建具有指定名称的新实体组。【功能：查找或创建实体组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (500) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_CreateKickerMessage"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_CreateKickerMessage( <span class="arg">EGroupID</span> group, <span class="arg">String</span> textid )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在实体组中的每个实体上创建并显示提示消息给玩家。【功能：创建提示消息】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1059) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_CreateUnique"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_CreateUnique( <span class="arg">String</span> OPT_prefix )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回具有唯一名称的实体组，名称带有指定的前缀。【功能：创建唯一实体组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (415) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_CreateUniqueWithPrefix"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_CreateUniqueWithPrefix( <span class="arg">String</span> prefix )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回具有自动生成唯一名称的新实体组，可选添加指定前缀。【功能：创建带前缀的唯一实体组】</p>
+                <p>Use this if you want to create a new EGroup but don't necessarily care about the name.\n Entity groups are used for buildings and objects such as rocks and trees.\n</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (227) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_DeSpawn"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_DeSpawn( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>取消生成实体组中所有已生成的实体。【功能：取消生成实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (813) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_Destroy"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_Destroy( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>手动销毁不再需要的实体组。【功能：销毁实体组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (250) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_DestroyAllEntities"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_DestroyAllEntities( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>销毁实体组中所有已生成和已取消生成的实体。【功能：销毁所有实体】</p>
+                <p>Be careful not to confuse this with EGroup_Destroy which destroys the group and NOT the items it contains.  This function will destroy spawned and despawned items in a group</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (659) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_Duplicate"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_Duplicate( <span class="arg">EGroupID</span> egroupid1, <span class="arg">EGroupID</span> egroupid2 )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>复制实体组。将实体组1的内容复制到实体组2。如有必要，函数会先清空实体组2。【功能：复制实体组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1281) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_EnableMinimapIndicator"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_EnableMinimapIndicator( <span class="arg">EGroupID</span> egroup, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用或禁用实体组中所有实体的小地图指示器。【功能：设置小地图指示器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1598) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_EnableUIDecorator"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_EnableUIDecorator( <span class="arg">SGroupID</span> group, <span class="arg">Boolean</span> enable, <span class="arg">Boolean</span> enableSelection )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用或禁用实体组中所有实体的UI装饰器。除非指定enableSelection参数，否则同时设置选择视觉效果。【功能：设置UI装饰器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1687) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_Exists"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_Exists( <span class="arg">String</span> name )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果具有指定名称的实体组存在，则返回true。【功能：检测实体组是否存在】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (462) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_Filter"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_Filter( <span class="arg">EGroupID</span> egroup, <span class="arg">String</span> blueprint/type, <span class="arg">Integer</span> filtertype, <span class="arg">EGroupID</span> OPT_splitGroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据蓝图或类型筛选实体组。【功能：筛选实体组】</p>
+                <p>Blueprints can be provided by name or by ID, and in a table if you want to filter on more than one type. Setting filtertype to FILTER_KEEP results in the group only containing entities of the types listed in the blueprint table. Setting filtertype to FILTER_REMOVE will strip those same entities out and leave those that aren't of the types listed.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1130) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_Filter_Internal"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_Filter_Internal( <span class="arg">EGroupID</span> group, <span class="arg">StackVar</span> blueprints, <span class="arg">ScarFilterType</span> filterType, <span class="arg">StackVar</span> optionalSplitGroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>EGroup_Filter的内部实现，用于处理可选参数。请勿直接使用，应使用EGroup_Filter。【功能：内部筛选实现】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (520) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_FilterByProximity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_FilterByProximity( <span class="arg">EGroupID</span> egroup, <span class="arg">Position/Marker</span> position, <span class="arg">Real</span> distance, <span class="arg">FilterType</span> filterType )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据实体是否靠近某位置或在标记边界内来筛选实体组。【功能：按距离筛选实体组】</p>
+                <p>filterType can be FILTER_KEEP or FILTER_REMOVE</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1222) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_FilterOnScreen"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_FilterOnScreen( <span class="arg">EGroupID</span> egroup, <span class="arg">Real</span> percent, <span class="arg">Integer</span> filtertype )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据单位是否在屏幕上来筛选实体组。百分比参数指定考虑的屏幕区域（0.8是个好值，不会包含屏幕边缘的内容）。【功能：按屏幕可见性筛选】</p>
+                <p>Setting filtertype to FILTER_KEEP results in the group only containing those entities that are on screen.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1199) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_FilterResource"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_FilterResource( <span class="arg">EGroupID</span> group, <span class="arg">String</span> name, <span class="arg">EGroupID</span> resource )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从给定实体组中筛选出具有指定名称的实体到资源实体组中。【功能：筛选到资源实体组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (576) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_FilterSquads"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_FilterSquads( <span class="arg">EGroupID</span> egroup, <span class="arg">Integer</span> filter_type )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据实体是否属于小队来筛选实体组。filter_type可以是FILTER_KEEP或FILTER_REMOVE。【功能：按小队归属筛选】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1140) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_FilterUnderConstruction"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_FilterUnderConstruction( <span class="arg">EGroupID</span> egroup, <span class="arg">Integer</span> filtertype )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据建造状态筛选实体组。将filtertype设为FILTER_REMOVE可移除正在建造的建筑。【功能：按建造状态筛选】</p>
+                <p>Setting filtertype to FILTER_KEEP results in the group only containing those entities that are in the process of being built.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1166) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_ForEach"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_ForEach( <span class="arg">EGroupID</span> egroup, <span class="arg">StackVarFunction</span> f )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为实体组中的每个项目调用Lua函数。函数接收参数，返回true中断循环，返回false继续。【功能：遍历实体组】</p>
+                <p>function Rule_Test( )\n \tlocal DespawnEntity = function( egroupid, itemindex, entityID )\n \t\tEntity_Despawn( entityID )\n \tend\n\n \tEGroup_ForEach( EGroup_FromName("eg_PlayersHQ"), DespawnEntity )\n end\n Note: This function iterates over SPAWNED ENTITIES ONLY.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (651) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_ForEachAllOrAny"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_ForEachAllOrAny( <span class="arg">EGroupID</span> egroup, <span class="arg">Boolean</span> all, <span class="arg">StackVarFunction</span> f )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为实体组中的每个项目调用Lua函数。函数接收参数并返回布尔值。【功能：条件遍历实体组】</p>
+                <p>Only use this to TEST conditions on entities. DO NOT use this to perform operations on all entities, since it may not call your function on all entities (due to short circuit evaluation). This is used for checking if ALL or ANY items in a group match a given predicate. (eg. Are all items in a group chaos marines)\n Note: This function iterates over SPAWNED ENTITIES ONLY.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (636) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_ForEachAllOrAnyEx"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_ForEachAllOrAnyEx( <span class="arg">EGroupID</span> egroup, <span class="arg">Boolean</span> all, <span class="arg">StackVarFunction</span> f, <span class="arg">Boolean</span> spawned, <span class="arg">Boolean</span> despawned )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>与EGroup_ForEachAllOrAny相同，但可选择遍历已生成实体、已取消生成实体或两者。【功能：扩展条件遍历】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (482) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_ForEachEx"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_ForEachEx( <span class="arg">EGroupID</span> egroup, <span class="arg">StackVarFunction</span> f, <span class="arg">Boolean</span> spawned, <span class="arg">Boolean</span> despawned )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>与EGroup_ForEach相同，但可选择遍历已生成实体、已取消生成实体或两者。【功能：扩展遍历实体组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (607) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_FromName"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_FromName( <span class="arg">String</span> name )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据名称查找实体组。【功能：按名称查找实体组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (259) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_GetAvgHealth"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_GetAvgHealth( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体组中所有单位的平均生命值比例。【功能：获取平均生命值】</p>
+                <p>This uses the "proper" measure of health for panel buildings, so should accurately reflect what the user sees.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (565) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_GetClosestEntities"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_GetClosestEntities(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体组中获取距离指定位置最近的若干实体。不会从源实体组中移除实体。【功能：获取最近实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (870) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_GetClosestEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_GetClosestEntity( <span class="arg">EGroupID</span> egroupid, <span class="arg">Marker/Pos</span> position )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取实体组中距离指定位置最近的实体。【功能：获取最近单个实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (863) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_GetClosestEntityInternal"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_GetClosestEntityInternal( <span class="arg">EGroupID</span> group, <span class="arg">Vector3f</span> position )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体组中距离指定位置最近的实体。【功能：内部获取最近实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (439) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_GetDeSpawnedEntityAt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_GetDeSpawnedEntityAt( <span class="arg">EGroupID</span> group, <span class="arg">Integer</span> int )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定索引处的已取消生成实体。【功能：获取指定索引的已取消生成实体】</p>
+                <p>Use EGroup_GetSpawnedEntityAt if you want the spawned items in the group\n Use index 1 to get the first entity in the group.\n It is an error if index &gt; EGroup_GetCountDeSpawned()\n</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (402) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_GetEntityAt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_GetEntityAt( <span class="arg">EGroupID</span> group, <span class="arg">Integer</span> int )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定索引处的实体。【功能：获取指定索引实体】</p>
+                <p>Use EGroup_GetSpawnedEntityAt or EGroup_GetDeSpawnedEntityAt if you want the spawned/despawned items in the group\n Use index 1 to get the first entity in the group.\n It is an error if index &gt; EGroup_GetCount()\n</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (358) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_GetInvulnerable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_GetInvulnerable( <span class="arg">EGroupID</span> egroup, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查实体组中全部或任意实体的无敌状态。【功能：检测无敌状态】</p>
+                <p>Set all param to true to check for ALL or set to false to check for ANY.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (787) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_GetLastAttacker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_GetLastAttacker( <span class="arg">EGroupID</span> EGroupVictim, <span class="arg">SGroupID</span> SGroupAttacker )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取实体组中所有实体的最后攻击者。获取小队组中所有小队的最后攻击者并存储在SGroupAttacker中。【功能：获取最后攻击者】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1570) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_GetName"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_GetName( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回给定实体组的名称。【功能：获取实体组名称】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (470) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_GetOffsetPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_GetOffsetPosition( <span class="arg">EGroupID</span> egroup, <span class="arg">Integer</span> offset, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回相对于实体当前位置/方向的偏移位置。关于offset参数的说明请参见ScarUtil.scar。【功能：获取偏移位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1507) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_GetPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_GetPosition( <span class="arg">EGroupID</span> group )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体组的中心位置。【功能：获取实体组位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (420) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_GetRandomSpawnedEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_GetRandomSpawnedEntity( <span class="arg">EGroupID</span> egroupid )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体组中随机获取一个已生成的实体。【功能：获取随机实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (843) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_GetSequence"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_GetSequence( <span class="arg">String</span> name )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>构建按序列命名的实体组ID表。例如名称"eg_building"会找到"eg_building1"、"eg_building2"等，直到找不到为止。【功能：获取序列实体组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1386) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_GetSpawnedEntityAt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_GetSpawnedEntityAt( <span class="arg">EGroupID</span> group, <span class="arg">Integer</span> int )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定索引处的已生成实体。【功能：获取指定索引的已生成实体】</p>
+                <p>Use EGroup_GetDeSpawnedEntityAt if you want the despawned items in the group\n Use index 1 to get the first entity in the group.\n It is an error if index &gt; EGroup_GetCountSpawned()\n</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (380) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_GetSpawnedEntityFilter"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_GetSpawnedEntityFilter( <span class="arg">EGroupID</span> egroupid, <span class="arg">function</span> condition(entity) )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体组中获取第一个满足条件的已生成实体（条件为接受实体的函数）。【功能：按条件获取实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (913) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_GetSpread"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_GetSpread( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体组中心到最远实体的距离。【功能：获取实体组分布范围】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1361) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_GetSquadsHeld"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_GetSquadsHeld( <span class="arg">EGroupID</span> egroup, <span class="arg">SGroupID</span> sgroupRecipient )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回包含实体组中所有实体所持有小队的小队组。【功能：获取持有的小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1492) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_GetTotalHealth"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_GetTotalHealth( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体组中所有单位的总生命值。【功能：获取总生命值】</p>
+                <p>This uses the "proper" measure of health for panel buildings, so should accurately reflect what the user sees.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (595) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_HasAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_HasAbility( <span class="arg">EGroupID</span> egroup, <span class="arg">Integer</span> ability, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>测试实体组中任意或全部建筑是否具有指定技能。【功能：检测技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1482) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_HasBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_HasBlueprint( <span class="arg">EGroupID</span> egroup, <span class="arg">EBP/EntityType/Table</span> blueprint, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查实体组中任意或全部实体是否匹配指定蓝图。【功能：检测蓝图匹配】</p>
+                <p>The blueprint can be a table of blueprints or types (see Entity_HasBlueprint() for details)</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (691) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_HasUpgrade"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_HasUpgrade( <span class="arg">EGroupID</span> egroup, <span class="arg">UpgradeID</span> upgrade, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体组中任意或全部实体是否具有指定升级。【功能：检测升级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1331) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_Hide"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_Hide( <span class="arg">EGroupID</span> egroup, <span class="arg">Boolean</span> hide )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>隐藏或显示实体组中的所有实体。【功能：隐藏或显示实体】</p>
+                <p>Bool should be true to hide, false to show</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (959) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_InstantCaptureStrategicPoint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_InstantCaptureStrategicPoint( <span class="arg">EGroupID</span> egroup, <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>更改战略点的所有权。【功能：占领战略点】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (944) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_InstantRevertOccupiedBuilding"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_InstantRevertOccupiedBuilding( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>还原被占领的建筑。【功能：还原被占领建筑】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1583) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_Intersection"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_Intersection( <span class="arg">EGroupID</span> group, <span class="arg">EGroupID</span> grouptointersect )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>执行实体组交集运算。【功能：实体组交集】</p>
+                <p>Only entities that are in both groups will be added to 'group'.\n The contents of 'grouptointersect' will not be changed.\n Example: group = (1,2,3,4,5,6)  grouptointersect = (2,4,6,8,10)   --&gt; group will now equal (2,4,6)</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (313) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_IsBurning"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_IsBurning( <span class="arg">EGroupID</span> egroup, <span class="arg">Boolean</span> ALL )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查实体组中任意或全部实体是否着火（超过点燃阈值）。【功能：检测着火状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1674) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_IsCapturedByPlayer"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_IsCapturedByPlayer( <span class="arg">EGroupID</span> egroup, <span class="arg">PlayerID</span> playerId, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体组中全部或任意战略点已被占领，则返回true。使用ANY或ALL关键字。【功能：检测玩家占领状态】</p>
+                <p>This function will ignore all entities that cannot be captured and will return false if no entities in the group can be captured.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (515) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_IsCapturedByTeam"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_IsCapturedByTeam( <span class="arg">EGroupID</span> egroup, <span class="arg">TeamID</span> teamId, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体组中全部或任意战略点已被队伍占领，则返回true。使用ANY或ALL关键字。【功能：检测队伍占领状态】</p>
+                <p>This function will ignore all entities that cannot be captured and will return false if no entities in the group can be captured.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (539) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_IsDoingAttack"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_IsDoingAttack( <span class="arg">EGroupID</span> egroup, <span class="arg">Boolean</span> all, <span class="arg">Real</span> time )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果全部或任意实体在指定时间内正在攻击，则返回true。【功能：检测攻击状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (464) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_IsEmpty"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_IsEmpty( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体组不包含任何已生成或已取消生成的实体，则返回true。【功能：检测实体组是否为空】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (507) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_IsHoldingAny"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_IsHoldingAny( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体组中是否有任何实体持有东西。【功能：检测持有状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1459) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_IsInCover"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_IsInCover( <span class="arg">EGroupID</span> egroup, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果全部或任意实体处于掩护中，则返回true。【功能：检测掩护状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (428) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_IsMoving"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_IsMoving( <span class="arg">EGroupID</span> egroupid, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体组中任意或全部实体正在移动，则返回true。【功能：检测移动状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1072) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_IsOnScreen"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_IsOnScreen( <span class="arg">PlayerID</span> player, <span class="arg">EGroupID</span> group, <span class="arg">Boolean</span> all, <span class="arg">Real</span> OPT_percent )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体组中任意或全部实体在屏幕上，则返回true。可传入屏幕百分比参数，0.8表示屏幕中心80%区域。【功能：检测屏幕可见性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1294) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_IsProducingSquads"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_IsProducingSquads( <span class="arg">EGroupID</span> egroup, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体组中全部或任意实体正在生产小队，则返回true。【功能：检测生产状态】</p>
+                <p>Set all to true to check for ALL or set to false to check for ANY</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1536) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_IsSpawned"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_IsSpawned( <span class="arg">EGroupID</span> egroup, <span class="arg">Boolean</span> ALL )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查实体组中任意或全部实体当前是否已生成。【功能：检测生成状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1710) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_IsUnderAttack"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_IsUnderAttack( <span class="arg">EGroupID</span> egroup, <span class="arg">Boolean</span> all, <span class="arg">Real</span> time )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果全部或任意实体在指定时间内正在被攻击，则返回true。【功能：检测受攻击状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (439) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_IsUnderAttackByPlayer"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_IsUnderAttackByPlayer( <span class="arg">EGroupID</span> group, <span class="arg">PlayerID</span> attackerplayer, <span class="arg">Real</span> duration )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查实体是否被玩家攻击。【功能：检测被玩家攻击】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (992) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_IsUnderAttackFromDirection"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_IsUnderAttackFromDirection( <span class="arg">EGroupID</span> egroup, <span class="arg">Boolean</span> all, <span class="arg">Integer</span> offset, <span class="arg">Real</span> time )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果全部或任意实体在指定时间内受到来自某方向的攻击，则返回true。方向类型参见ScarUtil.scar，可传入偏移量表。【功能：检测受攻击方向】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (451) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_IsUsingAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_IsUsingAbility( <span class="arg">EGroupID</span> egroup, <span class="arg">Boolean</span> ALL )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查实体组中任意或全部小队是否正在使用技能。【功能：检测技能使用状态】</p>
+                <p>also used for emplacements/entities that are built but function through the use of squads.  Does not check WHAT ability a squad is using.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1549) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_IsValid"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_IsValid( <span class="arg">Integer</span> egroupID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查实体组是否仍然存在，无需名称。【功能：检测实体组有效性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (189) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_Kill"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_Kill( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>杀死实体组中的所有实体。【功能：杀死所有实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (974) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_NotifyOnPlayerDemolition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_NotifyOnPlayerDemolition( <span class="arg">EGroupID</span> id, <span class="arg">LuaFunction</span> function )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当实体组中任何实体被玩家点击"引爆"按钮销毁时调用指定函数。【功能：引爆通知回调】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1647) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_Remove"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_Remove( <span class="arg">EGroupID</span> group, <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体组中移除一个实体。【功能：移除实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (348) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_RemoveAllMatching"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_RemoveAllMatching( <span class="arg">EGroupID</span> group, <span class="arg">EGroupID</span> grouptocompare )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除两个实体组中都存在的所有实体。【功能：移除交集实体】</p>
+                <p>Entities that exist in both groups will be removed from 'group'.\n The contents of 'grouptocompare' will not be changed.\n Example: group = (1,2,3,4,5,6)  grouptocompare = (1,2,3,8,10)   --&gt; group will now equal (4,5,6)</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (323) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_RemoveDemolitions"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_RemoveDemolitions( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除实体组上的所有爆破炸药。【功能：移除爆破炸药】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1619) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_RemoveGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_RemoveGroup( <span class="arg">EGroupID</span> group, <span class="arg">EGroupID</span> grouptoremove )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从第一个实体组中移除第二个实体组中的所有实体。第二个实体组保持不变。【功能：移除实体组内容】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1521) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_RemoveNonHoldEntities"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_RemoveNonHoldEntities( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体组中移除所有没有HoldExt组件的实体。【功能：移除非持有实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (657) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_RemoveUpgrade"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_RemoveUpgrade( <span class="arg">EGroupID</span> egroup, <span class="arg">Integer</span> upgrade )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体组中移除升级。【功能：移除升级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1634) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_ReSpawn"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_ReSpawn( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>重新生成实体组中所有已取消生成的实体。【功能：重新生成实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (802) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_SetAnimatorAction"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_SetAnimatorAction( <span class="arg">EGroupID</span> egroup, <span class="arg">String</span> actionName )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为实体组触发动画动作。请仅用于简单动画。【功能：设置动画动作】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1408) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_SetAnimatorEvent"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_SetAnimatorEvent( <span class="arg">EGroupID</span> egroup, <span class="arg">String</span> eventName )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为实体组设置动画事件。请仅用于简单动画。【功能：设置动画事件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1421) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_SetAnimatorState"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_SetAnimatorState( <span class="arg">EGroupID</span> egroup, <span class="arg">String</span> stateMachineName, <span class="arg">String</span> stateName )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为实体组设置状态机的动画状态。请仅用于简单动画。【功能：设置动画状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1434) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_SetAnimatorVariable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_SetAnimatorVariable( <span class="arg">EGroupID</span> egroup, <span class="arg">String</span> variableName, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为实体组设置动画变量值。请仅用于简单动画。【功能：设置动画变量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1447) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_SetAutoTargetting"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_SetAutoTargetting( <span class="arg">EGroupID</span> group, <span class="arg">String</span> hardpoint, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置武器是否自动瞄准目标。【功能：设置自动瞄准】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1310) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_SetAvgHealth"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_SetAvgHealth( <span class="arg">EGroupID</span> egroup, <span class="arg">Real</span> healthPercent )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将实体组中每个单位的生命值设置为指定百分比[0.0, 1.0]。【功能：设置平均生命值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (629) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_SetCrushable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_SetCrushable( <span class="arg">EGroupID</span> egroup, <span class="arg">Boolean</span> crushable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>覆盖实体组的可碾压行为。【功能：设置可碾压属性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1605) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_SetDemolitions"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_SetDemolitions( <span class="arg">PlayerID</span> player, <span class="arg">EGroupID</span> egroupid, <span class="arg">Integer</span> OPT_numcharges )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>立即为建筑安装爆破炸药。【功能：设置爆破炸药】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1659) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_SetHealthMinCap"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_SetHealthMinCap( <span class="arg">EGroupID</span> egroup, <span class="arg">Real</span> minhealth )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置实体的最小生命值。【功能：设置最小生命值】</p>
+                <p>This is usually set to zero, any higher value prevents the entity from having its health reduced below this given value</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (729) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_SetInvulnerable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_SetInvulnerable( <span class="arg">EGroupID</span> egroup, <span class="arg">Boolean</span> enabled, <span class="arg">Real</span> OPT_reset_time )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用/禁用整个实体组的无敌状态。使用true/false开关，或使用0.0到1.0之间的数值精确控制实体可承受的伤害上限。【功能：设置无敌状态】</p>
+                <p>The optional reset_time is used to automatically remove invulnerability after a set time. If invulnerable, health damage is disabled.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (706) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_SetPlayerOwner"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_SetPlayerOwner( <span class="arg">EGroupID</span> egroup, <span class="arg">PlayerID</span> owner )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>更改实体组中所有已生成和已取消生成实体的玩家所有者。【功能：设置玩家所有者】</p>
+                <p>Strategic/capturable point does not support setting player owner directly</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (643) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_SetRallyPoint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_SetRallyPoint( <span class="arg">EGroupID</span> egroup, <span class="arg">Position</span> target )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置实体的集结点。【功能：设置集结点】</p>
+                <p>This is usually set to zero, any higher value prevents the entity from having its health reduced below this given value</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (768) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_SetRecrewable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_SetRecrewable( <span class="arg">EGroupID</span> sgroup, <span class="arg">Boolean</span> recrewable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置实体组中所有实体在被遗弃时是否可重新操作。【功能：设置可重新操作】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1701) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_SetSelectable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_SetSelectable( <span class="arg">EGroupID</span> egroup, <span class="arg">Boolean</span> selectable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置实体组中实体的玩家可选择状态。【功能：设置可选择状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (934) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_SetStrategicPointNeutral"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_SetStrategicPointNeutral( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将战略点设置为中立（不属于任何队伍）。【功能：设置战略点中立】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1612) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_SetWorldOwned"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_SetWorldOwned( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将实体组设为中立。【功能：设置实体组中立】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1627) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_Single"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_Single( <span class="arg">EGroupID</span> egroup, <span class="arg">entityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建包含单个实体的实体组。【功能：创建单实体组】</p>
+                <p>Creates an EGroup containing just one entity, creating the group if it doesn't exist and clearing it if it does. It returns the name of the EGroup.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1090) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_SortBasedOnHealth"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_SortBasedOnHealth( <span class="arg">EGroupID</span> egroup, <span class="arg">Boolean</span> ascending )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据生命值对实体组进行排序。【功能：按生命值排序】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (672) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_WarpToMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_WarpToMarker( <span class="arg">EGroupID</span> entity, <span class="arg">MarkerID</span> marker )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>立即将实体组中的所有成员传送到标记位置。【功能：传送到标记】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1117) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_WarpToPos"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_WarpToPos( <span class="arg">EGroupID</span> entity, <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>立即将实体组中的所有成员传送到新位置。【功能：传送到位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1104) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetTotalHealth"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetTotalHealth( <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队组中所有单位的总生命值。【功能：获取小队组总生命值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (612) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_HasEntityUpgrade"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_HasEntityUpgrade( <span class="arg">EGroupID</span> egroup, <span class="arg">UpgradeID</span> upgrade, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队组中任意或全部小队包含具有升级的实体，则返回true。仅适用于小队组中每个小队的第一个实体。【功能：检测小队实体升级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1344) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

@@ -1,0 +1,1758 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;Util</title>
+</head>
+<body>
+<span class="subtitle">scardoc;Util</span><p>
+<a name="Group_scardoc;Util"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;Util</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="bug"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 bug( <span class="arg">ErrorMessage</span> errormessage )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在游戏结束时发送带有日志文件的警告邮件。【功能：调试报告】</p>
+                <p>This is similar to fatal() only the game will continue on. Use the ErrorMessage to dump out relevent information to the scarlog Example: bug( "This shouldn't happen, fix "..problem.here)</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (485) </b></td>
+            </tr>
+          </table>
+        </p><a name="Clone"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Clone( <span class="arg">Table</span> data, <span class="arg">Boolean</span> OPT_recursive )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>克隆一个表，允许对数据进行无污染的使用。默认情况下此克隆是递归进行的，但可以通过可选的递归标志进行更改。【功能：表克隆】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (3526) </b></td>
+            </tr>
+          </table>
+        </p><a name="Clone_Deterministic"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Clone_Deterministic( <span class="arg">Table</span> data, <span class="arg">Boolean</span> OPT_recursive )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>克隆一个表，允许对数据进行无污染的使用。【功能：确定性表克隆】</p>
+                <p>Clones a table allowing for unadulterated use of the data. The input table must be enumeratable by Table_DeterministicOrderedPairs. By default this cloning is done recursively, but that can be changed with the optional recursive flag.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (3574) </b></td>
+            </tr>
+          </table>
+        </p><a name="Enum_ToNumber"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Enum_ToNumber( <span class="arg">StackVar</span> var )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将任意枚举值转换为数字。【功能：枚举转数字】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\essence\public\essence\lua\lualibs\LuaLibEnums.cpp] (23) </b></td>
+            </tr>
+          </table>
+        </p><a name="Enum_ToString"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Enum_ToString( <span class="arg">StackVar</span> var )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将任意枚举值转换为字符串。【功能：枚举转字符串】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\essence\public\essence\lua\lualibs\LuaLibEnums.cpp] (11) </b></td>
+            </tr>
+          </table>
+        </p><a name="Event_IsAnyRunning"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Event_IsAnyRunning(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果有任何标准（非保存）事件已排队等待运行，则返回true。TODO：此函数名称具有误导性。我们可能应该更改它，但由于许多任务脚本都在调用它，所以我们暂时保留。【功能：检查事件运行状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2971) </b></td>
+            </tr>
+          </table>
+        </p><a name="Game_EndSP"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Game_EndSP( <span class="arg">Boolean</span> win, <span class="arg">WinReason</span> OPT_winReason, <span class="arg">Boolean</span> OPT_nis, <span class="arg">Boolean</span> OPT_sandmap )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>结束单人游戏（胜利/失败）。【功能：结束单人游戏】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2538) </b></td>
+            </tr>
+          </table>
+        </p><a name="Game_FadeToBlack"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Game_FadeToBlack( <span class="arg">Boolean</span> direction, <span class="arg">Real</span> length )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将屏幕淡入淡出至黑色 - FADE_OUT淡出至黑色，FADE_IN淡入恢复。【功能：屏幕淡入淡出】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2045) </b></td>
+            </tr>
+          </table>
+        </p><a name="Loc_FormatText"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Loc_FormatText( <span class="arg">Integer</span> FormatID, <span class="arg">argc</span> OPT_parameters )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回格式化的本地化字符串。【功能：格式化本地化文本】</p>
+                <p>Use this function to format localized text. ie %1PLAYERNAME% is going to win. It accepts up to 9 additional values as parameters.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2382) </b></td>
+            </tr>
+          </table>
+        </p><a name="Modify_EnableIsVisibleInFOW"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Modify_EnableIsVisibleInFOW( <span class="arg">EGroupID</span> group, <span class="arg">Boolean</span> enable, <span class="arg">Real</span> durationSeconds )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>修改组是否在战争迷雾中可见。【功能：战争迷雾可见性修改】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\modifiers.scar] (2088) </b></td>
+            </tr>
+          </table>
+        </p><a name="Modify_OnFireDamagePerTick"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Modify_OnFireDamagePerTick( <span class="arg">EGroupID</span> egroup, <a href="enum_list.htm#ModifierUsageType">ModifierUsageType</a> mathtype, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>修改实体着火时每刻受到的伤害。【功能：着火伤害修改】</p>
+                <p>Can modify the value to zero to allow buildings to be on fire without taking damage</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\modifiers.scar] (2225) </b></td>
+            </tr>
+          </table>
+        </p><a name="Modify_OnFireDecayAmountPerTick"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Modify_OnFireDecayAmountPerTick( <span class="arg">EGroupID</span> egroup, <a href="enum_list.htm#ModifierUsageType">ModifierUsageType</a> mathtype, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>修改未着火时每刻燃烧等级的衰减量。【功能：燃烧衰减修改】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\modifiers.scar] (2202) </b></td>
+            </tr>
+          </table>
+        </p><a name="Modify_OnFireHealthPercentage"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Modify_OnFireHealthPercentage( <span class="arg">EGroupID</span> egroup, <a href="enum_list.htm#ModifierUsageType">ModifierUsageType</a> mathtype, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>修改使实体着火所需的血量阈值。【功能：着血量阈值修改】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\modifiers.scar] (2166) </b></td>
+            </tr>
+          </table>
+        </p><a name="Modify_OnFireThreshold"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Modify_OnFireThreshold( <span class="arg">EGroupID</span> egroup, <a href="enum_list.htm#ModifierUsageType">ModifierUsageType</a> mathtype, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>修改使实体着火所需的燃烧等级阈值。较低的值意味着更快着火。【功能：着火阈值修改】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\modifiers.scar] (2129) </b></td>
+            </tr>
+          </table>
+        </p><a name="Modify_PlayerSquadLoadoutMax"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Modify_PlayerSquadLoadoutMax( <span class="arg">Player</span> player, <a href="enum_list.htm#ModifierUsageType">ModifierUsageType</a> mathtype, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>修改新生成小队中的实体数量。【功能：小队实体数量修改】</p>
+                <p>Intended use case is spawning damaged squadss</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\modifiers.scar] (2262) </b></td>
+            </tr>
+          </table>
+        </p><a name="Modify_SquadShieldRegen"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Modify_SquadShieldRegen( <span class="arg">SGroupID</span> group, <span class="arg">Integer</span> Factor, <span class="arg">MUT</span> Usage (MUT_Multiplication )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>修改实体的护盾回复。【功能：护盾回复修改】</p>
+                <p>Should only be used on squads</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\modifiers.scar] (2061) </b></td>
+            </tr>
+          </table>
+        </p><a name="Position_IsValid"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Position_IsValid( <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查位置是否有效...对于可能返回INVALID_POS的函数很有用。【功能：位置有效性检查】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (496) </b></td>
+            </tr>
+          </table>
+        </p><a name="Sound_PlayOnSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Sound_PlayOnSquad( <span class="arg">String</span> soundpathname, <span class="arg">SGroupID</span> sgroupid )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在小队组中最中心的小队上播放声音。【功能：小队声音播放】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2011) </b></td>
+            </tr>
+          </table>
+        </p><a name="Team_GetEntityConcentration"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Team_GetEntityConcentration( <span class="arg">TeamID</span> team, <span class="arg">Boolean</span> OPT_popcapOnly, <span class="arg">Table</span> OPT_includeBlueprints, <span class="arg">Table</span> OPT_excludeBlueprints, <span class="arg">Boolean</span> OPT_bLeastConcentrated, <span class="arg">MarkerID/Table</span> OPT_onlyInThisMarker )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找队伍拥有的实体的最大（或最小）聚集区域。【功能：实体聚集度查询】</p>
+                <p>This function is slow, so don't call it very often</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2947) </b></td>
+            </tr>
+          </table>
+        </p><a name="Team_GetSquadConcentration"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Team_GetSquadConcentration( <span class="arg">TeamID</span> team, <span class="arg">Boolean</span> OPT_popcapOnly, <span class="arg">Table</span> OPT_includeBlueprints, <span class="arg">Table</span> OPT_excludeBlueprints, <span class="arg">Boolean</span> OPT_bLeastConcentrated, <span class="arg">MarkerID/Table</span> OPT_onlyInThisMarker )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找队伍拥有的小队的最大（或最小）聚集区域。【功能：小队聚集度查询】</p>
+                <p>This function is slow, so don't call it very often</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2938) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_AddMouseoverSquadToSGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_AddMouseoverSquadToSGroup( <span class="arg">Boolean</span> OPT_clearGroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果鼠标光标下有小队，则将其添加到唯一的小队组。返回值是添加到的小队组，如果鼠标光标下没有小队则返回nil。传入true作为'clearGroup'可在添加小队前清空小队组。【功能：鼠标悬停小队添加】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2632) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_ApplyModifier"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_ApplyModifier( <span class="arg">EGroupID</span> groupid, <span class="arg">String</span> modifier, <span class="arg">Real</span> scalefactor, <span class="arg">Real</span> mathtype, <span class="arg">Real</span> OPT_applytype, <span class="arg">Boolean</span> OPT_exclusive, <span class="arg">String</span> OPT_targetname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将任意修改器应用于目标小队组、实体组或玩家。【功能：应用修改器】</p>
+                <p>Valid applytypes are MAT_...(Entity, Squad etc.), if left default assumption is default type for the target Cases you want to define applytype: Weapon Modifiers, Enable Modifiers, or a player modifier for all entity or squad types Valid mathtypes are MUT...(Addition, Multiplication, etc.) Exclusive modifiers will replace all pre-existing modifiers of that modifier type on the target</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\modifiers.scar] (1930) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_AutoAmbient"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_AutoAmbient( <span class="arg">Table</span> intelEventTable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Auto-generate an Ambient Event. These are Low priority, and will hopefully interrupt nothing. </p>
+                <p>Takes a table of Actors and LOC numbers</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1419) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_AutoIntel"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_AutoIntel( <span class="arg">Table</span> intelEventTable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>自动生成情报事件。这些是中等优先级事件，会中断环境事件，但不会中断非交互式场景。【功能：自动情报事件】</p>
+                <p>Takes a table of parameters defining speaker(s) and line(s)</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1465) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_AutoNISlet"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_AutoNISlet( <span class="arg">Integer</span> nisletType, <span class="arg">Table</span> intelEventTable, <span class="arg">Boolean</span> OPT_bFOWvisible )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>自动生成小型非交互式场景事件，这是一种用于传达任务位置的简单非交互式场景。这些是高优先级事件，会中断环境事件和情报事件。【功能：自动小型NIS事件】</p>
+                <p>Takes an NISLET type and a table of parameters defining speaker(s) and line(s) NISLET_BLACK2GAME	= 1 -- starts in black and fades up, ends in gamplay NISLET_GAME2GAME 	= 2 -- transitions from game play to letterbox and backto gameplay NISLET_GAME2BLACK	= 3 -- starts in gameplay and ends in black NISLET_GAME2LETTER	= 4 -- starts in gameplay and ends in letterbox mode (for transition to sitrep) NISLET_TIME 		= 1 -- use seconds to wait on camera movements NISLET_VO			= 2 -- use voice to wait on camera movements t_eventes.nislet_start = { {camPos = pos1, waitType = NISLET_TIME, waitValue = 5}, {camPos = pos2, waitType = NISLET_VO, waitValue = {ACTOR.GenericAlly, 000000}}, }</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1528) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_AutoSave"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_AutoSave( <span class="arg">Boolean</span> OPT_waitUntilOutOfCombat, <span class="arg">Boolean</span> OPT_onlyCareAboutCombatOnScreen, <span class="arg">Real</span> OPT_maxWaitTime )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>自动为玩家保存游戏。存档名称使用缩写的任务名称+检查点构建。可以选择等待玩家脱离战斗后再保存。【功能：自动存档】</p>
+                <p>This function checks the user setting regarding autosaves (so you don't have to!), and does nothing if the player has them disabled.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (3687) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_ClearWrecksFromMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_ClearWrecksFromMarker( <span class="arg">MarkerID/Pos/SectorID</span> position, <span class="arg">Real</span> OPT_range, <span class="arg">Table</span> OPT_wrecksList )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清除给定区域的载具残骸。【功能：清除残骸】</p>
+                <p>Area can be a marker (with or without a range override), a position and range combo, or a territory sector ID. Uses EBP.WRECKED_VEHICLES unless wrecksList is defined.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2885) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_Comparison"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_Comparison( <span class="arg">Real</span> value1, <span class="arg">Comparison</span> comparison, <span class="arg">Real</span> value2 )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>用于处理使用Comparison枚举的比较的辅助函数...例如，如果value1小于value2则返回true。【功能：比较运算辅助】</p>
+                <p>Comparison type can be IS_EQUAL, IS_LESS_THAN, IS_LESS_THAN_OR_EQUAL, IS_GREATER_THAN, IS_GREATER_THAN_OR_EQUAL or IS_NOT_EQUAL</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (3654) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_CreateEntities"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_CreateEntities( <span class="arg">PlayerID</span> player, <span class="arg">EGroupID</span> egroup, <span class="arg">Integer</span> blueprintID, <span class="arg">MarkerID/Pos</span> location, <span class="arg">Integer</span> numentities, <span class="arg">MarkerID/Pos</span> OPT_toward, <span class="arg">Boolean</span> OPT_snapToGround, <span class="arg">Boolean</span> OPT_skipForceConstruct, <span class="arg">Boolean</span> OPT_useMarkerTransform )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在指定位置创建给定数量的实体并将其添加到实体组。PlayerID为nil时将实体创建为世界对象。【功能：创建实体】</p>
+                <p>The skipForceConstruct parameter allows you to skip the step that normally spawns buildings fully constructed, so you can spawn buildings that self-construct. The toward parameter should be a world location that the entity should look at, NOT a direction. Leave it blank if you want the location's orientation to be used for a direction (assuming location is a marker). The useMarkerTransform parameter, if no toward is passed in, will determine if the marker's transform should be used for the entity OR if the marker's direction should be used in which case the entity will face the same way as the marker.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (529) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_CreateSquads"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_CreateSquads( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">Integer</span> sbp, <span class="arg">EGroupID</span> spawn_point, <span class="arg">Position</span> OPT_destination, <span class="arg">Integer</span> OPT_numsquads, <span class="arg">Integer</span> OPT_loadout, <span class="arg">Boolean</span> OPT_attackmove, <span class="arg">Position</span> OPT_dest_facing, <span class="arg">Integer</span> OPT_upgrades, <span class="arg">Position</span> OPT_spawn_facing, <span class="arg">String</span> OPT_spawntype )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>用于创建小队并在生成时给予基本命令的高级函数。详细说明见ScarUtil.scar。【功能：创建小队】</p>
+                <p>PlayerID player - player who will own the squads SGroupID/Table/String sgroup - sgroup that receives the new squads. Can be nil if you don't need to manage the new squads or a string if you want to create a new sgroup with that name. If a table is given, the first item will be used as the return sgroup. SquadBlueprint sbp - the blueprint for the new squads. Position location - where to spawn the squads (can be any parameter type whose position can be queried) SGroup - If the sgroup is a Hold Entity then the squad is spawned inside of it. EGroup - If the egroup is a hold entity then the squad is spawned inside of it. NOTE: if the hold is destroyed, or is full, or due to any other misc. failure case, then the squad is spawned at the player's map entry point. Pos - the squad is spawned at this location. Marker - the squad is spawned at the marker and facing the direciton of the marker. Position destination - (OPTIONAL) where the squads will move to, load into, or attack SGroup can mean two different things, if the Sgroup is owned by the player and a hold then try to enter it.  Or if the SGroup is an enemy squad, then the spawned squad should attack move the enemy.  If neither is true, then the squad just moves to the location. EGroup should be treated the same as the SGroup. Position/Marker: the squad moves to the location. Sync weapon: the squad captures the sync weapon. Integer numsquads - (OPTIONAL) how many squads to spawn Integer loadout - (OPTIONAL) max amount of units to spawn per squad Boolean attackmove - (OPTIONAL) in cases where the squads do a simple move to their destination (not attacking or loading into anything), this determines whether they attack move or not Position facing - (OPTIONAL) in cases where the squads do a simple move to their destination, this determines their facing once they reach their destination. If facing is not specified, and the squad is moving to a marker, the marker's facing is used. UpgradeBlueprint upgrades - (OPTIONAL) upgrade(s) to instantly apply to squads when they spawn Boolean useMarkerTransform -  (OPTIONAL) if no spawn_facing is passed in, this will determine if the marker's transform should be EGroup creator -  (OPTIONAL) for units that need to know their creator, such as trade units that need to know their home market or dock used (if true) for the squad spawn OR if the marker's direction should be used in which case it will face the same way as the marker.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (633) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_DifVar"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_DifVar( <span class="arg">Table</span> difficultyVariables, <span class="arg">Integer</span> OPT_difficulty )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>接收一个表并根据难度设置选择正确的变量。1-4个元素。默认获取当前难度。【功能：难度变量选择】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (175) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_DotProductRadians"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_DotProductRadians( <span class="arg">Vector</span> vectorA, <span class="arg">Vector</span> vectorB )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回两个项目的点积结果（以弧度为单位）。【功能：弧度点积计算】</p>
+                <p>The params must be 3D vectors</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (940) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_ElementCanSee"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_ElementCanSee( <span class="arg">PlayerID/TeamID</span> playerID/teamID, <span class="arg">EGroupID</span> element )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果玩家/队伍能看到小队组/小队/实体组/实体/位置/标记的任意或全部，则返回true。【功能：视野检测】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (3351) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_EntityLimit"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_EntityLimit( <span class="arg">Integer</span> OPT_entityLimit )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查世界的实体数量并根据结果返回true或false。可以传入特定值以覆盖默认数量。【功能：实体数量限制检查】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2699) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_FallBackToGarrisonBuilding"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_FallBackToGarrisonBuilding( <span class="arg">SGroupID</span> sgroupid, <span class="arg">Integer</span> radius )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>尝试驻守半径内比敌人更靠近小队组第一个小队的可装载建筑。【功能：撤退驻守建筑】</p>
+                <p>Returns the entity id of the building that the squad try to garrison into. Return nil if nothing is found The squad suppression would be resetted before fallling back so that they would not succumb to pinned state</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1848) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_FindHiddenItem"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_FindHiddenItem( <span class="arg">EGroupID</span> items )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据本地玩家能看到和不能看到的内容查找隐藏位置。【功能：查找隐藏位置】</p>
+                <p>If no position is found, returns nil</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (3174) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_FindHiddenSpawn"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_FindHiddenSpawn( <span class="arg">Position</span> origin, <span class="arg">Position</span> destination, <span class="arg">Boolean</span> furthest )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>沿着从起点到终点的路径，查找距离终点最近/最远的隐藏位置。【功能：查找隐藏生成点】</p>
+                <p>If no position is found, returns origin</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (3056) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_FindVisibleSpawn"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_FindVisibleSpawn( <span class="arg">Position</span> origin, <span class="arg">Position</span> destination, <span class="arg">Boolean</span> furthest )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>沿着从起点到终点的路径，查找距离终点最近/最远的可见位置。【功能：查找可见生成点】</p>
+                <p>If no position is found, returns destination</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (3116) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_ForceRetreatAll"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_ForceRetreatAll( <span class="arg">SGroupID</span> sgroup, <span class="arg">Marker</span> marker, <span class="arg">Boolean</span> deleteOnArrival, <span class="arg">Boolean</span> aiEncounterDisable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>强制所有给定小队撤退，无论它们是否在团队武器上。禁用aiEncounters输入（true禁用所有遭遇战）。【功能：强制全员撤退】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (3297) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GarrisonNearbyBuilding"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GarrisonNearbyBuilding( <span class="arg">SGroupID</span> sgroup, <span class="arg">Position</span> pos, <span class="arg">Real</span> radius, <span class="arg">Boolean</span> OPT_occupied, <span class="arg">SGroupID</span> OPT_filter )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找附近可驻守的建筑。可以忽略已占领的[友方]建筑。返回找到的实体ID，如果未找到则返回nil。【功能：驻守附近建筑】</p>
+                <p>Can also filter out groups not to occupy</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2956) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GarrisonNearbyVehicle"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GarrisonNearbyVehicle( <span class="arg">SGroupID</span> sgroup, <span class="arg">Position</span> pos, <span class="arg">Real</span> radius, <span class="arg">Boolean</span> OPT_occupied, <span class="arg">SGroupID</span> OPT_filter )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找附近可驻守的载具。可以忽略已占领的[友方]载具。返回找到的载具ID，如果未找到则返回nil。【功能：驻守附近载具】</p>
+                <p>Can also filter out groups not to occupy</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2964) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GetAngleDifference"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GetAngleDifference( <span class="arg">EGroupID</span> item1, <span class="arg">EGroupID</span> item2 )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回两个项目之间的角度（以度为单位）。【功能：角度差计算】</p>
+                <p>The items must of of types that can have a direction resolved on them with Util_GetDirection()</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (926) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GetAveragePosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GetAveragePosition( <span class="arg">Table</span> table_of_things )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从位置/标记/实体/实体组/小队/小队组的表中返回平均位置。【功能：获取平均位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2270) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GetClosestMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GetClosestMarker( <span class="arg">Variable</span> var, <span class="arg">Table</span> markers )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从提供的标记表中返回最接近实体/标记/位置/实体组/小队组/小队的标记ID。【功能：获取最近标记】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2409) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GetDirection"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GetDirection( <span class="arg">EGroupID</span> item )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回项目的朝向。【功能：获取朝向】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (954) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GetDirectionFromAtoB"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GetDirectionFromAtoB( <span class="arg">EGroupID</span> a, <span class="arg">EGroupID</span> b )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回从A点指向B点的方向朝向。【功能：获取方向朝向】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1976) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GetDistance"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GetDistance( <span class="arg">EGroupID</span> Object1, <span class="arg">EGroupID</span> Object2 )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回两个对象之间的距离。【功能：获取距离】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (890) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GetDistanceSquared"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GetDistanceSquared( <span class="arg">EGroupID</span> Object1, <span class="arg">EGroupID</span> Object2 )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回两个对象之间的距离平方。【功能：获取距离平方】</p>
+                <p>This is much cheaper to calculate that Util_GetDistance(), and fine for when you're only comparing results against other squared distances (i.e. to find the closest item)</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (904) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GetEntitiesByBP"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GetEntitiesByBP( <span class="arg">EGroupID</span> sourcegroup, <span class="arg">EGroupID</span> destgroup, <span class="arg">Integer</span> ebp )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在源组中查找具有给定蓝图的所有实体并将其添加到目标组。【功能：按蓝图获取实体】</p>
+                <p>See also: EGroup_Filter()</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1197) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GetFacingFromDirection"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GetFacingFromDirection( <span class="arg">Position</span> pos, <span class="arg">Position</span> direction )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将方向转换为朝向。【功能：方向转朝向】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1074) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GetHealth"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GetHealth( <span class="arg">EGroupID</span> var )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>确定给定对象的血量百分比。【功能：获取血量百分比】</p>
+                <p>Returns average health if the object is a group</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (3262) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GetMouseoverSGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GetMouseoverSGroup(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回用于保存从Util_AddMouseoverSquadToSGroup获取的鼠标悬停小队的唯一小队组。【功能：获取鼠标悬停小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2658) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GetOffsetPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GetOffsetPosition( <span class="arg">EGroupID</span> pos, <span class="arg">Integer</span> offset, <span class="arg">Real</span> distance )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回相对于实体/小队/实体组/小队组/标记/位置的当前位置和朝向的偏移位置。【功能：获取偏移位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1048) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GetPlayerOwner"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GetPlayerOwner( <span class="arg">EGroupID</span> Object )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回以下任意项的玩家所有者：实体、小队、实体组、小队组、玩家。对于组，使用第一个项目。对于世界拥有或空组返回nil。【功能：获取玩家所有者】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (851) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GetPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GetPosition( <span class="arg">Variable</span> var )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体/标记/位置/实体组/小队组/小队返回位置。【功能：获取位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2246) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GetPositionAwayFromPlayer"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GetPositionAwayFromPlayer( <span class="arg">EGroupID</span> pos, <span class="arg">PlayerID</span> player, <span class="arg">Integer</span> OPT_searchRadius, <span class="arg">Integer</span> OPT_distance )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回区域内不靠近玩家的随机位置。【功能：获取远离玩家的位置】</p>
+                <p>Useful for dropping artillery NEAR a player, but not on him, for example. searchRadius is the area to look for the location in.  Distance is how far from the player's units the position must be.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2289) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GetPositionFromAtoB"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GetPositionFromAtoB( <span class="arg">MarkerID/Pos</span> a, <span class="arg">MarkerID/Pos</span> b, <span class="arg">Real</span> distance )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回距离A点指定距离、朝向B点方向的位置。【功能：获取A到B路径上的位置】</p>
+                <p>You can also pass in a percentage (0.0 to 1.0) instead of a distance in metres.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1931) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GetRandomHiddenPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GetRandomHiddenPosition( <span class="arg">EGroupID</span> items )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据本地玩家能看到和不能看到的内容查找随机隐藏位置。【功能：获取随机隐藏位置】</p>
+                <p>If no position is found, returns nil</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (3218) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GetRandomPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GetRandomPosition( <span class="arg">Real</span> OPT_range, <span class="arg">Boolean</span> OPT_hidden )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回标记范围内的随机位置，或根据提供的位置和范围返回。矩形标记忽略范围参数。【功能：获取随机位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2335) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GetRelationship"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GetRelationship( <span class="arg">EGroupID</span> Object_1, <span class="arg">EGroupID</span> Object_2 )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取以下任意两项之间的关系：实体、小队、实体组、小队组、玩家。对于组，使用第一个项目。返回R_ENEMY、R_ALLY、R_NEUTRAL、R_UNDEFINED或nil（如果世界拥有或参数无效）。【功能：获取关系】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1032) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GetRelativeOffset"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GetRelativeOffset( <span class="arg">EGroupID</span> element, <span class="arg">EGroupID</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回相对于元素的偏移位置。【功能：获取相对偏移】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1085) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GetSquadsByBP"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GetSquadsByBP( <span class="arg">SGroupID</span> sourcegroup, <span class="arg">SGroupID</span> destgroup, <span class="arg">Integer</span> sbp )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在源组中查找具有给定蓝图的所有小队并将其添加到目标组。【功能：按蓝图获取小队】</p>
+                <p>See also: SGroup_Filter()</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1183) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_GetTrailingNumber"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_GetTrailingNumber( <span class="arg">String</span> val )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回字符串末尾的数字（如果存在），否则返回nil。例如"marker23"将返回23。【功能：提取末尾数字】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1209) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_HasPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_HasPosition( <span class="arg">Variable</span> var )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果给定的实体/标记/位置/实体组/小队组/小队有位置则返回true；如果为false，Util_GetPosition将失败。【功能：检查是否有位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2218) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_HidePlayerForNIS"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_HidePlayerForNIS( <span class="arg">PlayerID</span> player, <span class="arg">Boolean</span> hide )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>隐藏玩家的所有小队和/或建筑。【功能：为NIS隐藏玩家】</p>
+                <p>Doesn't hide buildings a player is in, or any base structures. Only items like sandbags, tanktraps, mg nests, etc. Put multiple playerIDs in a table to hide many players together, or use ALL for the playerID to apply to all players at once.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2670) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_IsSequenceSkipped"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_IsSequenceSkipped(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回当前运行的序列是否已被跳过。【功能：检查序列是否被跳过】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1259) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_Kill"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_Kill( <span class="arg">EGroupID</span> var )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>杀死给定对象。【功能：杀死对象】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (3279) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_LogSyncWpn"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_LogSyncWpn( <span class="arg">SGroupID</span> syncweapon, <span class="arg">Boolean</span> OPT_kill )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>跟踪同步武器ID并销毁它（默认）或使其不可被占领（如果kill设置为false）。【功能：记录同步武器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (3415) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_MarkerFX"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_MarkerFX( <span class="arg">String</span> markername, <span class="arg">String</span> eventfile )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在给定标记位置播放事件文件。【功能：标记特效播放】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1223) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_MissionTitle"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_MissionTitle( <span class="arg">String</span> title, <span class="arg">Integer</span> OPT_time_fade_in, <span class="arg">Integer</span> OPT_lifetime, <span class="arg">Integer</span> OPT_time_fade_out )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>播放任务标题淡入淡出效果。【功能：任务标题显示】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1627) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_NewHUDFeatureEvent"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_NewHUDFeatureEvent( <a href="enum_list.htm#HUDFeatureType">HUDFeatureType</a> newHUDFeature, <span class="arg">String</span> featureText, <span class="arg">String</span> featureIcon, <span class="arg">Real</span> duration )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>作为情报事件调用UI_NewHUDFeature()。将像其他事件一样排队。参数详情见UI_NewHUDFeature()。【功能：新HUD功能事件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (3836) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_PlayMovie"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_PlayMovie( <span class="arg">String</span> name, <span class="arg">Integer</span> OPT_fadeOut, <span class="arg">Integer</span> OPT_fadeIn, <span class="arg">LuaFunction</span> OPT_onComplete, <span class="arg">Integer</span> OPT_delay, <span class="arg">Boolean</span> OPT_onCompleteAfterMovie )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>播放影片。【功能：播放影片】</p>
+                <p>Plays a movie file after fading out the screen. Fades back in and triggers onComplete once it ends. If fadeIn &lt; 0, does not face back in once complete. If onCompleteAfterMovie is true, the onComplete function will play as soon as the movie is over, instead of after the fade-in</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1351) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_PlayMusic"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_PlayMusic( <span class="arg">String</span> name )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>播放Data:Sound文件夹中的音乐，并存储音乐轨道以便在保存/加载后恢复播放。【功能：播放音乐】</p>
+                <p>The new music will phase out the old one. There can only be one music playing at anytime.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2915) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_PrintIf"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_PrintIf(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果第一个变量为true则打印内容。【功能：条件打印】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (3753) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_PrintObject"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_PrintObject( <span class="arg">Object</span> obj, <span class="arg">Integer</span> OPT_max_depth, <span class="arg">String</span> OPT_data_type, <span class="arg">Function</span> OPT_print_func )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>打印对象的全部内容。【功能：打印对象】</p>
+                <p>This is most useful when used in conjunction with fatal() or bug() to populate the log file. Objects can be anything (Player, SGroup, Int, Table, String, etc.), but this is most useful for Tables</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2982) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_PrintTable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_PrintTable(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>打印表中的所有内容，包括嵌套表。【功能：打印表】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (3761) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_PrintUnitTable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_PrintUnitTable(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>打印单位表。indent是每行开头的制表符数量。【功能：打印单位表】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (3782) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_ReloadScript"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_ReloadScript(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>重新加载正在运行的scar脚本。当前运行的规则也会更新为重新定义的函数。【功能：重新加载脚本】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2000) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_RestoreMusic"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_RestoreMusic(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>恢复播放上次触发的音乐轨道，例如在保存/加载后。【功能：恢复音乐】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2926) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_ScarPos"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_ScarPos( <span class="arg">Real</span> xpos, <span class="arg">Real</span> zpos, <span class="arg">Real</span> ypos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将2D俯视位置转换为3D ScarPosition。返回Position，如果y高度为nil，则y高度=地面高度、地形地面或可行走表面。【功能：Scar坐标转换】</p>
+                <p>3D ScarPositions have the x axis left to right, the z axis in to out, and the y axis down to up (y axis represents the height of the terrain).  Use this function to convert a top-down 2D position to a 3D world position.\n\n Note: (0,0) is in the center of the map.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (514) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_SetPlayerCanSkipSequence"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_SetPlayerCanSkipSequence( <span class="arg">LuaFunction</span> event, <span class="arg">LuaFunction</span> skippedCallback, <span class="arg">Boolean</span> noFadeIn, <span class="arg">Integer</span> OPT_fadeInTime )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置使玩家可以跳过脚本序列。当按下跳过键时，回调给定函数作为序列后设置。noFadeIn阻止系统在完成后淡入回游戏。序列完成后调用Util_SetPlayerUnableToSkipSequence()禁用。【功能：设置可跳过序列】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1269) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_SetPlayerOwner"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_SetPlayerOwner( <span class="arg">EGroupID</span> Object, <span class="arg">PlayerID</span> owner, <span class="arg">Boolean</span> OPT_bApplyToSquadsHeld=true )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置实体、小队、实体组或小队组的玩家所有者。同时设置驻守在其中的任何内容的玩家所有者。【功能：设置玩家所有者】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (996) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_SetPlayerUnableToSkipSequence"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_SetPlayerUnableToSkipSequence( <span class="arg">LuaFunction</span> event, <span class="arg">LuaFunction</span> skippedCallback, <span class="arg">Boolean</span> noFadeIn )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>禁用Util_SetPlayerCanSkipSequence。【功能：禁用跳过序列】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1311) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_SortPositionsByClosest"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_SortPositionsByClosest( <span class="arg">EGroupID</span> origin, <span class="arg">Table</span> positions )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回按距离原点从近到远排序的位置表（如果reverse为true则从远到近）。【功能：按距离排序位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (3488) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_StartAmbient"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_StartAmbient( <span class="arg">LuaFunction</span> func )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>播放语音环境事件。这些是最低优先级，会被情报事件或非交互式场景打断。【功能：启动环境语音】</p>
+                <p>This function should used instead of Event_Start because it handles priorities.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1409) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_StartIntel"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_StartIntel( <span class="arg">LuaFunction</span> func )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Play an Intel Event. These are medium priority, and will interrupt a ambient, but not an NIS. </p>
+                <p>This function should used instead of Event_Start because it handles priorities.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1231) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_StartNIS"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_StartNIS( <span class="arg">LuaFunction</span> NIS )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>播放非交互式场景。非交互式场景应在开头调用NIS_START(details)，在结尾调用NIS_END()。【功能：启动NIS】</p>
+                <p>Example details table keys: {style = NIS_OPENING, NIS_MID or NIS_CLOSING, exemptions = {sg_unit_to_not_despawn}, revealFOW = true, callbackStart = func, callbackEnd = func}</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\nis.scar] (25) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_StartQuickIntel"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_StartQuickIntel( <span class="arg">String</span> actor, <span class="arg">String</span> speech )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>播放快速的单行情报事件。这些是中等优先级，会中断环境事件，但不会中断非交互式场景。【功能：启动快速情报事件】</p>
+                <p>Use this when playing a single line.  For multi-line events, use Util_StartIntel</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1332) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_StringSplit"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_StringSplit(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据给定分隔符将字符串拆分为子字符串表。如果未提供分隔符，则使用逗号作为默认分隔符。【功能：字符串拆分】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (3813) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_TableContains"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_TableContains( <span class="arg">Table</span> targetTable, <span class="arg">Object</span> obj )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查表的第一层并查找指定对象，如果找到则返回true。【功能：表包含检查】</p>
+                <p>Objects can be anything (Player, SGroup, Int, Table, String, etc.)</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (3041) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_ToggleAllowIntelEvents"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_ToggleAllowIntelEvents(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>用于切换是否播放情报事件的调试函数。仅在-dev参数下有效。【功能：切换情报事件开关】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (3826) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_TriggerEvent"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_TriggerEvent( <span class="arg">PlayerID</span> playerid, <span class="arg">EGroupID</span> position, <span class="arg">Integer</span> range, <span class="arg">LuaFunction</span> func, <span class="arg">Boolean</span> non_combat, <span class="arg">Boolean</span> onscreen_only, <span class="arg">Integer</span> onscreen_duration )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在特定条件集下触发非交互式场景事件的库函数。注意：如果检查标记，不要指定范围。将使用WorldBuilder中设置的标记范围。【功能：触发事件】</p>
+                <p>triggering event when one of the player's squads come near a particular SGroup, EGroup, Marker, or Position and that squad is onscreen, and that squad is not in combat. 6 arguments when using marker, 7 arguments when using position, egroup and sgroup with the additional range value non_combat set to TRUE means the squad cannot be in combat if the event is to be triggered. onscreen_only set to TRUE means the squad must be onscreen if the event is to be triggered.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1658) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_UnitCounts"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_UnitCounts( <span class="arg">Boolean</span> world OR playerID player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回包含总计或特定玩家的小队数量、实体数量和载具数量的表。【功能：单位计数】</p>
+                <p>table can be accessed as scene below Get Player Example:\n local t = Util_UnitCounts(player1)\n print(t.squad)\n print(t.entity)\n print(t.vehicle)\n Get World Example:\n local t = Util_UnitCounts(true)\n print(t.squad)\n print(t.entity)\n print(t.vehicle)\n Alternate Format:\n print(Util_UnitCounts(true).squad)\n</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2740) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_KillAllNeutralEntitesNearMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_KillAllNeutralEntitesNearMarker( <span class="arg">MarkerID</span> marker )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>杀死标记附近的所有世界实体。【功能：杀死标记附近中立实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2393) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

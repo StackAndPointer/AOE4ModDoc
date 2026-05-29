@@ -1,0 +1,3533 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;AIInterface</title>
+</head>
+<body>
+<span class="subtitle">scardoc;AIInterface</span><p>
+<a name="Group_scardoc;AIInterface"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;AIInterface</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="AI_AddHeavyCoverEbpOccupancyOverride"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_AddHeavyCoverEbpOccupancyOverride( <span class="arg">PlayerID</span> pPlayer, <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">Integer</span> occupancyOverride )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>覆盖传入EBP的重型掩体占用值【功能：设置重型掩体占用覆盖】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4642) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_AreThereAnyDeepwaterFish"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_AreThereAnyDeepwaterFish( <span class="arg">PlayerID</span> aiPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回地图上是否存在深水鱼资源点【功能：检测深水鱼资源】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (5248) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_ClearPBGRepairPriority"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_ClearPBGRepairPriority( <span class="arg">PlayerID</span> pPlayer, <span class="arg">String</span> pbgShortname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清除指定小队或建筑PBG的维修优先级值【功能：清除维修优先级】</p>
+                <p>pbgShortname is the PBG of the squad or building to clear its priority value.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4374) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_ConvertToSimEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_ConvertToSimEntity( <span class="arg">EntityID</span> pAIEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将AIEntity转换为Entity【功能：AI实体转模拟实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4566) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_ConvertToSimPlayer"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_ConvertToSimPlayer( <span class="arg">PlayerID</span> pAIPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将AIPlayer转换为Player【功能：AI玩家转模拟玩家】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4546) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_ConvertToSimSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_ConvertToSimSquad( <span class="arg">SquadID</span> pAISquad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将AISquad转换为Squad【功能：AI小队转模拟小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4556) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_CreateEncounter"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_CreateEncounter( <span class="arg">PlayerID</span> pPlayer, <span class="arg">Integer</span> encounterType )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为玩家创建新的遭遇战任务【功能：创建AI遭遇战】</p>
+                <p>EncounterType is one of: AIEncounterType_DefendArea, AIEncounterType_AttackArea, AIEncounterType_Move, AIEncounterType_Ability,</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (515) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_DebugAttackEncounterPositionScoringEnable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_DebugAttackEncounterPositionScoringEnable( <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用/禁用AI攻击遭遇战位置评分调试【功能：设置攻击位置评分调试】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4724) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_DebugAttackEncounterPositionScoringIsEnabled"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_DebugAttackEncounterPositionScoringIsEnabled(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>若AI攻击遭遇战位置评分调试已启用则返回true【功能：检查攻击位置评分调试状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4714) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_DebugLuaEnable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_DebugLuaEnable( <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用/禁用AI Lua调试【功能：设置AI Lua调试】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4682) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_DebugLuaIsEnabled"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_DebugLuaIsEnabled(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>若AI Lua调试已启用则返回true【功能：检查AI Lua调试状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4672) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_DebugRatingEnable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_DebugRatingEnable( <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用/禁用AI建造调试【功能：设置AI建造调试】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4742) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_DebugRatingIsEnabled"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_DebugRatingIsEnabled(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>若AI建造调试已启用则返回true【功能：检查AI建造调试状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4732) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_DebugRenderAllTaskChildrenEnable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_DebugRenderAllTaskChildrenEnable( <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用/禁用AI渲染所有任务子节点【功能：设置任务子节点渲染调试】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4706) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_DebugRenderAllTaskChildrenIsEnabled"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_DebugRenderAllTaskChildrenIsEnabled(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>若AI渲染所有任务子节点已启用则返回true【功能：检查任务子节点渲染状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4696) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_DebugSkirmishForwardDeployEnable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_DebugSkirmishForwardDeployEnable( <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用/禁用AI遭遇战前哨部署调试【功能：设置前哨部署调试】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4760) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_DebugSkirmishForwardDeployIsEnabled"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_DebugSkirmishForwardDeployIsEnabled(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>若AI遭遇战前哨部署调试已启用则返回true【功能：检查前哨部署调试状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4750) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_DisableAllEconomyOverrides"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_DisableAllEconomyOverrides( <span class="arg">PlayerID</span> pPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>禁用AI玩家的所有经济覆盖设置【功能：禁用经济覆盖】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4528) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_DoString"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_DoString( <span class="arg">Integer</span> playerID, <span class="arg">String</span> string )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在指定玩家的AI LuaConfig中以Lua执行字符串【功能：执行Lua字符串】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (185) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_DoWeHaveWaterLanes"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_DoWeHaveWaterLanes( <span class="arg">PlayerID</span> aiPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回当前地图是否包含水道【功能：检测水道地图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (5266) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_Enable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_Enable( <span class="arg">PlayerID</span> pPlayer, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用或禁用AI玩家【功能：设置AI玩家启用状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (164) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_EnableAll"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_EnableAll( <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用或禁用所有AI玩家【功能：批量设置AI玩家状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (300) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_EnableEconomyOverride"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_EnableEconomyOverride( <span class="arg">PlayerID</span> pPlayer, <span class="arg">String</span> overrideName, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用或禁用AI玩家的经济覆盖设置【功能：设置经济覆盖】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4514) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_FindAISquadByID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_FindAISquadByID( <span class="arg">PlayerID</span> pPlayer, <span class="arg">Integer</span> UID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找指定玩家拥有的AISquad【功能：按ID查找AI小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4612) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_FindBestProducibleEntityPBGforEntityTypes"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_FindBestProducibleEntityPBGforEntityTypes( <span class="arg">PlayerID</span> player, <span class="arg">String</span> entityTypeNames )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找与指定实体类型对应的当前最佳可生产实体PBG【功能：查找最佳可生产实体蓝图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (5303) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_FindBestProducibleSquadPBGforSquadTypes"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_FindBestProducibleSquadPBGforSquadTypes( <span class="arg">PlayerID</span> player, <span class="arg">String</span> squadTypeNames )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找与指定小队类型对应的当前最佳可生产小队PBG【功能：查找最佳可生产小队蓝图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (5285) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_FindConstructionLocation"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_FindConstructionLocation( <span class="arg">PlayerID</span> pPlayer, <span class="arg">PropertyBagGroup</span> pPbg, <span class="arg">Position</span> position )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>使用螺旋搜索为PBG查找有效建造位置，失败则返回INVALID_POS【功能：查找建造位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (5175) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_GetAllMilitaryPointsOfType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_GetAllMilitaryPointsOfType( <span class="arg">PlayerID</span> pAIPlayer, <span class="arg">AIMilitaryTargetType</span> type, <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将玩家拥有的指定类型实体存储到egroup参数中【功能：获取指定类型军事点】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4409) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_GetAndReserveNextTaskID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_GetAndReserveNextTaskID( <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取并预留下一个可用的AITaskID（可用于从SCAR创建AIEncounter）【功能：获取并预留任务ID】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (526) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_GetDifficulty"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_GetDifficulty( <span class="arg">PlayerID</span> pPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取此AI玩家的难度等级【功能：获取AI难度】</p>
+                <p>Levels can be one of: GD_Easy, GD_Normal, GD_Hard, GD_Expert, GD_INVALID</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4441) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_GetPersonality"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_GetPersonality( <span class="arg">PlayerID</span> pPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取此AI玩家的个性名称【功能：获取AI个性名称】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4471) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_GetPersonalityLuaFileName"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_GetPersonalityLuaFileName( <span class="arg">PlayerID</span> pPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取此AI玩家的个性Lua文件名【功能：获取AI个性文件名】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4488) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_GetWaterLanesCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_GetWaterLanesCount(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回地图上的水道数量【功能：获取水道数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (5277) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_IsAIPlayer"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_IsAIPlayer( <span class="arg">PlayerID</span> pPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>若玩家是AI玩家则返回true【功能：检查是否为AI玩家】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (310) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_IsAITargetable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_IsAITargetable( <span class="arg">PlayerID</span> pPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>若玩家是AIPlayer且可被其他AI玩家作为目标则返回true【功能：检查AI是否可被锁定为目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (280) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_IsDebugDisplay"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_IsDebugDisplay( <span class="arg">PlayerID</span> pPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查AI调试显示是否已启用【功能：检查调试显示状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (388) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_IsEnabled"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_IsEnabled( <span class="arg">PlayerID</span> pPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>若玩家是AIPlayer且已启用则返回true【功能：检查AI是否已启用】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (218) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_IsLocalAIPlayer"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_IsLocalAIPlayer( <span class="arg">PlayerID</span> pPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>若玩家是在本机运行的AIPlayer则返回true【功能：检查是否为本地AI玩家】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (238) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_IsPositionNearInSupplySector"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_IsPositionNearInSupplySector( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Position</span> position )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当位置处于与补给区域内相邻的区域时返回true【功能：检查位置是否邻近补给区】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (5213) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_IsSquadValid"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_IsSquadValid( <span class="arg">SquadID</span> pSquadAI )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查是否为有效的AISquad【功能：验证AI小队有效性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4540) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_LockEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_LockEntity( <span class="arg">PlayerID</span> pPlayer, <span class="arg">EntityID</span> pEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>锁定实体并禁用其战术（若有），AI将不再使用此对象【功能：锁定AI实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4127) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_LockSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_LockSquad( <span class="arg">PlayerID</span> pPlayer, <span class="arg">SquadID</span> pSquad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>锁定小队并禁用其战术（若有），AI将不再使用此对象【功能：锁定AI小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4183) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_LockSquads"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_LockSquads( <span class="arg">PlayerID</span> pPlayer, <span class="arg">SGroupID</span> squads )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>锁定小队组并禁用其战术（若有），AI将不再使用这些对象【功能：锁定多个AI小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4223) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_PauseCurrentTasks"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_PauseCurrentTasks( <span class="arg">PlayerID</span> pPlayer, <span class="arg">Boolean</span> pause )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>暂停或恢复当前运行的任务【功能：暂停/恢复当前任务】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (197) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_PlayerAddExclusionArea"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_PlayerAddExclusionArea( <span class="arg">PlayerID</span> pPlayer, <span class="arg">Position</span> position, <span class="arg">Real</span> noPathRadius, <span class="arg">Real</span> noTargetRadius )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为AI玩家添加排除区域【功能：添加排除区域】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4772) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_PlayerRemoveExclusionArea"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_PlayerRemoveExclusionArea( <span class="arg">PlayerID</span> pPlayer, <span class="arg">Position</span> position, <span class="arg">Real</span> noPathRadius, <span class="arg">Real</span> noTargetRadius )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从AI玩家移除排除区域【功能：移除排除区域】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4798) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_RemoveCapturePointHighPriority"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_RemoveCapturePointHighPriority( <span class="arg">PlayerID</span> pPlayer, <span class="arg">EntityID</span> pEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清除此占领点的重要性加成【功能：清除占领点优先级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4314) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_RestartSCAR"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_RestartSCAR( <span class="arg">PlayerID</span> pPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>重启AI【功能：重启AI系统】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (327) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_RestoreDefaultPersonalitySettings"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_RestoreDefaultPersonalitySettings( <span class="arg">PlayerID</span> pPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>恢复此AI玩家的默认个性和难度设置【功能：恢复默认个性设置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4502) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_SetAISquadCombatRangePolicyTaskOverride"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_SetAISquadCombatRangePolicyTaskOverride( <span class="arg">SquadID</span> pSquadAI, <span class="arg">CombatRangePolicy</span> policy )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为AISquad设置战斗范围策略，覆盖遭遇战/任务级别的设置【功能：设置小队战斗范围策略】</p>
+                <p>policy is one of: AICombatRangePolicy_Default, AICombatRangePolicy_Ranged_MinRange, AICombatRangePolicy_Ranged_MaxRange, AICombatRangePolicy_MeleeRange</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4578) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_SetAITargetable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_SetAITargetable( <span class="arg">PlayerID</span> pPlayer, <span class="arg">Boolean</span> targetable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用或禁用AI玩家被其他AI玩家作为目标【功能：设置AI可被锁定状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (259) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_SetCapturePointAsHighPriority"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_SetCapturePointAsHighPriority( <span class="arg">PlayerID</span> pPlayer, <span class="arg">EntityID</span> pEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置指定占领点的重要性加成【功能：设置占领点高优先级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4292) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_SetDebugDisplay"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_SetDebugDisplay( <span class="arg">PlayerID</span> pPlayer, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用或禁用AI调试显示【功能：设置调试显示】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (365) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_SetDifficulty"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_SetDifficulty( <span class="arg">PlayerID</span> pPlayer, <span class="arg">Integer</span> difficultyLevel )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置此AI玩家的难度等级【功能：设置AI难度】</p>
+                <p>Levels can be one of: GD_Easy, GD_Normal, GD_Hard, GD_Expert</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4426) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_SetPBGRepairPriority"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_SetPBGRepairPriority( <span class="arg">PlayerID</span> pPlayer, <span class="arg">String</span> pbgShortname, <span class="arg">Real</span> priorityValue )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置指定小队或建筑PBG的维修优先级值【功能：设置维修优先级】</p>
+                <p>pbgShortname is the PBG of the squad or building to change its priority value. priorityValue must be within range [0, 1], with higher value being more desirable to repair.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4338) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_SetPersonality"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_SetPersonality( <span class="arg">PlayerID</span> pPlayer, <span class="arg">String</span> personalityName )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置此AI玩家的个性名称【功能：设置AI个性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4459) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_SetResourceIncomeDesire"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_SetResourceIncomeDesire( <span class="arg">PlayerID</span> player, <span class="arg">Integer</span> resourceType, <span class="arg">Real</span> desiredIncome )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置AI玩家指定资源类型的期望收入值，这将影响AI的资源采集、建筑建造和生产优先级以达成指定的资源收入【功能：设置资源收入期望】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (5221) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_ToggleDebugDisplay"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_ToggleDebugDisplay( <span class="arg">PlayerID</span> pPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>切换AI调试显示状态【功能：切换调试显示】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (341) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_UnlockAll"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_UnlockAll( <span class="arg">PlayerID</span> pPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>解锁玩家所有被设计者锁定的小队【功能：解锁所有小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4276) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_UnlockEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_UnlockEntity( <span class="arg">PlayerID</span> pPlayer, <span class="arg">EntityID</span> pEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>解锁此实体以便AI可以再次使用它【功能：解锁AI实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4156) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_UnlockSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_UnlockSquad( <span class="arg">PlayerID</span> pPlayer, <span class="arg">SquadID</span> pSquad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>解锁指定小队以便AI可以再次使用它【功能：解锁AI小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4236) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_UnlockSquads"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_UnlockSquads( <span class="arg">PlayerID</span> pPlayer, <span class="arg">SGroupID</span> squads )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>解锁小队组以便AI可以再次使用它们【功能：解锁多个AI小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4263) </b></td>
+            </tr>
+          </table>
+        </p><a name="AI_UpdateStatics"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AI_UpdateStatics( <span class="arg">PlayerID</span> pPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>重新更新AI关于世界中所有静态对象的信息（若SCAR动态创建了新的战略点则需调用此函数）【功能：更新静态对象信息】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4626) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIAbilityEncounter_AbilityGuidance_SetAbilityPBG"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIAbilityEncounter_AbilityGuidance_SetAbilityPBG( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">PropertyBagGroup</span> abilityPBG )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为技能遭遇战设置技能PBG【功能：设置技能遭遇战技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4093) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_Cancel"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_Cancel( <span class="arg">AIEncounterID</span> pEncounter )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>结束并删除遭遇战任务【功能：取消遭遇战】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (582) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_CombatGuidance_AddForcedCombatTargetEGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_CombatGuidance_AddForcedCombatTargetEGroup( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将EGroup添加到遭遇战的强制目标列表。注意：仅攻击遭遇战支持【功能：添加强制战斗目标实体组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2475) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_CombatGuidance_AddForcedCombatTargetEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_CombatGuidance_AddForcedCombatTargetEntity( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">EntityID</span> pEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将Entity添加到遭遇战的强制目标列表。注意：仅攻击遭遇战支持【功能：添加强制战斗目标实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2433) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_CombatGuidance_AddForcedCombatTargetSGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_CombatGuidance_AddForcedCombatTargetSGroup( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将SGroup添加到遭遇战的强制目标列表。注意：仅攻击遭遇战支持【功能：添加强制战斗目标小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2452) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_CombatGuidance_AddForcedCombatTargetSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_CombatGuidance_AddForcedCombatTargetSquad( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">SquadID</span> pSquad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将Squad添加到遭遇战的强制目标列表。注意：仅攻击遭遇战支持【功能：添加强制战斗目标小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2414) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_CombatGuidance_ClearForcedCombatTargets"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_CombatGuidance_ClearForcedCombatTargets( <span class="arg">AIEncounterID</span> pEncounter )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清除遭遇战的强制战斗目标【功能：清除强制战斗目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2498) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_CombatGuidance_EnableCombatGarrison"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_CombatGuidance_EnableCombatGarrison( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用/禁用战斗中的小队驻守功能【功能：设置战斗驻守】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2356) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_CombatGuidance_RemoveForcedCombatTargetEGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_CombatGuidance_RemoveForcedCombatTargetEGroup( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从遭遇战的强制目标列表移除EGroup。注意：仅攻击遭遇战支持【功能：移除强制战斗目标实体组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2576) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_CombatGuidance_RemoveForcedCombatTargetEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_CombatGuidance_RemoveForcedCombatTargetEntity( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">EntityID</span> pEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从遭遇战的强制目标列表移除Entity。注意：仅攻击遭遇战支持【功能：移除强制战斗目标实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2534) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_CombatGuidance_RemoveForcedCombatTargetSGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_CombatGuidance_RemoveForcedCombatTargetSGroup( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从遭遇战的强制目标列表移除SGroup。注意：仅攻击遭遇战支持【功能：移除强制战斗目标小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2553) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_CombatGuidance_RemoveForcedCombatTargetSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_CombatGuidance_RemoveForcedCombatTargetSquad( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">SquadID</span> pSquad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从遭遇战的强制目标列表移除Squad。注意：仅攻击遭遇战支持【功能：移除强制战斗目标小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2515) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_CombatGuidance_SetCombatRangePolicy"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_CombatGuidance_SetCombatRangePolicy( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">CombatRangePolicy</span> policy )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为遭遇战设置战斗范围策略【功能：设置战斗范围策略】</p>
+                <p>policy is one of: AICombatRangePolicy_Default, AICombatRangePolicy_Ranged_MinRange, AICombatRangePolicy_Ranged_MaxRange, AICombatRangePolicy_MeleeRange</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2374) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_CombatGuidance_SetSpreadAttackers"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_CombatGuidance_SetSpreadAttackers( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Boolean</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置攻击遭遇战是否将攻击者分散到多个目标【功能：设置攻击者分散策略】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2398) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_DefenseGuidance_EnableIdleGarrison"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_DefenseGuidance_EnableIdleGarrison( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用/禁用空闲小队的驻守功能【功能：设置空闲驻守】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2340) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_EngagementGuidance_AddEncouterSetupLocation"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_EngagementGuidance_AddEncouterSetupLocation( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Position</span> pos, <span class="arg">Position</span> facingDir )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为此遭遇战添加部署位置和朝向，不特定分配给任何小队【功能：添加部署位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2175) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_EngagementGuidance_ClearSetupLocationOverrides"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_EngagementGuidance_ClearSetupLocationOverrides( <span class="arg">AIEncounterID</span> pEncounter )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清除遭遇战的部署位置覆盖设置【功能：清除部署位置覆盖】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2246) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_EngagementGuidance_EnableAggressiveEngagementMove"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_EngagementGuidance_EnableAggressiveEngagementMove( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用/禁用进入交战区域的激进行军【功能：设置激进行军】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2036) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_EngagementGuidance_EnableConstruction"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_EngagementGuidance_EnableConstruction( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在城镇生活遭遇战中启用建造功能【功能：启用城镇建造】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2068) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_EngagementGuidance_EnableSetupLocations"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_EngagementGuidance_EnableSetupLocations( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在攻击和防御遭遇战中启用部署位置【功能：启用部署位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2052) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_EngagementGuidance_SetAllowResourceGatheringOutsideLeash"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_EngagementGuidance_SetAllowResourceGatheringOutsideLeash( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Boolean</span> allowOutsideLeash )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置城镇生活遭遇战是否允许从活动范围外的资源点采集资源【功能：设置范围外资源采集】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2113) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_EngagementGuidance_SetAllowReturnToPreviousStages"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_EngagementGuidance_SetAllowReturnToPreviousStages( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用遭遇战在当前阶段条件不满足时返回前一阶段【功能：设置阶段回退】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2262) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_EngagementGuidance_SetCoordinatedSetup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_EngagementGuidance_SetCoordinatedSetup( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在攻击遭遇战中启用协调到达功能【功能：设置协调部署】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2156) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_EngagementGuidance_SetEnableSniperReactions"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_EngagementGuidance_SetEnableSniperReactions( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用/禁用狙击手反应【功能：设置狙击手反应】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2278) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_EngagementGuidance_SetEnableSubEngagementAreas"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_EngagementGuidance_SetEnableSubEngagementAreas( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用/禁用子交战区域【功能：设置子交战区域】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2324) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_EngagementGuidance_SetMaxEngagementTime"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_EngagementGuidance_SetMaxEngagementTime( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Real</span> seconds )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置目标交战后完成遭遇战的最长时间（秒）【功能：设置最大交战时间】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2004) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_EngagementGuidance_SetMaxIdleTime"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_EngagementGuidance_SetMaxIdleTime( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Real</span> seconds )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置交战后遭遇战目标处保持空闲的最长时间（秒）【功能：设置最大空闲时间】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2020) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_EngagementGuidance_SetSetupLocationSbpPriority"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_EngagementGuidance_SetSetupLocationSbpPriority( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">ScarSquadPBG</span> sbp, <span class="arg">Real</span> priority )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置SBP部署位置优先级覆盖【功能：设置小队蓝图部署优先级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2227) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_EngagementGuidance_SetSquadSetupLocation"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_EngagementGuidance_SetSquadSetupLocation( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">SquadID</span> pSquad, <span class="arg">Position</span> pos, <span class="arg">Position</span> facingDir )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置小队的部署位置和朝向【功能：设置小队部署位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2198) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FallbackGuidance_EnableReinforceDuringCombat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FallbackGuidance_EnableReinforceDuringCombat( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Boolean</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用/禁用战斗中的增援功能【功能：设置战斗增援】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2876) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FallbackGuidance_SetEntitiesRemainingThreshold"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FallbackGuidance_SetEntitiesRemainingThreshold( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置遭遇战撤退时的剩余实体数量阈值[-1到N]，负值表示禁用【功能：设置撤退实体阈值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2778) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FallbackGuidance_SetFallbackCapacityPercentage"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FallbackGuidance_SetFallbackCapacityPercentage( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置撤退时的容量阈值[-1到1]，负值表示禁用【功能：设置撤退容量阈值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2684) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FallbackGuidance_SetFallbackCombatRating"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FallbackGuidance_SetFallbackCombatRating( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置区域撤退的战斗评分阈值[0.0到1.0]，0.0表示禁用【功能：设置撤退战斗评分阈值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2599) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FallbackGuidance_SetFallbackSquadHealthPercentage"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FallbackGuidance_SetFallbackSquadHealthPercentage( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Real</span> fallbackStartValue, <span class="arg">Real</span> fallbackEndValue )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置小队撤退的生命值阈值[-1到1]，负值表示禁用【功能：设置撤退生命值阈值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2618) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FallbackGuidance_SetFallbackSquadShieldPercentage"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FallbackGuidance_SetFallbackSquadShieldPercentage( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Real</span> fallbackStartValue, <span class="arg">Real</span> fallbackEndValue )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置小队撤退的护盾阈值[-1到1]，负值表示禁用【功能：设置撤退护盾阈值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2641) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FallbackGuidance_SetFallbackVehicleHealthPercentage"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FallbackGuidance_SetFallbackVehicleHealthPercentage( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Real</span> fallbackStartValue, <span class="arg">Real</span> fallbackEndValue )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置载具撤退的生命值阈值[-1到1]，负值表示禁用【功能：设置撤退载具生命值阈值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2664) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FallbackGuidance_SetGlobalFallbackPercentage"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FallbackGuidance_SetGlobalFallbackPercentage( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置全局撤退阈值，负值表示使用单个小队设置【功能：设置全局撤退阈值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2794) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FallbackGuidance_SetGlobalFallbackRetreat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FallbackGuidance_SetGlobalFallbackRetreat( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Boolean</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置全局撤退类型（true为撤退，false为后撤）【功能：设置全局撤退类型】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2810) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FallbackGuidance_SetReinforceHealthPercentage"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FallbackGuidance_SetReinforceHealthPercentage( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置增援生命值百分比[-1到1]，负值表示禁用撤退【功能：设置增援生命值百分比】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2826) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FallbackGuidance_SetReinforceMaxDistance"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FallbackGuidance_SetReinforceMaxDistance( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置最大增援距离，负值表示无距离限制【功能：设置最大增援距离】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2842) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FallbackGuidance_SetReinforceMinHealthRatioToReachReinforcePoint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FallbackGuidance_SetReinforceMinHealthRatioToReachReinforcePoint( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置到达增援点所需的最小生命值比率[0.0, 1.0]，负值表示无限制【功能：设置增援点最小生命值比率】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2860) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FallbackGuidance_SetRetreatCapacityPercentage"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FallbackGuidance_SetRetreatCapacityPercentage( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置区域撤退的容量阈值[-1到1]，负值表示禁用【功能：设置撤退容量百分比】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2729) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FallbackGuidance_SetRetreatCombatRating"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FallbackGuidance_SetRetreatCombatRating( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置区域撤退的战斗评分阈值[0.0到1.0]，0.0表示禁用【功能：设置撤退战斗评分】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2699) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FallbackGuidance_SetRetreatHealthPercentage"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FallbackGuidance_SetRetreatHealthPercentage( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置区域撤退的生命值阈值[-1到1]，负值表示禁用【功能：设置撤退生命值百分比】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2714) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FallbackGuidance_SetTargetPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FallbackGuidance_SetTargetPosition( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置撤退目标位置【功能：设置撤退目标点】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2762) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_ForceComplete"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_ForceComplete( <span class="arg">AIEncounterID</span> pEncounter )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>要求遭遇战在下一次更新时终止（允许阶段遭遇战设置其退出信息）【功能：强制完成遭遇战】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (613) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FormationGuidance_SetFormUpAtBuildingOfType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FormationGuidance_SetFormUpAtBuildingOfType( <span class="arg">AIEncounterID</span> encounter, <span class="arg">String</span> unitTypeList )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为阵型遭遇战设置在指定类型建筑处集结（来自AE调优列表，触发前必须设置）【功能：设置建筑集结点】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2895) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FormationGuidance_SetFormUpAtEntityTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FormationGuidance_SetFormUpAtEntityTarget( <span class="arg">AIEncounterID</span> encounter, <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为阵型遭遇战设置集结目标实体（触发前必须设置）【功能：设置实体集结点】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2971) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FormationGuidance_SetFormUpAtPositionTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FormationGuidance_SetFormUpAtPositionTarget( <span class="arg">AIEncounterID</span> encounter, <span class="arg">Position</span> postion )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为阵型遭遇战设置集结目标位置（触发前必须设置）【功能：设置位置集结点】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (2943) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FormationGuidance_SetFormUpAtSquadAverage"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FormationGuidance_SetFormUpAtSquadAverage( <span class="arg">AIEncounterID</span> encounter )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将阵型遭遇战的集结位置设为当前小队位置的平均点（触发前必须设置）【功能：设置小队平均集结点】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3008) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FormationGuidance_SetFormUpAtTimeOutParams"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FormationGuidance_SetFormUpAtTimeOutParams( <span class="arg">AIEncounterID</span> encounter, <span class="arg">Real</span> timeoutSeconds, <span class="arg">Real</span> requiredSquadsPercent )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置集结位置超时时间和必须到达的小队百分比，否则失败。超时设为零表示无限等待【功能：设置集结超时参数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3041) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FormationPhase_GetEndPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FormationPhase_GetEndPosition( <span class="arg">AITaskID</span> encounterID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取此已完成阵型阶段遭遇战的小队平均位置（成功时可能与目标位置相同）。调用前应先调用AIEncounter_FormationPhase_HasValidExitInfo以避免错误【功能：获取阵型阶段结束位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3342) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FormationPhase_GetEndReason"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FormationPhase_GetEndReason( <span class="arg">AITaskID</span> encounterID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取此已完成阵型阶段移动遭遇战的结束位置（成功时可能与目标位置相同）【功能：获取阵型阶段结束原因】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3366) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FormationPhase_GetEnemiesAtEnd"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FormationPhase_GetEnemiesAtEnd( <span class="arg">AITaskID</span> encounterID, <span class="arg">SGroupID</span> enemySquads, <span class="arg">EGroupID</span> enemyBuildings )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取此阵型阶段遭遇战遇到的敌人组（遭遇战必须已完成），false表示此遭遇战的退出信息不可用【功能：获取阵型阶段遇到的敌人】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3317) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FormationPhase_GetExitCombatFitnessResult"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FormationPhase_GetExitCombatFitnessResult( <span class="arg">AITaskID</span> encounterID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取已完成阶段遭遇战的战斗适应度结果，仅对退出状态为CombatFitnessThreshold或WasAttacked时有效。-1.0f表示无效【功能：获取退出战斗适应度结果】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3262) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FormationPhase_GetSquadsAvailableAtEnd"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FormationPhase_GetSquadsAvailableAtEnd( <span class="arg">AITaskID</span> encounterID, <span class="arg">SGroupID</span> squadsAvailable, <span class="arg">SGroupID</span> squadsUnavailable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取包含到达阵型阶段移动遭遇战目的地的小队和未到达小队的SGroup（遭遇战必须已完成），false表示退出信息不可用【功能：获取阵型阶段结束时的可用小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3280) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FormationPhase_HasValidExitInfo"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FormationPhase_HasValidExitInfo( <span class="arg">AITaskID</span> encounterID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查询此遭遇战是否有有效的退出信息（仅对阶段遭遇战返回true）【功能：检查有效退出信息】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3254) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FormationPhaseGuidance_SetCombatCoordinator"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FormationPhaseGuidance_SetCombatCoordinator( <span class="arg">AIEncounterID</span> encounter, <span class="arg">PropertyBagGroup</span> coordinatorPBG )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>分配包含数据的属性包以支持战斗遭遇战的子任务协调【功能：设置战斗协调器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3230) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FormationPhaseGuidance_SetCombatExitParams"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FormationPhaseGuidance_SetCombatExitParams( <span class="arg">AIEncounterID</span> encounter, <span class="arg">Real</span> timeoutSeconds, <span class="arg">Boolean</span> testTargetDestroyed, <span class="arg">Boolean</span> testEnemySquadsCleared, <span class="arg">Boolean</span> testEnemyBuildingsCleared, <span class="arg">Real</span> enemyScanRange, <span class="arg">String</span> excludeBuildingTypeNames )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置基于战斗终止阵型阶段遭遇战的参数，也可使用撤退参数【功能：设置战斗退出参数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3172) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FormationPhaseGuidance_SetMoveEnemiesExitParams"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FormationPhaseGuidance_SetMoveEnemiesExitParams( <span class="arg">AIEncounterID</span> encounter, <span class="arg">Real</span> enemyScanRange, <span class="arg">Real</span> combatFitnessThreshold, <span class="arg">Real</span> enemyFormationHeading, <span class="arg">Real</span> enemyFormationPosition, <span class="arg">Real</span> enemyFormationDistance, <span class="arg">String</span> excludeBuildingTypeNames )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置移动中遭遇敌人时终止阵型阶段遭遇战的参数【功能：设置移动遇敌退出参数】</p>
+                <p>enemyScanRange is scan range from current centre of the formation to look for enemies in meters combatFitnessThreshold is the fitness rating against all detected enemies, &lt; 0 means do not use, 0 means our team will win taking no damage, 1.0 means the enemy will win taking now damage. enemyFormationAngle is the relative heading of the strongest enemy formation in degrees, 0 means do not use enemyFormationPosition is the relative position of the strongest enemy formation in degrees, where 360.0f means directly behind us, 0 means do not use enemyFormationDistance is the distance threshold of the strongest enemy formation in meters</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3126) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FormationPhaseGuidance_SetMoveExitParams"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FormationPhaseGuidance_SetMoveExitParams( <span class="arg">AIEncounterID</span> encounter, <span class="arg">Real</span> timeoutSeconds, <span class="arg">Real</span> requiredSquadsPercent, <span class="arg">Real</span> wasRecentlyAttackedSecs )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置移动到某处时终止阵型阶段遭遇战的参数【功能：设置移动退出参数】</p>
+                <p>timeoutSeconds is how long to wait for squads to get to destination (0 means run indefinitely) requiredSquadsPercent is how many squads must be in the target area, 1.0 means all wasRecentlyAttackedSecs was any unit attacked in this interval, 0 means do not use.  Recommend not using if you are also using combat threshold</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3082) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FormationTaskStateGuidance_MinRange"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FormationTaskStateGuidance_MinRange( <span class="arg">AIEncounterID</span> encounter, <span class="arg">Integer</span> priority, <span class="arg">Integer</span> minSquads, <span class="arg">Integer</span> maxSquads, <span class="arg">Integer</span> maxTasks, <span class="arg">Real</span> repositionIntervalSecs, <span class="arg">Boolean</span> useTactics, <span class="arg">String</span> unitTypeNames, <span class="arg">PropertyBagGroup</span> targetPriorityPBG )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为阵型遭遇战指定数据以创建阵型最小范围任务状态【功能：设置最小范围任务状态】</p>
+                <p>repositionInterval is how often they will check to see if they need to reposition</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3444) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FormationTaskStateGuidance_MinRangeWithProtect"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FormationTaskStateGuidance_MinRangeWithProtect( <span class="arg">AIEncounterID</span> encounter, <span class="arg">Integer</span> priority, <span class="arg">Integer</span> minSquads, <span class="arg">Integer</span> maxSquads, <span class="arg">Integer</span> maxTasks, <span class="arg">Real</span> repositionIntervalSecs, <span class="arg">Boolean</span> useTactics, <span class="arg">String</span> unitTypeNames, <span class="arg">PropertyBagGroup</span> targetPriorityPBG, <span class="arg">Integer</span> protectMinSquads, <span class="arg">Integer</span> protectMaxSquads, <span class="arg">Real</span> protectProportionSquads, <span class="arg">Real</span> protectDistance, <span class="arg">Real</span> protectRepositionThreshold, <span class="arg">Real</span> protectRepositionIntervalSecs, <span class="arg">String</span> protectUnitTypeNames )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为阵型遭遇战指定数据以创建带保护任务的阵型最小范围任务状态【功能：设置带保护的最小范围任务状态】</p>
+                <p>enemyScanRange is scan range from current centre of the formation to look for enemies in meters</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3507) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FormationTaskStateGuidance_Move"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FormationTaskStateGuidance_Move( <span class="arg">AIEncounterID</span> encounter, <span class="arg">Boolean</span> attackMove, <span class="arg">Integer</span> priority, <span class="arg">Integer</span> minSquads, <span class="arg">Integer</span> maxSquads, <span class="arg">Integer</span> maxTasks, <span class="arg">String</span> unitTypeNames )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为阵型遭遇战指定数据以创建阵型移动任务状态【功能：设置移动任务状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3388) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FormationTaskStateGuidance_SetupRanged"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FormationTaskStateGuidance_SetupRanged( <span class="arg">AIEncounterID</span> encounter, <span class="arg">Integer</span> priority, <span class="arg">Integer</span> minSquads, <span class="arg">Integer</span> maxSquads, <span class="arg">Integer</span> maxTasks, <span class="arg">String</span> unitTypeNames, <span class="arg">PropertyBagGroup</span> targetPriorityPBG )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为阵型遭遇战指定数据以创建阵型远程部署任务状态【功能：设置远程部署任务状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3586) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FormationTaskStateGuidance_SetupRangedWithProtect"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FormationTaskStateGuidance_SetupRangedWithProtect( <span class="arg">AIEncounterID</span> encounter, <span class="arg">Integer</span> priority, <span class="arg">Integer</span> minSquads, <span class="arg">Integer</span> maxSquads, <span class="arg">Integer</span> maxTasks, <span class="arg">String</span> unitTypeNames, <span class="arg">PropertyBagGroup</span> targetPriorityPBG, <span class="arg">Integer</span> protectMinSquads, <span class="arg">Integer</span> protectMaxSquads, <span class="arg">Real</span> protectProportionSquads, <span class="arg">Real</span> protectDistance, <span class="arg">Real</span> protectRepositionThreshold, <span class="arg">Real</span> protectRepositionIntervalSecs, <span class="arg">String</span> protectUnitTypeNames )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为阵型遭遇战指定数据以创建阵型远程部署任务状态，并配有其他单位阵型进行保护【功能：设置带保护的远程部署任务状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3643) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FormationTaskStateGuidance_SimpleMelee"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FormationTaskStateGuidance_SimpleMelee( <span class="arg">AIEncounterID</span> encounter, <span class="arg">Integer</span> priority, <span class="arg">Integer</span> minSquads, <span class="arg">Integer</span> maxSquads, <span class="arg">Integer</span> maxTasks, <span class="arg">String</span> unitTypeNames, <span class="arg">PropertyBagGroup</span> targetPriorityPBG )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为阵型遭遇战指定数据以创建阵型简单近战任务状态【功能：设置简单近战任务状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3718) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_FormationTaskStateGuidance_TransportMove"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_FormationTaskStateGuidance_TransportMove( <span class="arg">AIEncounterID</span> encounter, <span class="arg">Integer</span> priority, <span class="arg">Integer</span> minSquads, <span class="arg">Integer</span> maxSquads, <span class="arg">Integer</span> maxTasks, <span class="arg">String</span> unitTypeNames, <span class="arg">Integer</span> minPassengerSquads, <span class="arg">Integer</span> maxPassengerSquadsPerTransport, <span class="arg">PropertyBagGroup</span> unloadAbilityPBG, <span class="arg">String</span> passengerUnitTypeNames, <span class="arg">PropertyBagGroup</span> targetPriorityPBG )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为阵型遭遇战指定数据以创建阵型运输移动任务状态【功能：设置运输移动任务状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3771) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_GetEncounterFromID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_GetEncounterFromID( <span class="arg">PlayerID</span> player, <span class="arg">AITaskID</span> taskID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据ID返回遭遇战指针，使用前务必检测是否为nil【功能：根据ID获取遭遇战】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (635) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_IsAIPlayerValid"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_IsAIPlayerValid( <span class="arg">AIEncounterID</span> pEncounter )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>若遭遇战拥有有效的AI玩家则返回true【功能：检查AI玩家有效性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (733) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_IsValid"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_IsValid( <span class="arg">UniqueID</span> PlayerUniqueID, <span class="arg">AITaskID</span> encounterTaskID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>判断遭遇战是否仍然有效。调用其他AIEncounter_*函数前必须为true。有效返回true，否则返回false【功能：验证遭遇战有效性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (552) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_LogDebug"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_LogDebug( <span class="arg">PlayerID</span> pPlayer, <span class="arg">Integer</span> encounterID, <span class="arg">String</span> debugString )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在非RTM版本中，若verboseEncounterLogging已启用，将输出字符串到AI日志文件【功能：输出调试日志】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3874) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_MoveGuidance_EnableAggressiveMove"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_MoveGuidance_EnableAggressiveMove( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用/禁用前往交战目标途中的激进行军【功能：设置激进行军】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1973) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_MoveGuidance_SetSquadCoherenceRadius"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_MoveGuidance_SetSquadCoherenceRadius( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Real</span> radius )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置协调移动阶段的小队一致性半径（跟随距离），<=0表示禁用协调移动【功能：设置小队一致性半径】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1988) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_Notify_ClearCallbacks"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_Notify_ClearCallbacks( <span class="arg">AIEncounterID</span> pEncounter )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清除遭遇战的所有通知回调【功能：清除通知回调】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3842) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_Notify_SetEnableSnipedCallbacks"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_Notify_SetEnableSnipedCallbacks( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Boolean</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用/禁用被狙击回调【功能：设置被狙击回调】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3858) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_Notify_SetPlayerEventEncounterID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_Notify_SetPlayerEventEncounterID( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Integer</span> id )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置遭遇战发出的通知事件ID【功能：设置通知事件ID】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3826) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_Pause"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_Pause( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Boolean</span> bPause )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>暂停/恢复此遭遇战【功能：暂停/恢复遭遇战】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3892) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_ResourceGuidance_CalculateEstimatedSquadProductionTime"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_ResourceGuidance_CalculateEstimatedSquadProductionTime( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">String</span> pbgShortname, <span class="arg">Boolean</span> canAffordNowOnly )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>计算指定遭遇战生产指定小队所需的大致时间【功能：计算小队生产时间】</p>
+                <p>Returns production time in seconds.  Negative value means the specified PBG cannot be produced at the specified Encounter. pEncounter is the Encounter Module that can service a production request. pbgShortname is the PBG of the squad to query. if canAffordNowOnly is set and we currently don't have enough resource now, report "cannot be produced".</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (993) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_ResourceGuidance_ClearEntities"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_ResourceGuidance_ClearEntities( <span class="arg">AIEncounterID</span> pEncounter )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从遭遇战中移除所有资源实体【功能：清除资源实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1127) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_ResourceGuidance_ClearSquads"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_ResourceGuidance_ClearSquads( <span class="arg">AIEncounterID</span> pEncounter )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从遭遇战中移除所有资源小队【功能：清除资源小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1112) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_ResourceGuidance_EntityGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_ResourceGuidance_EntityGroup( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">EGroupID</span> entities )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置遭遇战的资源实体【功能：设置资源实体组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (864) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_ResourceGuidance_IsSquadGroupEqual"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_ResourceGuidance_IsSquadGroupEqual( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">SGroupID</span> squads )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查小队组是否与遭遇战的资源小队相同【功能：检查小队组是否相等】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (750) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_ResourceGuidance_SetResourceMoney"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_ResourceGuidance_SetResourceMoney( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">ResourceAmount</span> resourceAmount )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置遭遇战的资源资金【功能：设置资源资金】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1146) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_ResourceGuidance_SquadGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_ResourceGuidance_SquadGroup( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">SGroupID</span> squads )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置遭遇战的资源小队【功能：设置资源小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (757) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_SetDebugName"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_SetDebugName( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">String</span> name )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置遭遇战的调试名称【功能：设置调试名称】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (670) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TacticFilter_Reset"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TacticFilter_Reset( <span class="arg">AIEncounterID</span> pEncounter )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>重置遭遇战的所有战术过滤器【功能：重置战术过滤器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1503) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TacticFilter_ResetAbilityGuidance"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TacticFilter_ResetAbilityGuidance( <span class="arg">AIEncounterID</span> pEncounter )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>重置遭遇战的所有战术技能约束【功能：重置技能约束】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1797) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TacticFilter_ResetAbilityPriority"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TacticFilter_ResetAbilityPriority( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">PropertyBagGroup</span> abilityPBG )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>重置遭遇战中所有小队的技能优先级【功能：重置技能优先级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1577) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TacticFilter_ResetPriority"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TacticFilter_ResetPriority( <span class="arg">AIEncounterID</span> pEncounter, <a href="enum_list.htm#AITacticType">AITacticType</a> tactic )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>重置遭遇战中所有小队的战术优先级【功能：重置战术优先级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1536) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TacticFilter_ResetTacticGuidance"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TacticFilter_ResetTacticGuidance( <span class="arg">AIEncounterID</span> pEncounter )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>重置遭遇战的所有战术约束【功能：重置战术约束】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1918) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TacticFilter_ResetTargetGuidance"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TacticFilter_ResetTargetGuidance( <span class="arg">AIEncounterID</span> pEncounter )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>重置遭遇战的所有战术目标约束【功能：重置目标约束】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1934) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TacticFilter_SetAbilityGuidance"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TacticFilter_SetAbilityGuidance( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">PropertyBagGroup</span> ability, <span class="arg">Integer</span> maxCasters, <span class="arg">Real</span> retrySecs, <span class="arg">Real</span> waitSelfSecs, <span class="arg">Real</span> waitEncounterSecs, <span class="arg">Real</span> timeoutSecs, <span class="arg">Boolean</span> initialWait, <span class="arg">Real</span> maxRange, <span class="arg">Real</span> castChanceOverride )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置遭遇战的战术技能约束【功能：设置技能约束】</p>
+                <p>maxCasters is maximum concurrent casters of this ability (-1 is unlimited), waitRetrySecs is time in seconds between ability tactic retrying ability retry, wait[self/encounter], and timeout Secs are: the number of seconds to try doing a tactic after a previous try; seconds after last successful try; how long the successful tactic can run. initialWait is true if the waitTime applies before the first ability use. maxRange is the maximum range to look for ability target from caster (other range constraints may limit the max range to a smaller value) castChanceOverride is the probability to cast the ability, must be between 0.0 and 1.0</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1690) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TacticFilter_SetAbilityPriority"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TacticFilter_SetAbilityPriority( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">PropertyBagGroup</span> abilityPBG, <span class="arg">Real</span> priority )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置遭遇战中所有小队的技能优先级，负值表示禁用【功能：设置技能优先级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1555) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TacticFilter_SetAbilityPriorityForSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TacticFilter_SetAbilityPriorityForSquad( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">SquadID</span> squad, <span class="arg">PropertyBagGroup</span> abilityPBG, <span class="arg">Real</span> priority )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置遭遇战中指定小队的技能优先级【功能：设置小队技能优先级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1624) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TacticFilter_SetDefaultAbilityGuidance"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TacticFilter_SetDefaultAbilityGuidance( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Integer</span> maxCasters, <span class="arg">Real</span> retrySecs, <span class="arg">Real</span> waitSelfSecs, <span class="arg">Real</span> waitEncounterSecs, <span class="arg">Real</span> timeoutSecs, <span class="arg">Boolean</span> initialWait, <span class="arg">Real</span> maxRange, <span class="arg">Real</span> castChanceOverride )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置遭遇战的默认战术技能约束（技能特定约束优先于默认值）【功能：设置默认技能约束】</p>
+                <p>maxCasters is maximum concurrent casters of ability (-1 is unlimited), waitRetrySecs is time in seconds between ability tactic retrying ability, retry, wait[self/encounter], and timeout Secs are: the number of seconds to try doing a tactic after a previous try; seconds after last successful try; how long the successful tactic can run. initialWait is true if the waitTime applies before the first ability use. maxRange is the maximum range to look for ability target from caster (other range constraints may limit the max range to a smaller value) castChanceOverride is the probability to cast the ability, must be between 0.0 and 1.0</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1757) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TacticFilter_SetDefaultTacticGuidance"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TacticFilter_SetDefaultTacticGuidance( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Integer</span> maxUsers, <span class="arg">Real</span> retrySecs, <span class="arg">Real</span> waitSecs, <span class="arg">Real</span> timeoutSecs, <span class="arg">Boolean</span> initialWait, <span class="arg">Real</span> maxRange )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置遭遇战的默认战术约束（战术特定约束优先于默认值）【功能：设置默认战术约束】</p>
+                <p>maxUsers is maximum concurrent users of tactic (-1 is unlimited), waitRetrySecs is time in seconds between tactic retrying retry, wait, and timeout Secs are: the number of seconds to try doing a tactic after a previous try; seconds after last successful try; how long the successful tactic can run. initialWait is true if the waitTime applies before the first tactic use. maxRange is the maximum range to look for tactic target from caster (other range constraints may limit the max range to a smaller value)</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1884) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TacticFilter_SetPriority"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TacticFilter_SetPriority( <span class="arg">AIEncounterID</span> pEncounter, <a href="enum_list.htm#AITacticType">AITacticType</a> tactic, <span class="arg">Real</span> priority )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置遭遇战中所有小队的战术优先级，负值表示禁用【功能：设置战术优先级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1519) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TacticFilter_SetPriorityForSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TacticFilter_SetPriorityForSquad( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">SquadID</span> squad, <a href="enum_list.htm#AITacticType">AITacticType</a> tactic, <span class="arg">Real</span> priority )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置遭遇战中指定小队的战术优先级【功能：设置小队战术优先级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1598) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TacticFilter_SetTacticGuidance"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TacticFilter_SetTacticGuidance( <span class="arg">AIEncounterID</span> pEncounter, <a href="enum_list.htm#AITacticType">AITacticType</a> tactic, <span class="arg">Integer</span> maxUsers, <span class="arg">Real</span> retrySecs, <span class="arg">Real</span> waitSecs, <span class="arg">Real</span> timeoutSecs, <span class="arg">Boolean</span> initialWait, <span class="arg">Real</span> maxRange )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置遭遇战的战术约束【功能：设置战术约束】</p>
+                <p>maxUsers is maximum concurrent users of this tactic (-1 is unlimited), waitRetrySecs is time in seconds between tactic retry retry, wait, and timeout Secs are: the number of seconds to try doing a tactic after a previous try; seconds after last successful try; how long the successful tactic can run. initialWait is true if the waitTime applies before the first tactic use. maxRange is the maximum range to look for tactic target from caster (other range constraints may limit the max range to a smaller value)</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1828) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TacticFilter_SetTargetPolicy"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TacticFilter_SetTargetPolicy( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">TargetPreference</span> policy )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置遭遇战的战术目标优先级【功能：设置目标策略】</p>
+                <p>policy is one of: AITacticTargetPreference_None, AITacticTargetPreference_Near,</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1649) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TargetGuidance_DisableSquadPatrol"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TargetGuidance_DisableSquadPatrol( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">SquadID</span> pSquad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>禁用指定小队的巡逻【功能：禁用小队巡逻】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1474) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TargetGuidance_SetPatrolPathByName"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TargetGuidance_SetPatrolPathByName( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">String</span> pathName, <span class="arg">Real</span> delaySecs, <span class="arg">Boolean</span> invertPathAtEnd, <span class="arg">Boolean</span> startInverted )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置遭遇战的目标巡逻路径【功能：设置巡逻路径】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1253) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TargetGuidance_SetPatrolWander"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TargetGuidance_SetPatrolWander( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Real</span> delaySecs, <span class="arg">Integer</span> radiusMode, <span class="arg">Real</span> radiusOverride, <span class="arg">Boolean</span> overrideCenter, <span class="arg">Position</span> centerOverride )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置遭遇战的随机游荡巡逻，delaySecs为每个随机点的停留时间（秒）【功能：设置随机游荡巡逻】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1311) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TargetGuidance_SetSquadPatrolPathByName"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TargetGuidance_SetSquadPatrolPathByName( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">SquadID</span> pSquad, <span class="arg">String</span> pathName, <span class="arg">Real</span> delaySecs, <span class="arg">Boolean</span> invertPathAtEnd, <span class="arg">Boolean</span> startInverted )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置小队的目标巡逻路径【功能：设置小队巡逻路径】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1363) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TargetGuidance_SetSquadPatrolWander"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TargetGuidance_SetSquadPatrolWander( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">SquadID</span> pSquad, <span class="arg">Real</span> delaySecs, <span class="arg">Integer</span> radiusMode, <span class="arg">Real</span> radiusOverride, <span class="arg">Boolean</span> overrideCenter, <span class="arg">Position</span> centerOverride )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置小队的随机游荡巡逻，delaySecs为每个随机点的停留时间（秒）【功能：设置小队随机游荡巡逻】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1427) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TargetGuidance_SetTargetArea"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TargetGuidance_SetTargetArea( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Real</span> radius )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置目标周围的交战区域半径【功能：设置交战区域】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1216) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TargetGuidance_SetTargetEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TargetGuidance_SetTargetEntity( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置遭遇战的目标实体【功能：设置目标实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1197) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TargetGuidance_SetTargetLeash"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TargetGuidance_SetTargetLeash( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Real</span> radius )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置目标周围的活动范围半径，小队应保持在此范围内【功能：设置活动范围】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1232) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TargetGuidance_SetTargetPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TargetGuidance_SetTargetPosition( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置遭遇战的目标位置【功能：设置目标位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1162) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_TargetGuidance_SetTargetSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_TargetGuidance_SetTargetSquad( <span class="arg">AIEncounterID</span> pEncounter, <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置遭遇战的目标小队【功能：设置目标小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (1178) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIEncounter_Trigger"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIEncounter_Trigger( <span class="arg">AIEncounterID</span> pEncounter )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>触发遭遇战【功能：触发遭遇战】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (654) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIPlayer_CanAISquadLockTacticItem"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIPlayer_CanAISquadLockTacticItem( <span class="arg">EntityID</span> tacticItemEntity, <span class="arg">SquadID</span> lockingAISquad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查小队是否可以锁定战术项目【功能：检查战术项目锁定权限】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (5144) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIPlayer_GetOpponentPlayerAtIndex"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIPlayer_GetOpponentPlayerAtIndex( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Integer</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回所有对手玩家中指定索引的玩家。需与AIPlayer_GetOpponentPlayerCount配合使用【功能：获取对手玩家】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (5339) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIPlayer_GetOpponentPlayerCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIPlayer_GetOpponentPlayerCount( <span class="arg">PlayerID</span> aiPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定AI玩家的对手玩家数量【功能：获取对手玩家数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (5320) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIPlayer_GetStateModelAISquadListEntries"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIPlayer_GetStateModelAISquadListEntries( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回AI玩家状态模型中与指定键对应的小队ID表【功能：获取状态模型小队列表】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (5427) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIPlayer_IsTacticItemLocked"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIPlayer_IsTacticItemLocked( <span class="arg">PlayerID</span> player, <span class="arg">EntityID</span> tacticItemEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查战术项目是否被锁定【功能：检查战术项目锁定状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (5121) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIPlayer_IsTacticItemLockedByAISquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIPlayer_IsTacticItemLockedByAISquad( <span class="arg">EntityID</span> tacticItemEntity, <span class="arg">SquadID</span> lockingAISquad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查战术项目是否被指定小队锁定【功能：检查战术项目锁定者】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (5132) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIPlayer_LockTacticItemForAISquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIPlayer_LockTacticItemForAISquad( <span class="arg">EntityID</span> tacticItemEntity, <span class="arg">SquadID</span> lockingAISquad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为指定玩家锁定战术项目【功能：锁定战术项目】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (5054) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIPlayer_ResetEnemySquadsVisibility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIPlayer_ResetEnemySquadsVisibility( <span class="arg">PlayerID</span> player, <span class="arg">PlayerID</span> enemyPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>临时隐藏指定AI所知的敌方玩家的所有小队【功能：重置敌方小队可见性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (5155) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIPlayer_SetGathererDistributionOverride"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIPlayer_SetGathererDistributionOverride( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> luaGatherDistro )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置AI玩家应如何分配采集单位的目标分布【功能：设置采集者分布覆盖】</p>
+                <p>Second argument is a map of resource type names to weights ex: { ['wood'] = 5, ... }</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (5372) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIPlayer_SetRequiresStatsUpdate"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIPlayer_SetRequiresStatsUpdate( <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>标记玩家以强制更新统计小队【功能：设置需要统计更新】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (5037) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIPlayer_UnLockTacticItemForAISquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIPlayer_UnLockTacticItemForAISquad( <span class="arg">EntityID</span> tacticItemEntity, <span class="arg">SquadID</span> lockingAISquad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为指定玩家解锁战术项目【功能：解锁战术项目】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (5087) </b></td>
+            </tr>
+          </table>
+        </p><a name="AISquad_FindBestIsolatedSquadTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AISquad_FindBestIsolatedSquadTarget( <span class="arg">SquadID</span> aiSquad, <span class="arg">SGroupID</span> targetSquads, <span class="arg">TargetPreference</span> tacticTargetPolicy, <span class="arg">Boolean</span> targetAllies )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找不属于集群的最佳小队目标【功能：查找孤立小队目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4882) </b></td>
+            </tr>
+          </table>
+        </p><a name="AISquad_FindBestSquadTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AISquad_FindBestSquadTarget( <span class="arg">SquadID</span> aiSquad, <span class="arg">SGroupID</span> targetSquads, <span class="arg">TargetPreference</span> tacticTargetPolicy )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据传入的战术目标策略返回小队组中的最佳小队目标【功能：查找最佳小队目标】</p>
+                <p>policy is one of: AITacticTargetPreference_None, AITacticTargetPreference_Near,</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4840) </b></td>
+            </tr>
+          </table>
+        </p><a name="AISquad_FindSafePositionInEncounterLeash"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AISquad_FindSafePositionInEncounterLeash( <span class="arg">SquadID</span> aiSquad, <span class="arg">Real</span> maxRadius )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回AISquad在当前遭遇战活动范围内的最安全位置【功能：查找安全位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4820) </b></td>
+            </tr>
+          </table>
+        </p><a name="AISquad_IsRunningSquadTacticAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AISquad_IsRunningSquadTacticAbility( <span class="arg">SquadID</span> aiSquad, <span class="arg">PropertyBagGroup</span> abilityPBG )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>若AISquad当前正在为指定技能PBG运行AISquadAbilityTactic则返回true【功能：检查是否正在运行技能战术】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4949) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIStateTree_SpawnRootControllerWithStateModelTunings"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIStateTree_SpawnRootControllerWithStateModelTunings( <span class="arg">PlayerID</span> pPlayer, <span class="arg">String</span> openingBranchName, <span class="arg">Boolean</span> keepAlive, <span class="arg">ScarAIStateModelTuningsPBG</span> stateModelTuningsScarPBG, <span class="arg">SGroupID</span> stateModelSGroupListTunings, <span class="arg">EGroupID</span> stateModelEGroupListTunings, <span class="arg">Position</span> stateModelPositionTargetListTunings, <span class="arg">MarkerID</span> stateModelMarkerTargetListTunings, <span class="arg">String list</span> stateModelEntityTypeListTunings, <span class="arg">LuaMap&lt;ScarAIFormationCoordinatorPBG&gt;</span> stateModelCoordinatorPBGListTunings, <span class="arg">Boolean</span> stateModelBoolTunings, <span class="arg">Real</span> stateModelFloatTunings, <span class="arg">Integer</span> stateModelIntTunings )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在AI玩家状态树上生成一个根控制器，带有可推送到根控制器状态模型的调优参数【功能：生成根控制器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (3965) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetInternalAIEncounterPtr"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetInternalAIEncounterPtr( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回控制此小队的遭遇战【功能：获取小队所属遭遇战】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4994) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsInAIEncounter"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsInAIEncounter( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>若小队处于遭遇战中则返回true【功能：检查小队是否在遭遇战中】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (4978) </b></td>
+            </tr>
+          </table>
+        </p><a name="SquadGroup_CountSpawnedAndStatsInitialized"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SquadGroup_CountSpawnedAndStatsInitialized( <span class="arg">SGroupID</span> sgroup, <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>遍历小队组，返回拥有AIStatsSquad的小队数量【功能：统计已初始化统计的小队数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAI.cpp] (5014) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

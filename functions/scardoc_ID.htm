@@ -1,0 +1,135 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;ID</title>
+</head>
+<body>
+<span class="subtitle">scardoc;ID</span><p>
+<a name="Group_scardoc;ID"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;ID</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="EGroup_CreateTable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_CreateTable( <span class="arg">String</span> format, <span class="arg">Integer</span> size )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回一个不在世界构建器中的实体组表【功能：获取非世界构建器创建的实体组表】</p>
+                <p>See Marker_GetTable for more info on format parameter</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\uid.scar] (107) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_GetWBTable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_GetWBTable( <span class="arg">String</span> format )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回一个来自世界构建器的实体组表【功能：获取世界构建器中的实体组表】</p>
+                <p>See Marker_GetTable for more info on format parameter</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\uid.scar] (87) </b></td>
+            </tr>
+          </table>
+        </p><a name="Marker_GetNonSequentialTable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Marker_GetNonSequentialTable( <span class="arg">String</span> format, <span class="arg">Integer</span> size )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回一个固定大小的来自世界构建器的标记表。在世界构建器中不存在的标记，在表中将为nil。这就是我们称之为"非顺序"的原因【功能：获取固定大小的标记表（可能包含nil值）】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\uid.scar] (69) </b></td>
+            </tr>
+          </table>
+        </p><a name="Marker_GetTable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Marker_GetTable( <span class="arg">String</span> format )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回一个来自世界构建器的标记表。创建找到的所有标记【功能：获取世界构建器中的标记表】</p>
+                <p>mkr_table = Marker_GetTable( 'mkr_%d' ) -- creates a table with 3 markers named 'mkr_1', 'mkr_2', and 'mkr_3' (and so on) from the WB\n\n mkr_table2 = Marker_GetTable( 'mkr_%02d' )  -- creates a table with 3 markers named 'mkr_01', 'mkr_02', 'mkr_03' (and so on) from the WB\n\n mkr_table3 = Marker_GetTable( 'mkr_%03d_patrol' )  -- creates a table with 3 markers named 'mkr_001_patrol', 'mkr_002_patrol' (and so on) from the WB\n\n</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\uid.scar] (57) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_CreateTable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_CreateTable( <span class="arg">String</span> format, <span class="arg">Integer</span> size )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回一个不在世界构建器中的小队组表【功能：获取非世界构建器创建的小队组表】</p>
+                <p>See Marker_GetTable for more info on format parameter</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\uid.scar] (117) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetWBTable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetWBTable( <span class="arg">String</span> format )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回一个来自世界构建器的小队组表【功能：获取世界构建器中的小队组表】</p>
+                <p>See Marker_GetTable for more info on format parameter</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\uid.scar] (97) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

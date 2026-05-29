@@ -1,0 +1,258 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;Sound</title>
+</head>
+<body>
+<span class="subtitle">scardoc;Sound</span><p>
+<a name="Group_scardoc;Sound"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;Sound</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="Sound_ForceMusicEnabled"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Sound_ForceMusicEnabled(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>用于作弊菜单【功能：强制启用音乐】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameSound.cpp] (98) </b></td>
+            </tr>
+          </table>
+        </p><a name="Sound_ForceSetMinimumMusicCombatIntensity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Sound_ForceSetMinimumMusicCombatIntensity( <span class="arg">Real</span> combatIntensity, <span class="arg">Real</span> durationSeconds )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>强制将战斗强度设置为至少combatIntensity，持续一段时间。【功能：强制设置最小音乐战斗强度】</p>
+                <p>Use a duration of -1 for an indefinite override. Use a duration of 0 to cancel the override. Does not trigger any music events.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameSound.cpp] (51) </b></td>
+            </tr>
+          </table>
+        </p><a name="Sound_ForceSilenceEnabled"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Sound_ForceSilenceEnabled(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>用于作弊菜单【功能：强制启用静音】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameSound.cpp] (83) </b></td>
+            </tr>
+          </table>
+        </p><a name="Sound_MusicStop"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Sound_MusicStop(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>立即停止音乐并进入静音状态。【功能：停止音乐】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameSound.cpp] (104) </b></td>
+            </tr>
+          </table>
+        </p><a name="Sound_PlaySpeech"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Sound_PlaySpeech( <span class="arg">String</span> eventName, <span class="arg">Integer</span> eventArgs )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据本地玩家的种族播放语音事件。【功能：播放语音】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameSound.cpp] (151) </b></td>
+            </tr>
+          </table>
+        </p><a name="Sound_PlaySpeechForPlayer"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Sound_PlaySpeechForPlayer( <span class="arg">PlayerID</span> player, <span class="arg">String</span> eventName, <span class="arg">Integer</span> eventArgs )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据指定玩家的种族播放语音事件。【功能：为指定玩家播放语音】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameSound.cpp] (141) </b></td>
+            </tr>
+          </table>
+        </p><a name="Sound_SetForceMusic"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Sound_SetForceMusic( <span class="arg">Boolean</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>告知音乐系统是否应该尝试进入/保持在播放音乐状态。【功能：设置强制音乐状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameSound.cpp] (89) </b></td>
+            </tr>
+          </table>
+        </p><a name="Sound_SetForceSilence"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Sound_SetForceSilence( <span class="arg">Boolean</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>告知音乐系统是否应该尝试进入/保持在静音状态。【功能：设置强制静音状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameSound.cpp] (74) </b></td>
+            </tr>
+          </table>
+        </p><a name="Sound_SetMinimumMusicCombatIntensity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Sound_SetMinimumMusicCombatIntensity( <span class="arg">Real</span> combatIntensity, <span class="arg">Real</span> durationSeconds )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Set the target combat intensity to at least the value of value combatIntensity for a duration. </p>
+                <p>Use a duration of -1 for an indefinite override. Use a duration of 0 to cancel the override.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameSound.cpp] (59) </b></td>
+            </tr>
+          </table>
+        </p><a name="Sound_SetMusicIntensityScaling"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Sound_SetMusicIntensityScaling( <span class="arg">Real</span> scale )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置音乐强度值的缩放倍数。【功能：设置音乐强度缩放】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameSound.cpp] (131) </b></td>
+            </tr>
+          </table>
+        </p><a name="Sound_SetMusicRaceCode"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Sound_SetMusicRaceCode( <span class="arg">String</span> raceCode )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置种族RTPC以控制播放哪个种族的音乐。【功能：设置音乐种族代码】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameSound.cpp] (118) </b></td>
+            </tr>
+          </table>
+        </p><a name="Sound_SetScriptedMusicDuration"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Sound_SetScriptedMusicDuration( <span class="arg">Real</span> durationSecs )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>阻止音乐系统在持续时间内自动切换层级或停止。【功能：设置脚本音乐持续时间】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameSound.cpp] (67) </b></td>
+            </tr>
+          </table>
+        </p><a name="Sound_StartMusicOutro"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Sound_StartMusicOutro( <span class="arg">String</span> outroEvent )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>立即停止音乐并进入静音状态。【功能：开始音乐结尾】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameSound.cpp] (111) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

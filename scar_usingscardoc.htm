@@ -1,0 +1,124 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>实体蓝图</title></head>
+
+<body>
+<span class="subtitle">使用ScarDoc</span> 
+<p>ScarDoc可用于添加自动文档化的C++和Lua函数。&nbsp;
+要让函数显示在此网页中，您只需在函数上方添加一些特殊注释即可。&nbsp;
+您可以在函数上使用多种不同的标签；有些是必需的，而其他则是可选的。</p>
+<p>使用ScarDoc为Lua函数编写文档时，必须为函数的参数和返回值提供类型信息。&nbsp;
+这样ScarDoc才能知道需要向函数传递哪些类型。&nbsp;
+用于指定这些信息的标签是@result和@args。</p>
+<table width="100%" class="exampletable">
+  <tr>
+    <td width="100%" class="exampletitle">示例 1.1：使用ScarDoc注册Lua函数</td>
+  </tr>
+  <tr>
+    <td width="100%" class="examplebody">--? @shortdesc 设置玩家的种族。<br>
+      --? @extdesc<br>
+      --? 种族名称必须是属性编辑器中的有效种族名称。\n\n<br>
+      --? 如果raceName不存在，此函数将返回false。\n\n<br>
+      --? 此注释将位于新段落中。<br>
+      --? @result Void<br>
+      --? @args PlayerID playerID, String raceName<br>
+      --? @refs PlayerRaces.txt, SomeOtherDoc.doc<br>
+      function Player_SetRace( playerID, raceName )<br>
+      &nbsp;&nbsp;&nbsp; --<br>
+      end</td>
+  </tr>
+</table>
+<p>为C++函数编写文档则更为直接，因为类型信息已在C++语言中指定。&nbsp;
+由于C++类型名称可能看起来非常复杂，ScarDoc会将C++类型名称转换为"设计者友好"的类型名称。&nbsp;
+这样，如果Lua绑定函数接受"const Math::Vector3f&nbsp; *"作为参数，编写脚本的人员无需担心其所有含义。&nbsp;
+在这种情况下，它将显示为更友好的名称，如"PositionRef"。&nbsp;
+要查看所有类型及其转换列表，请转到<b>&gt;&gt;待完成&lt;&lt;</b>。&nbsp;</p>
+<table width="100%" class="exampletable">
+  <tr>
+    <td width="100%" class="exampletitle">示例 1.2：使用ScarDoc注册C++函数</td>
+  </tr>
+  <tr>
+    <td width="100%" class="examplebody">//? @shortdesc 设置玩家的种族。<br>
+      //? @extdesc<br>
+      //? 种族名称必须是属性编辑器中的有效种族名称。\n\n<br>
+      //? 如果raceName不存在，此函数将返回false。\n\n<br>
+      //? 此注释将位于新段落中。<br>
+      //? @refs PlayerRaces.txt, SomeOtherDoc.doc<br>
+      static bool Player_SetRace( Player * playerID, const char * raceName )<br>
+      {<br>
+      }</td>
+  </tr>
+</table>
+<p>函数还可以分类到命名的子组中。&nbsp;
+这些是您在函数列表中看到的子组。要设置当前组，请使用@group标签。&nbsp;
+一旦设置了组，文件中该标签<i>下方</i>的所有函数都将添加到此组中。&nbsp;
+如果找到另一个@group标签，这将更改当前组，函数现在将添加到该组中。&nbsp;
+如果不指定组，函数将添加到"Various"（杂项）组。</p>
+<table width="100%" class="exampletable">
+  <tr>
+    <td width="100%" class="exampletitle">示例 1.3：使用@group标签</td>
+  </tr>
+  <tr>
+    <td width="100%" class="examplebody">/* 在此示例中，"Group1"将包含Function1和Function2，"Group2"将包含Function3和Function4。&nbsp; Function0将被添加到"Various" */
+      <p>//? @shortdesc Function0的描述。<br>
+      static void Function0( ){}<br>
+      <br>
+      <br>
+      //? @group Group1</p>
+      <p>//? @shortdesc Function1的描述。<br>
+      static void Function1( ){}<br>
+      <br>
+      //? @shortdesc Function2的描述。<br>
+      static void Function2( ){}<br>
+      <br>
+      <br>
+      //? @group Group2<br>
+      <br>
+      //? @shortdesc Function3的描述。<br>
+      static void Function3( ){}<br>
+      <br>
+      //? @shortdesc Function4的描述。<br>
+      static void Function4( ){}</p>
+    </td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+<span class="subtitle">标签</span> 
+<p>以下是所有可能的ScarDoc标签列表。</p>
+<ul>
+  <li><b>@shortdesc</b>（<i>必需</i>）
+    <ul>
+      <li>函数的一句话描述。&nbsp; 此描述将显示在WSciTE API中。</li>
+    </ul>
+  </li>
+  <li><b>@extdesc</b>（<i>可选</i>）
+    <ul>
+      <li>函数的可选详细描述。&nbsp; 如果在描述中放入"\n"，生成的HTML将包含&lt;BR&gt;标签。此描述不会显示在WSciTE API中。</li>
+    </ul>
+  </li>
+  <li><b>@refs</b>（<i>可选</i>）
+    <ul>
+      <li>添加指向外部文档的链接。&nbsp; 文件路径必须相对于scardoc/html/references文件夹。&nbsp;&nbsp; 如果有多个文件名，请用逗号分隔。</li>
+    </ul>
+  </li>
+  <li><b>@result</b>（<i>必需，仅Lua</i>）
+    <ul>
+      <li>用于指定函数的返回值类型。&nbsp; 此返回值类型必须是有效的ScarDoc类型。</li>
+    </ul>
+  </li>
+  <li><b>@args</b>（<i>必需，仅Lua</i>）
+    <ul>
+      <li>用于指定函数参数的类型。&nbsp; 如果此列表中的参数数量与函数中的参数数量不匹配，ScarDoc将在其日志文件中显示警告。</li>
+    </ul>
+  </li>
+  <li><b>@group</b>（<i>可选</i>）
+    <ul>
+      <li>此标签不必属于函数的一部分。这是当前文件的全局标签，用于设置当前组类型。&nbsp; 如果未指定此标签，函数将被添加到"Various"组。</li>
+    </ul>
+  </li>
+</ul>
+
+</body>
+</html>

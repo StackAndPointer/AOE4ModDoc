@@ -1,0 +1,1603 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;World</title>
+</head>
+<body>
+<span class="subtitle">scardoc;World</span><p>
+<a name="Group_scardoc;World"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;World</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="Marker_CleanUpTheDead"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Marker_CleanUpTheDead( <span class="arg">PlayerID</span> player, <span class="arg">MarkerID</span> marker )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清除标记半径内指定玩家的尸体（输入ALL清除所有）。【功能：清理标记范围内的死亡单位】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2187) </b></td>
+            </tr>
+          </table>
+        </p><a name="Vector_Length"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Vector_Length( <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>计算所提供向量的长度。【功能：向量长度计算】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (440) </b></td>
+            </tr>
+          </table>
+        </p><a name="Vector_Lerp"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Vector_Lerp( <span class="arg">Real</span> factor, <span class="arg">Position</span> pos1, <span class="arg">Position</span> pos2 )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据所提供的因子在两个向量之间进行线性插值。【功能：向量线性插值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (446) </b></td>
+            </tr>
+          </table>
+        </p><a name="Vector_Normalize"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Vector_Normalize( <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回所提供向量的归一化版本。【功能：向量归一化】</p>
+                <p>Returns a vector pointing the same direction as the provided vector, but shortened/elongated to a length of 1. Don't pass in a vector of length 0, or you'll get a divide-by-zero error!</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (434) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_CalculateEntitiesAveragePositionInArea"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_CalculateEntitiesAveragePositionInArea( <span class="arg">PlayerID</span> player, <span class="arg">Position</span> pos, <span class="arg">Real</span> radius, <a href="enum_list.htm#OwnerType">OwnerType</a> ownerType, <span class="arg">Boolean</span> onlyEntitiesInSquads )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回区域内实体的平均位置。【功能：计算区域内实体平均位置】</p>
+                <p>Owner type could be OT_Player, OT_Ally, OT_Enemy or OT_Neutral It filters out entities not belonging to a squad, when onlyEntitiesInSquads is true</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1449) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_ChangeZoneInteractivity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_ChangeZoneInteractivity( <span class="arg">Integer</span> targetInteractivity, <span class="arg">Integer</span> adjustedInteractivity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将目标交互区域更改为调整后的交互性（最大255），可能仅在NIS（非交互序列）后使用才安全。【功能：修改区域交互性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1722) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_CleanUpTheDead"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_CleanUpTheDead( <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清除指定玩家的尸体（输入ALL清除所有）。【功能：全局清理死亡单位】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2162) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_DestroyWallsNearMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_DestroyWallsNearMarker( <span class="arg">MarkerID</span> marker )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>摧毁标记附近的墙壁（带有wall_ext组件的实体）。【功能：摧毁标记附近的城墙】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1729) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_DistanceEGroupToPoint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_DistanceEGroupToPoint( <span class="arg">EGroupID</span> egroup, <span class="arg">Position</span> p1, <span class="arg">Boolean</span> closest )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取实体组与点之间的距离。【功能：计算实体组到点的距离】</p>
+                <p>Pass in true for 3rd parameter to get the closest point and pass in false to get the furthest point.  The closest/furthest point is calculated on a per entity basis.  So the closest distance would be that of the closest entity.\n Also note, it is an error to call this function with an empty group.\n</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (187) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_DistancePointToPoint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_DistancePointToPoint( <span class="arg">Position</span> p1, <span class="arg">Position</span> p2 )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取两点之间的距离。【功能：计算两点间距离】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (171) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_DistanceSGroupToPoint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_DistanceSGroupToPoint( <span class="arg">SGroupID</span> sgroup, <span class="arg">Position</span> p1, <span class="arg">Boolean</span> closest )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取小队组与点之间的距离。【功能：计算小队组到点的距离】</p>
+                <p>Pass in true for 3rd parameter to get the closest point and pass in false to get the furthest point.  The closest/furthest point is calculated on a per squadron basis.  So the closest distance would be that of the closest squadron.\n It is an error to call this function with an empty group.  Check the group size with SquadGroup_Count( ) first.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (234) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_DistanceSquaredPointToPoint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_DistanceSquaredPointToPoint( <span class="arg">Position</span> p1, <span class="arg">Position</span> p2 )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取两点之间距离的平方。【功能：计算两点间距离的平方值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (177) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_EnableReplacementObjectForEmptyPlayers"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_EnableReplacementObjectForEmptyPlayers( <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>确定空玩家是否转换为空资源点。【功能：设置空玩家资源点转换】</p>
+                <p>*** You must call this from OnGameSetup, otherwise it's too late *** see Attribute Editor under tuning/player/empty_player_replacement_object</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1780) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_EnableSharedLineOfSight"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_EnableSharedLineOfSight( <span class="arg">PlayerID</span> p0, <span class="arg">PlayerID</span> p1, <span class="arg">Boolean</span> enableSharedVision )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用或禁用这两个玩家之间的共享视野。【功能：设置玩家间共享视野】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (757) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetAllEntities"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetAllEntities( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清空实体组，然后查找并将所有实体添加到其中。【功能：获取所有实体】</p>
+                <p>Returns the number of entities found</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1197) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetAllEntitiesOfType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetAllEntitiesOfType( <span class="arg">EGroupID</span> egroup, <span class="arg">String</span> type )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清空实体组，然后查找并将指定类型的所有实体添加到其中。【功能：获取指定类型的所有实体】</p>
+                <p>Returns the number of entities found</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1216) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetAllNeutralEntities"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetAllNeutralEntities( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清空实体组，然后查找并将所有中立实体添加到其中。【功能：获取所有中立实体】</p>
+                <p>Returns the number of entities found</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1252) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetAllNeutralSquads"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetAllNeutralSquads( <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清空小队组，然后查找并将所有中立小队添加到其中。【功能：获取所有中立小队】</p>
+                <p>Returns the number of squads found</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1276) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetAllSquads"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetAllSquads( <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清空小队组，然后查找并将所有小队添加到其中。【功能：获取所有小队】</p>
+                <p>Returns the number of squads found</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1301) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetAllSquadsOfType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetAllSquadsOfType( <span class="arg">SGroupID</span> sgroup, <span class="arg">String</span> type )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清空小队组，然后查找并将指定类型的所有小队添加到其中。【功能：获取指定类型的所有小队】</p>
+                <p>Returns the number of squads found</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1321) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetBlueprintEntities"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetBlueprintEntities( <span class="arg">ScarEntityPBG</span> pbg, <span class="arg">EGroupID</span> outEntities )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回具有此蓝图的所有实体。警告：此函数遍历所有实体，因此速度较慢。【功能：获取指定蓝图的所有实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (551) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetClosest"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetClosest( <span class="arg">Variable</span> var, <span class="arg">EGroupID</span> items )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从标记/位置/实体组/小队组的表中返回距离指定标记/位置/实体组/小队组最近的对象。【功能：获取最近的对象】</p>
+                <p>The table may mix together objects of different types.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2063) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetCoverPoints"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetCoverPoints( <span class="arg">EGroupID</span> group )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将所有掩体点追加到实体组。【功能：获取所有掩体点】</p>
+                <p>Takes an egroup where you want to put the points. If this 'group' already contains a cover point, this cover point will not be added a second time. This function does not clear the contents of 'group'.\n</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (660) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetEntitiesNearMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetEntitiesNearMarker( <span class="arg">PlayerID</span> player, <span class="arg">EGroupID</span> egroup, <span class="arg">MarkerID</span> marker, <a href="enum_list.htm#OwnerType">OwnerType</a> ownerType )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清空实体组，然后查找并将标记附近的实体添加到实体组。【功能：获取标记附近的实体】</p>
+                <p>Returns the number of entities found Owner type could be OT_Player, OT_Ally, OT_Enemy or OT_Neutral Entities belonging to a squad would not be added to the egroup</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1405) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetEntitiesNearPoint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetEntitiesNearPoint( <span class="arg">PlayerID</span> player, <span class="arg">EGroupID</span> egroup, <span class="arg">Position</span> pos, <span class="arg">Real</span> radius, <a href="enum_list.htm#OwnerType">OwnerType</a> ownerType )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清空实体组，然后查找并将点附近的实体添加到实体组。【功能：获取点附近的实体】</p>
+                <p>Returns the number of entities found Owner type could be OT_Player, OT_Ally, OT_Enemy or OT_Neutral Entities belonging to a squad would not be added to the egroup</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1047) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetEntitiesWithinTerritorySector"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetEntitiesWithinTerritorySector( <span class="arg">PlayerID</span> player, <span class="arg">EGroupID</span> egroup, <span class="arg">Integer</span> inSectorID, <a href="enum_list.htm#OwnerType">OwnerType</a> ownerType )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清空实体组，然后查找并将领土区域内的实体添加到实体组。【功能：获取领土区域内的实体】</p>
+                <p>Returns the number of entities found Owner type could be OT_Player, OT_Ally, OT_Enemy or OT_Neutral Entities belonging to a squad would not be added to the egroup</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1596) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetFurthest"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetFurthest( <span class="arg">Variable</span> var, <span class="arg">LuaTable</span> items )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从标记/位置/实体组/小队组的表中返回距离指定标记/位置/实体组/小队组最远的对象。【功能：获取最远的对象】</p>
+                <p>The table may mix together objects of different types.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2115) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetGameTicks"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetGameTicks(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回已流逝的游戏（模拟）时钟周期总数。【功能：获取游戏时钟周期数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (97) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetGameTime"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetGameTime(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回总游戏时间（秒）。【功能：获取游戏总时长】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (103) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetHeightAt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetHeightAt( <span class="arg">Real</span> x, <span class="arg">Real</span> y )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回2D坐标x,y处的地面高度。【功能：获取地面高度】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (409) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetInteractionStageAtPoint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetInteractionStageAtPoint( <span class="arg">Position</span> position )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回所提供位置的单元格交互阶段。【功能：获取位置交互阶段】</p>
+                <p>Returns a value between 0 - 63</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (426) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetLength"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetLength(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回游戏世界的总可玩长度（z坐标）。【功能：获取地图可玩长度】</p>
+                <p>Since the center of the map is 0,0 the world z range is (-l/2 -&gt; l/2)</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (403) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetMetadataBiomePBGName"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetMetadataBiomePBGName( <span class="arg">String</span> layerName, <span class="arg">Real</span> x, <span class="arg">Real</span> y )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取指定地形元数据层和指定坐标的生物群系PBG名称。【功能：获取生物群系名称】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1876) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetMetadataLayerBoolean"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetMetadataLayerBoolean( <span class="arg">String</span> layerName, <span class="arg">Real</span> x, <span class="arg">Real</span> y )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取指定地形元数据层和指定坐标的布尔值。【功能：获取地形布尔元数据】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1806) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetMetadataLayerInteger"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetMetadataLayerInteger( <span class="arg">String</span> layerName, <span class="arg">Real</span> x, <span class="arg">Real</span> y )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取指定地形元数据层和指定坐标的整数值。【功能：获取地形整数元数据】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1820) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetMetadataLayerNumber"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetMetadataLayerNumber( <span class="arg">String</span> layerName, <span class="arg">Real</span> x, <span class="arg">Real</span> y )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取指定地形元数据层和指定坐标的数值。【功能：获取地形数值元数据】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1834) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetMetadataLayerPBG"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetMetadataLayerPBG( <span class="arg">String</span> layerName, <span class="arg">Real</span> x, <span class="arg">Real</span> y )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取指定地形元数据层和指定坐标的PBG。【功能：获取地形PBG元数据】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1862) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetMetadataLayerString"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetMetadataLayerString( <span class="arg">String</span> layerName, <span class="arg">Real</span> x, <span class="arg">Real</span> y )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取指定地形元数据层和指定坐标的字符串。【功能：获取地形字符串元数据】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1848) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetNearestInteractablePoint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetNearestInteractablePoint( <span class="arg">Position</span> position )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回距离所提供位置最近的交互位置。【功能：获取最近交互点】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (415) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetNeutralEntitiesNearMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetNeutralEntitiesNearMarker( <span class="arg">EGroupID</span> egroup, <span class="arg">MarkerID</span> marker )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找并将标记附近的中立实体添加到实体组。【功能：获取标记附近的中立实体】</p>
+                <p>Returns the number of entities found Entities belonging to a squad would not be added to the egroup</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1436) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetNeutralEntitiesNearPoint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetNeutralEntitiesNearPoint( <span class="arg">EGroupID</span> egroup, <span class="arg">Position</span> pos, <span class="arg">Real</span> radius )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找并将点附近的中立实体添加到实体组。【功能：获取点附近的中立实体】</p>
+                <p>Returns the number of entities found Entities belonging to a squad would not be added to the egroup</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1084) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetNeutralEntitiesWithinTerritorySector"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetNeutralEntitiesWithinTerritorySector( <span class="arg">EGroupID</span> egroup, <span class="arg">Integer</span> sectorID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找并将领土区域内的中立实体添加到实体组。【功能：获取领土区域内的中立实体】</p>
+                <p>Returns the number of entities found Entities belonging to a squad would not be added to the egroup</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1672) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetNumEntitiesNearPoint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetNumEntitiesNearPoint( <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">Position</span> pos, <span class="arg">Real</span> radius )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回球体体积内相同实体蓝图(ebp)的实体数量。【功能：统计球体内实体数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (925) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetNumStrategicPoints"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetNumStrategicPoints(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回此地图上的战略点数量（不包括战略目标）。【功能：获取地图战略点数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (581) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetOffsetPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetOffsetPosition( <span class="arg">Position</span> position, <span class="arg">Position</span> heading, <span class="arg">Integer</span> offset, <span class="arg">Real</span> distance )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回从传入的位置/朝向偏移一定距离的位置。有关'offset'参数的说明，请参阅ScarUtil.scar。【功能：获取偏移位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (277) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetOffsetPositionRelativeToFacingTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetOffsetPositionRelativeToFacingTarget( <span class="arg">Position</span> position, <span class="arg">Position</span> facingTarget, <span class="arg">Real</span> offset )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>相对于朝向目标偏移输入位置。【功能：获取相对朝向的偏移位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (308) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetOffsetVectorPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetOffsetVectorPosition( <span class="arg">Position</span> position, <span class="arg">Position</span> heading, <span class="arg">Position</span> offset )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回从输入位置偏移的位置，偏移量由所提供方向旋转偏移向量得到。【功能：获取向量偏移位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (294) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetPlayerAt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetPlayerAt( <span class="arg">Integer</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回给定索引处的玩家，索引从1开始。【功能：获取指定索引的玩家】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (125) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetPlayerCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetPlayerCount(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回世界中的玩家总数。【功能：获取玩家总数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (109) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetPlayerIndex"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetPlayerIndex( <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据玩家指针(Player*)返回玩家索引。【功能：获取玩家索引】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (148) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetPossibleSquadsBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetPossibleSquadsBlueprint( <span class="arg">ScarRacePBG</span> racePBG, <span class="arg">Integer</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回种族所选小队的蓝图。【功能：获取种族可用小队蓝图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (535) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetPossibleSquadsCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetPossibleSquadsCount( <span class="arg">ScarRacePBG</span> racePBG )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回种族可建造的小队类型数量。【功能：获取种族可造小队类型数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (523) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetRaceBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetRaceBlueprint( <span class="arg">String</span> racename )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据名称返回种族的种族索引（来自地图编辑器ME）。【功能：获取种族索引】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (712) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetRand"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetRand( <span class="arg">Integer</span> min, <span class="arg">Integer</span> max )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回[min, max]范围内的随机整数。【功能：生成随机整数】</p>
+                <p>It is recommended you use this instead of luas math.random function</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (352) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetScenarioMaxPlayers"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetScenarioMaxPlayers(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回本局比赛的最大玩家数。【功能：获取比赛最大玩家数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (165) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetSpawnablePosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetSpawnablePosition( <span class="arg">Position</span> around, <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>给定世界中的任意位置，此函数将返回适合生成指定实体的安全位置。【功能：获取可生成位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (458) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetSquadsNearMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetSquadsNearMarker( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">MarkerID</span> marker, <a href="enum_list.htm#OwnerType">OwnerType</a> ownerType )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清空小队组，然后查找并将标记附近的小队添加到小队组。【功能：获取标记附近的小队】</p>
+                <p>Returns the number of squads found Owner type could be OT_Player, OT_Ally, OT_Enemy or OT_Neutral This function is faster if radius is small and/or number of squads to search for is large</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1368) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetSquadsNearPoint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetSquadsNearPoint( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">Position</span> pos, <span class="arg">Real</span> radius, <a href="enum_list.htm#OwnerType">OwnerType</a> ownerType )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清空小队组，然后查找并将点附近的小队添加到小队组。【功能：获取点附近的小队】</p>
+                <p>Returns the number of squads found Owner type could be OT_Player, OT_Ally, OT_Enemy or OT_Neutral This function is faster if radius is small and/or number of squads to search for is large</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (997) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetSquadsWithinTerritorySector"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetSquadsWithinTerritorySector( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">Integer</span> inSectorID, <a href="enum_list.htm#OwnerType">OwnerType</a> ownerType )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清空小队组，然后查找并将区域ID标识的领土区域内的小队添加到小队组。【功能：获取领土区域内的小队】</p>
+                <p>Returns the number of squads found Owner type could be OT_Player, OT_Ally, OT_Enemy or OT_Neutral</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1511) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetStrategyPoints"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetStrategyPoints( <span class="arg">EGroupID</span> group, <span class="arg">Boolean</span> bIncludeVP )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将所有战略资源点追加到实体组。【功能：获取所有战略资源点】</p>
+                <p>takes the egroup where you want to put the points, and 2nd parameter is a bool which indicates if you want to include VPs or not If 'group' already contains an entity from 'grouptoadd' it will not be added.\n This function does not clear the contents of 'group'.\n Example: World_GetStrategyPoints(mypointgroup, true) --puts all the points including vps into mypointgroup</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (608) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetTeamTerritoryGaps"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetTeamTerritoryGaps( <span class="arg">Integer</span> sectorID1, <span class="arg">Integer</span> sectorID2, <span class="arg">StackVarTable</span> results )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回可连接两块不连续领土的一个或多个区域ID。返回值通过表传递（因为可能存在多种连接领土的方式）- 此表中的每个条目都是一个区域ID表。【功能：获取领土连接缺口】</p>
+                <p>Currently only finds single gaps - i.e. if two territories are 'almost' connected.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (811) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetTerrainCellType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetTerrainCellType( <span class="arg">Real</span> x, <span class="arg">Real</span> y )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定坐标处单元格的单元格类型。0=天空，1=陆地，2=水域。【功能：获取地形单元格类型】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1800) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetTerritorySectorID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetTerritorySectorID( <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据位置返回区域ID。【功能：获取领土区域ID】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1678) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetTerritorySectorPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetTerritorySectorPosition( <span class="arg">Integer</span> inSectorID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回区域生成点的位置。【功能：获取领土区域生成点位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1685) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_GetWidth"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_GetWidth(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回游戏世界的总可玩宽度（x坐标）。【功能：获取地图可玩宽度】</p>
+                <p>Since the center of the map is 0,0 the world x range is (-w/2 -&gt; w/2)</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (396) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_IsCurrentInteractionStageActive"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_IsCurrentInteractionStageActive( <span class="arg">Integer</span> stage )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回当前交互阶段是否处于活动状态。【功能：检查交互阶段是否激活】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1698) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_IsInSupply"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_IsInSupply( <span class="arg">PlayerID</span> player, <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果位置在给定玩家的补给范围内，则返回true。【功能：检查位置是否在补给范围内】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (886) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_IsMultiplayerGame"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_IsMultiplayerGame(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回此世界的游戏类型是否为多人游戏。【功能：检查是否为多人游戏】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (91) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_IsPointInPlayerTerritory"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_IsPointInPlayerTerritory( <span class="arg">PlayerID</span> player, <span class="arg">Position</span> position )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果位置属于实体领土的一部分，则返回true。【功能：检查位置是否在玩家领土内】</p>
+                <p>Note that this does not care if territory is in supply or not</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (913) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_IsPosOnWalkableWall"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_IsPosOnWalkableWall( <span class="arg">Position</span> p )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回位置是否在可行走墙壁上。【功能：检查位置是否在可行走城墙上】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1908) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_IsReplay"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_IsReplay(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果游戏当前处于回放状态，则返回TRUE。【功能：检查是否为回放模式】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (115) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_IsTerritorySectorOwnedByPlayer"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_IsTerritorySectorOwnedByPlayer( <span class="arg">PlayerID</span> player, <span class="arg">Integer</span> inSectorID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找玩家是否拥有此领土区域。【功能：检查领土区域所有权】</p>
+                <p>Other players on the same team would also have the ownership to the sector</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1494) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_OwnsEGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_OwnsEGroup( <span class="arg">EGroupID</span> egroup, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回组中是否有任意(ANY)或全部(ALL)实体由世界拥有（即中立）。【功能：检查实体组所有权归属】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2149) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_OwnsEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_OwnsEntity( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体由世界拥有，则返回true。【功能：检查实体是否为中立】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (339) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_OwnsSGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_OwnsSGroup( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回组中是否有任意(ANY)或全部(ALL)小队由世界拥有（即中立）。【功能：检查小队组所有权归属】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2136) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_OwnsSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_OwnsSquad( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队由世界拥有，则返回true。【功能：检查小队是否为中立】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (345) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_PointPointProx"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_PointPointProx( <span class="arg">Position</span> p1, <span class="arg">Position</span> p2, <span class="arg">Real</span> prox )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果两个世界位置彼此接近，则返回true。【功能：检查两点是否邻近】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (792) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_Pos"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_Pos( <span class="arg">Real</span> x, <span class="arg">Real</span> y, <span class="arg">Real</span> z )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建一个新的位置对象。【功能：创建位置对象】</p>
+                <p>A position object is basically a table with an x, y, and z attribute.  You can directly access the individual components in the same way that you would access a field in a table.\n\n Example:\n --* lua script snip\n local pos = World_Pos(2, 0, 0)\n pos.x = pos.x + 1\n print pos.x -- this will print 3\n --* lua script snip\n</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (327) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_PosInBounds"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_PosInBounds( <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回给定位置是否在可玩区域内。【功能：检查位置是否在可玩区域内】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (333) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_Reset"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_Reset(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>请勿调用，除非您正在进行自动化测试。【功能：重置世界（仅限自动化测试）】</p>
+                <p>This resets the world into a state comparable to a fresh scenario start. Used in automated testing to avoid tests being dependent on each other.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (385) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_SetAllInteractiveStagesVisibility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_SetAllInteractiveStagesVisibility( <span class="arg">Boolean</span> visibilityStatus )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>解锁所有交互阶段。【功能：解锁所有交互阶段】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1715) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_SetDesignerSupply"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_SetDesignerSupply( <span class="arg">Position</span> point, <span class="arg">Boolean</span> bSupply )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将世界中的特定区域设置为补给提供者（或取消设置）。【功能：设置区域补给提供者状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (902) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_SetInteractionStage"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_SetInteractionStage( <span class="arg">Integer</span> stage )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将当前交互阶段设置为所提供的值，必须>=0。【功能：设置交互阶段】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1704) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_SetSharedLineOfSightEnabledAndMergeExploredMaps"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_SetSharedLineOfSightEnabledAndMergeExploredMaps( <span class="arg">PlayerID</span> p0, <span class="arg">PlayerID</span> p1, <span class="arg">Boolean</span> enableSharedVision )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用或禁用这两个玩家之间的共享视野，并在需要时合并已探索地图。【功能：设置共享视野并合并探索地图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (766) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_SpawnDemolitionCharge"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_SpawnDemolitionCharge( <span class="arg">PlayerID</span> player, <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在指定位置生成爆破炸药，'player'是拥有炸药并可以引爆它们的一方。【功能：生成爆破炸药】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (1359) </b></td>
+            </tr>
+          </table>
+        </p><a name="World_TeamTerritoryPointsConnected"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 World_TeamTerritoryPointsConnected( <span class="arg">Integer</span> team_index, <span class="arg">Position</span> p1, <span class="arg">Position</span> p2 )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果两点在同一领土区域内且由指定的领土团队拥有，则返回true，否则返回false。【功能：检查两点领土连接状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaworld.cpp] (800) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>帝国时代IV ScarDoc 中文文档</title>
+<link href="scardoc.css" rel="stylesheet" type="text/css">
+<style>
+.hero {
+  background: linear-gradient(135deg, #1a73e8 0%, #1557b0 100%);
+  color: #fff;
+  padding: 48px 32px;
+  margin: -16px -16px 32px -16px;
+  border-radius: 0;
+}
+.hero h1 {
+  margin: 0 0 12px 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+.hero p {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 16px;
+}
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+.card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(60,64,67,0.15);
+  transition: all 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.card:hover {
+  box-shadow: 0 4px 12px rgba(60,64,67,0.2);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+.card-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+.card-icon.blue { background: #e8f0fe; }
+.card-icon.green { background: #e6f4ea; }
+.card-icon.red { background: #fce8e6; }
+.card-icon.yellow { background: #fef7e0; }
+.card h3 {
+  margin: 0 0 8px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #202124;
+}
+.card p {
+  margin: 0;
+  font-size: 13px;
+  color: #5f6368;
+  line-height: 1.5;
+}
+.section {
+  margin: 32px 0;
+}
+.section h2 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #202124;
+  margin: 0 0 16px 0;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #dadce0;
+}
+.feature-list {
+  column-count: 2;
+  column-gap: 24px;
+}
+.feature-item {
+  break-inside: avoid;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.feature-item span {
+  font-size: 20px;
+}
+.feature-item strong {
+  font-size: 14px;
+  color: #202124;
+}
+.stats-grid {
+  column-count: 4;
+  column-gap: 16px;
+  margin: 24px 0;
+}
+.stat-card {
+  break-inside: avoid;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(60,64,67,0.15);
+}
+.stat-number {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1a73e8;
+}
+.stat-label {
+  font-size: 13px;
+  color: #5f6368;
+  margin-top: 4px;
+}
+.nav-section {
+  margin: 24px 0;
+}
+.nav-category {
+  margin-bottom: 20px;
+}
+.nav-category-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a73e8;
+  margin-bottom: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #dadce0;
+}
+.nav-grid {
+  column-count: 4;
+  column-gap: 16px;
+}
+.nav-grid-5 {
+  column-count: 5;
+  column-gap: 12px;
+}
+.nav-item {
+  break-inside: avoid;
+  padding: 6px 10px;
+  margin-bottom: 4px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  font-size: 13px;
+  transition: all 0.15s ease;
+}
+.nav-item:hover {
+  background: #e8f0fe;
+}
+.nav-item a {
+  color: #202124;
+  text-decoration: none;
+}
+.nav-item a:hover {
+  color: #1a73e8;
+}
+.enum-nav-item {
+  break-inside: avoid;
+  padding: 4px 8px;
+  margin-bottom: 2px;
+  background: #fff;
+  border-radius: 4px;
+  border: 1px solid #e8eaed;
+  font-size: 12px;
+  transition: all 0.15s ease;
+}
+.enum-nav-item:hover {
+  background: #e8f0fe;
+  border-color: #1a73e8;
+}
+.enum-nav-item a {
+  color: #5f6368;
+  text-decoration: none;
+}
+.enum-nav-item a:hover {
+  color: #1a73e8;
+}
+@media screen and (max-width: 1200px) {
+  .nav-grid-5 { column-count: 4; }
+}
+@media screen and (max-width: 1100px) {
+  .nav-grid { column-count: 3; }
+  .nav-grid-5 { column-count: 3; }
+}
+@media screen and (max-width: 900px) {
+  .feature-list { column-count: 1; }
+  .stats-grid { column-count: 2; }
+  .nav-grid { column-count: 2; }
+  .nav-grid-5 { column-count: 2; }
+}
+@media screen and (max-width: 600px) {
+  .stats-grid { column-count: 1; }
+  .nav-grid { column-count: 1; }
+  .nav-grid-5 { column-count: 1; }
+}
+</style>
+</head>
+<body>
+<div class="content">
+  <div class="hero">
+    <h1>帝国时代IV ScarDoc 中文文档</h1>
+    <p>完整的SCAR脚本函数参考，助力您的游戏开发之旅</p>
+  </div>
+
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-number">2000+</div>
+      <div class="stat-label">函数数量</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">55</div>
+      <div class="stat-label">枚举类型</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">38</div>
+      <div class="stat-label">函数分类</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">100%</div>
+      <div class="stat-label">中文翻译</div>
+    </div>
+  </div>
+
+  <div class="card-grid">
+    <a href="scar_overview.htm" class="card">
+      <div class="card-icon blue">📖</div>
+      <h3>概述</h3>
+      <p>了解LUA语言和SCAR脚本的基础知识</p>
+    </a>
+    <a href="scar_usingscardoc.htm" class="card">
+      <div class="card-icon green">🔧</div>
+      <h3>使用ScarDoc</h3>
+      <p>学习如何使用ScarDoc文档系统</p>
+    </a>
+    <a href="function_list.htm" class="card">
+      <div class="card-icon red">⚡</div>
+      <h3>函数列表</h3>
+      <p>查看所有可用的SCAR函数</p>
+    </a>
+    <a href="enum_list.htm" class="card">
+      <div class="card-icon yellow">📋</div>
+      <h3>枚举列表</h3>
+      <p>查看所有枚举类型定义</p>
+    </a>
+  </div>
+
+  <div class="section">
+    <h2>关于SCAR脚本</h2>
+    <p><strong>SCAR脚本</strong>（"Scripting At Relic"的缩写）是一种基于LUA语言的编程语言，可以在《帝国时代IV》的对局中运行。</p>
+    <p>通过SCAR脚本，您可以：</p>
+    <div class="feature-list">
+      <div class="feature-item">
+        <span>🎮</span>
+        <strong>创建多人游戏模式逻辑</strong>
+      </div>
+      <div class="feature-item">
+        <span>🗺️</span>
+        <strong>设计战役任务</strong>
+      </div>
+      <div class="feature-item">
+        <span>🎲</span>
+        <strong>程序化地图生成</strong>
+      </div>
+      <div class="feature-item">
+        <span>🐛</span>
+        <strong>编写调试函数</strong>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-section">
+    <h2>函数分类快速导航</h2>
+    
+    <div class="nav-category">
+      <div class="nav-category-title">🤖 AI相关函数</div>
+      <div class="nav-grid">
+        <div class="nav-item"><a href="functions/AI_Production_Scoring_Functions.htm">AI生产评分函数</a></div>
+        <div class="nav-item"><a href="functions/AI_StateModel_Functions.htm">AI状态模型函数</a></div>
+        <div class="nav-item"><a href="functions/AI_Tactics.htm">AI战术</a></div>
+      </div>
+    </div>
+
+    <div class="nav-category">
+      <div class="nav-category-title">🎯 核心系统函数</div>
+      <div class="nav-grid">
+        <div class="nav-item"><a href="functions/scardoc_Core.htm">核心函数</a></div>
+        <div class="nav-item"><a href="functions/scardoc_Entity.htm">实体函数</a></div>
+        <div class="nav-item"><a href="functions/scardoc_Squad.htm">小队函数</a></div>
+        <div class="nav-item"><a href="functions/scardoc_Player.htm">玩家函数</a></div>
+        <div class="nav-item"><a href="functions/scardoc_EGroup.htm">实体组函数</a></div>
+        <div class="nav-item"><a href="functions/scardoc_SGroup.htm">小队组函数</a></div>
+        <div class="nav-item"><a href="functions/scardoc_World.htm">世界函数</a></div>
+        <div class="nav-item"><a href="functions/Game.htm">游戏函数</a></div>
+      </div>
+    </div>
+
+    <div class="nav-category">
+      <div class="nav-category-title">🗺️ 地图与视野函数</div>
+      <div class="nav-grid">
+        <div class="nav-item"><a href="functions/scardoc_FOW.htm">战争迷雾</a></div>
+        <div class="nav-item"><a href="functions/scardoc_Territory.htm">领地函数</a></div>
+        <div class="nav-item"><a href="functions/scardoc_Marker.htm">标记函数</a></div>
+        <div class="nav-item"><a href="functions/scardoc_Proximity.htm">邻近检测</a></div>
+      </div>
+    </div>
+
+    <div class="nav-category">
+      <div class="nav-category-title">🎮 界面与表现函数</div>
+      <div class="nav-grid">
+        <div class="nav-item"><a href="functions/scardoc_UI.htm">用户界面</a></div>
+        <div class="nav-item"><a href="functions/scardoc_Presentation.htm">表现层</a></div>
+        <div class="nav-item"><a href="functions/scardoc_Camera.htm">摄像机</a></div>
+        <div class="nav-item"><a href="functions/scardoc_Objectives.htm">目标系统</a></div>
+      </div>
+    </div>
+
+    <div class="nav-category">
+      <div class="nav-category-title">🔊 音效与资源函数</div>
+      <div class="nav-grid">
+        <div class="nav-item"><a href="functions/scardoc_Sound.htm">声音函数</a></div>
+        <div class="nav-item"><a href="functions/scardoc_ResourceLoading.htm">资源加载</a></div>
+        <div class="nav-item"><a href="functions/Blueprints.htm">蓝图函数</a></div>
+      </div>
+    </div>
+
+    <div class="nav-category">
+      <div class="nav-category-title">⚙️ 系统与工具函数</div>
+      <div class="nav-grid">
+        <div class="nav-item"><a href="functions/scardoc_Event_System.htm">事件系统</a></div>
+        <div class="nav-item"><a href="functions/scardoc_Timer.htm">计时器</a></div>
+        <div class="nav-item"><a href="functions/scardoc_RuleSystem.htm">规则系统</a></div>
+        <div class="nav-item"><a href="functions/scardoc_Modifiers.htm">修改器</a></div>
+        <div class="nav-item"><a href="functions/scardoc_Command.htm">命令系统</a></div>
+        <div class="nav-item"><a href="functions/scardoc_ID.htm">ID函数</a></div>
+
+        <div class="nav-item"><a href="functions/scardoc_Prefab_System.htm">预制件系统</a></div>
+      </div>
+    </div>
+
+    <div class="nav-category">
+      <div class="nav-category-title">🔧 调试与开发函数</div>
+      <div class="nav-grid">
+        <div class="nav-item"><a href="functions/scardoc_Debug.htm">调试函数</a></div>
+        <div class="nav-item"><a href="functions/DebugRender.htm">调试渲染</a></div>
+        <div class="nav-item"><a href="functions/Console.htm">控制台</a></div>
+        <div class="nav-item"><a href="functions/scardoc_Cheat_Menu.htm">作弊菜单</a></div>
+        <div class="nav-item"><a href="functions/scardoc_DesignerLib.htm">设计者库</a></div>
+      </div>
+    </div>
+
+    <div class="nav-category">
+      <div class="nav-category-title">📦 其他函数</div>
+      <div class="nav-grid">
+        <div class="nav-item"><a href="functions/scardoc_Training_Goals.htm">训练/目标</a></div>
+        <div class="nav-item"><a href="functions/scardoc_Xbox.htm">Xbox函数</a></div>
+        <div class="nav-item"><a href="functions/Other.htm">其他函数</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nav-section">
+    <h2>枚举分类快速导航</h2>
+    
+    <div class="nav-category">
+      <div class="nav-category-title">🤖 AI相关枚举</div>
+      <div class="nav-grid-5">
+        <div class="enum-nav-item"><a href="enum_list.htm#AIBuildStyle (BS_)">AIBuildStyle</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#AICombatRangePolicy">AICombatRangePolicy</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#AICombatType">AICombatType</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#AICountType">AICountType</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#AIDifficultyLevel">AIDifficultyLevel</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#AIMilitaryEngagementType (AIMET_)">AIMilitaryEngagementType</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#AITacticTargetPreference">AITacticTargetPreference</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#AITacticType">AITacticType</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#AITaskType">AITaskType</a></div>
+      </div>
+    </div>
+
+    <div class="nav-category">
+      <div class="nav-category-title">🎮 游戏系统枚举</div>
+      <div class="nav-grid-5">
+        <div class="enum-nav-item"><a href="enum_list.htm#Availability">Availability</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#CameraMode">CameraMode</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#CanProduceResult">CanProduceResult</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#CapType">CapType</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#CheckHiddenType">CheckHiddenType</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#CrushMode">CrushMode</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#DeathReason">DeathReason</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#EntityCommandType">EntityCommandType</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#EntityStateID">EntityStateID</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#LoopType">LoopType</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#ModalAbilityPhase">ModalAbilityPhase</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#OwnerType">OwnerType</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#PlayerCommandType">PlayerCommandType</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#PlayerState">PlayerState</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#ProductionItemType">ProductionItemType</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#ScarType">ScarType</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#SimulationEventType">SimulationEventType</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#SquadCommandType">SquadCommandType</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#StanceType">StanceType</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#WeaponPreference">WeaponPreference</a></div>
+      </div>
+    </div>
+
+    <div class="nav-category">
+      <div class="nav-category-title">🖥️ 界面与表现枚举</div>
+      <div class="nav-grid-5">
+        <div class="enum-nav-item"><a href="enum_list.htm#ButtonIconStyle">ButtonIconStyle</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#DialogButton">DialogButton</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#DialogClass">DialogClass</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#EasingFunction">EasingFunction</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#EasingType">EasingType</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#ExplosionDebugVisuals">ExplosionDebugVisuals</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#FrontEnd_Layer">FrontEnd_Layer</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#HintPointActionType">HintPointActionType</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#HUDFeatureType">HUDFeatureType</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#InputEnabledFlag">InputEnabledFlag</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#LabelAlignHorizontal">LabelAlignHorizontal</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#LabelAlignVertical">LabelAlignVertical</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#MoodMode">MoodMode</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#PresentationEventType">PresentationEventType</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#UIEventType">UIEventType</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#VisibilityFlag">VisibilityFlag</a></div>
+      </div>
+    </div>
+
+    <div class="nav-category">
+      <div class="nav-category-title">🎯 目标与规则枚举</div>
+      <div class="nav-grid-5">
+        <div class="enum-nav-item"><a href="enum_list.htm#ObjectiveFunction">ObjectiveFunction</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#ObjectiveState">ObjectiveState</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#ObjectiveType">ObjectiveType</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#RuleComparison">RuleComparison</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#RuleSelection">RuleSelection</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#SaveTriggerType">SaveTriggerType</a></div>
+      </div>
+    </div>
+
+    <div class="nav-category">
+      <div class="nav-category-title">⚙️ 系统与修改器枚举</div>
+      <div class="nav-grid-5">
+        <div class="enum-nav-item"><a href="enum_list.htm#ModifierApplicationType">ModifierApplicationType</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#ModifierUsageType">ModifierUsageType</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#TuningValue">TuningValue</a></div>
+        <div class="enum-nav-item"><a href="enum_list.htm#UpgradeOwnerType">UpgradeOwnerType</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>使用说明</h2>
+    <p>请使用左侧的目录面板浏览文档内容。点击各分类可展开查看详细函数列表。</p>
+  </div>
+</div>
+</body>
+</html>

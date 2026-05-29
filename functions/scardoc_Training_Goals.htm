@@ -1,0 +1,187 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;Training;Goals</title>
+</head>
+<body>
+<span class="subtitle">scardoc;Training;Goals</span><p>
+<a name="Group_scardoc;Training;Goals"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;Training;Goals</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="Training_AddCallbacksToGoal"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Training_AddCallbacksToGoal( <span class="arg">the</span> target goal onStart: a function with GoalStartReason as argument. E.G. function OnGoalStart(startReason) onComplete: a function with GoalCompletionReason as argument. E.G. function OnGoalComplete(completeReason) )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向目标注册两个回调函数。一个在开始时触发，另一个在完成时触发。【功能：为目标添加开始和完成回调】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\training.scar] (293) </b></td>
+            </tr>
+          </table>
+        </p><a name="Training_AddExTagToGoal"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Training_AddExTagToGoal(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为现有目标添加额外标签。【功能：为目标添加额外标签】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\training.scar] (285) </b></td>
+            </tr>
+          </table>
+        </p><a name="Training_AddGoalSequence"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Training_AddGoalSequence(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向训练系统添加一系列目标，同时启动序列计时器。【功能：添加目标序列并启动计时】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\training.scar] (389) </b></td>
+            </tr>
+          </table>
+        </p><a name="Training_EnableGoalSequence"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Training_EnableGoalSequence( <span class="arg">GoalSequence</span> goalSequence, <span class="arg">Boolean</span> enabled )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用/禁用目标序列。【功能：切换目标序列的启用状态】</p>
+                <p>Also restarts the timer for the goal sequence</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\training.scar] (669) </b></td>
+            </tr>
+          </table>
+        </p><a name="Training_EnableGoalSequenceByID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Training_EnableGoalSequenceByID( <span class="arg">String</span> id, <span class="arg">Boolean</span> enabled )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据指定ID启用/禁用目标序列。【功能：按ID切换目标序列启用状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\training.scar] (685) </b></td>
+            </tr>
+          </table>
+        </p><a name="Training_EndGoalSequence"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Training_EndGoalSequence(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>终止目标序列。【功能：终止目标序列】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\training.scar] (453) </b></td>
+            </tr>
+          </table>
+        </p><a name="Training_Goal"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Training_Goal( <span class="arg">String</span> key, <span class="arg">Table</span> data )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建目标对象。【功能：创建目标对象】</p>
+                <p>A goal represents one step in a training sequence. Each goal gets one hint popup. Only one goal hint will be displayed at a time. key is the object to visually anchor the hint to. This can be: - the name of an adornable UI element - an entity - a squad - the pbg of a production button - a squad or entity unique id - UniqueSquadButton will anchor to the hero selection - UniqueRespawningSquadButton will anchor to the respawning hero element - CenterLeftSecondaryInfo will anchor to the information panel left of the command card. data is a table of arbitrary information for use in the isCompletePredicate and is routed to the ui. It should include: Message: Localized text to display on the hint pop-up. Use DataTemplate: template for the UI hint. Options are: - LeftClickTrainingDataTemplate: a box displaying an image of a left clicking mouse and message text - RightClickTrainingDataTemplate: a box displaying an image of a right clicking mouse and message text - PanCameraTrainingDataTemplate: a box displaying an image of a middle clicking mouse and message text - GenericTrainingDataTemplate: a box displaying message text - RadialTrainingDataTemplate: a box displaying message text, will not be hidden when the radial menu is open. - LargeGenericDataTemplate: a larger box dislpaying message text isComplete predicate to run on the goal. It should return true if and only if the goal is complete.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\training.scar] (238) </b></td>
+            </tr>
+          </table>
+        </p><a name="Training_GoalSequence"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Training_GoalSequence( <span class="arg">String</span> id, <span class="arg">Integer</span> repeatMax, <span class="arg">Integer</span> remindMax, <span class="arg">String</span> goalTriggeredAudioEvent, <span class="arg">String</span> completeAudioEvent )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建目标序列。【功能：创建目标序列】</p>
+                <p>A Goal Sequence represents the a single high-level task to prompt the user to do, composed of one or more goals. The goal sequence will begin when its trigger predicate is met, assuming its ignore and bypass conditions aren't met first. Only one goal sequence will be run at a time. id - unique string id to identify or reference the goal seqeuence repeatMax - if the goal sequence has been completed less than repeatMax times and its triggerPredicate passes, the goal sequence will run again. Infinite if less than 0. remindMax - if the . Infinite if less than 0. trigger - predicate to run on the goal sequence. If it returns true, start the goal sequence. ignore - predicate to run on the goal sequence. If it returns true, don't show the goal sequence even if trigger passes. remind - predicate to run on the goal sequence. It should indicate that the player needs a reminder on how to do the task. If it returns true, show the goal sequence again. bypass - predicate to run on the goal sequence. It should indicate whether the player has completed the goal without prompting. If true, the goal sequence will be ended and its completion count incremented. canRegress - if the complete condition for the current goal in the sequence stops passing, back up to the previous goal goals - list of goals to proceed through to as part of this goal sequence repeatMax and remindMax will be infinite if less than 0.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\training.scar] (319) </b></td>
+            </tr>
+          </table>
+        </p><a name="Training_IsGoalSequenceComplete"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Training_IsGoalSequenceComplete(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>若目标序列至少达成一次则返回true，或可选地检查是否达到最大重复次数。【功能：检查目标序列完成状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\training.scar] (695) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

@@ -1,0 +1,862 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;Objectives</title>
+</head>
+<body>
+<span class="subtitle">scardoc;Objectives</span><p>
+<a name="Group_scardoc;Objectives"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;Objectives</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="Objective_AddAreaHighlight"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_AddAreaHighlight( <span class="arg">LuaTable</span> objTable, <span class="arg">Marker/Position/Group</span> pos, <span class="arg">AreaType</span> OPT_areatype, <span class="arg">Real</span> OPT_scale, <span class="arg">Table</span> OPT_color, <span class="arg">Real</span> OPT_alpha )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在指定点周围添加地图高亮区域【功能：地图标记】</p>
+                <p>AreaType is AT_CIRCLE (the default) or AT_SQUARE. Color is a table with three values for red, green and blue - i.e. {255, 0, 0}.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (709) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_AddGroundReticule"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_AddGroundReticule( <span class="arg">LuaTable</span> objTable, <span class="arg">Marker/Pos</span> position, <span class="arg">Real</span> OPT_size, <span class="arg">BP</span> OPT_reticuleBlueprint, <span class="arg">String</span> OPT_hintpointTemplate )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在世界中指定位置的地面添加视觉标记，返回标记ID【功能：地面标记】</p>
+                <p>The reticule blueprint (the circle on the ground) and the hintpoint template (the arrow) are by defualt taken from the objective type, but you can override them or set them to false to turn that element off.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (1117) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_AddHealthBar"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_AddHealthBar( <span class="arg">LuaTable</span> objTable, <span class="arg">EGroupID</span> group , <span class="arg">Boolean</span> OPT_onlyWhenDamaged, <span class="arg">Integer</span> OPT_barIndex, <span class="arg">String</span> OPT_text )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在指定位置为小队或实体添加生命值条。生命值条会随单位生命值变化而更新。可通过Objective_RemoveHealthBar或完成/失败目标来移除【功能：生命值条显示】</p>
+                <p>If you want to use one of the "global" progress bars (if your project supports them), supply the relevant barIndex value and text string to show alongside it.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (1211) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_AddPing"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_AddPing( <span class="arg">LuaTable</span> objectiveTable, <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为目标添加战术地图标记【功能：战术地图标记】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (1064) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_AddTimerBar"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_AddTimerBar( <span class="arg">LuaTable</span> objTable, <span class="arg">Integer</span> OPT_barIndex, <span class="arg">String</span> OPT_text )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为目标计时器添加计时条，自动更新。可通过Objective_RemoveTimerBar或完成/失败目标来移除【功能：计时条显示】</p>
+                <p>Requires a timer to have been started with Objective_StartTimer to work. If you want to use one of the "global" progress bars (if your project supports them), supply the relevant barIndex value and text string to show alongside it.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (1280) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_AddUIElements"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_AddUIElements( <span class="arg">LuaTable</span> objTable, <span class="arg">Position</span> pos, <span class="arg">Boolean</span> OPT_ping, <span class="arg">String</span> OPT_hintpointText, <span class="arg">Boolean</span> OPT_worldArrow, <span class="arg">Real</span> OPT_objectiveArrowOffset, <span class="arg">Entity/Squad/Position</span> OPT_objectiveArrowFacing, <span class="arg">Integer</span> OPT_actionType, <span class="arg">String</span> OPT_iconName, <span class="arg">String</span> OPT_templateName )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在指定位置添加多个UI元素。'pos'可以是编组/实体/小队/标记。worldArrow添加指向世界中物体的3D箭头。hintpointText添加鼠标悬停时显示的提示点。如果添加箭头或提示点，该物体将被2D HUD箭头指向。objectiveArrowOffset是应用于箭头位置的偏移量（可指定高度偏移或3D位置偏移）【功能：UI元素添加】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (765) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_AreAllPrimaryObjectivesComplete"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_AreAllPrimaryObjectivesComplete(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回所有主要目标是否已完成【功能：目标状态检查】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (656) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_AreSubObjectivesComplete"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_AreSubObjectivesComplete( <span class="arg">LuaTable</span> objTable, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回给定目标的所有或任意子目标是否已完成【功能：子目标状态检查】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (534) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_AreSubObjectivesExpired"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_AreSubObjectivesExpired( <span class="arg">LuaTable</span> objTable, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回给定目标的所有或任意子目标是否已过期【功能：子目标状态检查】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (580) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_AreSubObjectivesFailed"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_AreSubObjectivesFailed( <span class="arg">LuaTable</span> objTable, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回给定目标的所有或任意子目标是否已失败【功能：子目标状态检查】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (557) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_BlinkUIElements"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_BlinkUIElements( <span class="arg">LuaTable</span> objTable, <span class="arg">Integer</span> elementID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>通过闪烁UI元素来引起注意。这会使提示点和屏幕外箭头闪烁，但小地图标记和其他元素保持不变【功能：UI闪烁效果】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (958) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_Complete"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_Complete( <span class="arg">LuaTable</span> objTable, <span class="arg">Boolean</span> OPT_showTitle, <span class="arg">Boolean</span> OPT_playIntel )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>完成目标并从列表中移除（如果是子目标，则标记为完成但保持可见直到父目标结束）【功能：目标完成】</p>
+                <p>Automatically removes any elements added with Objective_AddUIElements(). The showTitle and playIntel flags let you control whether the titlecard and Intel_Complete event are played (default: true).</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (237) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_Expire"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_Expire( <span class="arg">LuaTable</span> objTable, <span class="arg">Boolean</span> OPT_showTitle, <span class="arg">Boolean</span> OPT_playIntel )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>使目标过期并从列表中移除（如果是子目标，则标记为过期但保持可见直到父目标结束）【功能：目标过期】</p>
+                <p>Automatically removes any elements added with Objective_AddUIElements(). The showTitle and playIntel flags let you control whether the titlecard and Intel_Expire event are played (default: true).</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (308) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_Fail"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_Fail( <span class="arg">LuaTable</span> objTable, <span class="arg">Boolean</span> OPT_showTitle, <span class="arg">Boolean</span> OPT_playIntel )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>使目标失败并从列表中移除（如果是子目标，则标记为失败但保持可见直到父目标结束）【功能：目标失败】</p>
+                <p>Automatically removes any elements added with Objective_AddUIElements(). The showTitle and playIntel flags let you control whether the titlecard and Intel_Fail event are played (default: true).</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (275) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_GetCounter"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_GetCounter( <span class="arg">LuaTable</span> objTable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回与此目标关联的当前计数值【功能：获取计数器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (1503) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_GetSubObjectives"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_GetSubObjectives( <span class="arg">LuaTable</span> objTable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回给定目标的所有子目标列表【功能：获取子目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (515) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_GetTimerSeconds"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_GetTimerSeconds( <span class="arg">LuaTable</span> objTable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回计时器上的秒数（剩余时间或已用时间，取决于计时器类型）【功能：获取计时器秒数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (1416) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_IncreaseCounter"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_IncreaseCounter( <span class="arg">LuaTable</span> objTable, <span class="arg">Integer</span> OPT_amount )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>增加UI中与此目标关联的计数器。可指定增加的数量【功能：增加计数器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (1467) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_IsComplete"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_IsComplete( <span class="arg">LuaTable</span> objTable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回目标是否已完成【功能：目标状态检查】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (502) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_IsCounterSet"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_IsCounterSet( <span class="arg">LuaTable</span> objTable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果已为此目标设置计数器则返回true【功能：计数器状态检查】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (1516) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_IsExpired"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_IsExpired( <span class="arg">LuaTable</span> objTable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回目标是否已过期【功能：目标状态检查】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (616) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_IsFailed"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_IsFailed( <span class="arg">LuaTable</span> objTable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回目标是否已失败【功能：目标状态检查】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (603) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_IsStarted"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_IsStarted( <span class="arg">LuaTable</span> objTable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回目标是否已开始。已完成和失败/过期的目标也会返回true【功能：目标状态检查】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (629) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_IsTimerSet"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_IsTimerSet( <span class="arg">LuaTable</span> objTable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果已为此目标设置计时器则返回true【功能：计时器状态检查】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (1435) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_IsVisible"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_IsVisible( <span class="arg">LuaTable</span> objTable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回目标是否可见【功能：目标可见性检查】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (642) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_PauseTimer"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_PauseTimer( <span class="arg">LuaTable</span> objTable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>暂停目标的计时器。如果未设置计时器则不执行任何操作【功能：暂停计时器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (1379) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_Register"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_Register( <span class="arg">LuaTable</span> objTable, <span class="arg">PlayerID/TeamID</span> OPT_owner )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>"注册"一个目标。是Objective_Create的包装函数，带有其他功能【功能：目标注册】</p>
+                <p>Includes pings as defined by the objective table created in the main scar file. You can pass in a team or player, so that the objective only applies to it.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (96) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_RemoveGroundReticule"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_RemoveGroundReticule(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>通过ID移除现有的地面标记【功能：移除地面标记】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (1181) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_RemoveHealthBar"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_RemoveHealthBar( <span class="arg">LuaTable</span> objectiveTable, <span class="arg">Element</span> healthBarID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除生命值条监视器【功能：移除生命值条】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (1310) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_RemovePing"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_RemovePing( <span class="arg">LuaTable</span> objectiveTable, <span class="arg">Integer</span> PingID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从目标移除战术地图标记【功能：移除战术标记】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (1093) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_RemoveProgressBar"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_RemoveProgressBar( <span class="arg">LuaTable</span> objTable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除此目标的进度条【功能：移除进度条】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (1561) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_RemoveTimerBar"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_RemoveTimerBar( <span class="arg">LuaTable</span> objectiveTable, <span class="arg">Element</span> timerBarID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除计时条监视器【功能：移除计时条】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (1323) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_RemoveUIElements"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_RemoveUIElements( <span class="arg">LuaTable</span> objTable, <span class="arg">Integer</span> elementID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除由Objective_AddUIElements添加的一组UI元素【功能：移除UI元素】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (871) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_ResumeTimer"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_ResumeTimer( <span class="arg">LuaTable</span> objTable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>恢复目标的计时器。如果未设置计时器则不执行任何操作【功能：恢复计时器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (1391) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_SetAlwaysShowDetails"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_SetAlwaysShowDetails( <span class="arg">LuaTable</span> objTable, <span class="arg">Boolean</span> title, <span class="arg">Boolean</span> hud_arrow, <span class="arg">Boolean</span> hintpoints )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置此目标是否始终显示详细文本、HUD箭头或提示点。同一时间只能有一个目标强制显示HUD箭头。如果为hud_arrow传入'nil'则不影响其行为【功能：设置详细显示】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (1585) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_SetCounter"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_SetCounter( <span class="arg">LuaTable</span> objTable, <span class="arg">Real</span> current, <span class="arg">Real</span> OPT_maximum )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置UI中与此目标关联的计数器。可提供'最大值'以显示为"1/5"格式【功能：设置计数器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (1447) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_SetProgressBar"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_SetProgressBar( <span class="arg">LuaTable</span> objTable, <span class="arg">Real</span> value, <span class="arg">Boolean</span> OPT_flashing, <span class="arg">Integer</span> OPT_barIndex, <span class="arg">String</span> OPT_text )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为此目标显示进度条，值为0.0（空）到1.0（满）的百分比。可通过Objective_RemoveProgressBar或完成/失败任务来移除【功能：设置进度条】</p>
+                <p>If you want to use one of the "global" progress bars (if your project supports them), supply the relevant barIndex value and text string to show alongside it.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (1530) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_Show"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_Show( <span class="arg">LuaTable</span> objective_table, <span class="arg">Boolean</span> on/off, <span class="arg">Boolean</span> ShowTitle )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在UI和战术地图中显示或隐藏目标【功能：目标显示控制】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (363) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_Start"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_Start( <span class="arg">LuaTable</span> objTable, <span class="arg">Boolean</span> OPT_showTitle, <span class="arg">Boolean</span> OPT_playIntel )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向玩家显示目标并激活它【功能：启动目标】</p>
+                <p>Includes pings and FOW as defined by the SetupUI() function. The showTitle and playIntel flags let you control whether the titlecard and Intel_Start event are played (default: true).</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (204) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_StartTimer"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_StartTimer( <span class="arg">LuaTable</span> objTable, <span class="arg">Integer</span> direction, <span class="arg">Real</span> OPT_initialTime, <span class="arg">Real</span> OPT_flashThreshold )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启动UI中与此目标关联的计时器。'direction'参数使用COUNT_DOWN（倒计时）或COUNT_UP（正计时）【功能：启动计时器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (1344) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_Stop"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_Stop( <span class="arg">LuaTable</span> objTable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>停止正在进行的目标并将其恢复到等待开始状态【功能：停止目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (337) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_StopCounter"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_StopCounter( <span class="arg">LuaTable</span> objTable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>停止目标的计数器。如果未设置计数器则不执行任何操作【功能：停止计数器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (1491) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_StopTimer"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_StopTimer( <span class="arg">LuaTable</span> objTable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>停止目标的计时器。如果未设置计时器则不执行任何操作【功能：停止计时器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (1403) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_TogglePings"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_TogglePings( <span class="arg">LuaTable</span> objective_table, <span class="arg">Boolean</span> on/off )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>切换小地图标记的开关状态【功能：切换小地图标记】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (699) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_TriggerTitleCard"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_TriggerTitleCard(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>仅可在目标的情报开始/完成/失败/过期事件内部调用。目标标题卡将在事件中的此时点显示【功能：触发标题卡】</p>
+                <p>If you omit this call, the titlecard will appear at the end of the event by default. You also do not have to wrap this with CTRL and WAIT stuff - it does all of the internally.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (417) </b></td>
+            </tr>
+          </table>
+        </p><a name="Objective_UpdateText"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Objective_UpdateText( <span class="arg">LuaTable</span> objTable, <span class="arg">String</span> new_title, <span class="arg">String</span> new_description, <span class="arg">Boolean</span> OPT_showTitle, <span class="arg">Boolean</span> OPT_immediate )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>更新目标的标题和描述。如果只想设置其中一个，为另一个传入nil【功能：更新目标文本】</p>
+                <p>Use the immediate flag to make this change happen immediately, bypassing the queue that objective updates normally sit in (i.e. you're updating the objective's title in the middle of its PreStart() function!)</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core_objectives.scar] (385) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

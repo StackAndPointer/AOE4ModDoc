@@ -1,0 +1,459 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;Proximity</title>
+</head>
+<body>
+<span class="subtitle">scardoc;Proximity</span><p>
+<a name="Group_scardoc;Proximity"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;Proximity</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="Prox_AreEntitiesNearMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prox_AreEntitiesNearMarker( <span class="arg">EGroupID</span> egroup, <span class="arg">MarkerID/Position/SectorID</span> position, <span class="arg">Boolean</span> all, <span class="arg">Real</span> OPT_range )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果组中的任意或所有实体在给定位置、标记或领地区域的范围内，则返回true。【功能：检测实体邻近标记】</p>
+                <p>You MUST specify a range if you are using a position rather than a marker. Markers with proximity type rectangle will use circular proximity check if custom range is supplied\n</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\proximity.scar] (362) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prox_ArePlayerEntitiesNearMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prox_ArePlayerEntitiesNearMarker( <span class="arg">PlayerID</span> player, <span class="arg">MarkerID/Position/SectorID</span> position, <span class="arg">Boolean</span> all, <span class="arg">Real</span> OPT_range, <span class="arg">EBP/Table</span> OPT_filterlist, <span class="arg">Integer</span> OPT_filtertype, <span class="arg">Boolean</span> OPT_ignore_camouflage )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果玩家的任意或所有实体在给定位置、标记或领地区域的范围内，则返回true。此函数非常慢，除非绝对必要，否则不要使用。【功能：检测玩家实体邻近标记】</p>
+                <p>You MUST specify a range if you are using a position rather than a marker.\n Markers with proximity type rectangle will use circular proximity check if custom range is supplied\n</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\proximity.scar] (462) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prox_ArePlayerMembersNearMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prox_ArePlayerMembersNearMarker( <span class="arg">PlayerID</span> player, <span class="arg">MarkerID/Position/SectorID</span> position, <span class="arg">Boolean</span> all, <span class="arg">Real</span> OPT_range, <span class="arg">SBP/Table</span> OPT_filterlist, <span class="arg">Integer</span> OPT_filtertype, <span class="arg">Boolean</span> OPT_ignore_camouflage )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果玩家的任意或所有成员（即个体单位，而非整个小队）在给定位置、标记或领地区域的范围内，则返回true。除非绝对必要，否则不要使用此函数！！【功能：检测玩家成员邻近标记】</p>
+                <p>You MUST specify a range if you are using a position rather than a marker.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\proximity.scar] (513) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prox_ArePlayersNearMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prox_ArePlayersNearMarker( <span class="arg">PlayerID</span> player, <span class="arg">MarkerID/Position/SectorID</span> position, <span class="arg">Boolean</span> all, <span class="arg">Real</span> OPT_range, <span class="arg">SBP/Table</span> OPT_filterlist, <span class="arg">Integer</span> OPT_filtertype, <span class="arg">Boolean</span> OPT_ignore_camouflage )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果玩家的任意或所有小队在给定位置、标记或领地区域的范围内，则返回true。此函数非常慢，除非绝对必要，否则不要使用。【功能：检测玩家小队邻近标记】</p>
+                <p>You MUST specify a range if you are using a position rather than a marker.\n Markers with proximity type rectangle will use circular proximity check if custom range is supplied\n</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\proximity.scar] (428) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prox_AreSquadMembersNearMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prox_AreSquadMembersNearMarker( <span class="arg">SGroupID</span> sgroup, <span class="arg">MarkerID/Position/SectorID</span> position, <span class="arg">Boolean</span> all, <span class="arg">Real</span> OPT_range )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果组中的任意或所有小队成员（即个体单位，而非整个小队）在给定位置、标记或领地区域的范围内，则返回true。除非绝对必要，否则不要使用此函数！！【功能：检测小队成员邻近标记】</p>
+                <p>You MUST specify a range if you are using a position rather than a marker.\n Markers with proximity type rectangle will use circular proximity check if custom range is supplied\n</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\proximity.scar] (283) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prox_AreSquadsNearMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prox_AreSquadsNearMarker( <span class="arg">SGroupID</span> sgroup, <span class="arg">MarkerID/Position/SectorID</span> position, <span class="arg">Boolean</span> all, <span class="arg">Real</span> OPT_range )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果组中的任意或所有小队在给定位置、标记或领地区域的范围内，则返回true。【功能：检测小队邻近标记】</p>
+                <p>You MUST specify a range if you are using a position rather than a marker.\n Markers with proximity type rectangle will use circular proximity check if custom range is supplied\n</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\proximity.scar] (251) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prox_AreTeamsNearMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prox_AreTeamsNearMarker( <span class="arg">TeamID</span> team, <span class="arg">MarkerID/Position/SectorID</span> position, <span class="arg">Boolean</span> all, <span class="arg">Real</span> OPT_range, <span class="arg">SBP/Table</span> OPT_filterlist, <span class="arg">Integer</span> OPT_filtertype, <span class="arg">Boolean</span> OPT_ignore_camouflage )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果队伍的任意或所有小队在给定位置、标记或领地区域的范围内，则返回true。此函数非常慢，除非绝对必要，否则不要使用。【功能：检测队伍小队邻近标记】</p>
+                <p>You MUST specify a range if you are using a position rather than a marker.\n Markers with proximity type rectangle will use circular proximity check if custom range is supplied\n</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\proximity.scar] (496) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prox_EGroupEGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prox_EGroupEGroup( <span class="arg">EGroupID</span> egroup1, <span class="arg">EGroupID</span> egroup2, <span class="arg">ProxType</span> checktype )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回两个实体组之间的距离。使用检查类型PROX_SHORTEST（最短）、PROX_LONGEST（最长）或PROX_CENTER（中心）。【功能：计算实体组间距离】</p>
+                <p>If check is PROX_SHORTEST this will return the shortest distance between the two groups.\n If check is PROX_LONGEST this will return the longest distance between the two groups.\n If check is PROX_CENTER this will return the distance between the two groups centers.\n</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\proximity.scar] (157) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prox_EGroupSGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prox_EGroupSGroup( <span class="arg">EGroupID</span> egroup1, <span class="arg">SGroupID</span> sgroup2, <span class="arg">ProxType</span> checktype )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体组与小队组之间的距离。使用检查类型PROX_SHORTEST（最短）、PROX_LONGEST（最长）或PROX_CENTER（中心）。【功能：计算实体组与小队组距离】</p>
+                <p>If check is PROX_SHORTEST this will return the shortest distance between the two groups.\n If check is PROX_LONGEST this will return the longest distance between the two groups.\n If check is PROX_CENTER this will return the distance between the two groups centers.\n</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\proximity.scar] (180) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prox_EntitiesInProximityOfEntities"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prox_EntitiesInProximityOfEntities( <span class="arg">EGroupID</span> egroup1, <span class="arg">EGroupID</span> egroup2, <span class="arg">Real</span> proximity, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查所有或任意实体是否在给定实体组的邻近范围内。【功能：检测实体邻近实体组】</p>
+                <p>Set "all" to true to check that ALL entities are in proximity, or set "all" to false to check for ANY.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\proximity.scar] (754) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prox_GetRandomPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prox_GetRandomPosition( <span class="arg">Object</span> item, <span class="arg">Integer</span> radius, <span class="arg">Integer</span> minimum )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>接收一个对象（实体、小队、小队组、实体组、位置），然后返回一个随机位置。【功能：获取随机位置】</p>
+                <p>Minimum is the distance from the origin point that is guaranteed to have a return greater than Minimum is ignored if it is greater than the radius</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\proximity.scar] (767) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prox_MarkerEGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prox_MarkerEGroup( <span class="arg">MarkerID</span> marker, <span class="arg">EGroupID</span> egroup, <span class="arg">ProxType</span> checktype )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回标记与实体组之间的距离。使用检查类型PROX_SHORTEST（最短）、PROX_LONGEST（最长）或PROX_CENTER（中心）。【功能：计算标记与实体组距离】</p>
+                <p>If check is PROX_SHORTEST this will return the shortest distance between the two groups.\n If check is PROX_LONGEST this will return the longest distance between the two groups.\n If check is PROX_CENTER this will return the distance between the two groups centers.\n</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\proximity.scar] (203) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prox_MarkerSGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prox_MarkerSGroup( <span class="arg">MarkerID</span> marker, <span class="arg">SGroupID</span> sgroup, <span class="arg">ProxType</span> checktype )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回标记与小队组之间的距离。使用检查类型PROX_SHORTEST（最短）、PROX_LONGEST（最长）或PROX_CENTER（中心）。【功能：计算标记与小队组距离】</p>
+                <p>If check is PROX_SHORTEST this will return the shortest distance between the two groups.\n If check is PROX_LONGEST this will return the longest distance between the two groups.\n If check is PROX_CENTER this will return the distance between the two groups centers.\n</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\proximity.scar] (226) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prox_PlayerEntitiesInProximityOfEntities"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prox_PlayerEntitiesInProximityOfEntities( <span class="arg">PlayerID</span> playerid, <span class="arg">EGroupID</span> egroup, <span class="arg">Real</span> proximity, <span class="arg">Boolean</span> all, <span class="arg">EntityID</span> exclude )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查所有或任意玩家小队是否在给定实体组的邻近范围内。【功能：检测玩家小队邻近实体组】</p>
+                <p>Set "all" to true to check that ALL entities are in proximity, or set "all" to false to check for ANY.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\proximity.scar] (715) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prox_PlayerEntitiesInProximityOfPlayerSquads"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prox_PlayerEntitiesInProximityOfPlayerSquads( <span class="arg">PlayerID</span> playerentities, <span class="arg">PlayerID</span> playersquads, <span class="arg">Real</span> proximity, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查所有或任意玩家实体是否在给定小队组的邻近范围内。【功能：检测玩家实体邻近小队组】</p>
+                <p>Set "all" to true to check that ALL entities are in proximity, or set "all" to false to check for ANY.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\proximity.scar] (702) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prox_PlayerEntitiesInProximityOfSquads"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prox_PlayerEntitiesInProximityOfSquads( <span class="arg">PlayerID</span> playerid, <span class="arg">SGroupID</span> sgroup, <span class="arg">Real</span> proximity, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查所有或任意玩家实体是否在给定小队组的邻近范围内。【功能：检测玩家实体邻近小队组】</p>
+                <p>Set "all" to true to check that ALL entities are in proximity, or set "all" to false to check for ANY.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\proximity.scar] (663) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prox_PlayerSquadsInProximityOfEntities"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prox_PlayerSquadsInProximityOfEntities( <span class="arg">PlayerID</span> playerid, <span class="arg">EGroupID</span> egroup, <span class="arg">Real</span> proximity, <span class="arg">Boolean</span> all, <span class="arg">SBP/Table</span> filterlist, <span class="arg">Integer</span> filtertype, <span class="arg">Boolean</span> ignore_camouflage )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查所有或任意玩家小队是否在给定实体组的邻近范围内。【功能：检测玩家小队邻近实体组】</p>
+                <p>Set "all" to true to check that ALL squads are in proximity, or set "all" to false to check for ANY.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\proximity.scar] (634) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prox_PlayerSquadsInProximityOfPlayerEntities"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prox_PlayerSquadsInProximityOfPlayerEntities( <span class="arg">PlayerID</span> playersquads, <span class="arg">PlayerID</span> playerentities, <span class="arg">Real</span> proximity, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查所有或任意玩家小队是否在给定玩家实体的邻近范围内。【功能：检测玩家小队邻近玩家实体】</p>
+                <p>Set "all" to true to check that ALL squads are in proximity, or set "all" to false to check for ANY.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\proximity.scar] (689) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prox_PlayerSquadsInProximityOfPlayerSquads"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prox_PlayerSquadsInProximityOfPlayerSquads( <span class="arg">PlayerID</span> playerid1, <span class="arg">PlayerID</span> playerid2, <span class="arg">Real</span> proximity, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查所有或任意玩家小队是否在给定玩家小队的邻近范围内。【功能：检测玩家小队邻近玩家小队】</p>
+                <p>Set "all" to true to check that ALL squads are in proximity, or set "all" to false to check for ANY.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\proximity.scar] (676) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prox_PlayerSquadsInProximityOfSquads"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prox_PlayerSquadsInProximityOfSquads( <span class="arg">PlayerID</span> playerid, <span class="arg">SGroupID</span> sgroup, <span class="arg">Real</span> proximity, <span class="arg">Boolean</span> all, <span class="arg">SquadID</span> exclude, <span class="arg">SBP/Table</span> filterlist, <span class="arg">Integer</span> filtertype, <span class="arg">Boolean</span> ignore_camouflage )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查所有或任意玩家小队是否在给定小队组的邻近范围内。【功能：检测玩家小队邻近小队组】</p>
+                <p>Set "all" to true to check that ALL squads are in proximity, or set "all" to false to check for ANY.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\proximity.scar] (607) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prox_SGroupSGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prox_SGroupSGroup( <span class="arg">SGroupID</span> sgroup1, <span class="arg">SGroupID</span> sgroup2, <span class="arg">ProxType</span> checktype )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回两个小队组之间的距离。使用检查类型PROX_SHORTEST（最短）、PROX_LONGEST（最长）或PROX_CENTER（中心）。【功能：计算小队组间距离】</p>
+                <p>If check is PROX_SHORTEST this will return the shortest distance between the two groups.\n If check is PROX_LONGEST this will return the longest distance between the two groups.\n If check is PROX_CENTER this will return the distance between the two groups centers.\n</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\proximity.scar] (134) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prox_SquadsInProximityOfEntities"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prox_SquadsInProximityOfEntities( <span class="arg">SGroupID</span> sgroup, <span class="arg">EGroupID</span> egroup, <span class="arg">Real</span> proximity, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查所有或任意小队是否在给定实体组的邻近范围内。【功能：检测小队邻近实体组】</p>
+                <p>Set "all" to true to check that ALL squads are in proximity, or set "all" to false to check for ANY.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\proximity.scar] (741) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prox_SquadsInProximityOfSquads"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prox_SquadsInProximityOfSquads( <span class="arg">SGroupID</span> sgroup1, <span class="arg">SGroupID</span> sgroup2, <span class="arg">Real</span> proximity, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查所有或任意小队是否在给定小队组的邻近范围内。【功能：检测小队邻近小队组】</p>
+                <p>Set "all" to true to check that ALL squads are in proximity, or set "all" to false to check for ANY.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\proximity.scar] (728) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

@@ -1,0 +1,59 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;Presentation</title>
+</head>
+<body>
+<span class="subtitle">scardoc;Presentation</span><p>
+<a name="Group_scardoc;Presentation"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;Presentation</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="Actor_PlaySpeech"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Actor_PlaySpeech( <span class="arg">ActorTable</span> actor, <span class="arg">Integer</span> locID, <span class="arg">SGroupID</span> OPT_speechbubble, <span class="arg">String</span> OPT_audioCtrlEvent )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为指定演员播放语音事件，带有头像和字幕。【功能：播放带头像字幕的语音】</p>
+                <p>If the speech file is not available, a placeholder time will be calculated for the message using the number of words and the message will be displayed for that length of time.\n speechbubble: Who a speech bubble should appear over ingame. Can be a squadID or an SGroup (where it appears over the first guy in the group) \n It can also be a table in the format {sgroup = sg_orkboys, closest_to = sg_gorgutz} where it finds the squad in the group closest to the reference point. It can also be in the format {sbp = SBP.ORKS.ORK_BOY, closest_to = mkr_orkIdol} to find the closest unit of the specified type, and you can also add a player entry to that table to specify which player (default is the local player)\n You can also specify just an SBP, in which case it will play on the first SBP found owned - use this for elite units who may or may not be on the map audioCtrlEvent:  is a wwise event name. This parameter is used to apply an effect on the line of speech. Ex. "Comm_on" plays speech through a comm effect. Work with an audio designer to get more effects.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\speech.scar] (17) </b></td>
+            </tr>
+          </table>
+        </p><a name="Actor_PlaySpeechWithoutPortrait"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Actor_PlaySpeechWithoutPortrait( <span class="arg">ActorTable</span> actor, <span class="arg">Integer</span> locID, <span class="arg">SGroupID</span> OPT_speechbubble, <span class="arg">String</span> OPT_audioCtrlEvent )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为指定演员播放语音事件，不带头像和字幕。详见 Actor_PlaySpeech。【功能：播放不带头像字幕的语音】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\speech.scar] (38) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

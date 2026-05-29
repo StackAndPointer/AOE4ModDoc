@@ -1,0 +1,1177 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;Blueprint</title>
+</head>
+<body>
+<span class="subtitle">scardoc;Blueprint</span><p>
+<a name="Group_scardoc;Blueprint"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;Blueprint</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="BP_GenerateWave"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GenerateWave( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> waveBpShortName, <span class="arg">Real</span> resourceMultiplier )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回包含波次单位组成的表。包含应生成的单位列表及其数量。返回的表中每行包含以下字段：int id = 该条目在波次包中所属的组索引；int archetypeGroupId = 该条目在波次包中定义的单位组枚举ID；int archetypeId = 从archetypeGroupId中选择的原型ID；int count = 要生成的单位数量；ScarSquadPBG sbp = 要生成单位的蓝图。【功能：生成波次单位组成数据】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (1105) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetAbilityBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetAbilityBlueprint( <span class="arg">String</span> pbgShortname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回能力属性包组。【功能：获取能力蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (560) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetAbilityBlueprintByPbgID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetAbilityBlueprintByPbgID( <span class="arg">Integer</span> pbgID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回能力属性包组。【功能：通过PbgID获取能力蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (566) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetAIAbilityBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetAIAbilityBlueprint( <span class="arg">String</span> pbgShortname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回AI能力属性包组。【功能：获取AI能力蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (672) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetAIAbilityBlueprintByPbgID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetAIAbilityBlueprintByPbgID( <span class="arg">Integer</span> pbgID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回AI能力属性包组。【功能：通过PbgID获取AI能力蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (678) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetAIFormationCoordinatorBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetAIFormationCoordinatorBlueprint( <span class="arg">String</span> pbgShortname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回AI阵型协调器属性包组。【功能：获取AI阵型协调器蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (696) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetAIFormationCoordinatorBlueprintByPbgID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetAIFormationCoordinatorBlueprintByPbgID( <span class="arg">Integer</span> pbgID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回AI阵型协调器属性包组。【功能：通过PbgID获取AI阵型协调器蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (702) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetAIFormationTargetPriorityBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetAIFormationTargetPriorityBlueprint( <span class="arg">String</span> pbgShortname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回AI阵型目标优先级属性包组。【功能：获取AI阵型目标优先级蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (684) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetAIFormationTargetPriorityBlueprintByPbgID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetAIFormationTargetPriorityBlueprintByPbgID( <span class="arg">Integer</span> pbgID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回AI阵型目标优先级属性包组。【功能：通过PbgID获取AI阵型目标优先级蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (690) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetAIStateModelTuningsBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetAIStateModelTuningsBlueprint( <span class="arg">String</span> pbgShortname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回AI状态模型调优属性包组。【功能：获取AI状态模型调优蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (708) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetAIStateModelTuningsBlueprintByPbgID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetAIStateModelTuningsBlueprintByPbgID( <span class="arg">Integer</span> pbgID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回AI状态模型调优属性包组。【功能：通过PbgID获取AI状态模型调优蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (714) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetBlueprintArchetypeTypename"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetBlueprintArchetypeTypename( <span class="arg">FamilyIndex</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回BLUEPRINT_ARCHETYPE枚举条目的字符串名称。【功能：获取蓝图原型类型名称】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (1048) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetEntityArchetypeBlueprintForPlayer"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetEntityArchetypeBlueprintForPlayer( <span class="arg">Player&amp;</span> player, <span class="arg">FamilyIndex</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回玩家对应种族的指定BLUEPRINT_ARCHETYPE索引类型的实体蓝图。【功能：获取玩家种族的实体原型蓝图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (1090) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetEntityArchetypeBlueprintForRace"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetEntityArchetypeBlueprintForRace( <span class="arg">ScarRacePBG</span> racePBG, <span class="arg">FamilyIndex</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定种族的指定BLUEPRINT_ARCHETYPE索引类型的实体蓝图。【功能：获取种族的实体原型蓝图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (1077) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetEntityBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetEntityBlueprint( <span class="arg">String</span> pbgShortname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体属性包组。【功能：获取实体蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (242) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetEntityBlueprintByPbgID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetEntityBlueprintByPbgID( <span class="arg">Integer</span> pbgID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体属性包组。【功能：通过PbgID获取实体蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (248) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetEntityBPBuildTime"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetEntityBPBuildTime( <span class="arg">ScarEntityPBG</span> entityBag )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定实体蓝图在cost_ext中的未修改建造时间（秒）。【功能：获取实体蓝图建造时间】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (608) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetEntityBPCost"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetEntityBPCost( <span class="arg">ScarEntityPBG</span> entityBag )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定实体蓝图在cost_ext中的资源成本。【功能：获取实体蓝图资源成本】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (622) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetEntityBPDefaultSpeed"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetEntityBPDefaultSpeed( <span class="arg">ScarEntityPBG</span> entityBag, <span class="arg">Boolean</span> getModifiedSpeed, <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定实体蓝图在moving_ext中的默认移动速度。如果getModifiedSpeed为true，该值将被应用于该玩家对该实体蓝图的任何speed_maximum_modifier所修改。【功能：获取实体蓝图默认移动速度】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (586) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetEntityChildBlueprintAtIndex"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetEntityChildBlueprintAtIndex( <span class="arg">String</span> pbgShortname, <span class="arg">Integer</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定实体蓝图在指定索引处的子蓝图。【功能：获取实体子蓝图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (830) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetEntityChildBlueprintCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetEntityChildBlueprintCount( <span class="arg">String</span> pbgShortname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定实体蓝图的子蓝图数量。【功能：获取实体子蓝图数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (816) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetEntityParentBlueprintAtIndex"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetEntityParentBlueprintAtIndex( <span class="arg">String</span> pbgShortname, <span class="arg">Integer</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定实体蓝图在指定索引处的父蓝图。【功能：获取实体父蓝图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (788) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetEntityParentBlueprintCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetEntityParentBlueprintCount( <span class="arg">String</span> pbgShortname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定实体蓝图的父蓝图数量。【功能：获取实体父蓝图数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (764) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetEntityTypeExtRaceBlueprintAtIndex"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetEntityTypeExtRaceBlueprintAtIndex( <span class="arg">String</span> pbgShortname, <span class="arg">Integer</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回与实体蓝图type_ext关联的指定索引处的种族蓝图。【功能：获取实体类型扩展种族蓝图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (971) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetEntityTypeExtRaceCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetEntityTypeExtRaceCount( <span class="arg">String</span> pbgShortname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回与实体蓝图type_ext关联的种族蓝图数量。【功能：获取实体类型扩展种族蓝图数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (954) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetEntityUIInfo"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetEntityUIInfo( <span class="arg">ScarEntityPBG</span> ebp )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回包含指定实体ui_ext信息的表。【功能：获取实体UI信息】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (726) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetMapPoolBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetMapPoolBlueprint( <span class="arg">String</span> pbgShortname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回地图池属性包组。【功能：获取地图池蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (660) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetMapPoolBlueprintByPbgID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetMapPoolBlueprintByPbgID( <span class="arg">Integer</span> pbgID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回地图池属性包组。【功能：通过PbgID获取地图池蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (666) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetMoveTypeBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetMoveTypeBlueprint( <span class="arg">String</span> pbgShortname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回移动类型属性包组。【功能：获取移动类型蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (636) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetMoveTypeBlueprintByPbgID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetMoveTypeBlueprintByPbgID( <span class="arg">Integer</span> pbgID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回移动类型属性包组。【功能：通过PbgID获取移动类型蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (642) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetName"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetName( <span class="arg">PropertyBagGroup</span> pbg )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回组的短名称。【功能：获取蓝图组名称】</p>
+                <p>Example name would be "ally_mad_minute_ability"</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (142) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetPassTypeBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetPassTypeBlueprint( <span class="arg">String</span> pbgShortname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回通行类型属性包组。【功能：获取通行类型蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (648) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetPassTypeBlueprintByPbgID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetPassTypeBlueprintByPbgID( <span class="arg">Integer</span> pbgID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回通行类型属性包组。【功能：通过PbgID获取通行类型蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (654) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetPropertyBagGroupCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetPropertyBagGroupCount( <span class="arg">PropertyBagGroupType</span> type )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回相同类型的属性包组数量。【功能：获取属性包组数量】</p>
+                <p>Example type would be PBG_Critical</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (163) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetPropertyBagGroupPathName"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetPropertyBagGroupPathName( <span class="arg">PropertyBagGroupType</span> type, <span class="arg">Integer</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定索引处组的路径名称。【功能：获取属性包组路径名称】</p>
+                <p>Example name would be "abilities\ally_mad_minute_ability"</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (174) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetReticuleBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetReticuleBlueprint( <span class="arg">String</span> pbgShortname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回UI准星包属性包组。【功能：获取UI准星蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (720) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetSimulationFloatProperty"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetSimulationFloatProperty( <span class="arg">String</span> propertyName )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回AE模拟调优中指定属性名存储的浮点值。【功能：获取模拟浮点属性值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (1322) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetSimulationIntProperty"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetSimulationIntProperty( <span class="arg">String</span> propertyName )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回AE模拟调优中指定属性名存储的整数值。【功能：获取模拟整数属性值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (1343) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetSlotItemBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetSlotItemBlueprint( <span class="arg">String</span> pbgShortname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回插槽物品属性包组。【功能：获取插槽物品蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (548) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetSlotItemBlueprintByPbgID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetSlotItemBlueprintByPbgID( <span class="arg">Integer</span> pbgID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回插槽物品属性包组。【功能：通过PbgID获取插槽物品蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (554) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetSquadArchetypeBlueprintForPlayer"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetSquadArchetypeBlueprintForPlayer( <span class="arg">Player&amp;</span> player, <span class="arg">FamilyIndex</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回玩家对应种族的指定BLUEPRINT_ARCHETYPE索引类型的小队蓝图。【功能：获取玩家种族的小队原型蓝图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (1069) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetSquadArchetypeBlueprintForRace"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetSquadArchetypeBlueprintForRace( <span class="arg">ScarRacePBG</span> racePBG, <span class="arg">FamilyIndex</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定种族的指定BLUEPRINT_ARCHETYPE索引类型的小队蓝图。【功能：获取种族的小队原型蓝图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (1056) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetSquadBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetSquadBlueprint( <span class="arg">String</span> pbgShortname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队属性包组。【功能：获取小队蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (254) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetSquadBlueprintByPbgID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetSquadBlueprintByPbgID( <span class="arg">String</span> pbgID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队属性包组。【功能：通过PbgID获取小队蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (260) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetSquadChildBlueprintAtIndex"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetSquadChildBlueprintAtIndex( <span class="arg">String</span> pbgShortname, <span class="arg">Integer</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定小队蓝图在指定索引处的子蓝图。【功能：获取小队子蓝图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (914) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetSquadChildBlueprintCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetSquadChildBlueprintCount( <span class="arg">String</span> pbgShortname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定小队蓝图的子蓝图数量。【功能：获取小队子蓝图数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (900) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetSquadParentBlueprintAtIndex"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetSquadParentBlueprintAtIndex( <span class="arg">String</span> pbgShortname, <span class="arg">Integer</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定小队蓝图在指定索引处的父蓝图。【功能：获取小队父蓝图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (872) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetSquadParentBlueprintCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetSquadParentBlueprintCount( <span class="arg">String</span> pbgShortname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定小队蓝图的父蓝图数量。【功能：获取小队父蓝图数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (848) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetSquadTypeExtRaceBlueprintAtIndex"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetSquadTypeExtRaceBlueprintAtIndex( <span class="arg">String</span> pbgShortname, <span class="arg">Integer</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回与小队蓝图squad_type_ext关联的指定索引处的种族蓝图。【功能：获取小队类型扩展种族蓝图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (1029) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetSquadTypeExtRaceCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetSquadTypeExtRaceCount( <span class="arg">String</span> pbgShortname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回与小队蓝图squad_type_ext关联的种族蓝图数量。【功能：获取小队类型扩展种族蓝图数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (1012) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetSquadUIInfo"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetSquadUIInfo( <span class="arg">ScarSquadPBG</span> sbp, <span class="arg">ScarRacePBG</span> rbp )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回包含指定小队和种族ui_ext信息的表。【功能：获取小队UI信息】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (738) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetType( <span class="arg">StackVar</span> v )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回蓝图的类型。【功能：获取蓝图类型】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (284) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetUpgradeBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetUpgradeBlueprint( <span class="arg">String</span> pbgShortname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回升级属性包组。【功能：获取升级蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (536) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetUpgradeBlueprintByPbgID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetUpgradeBlueprintByPbgID( <span class="arg">Integer</span> pbgID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回升级属性包组。【功能：通过PbgID获取升级蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (542) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetUpgradeUIInfo"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetUpgradeUIInfo( <span class="arg">ScarUpgradePBG</span> ubp )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回包含指定升级ui_ext信息的表。【功能：获取升级UI信息】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (753) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetWeaponBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetWeaponBlueprint( <span class="arg">String</span> pbgShortname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回武器属性包组。【功能：获取武器蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (572) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_GetWeaponBlueprintByPbgID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_GetWeaponBlueprintByPbgID( <span class="arg">Integer</span> pbgID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回武器属性包组。【功能：通过PbgID获取武器蓝图属性包】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (578) </b></td>
+            </tr>
+          </table>
+        </p><a name="BP_IsUpgradeOfType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 BP_IsUpgradeOfType( <span class="arg">ScarUpgradePBG</span> upgradePBG, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果UpgradePGB的类型列表包含指定类型，则返回true。【功能：检查升级是否为指定类型】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (510) </b></td>
+            </tr>
+          </table>
+        </p><a name="EBP_Exists"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EBP_Exists( <span class="arg">String</span> pbgShortname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果存在指定名称的实体蓝图，则返回true。【功能：检查实体蓝图是否存在】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (186) </b></td>
+            </tr>
+          </table>
+        </p><a name="EBP_IsOfRace"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EBP_IsOfRace( <span class="arg">String</span> pbgShortname, <span class="arg">ScarRacePBG</span> race )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体蓝图是否属于指定种族。【功能：检查实体蓝图种族归属】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (932) </b></td>
+            </tr>
+          </table>
+        </p><a name="EBP_PopulationCost"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EBP_PopulationCost( <span class="arg">PropertyBagGroup</span> ebpUnit, <span class="arg">PlayerID</span> player, <a href="enum_list.htm#CapType">CapType</a> type )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取实体蓝图人口成本，使用CT_Personnel（人员）、CT_Vehicle（车辆）、CT_Medic（医疗）作为人口上限类型。【功能：获取实体蓝图人口成本】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (226) </b></td>
+            </tr>
+          </table>
+        </p><a name="SBP_Exists"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SBP_Exists( <span class="arg">String</span> pbgShortname )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果存在指定名称的小队蓝图，则返回true。【功能：检查小队蓝图是否存在】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (196) </b></td>
+            </tr>
+          </table>
+        </p><a name="SBP_GetFirstEBP"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SBP_GetFirstEBP( <span class="arg">ScarSquadPBG</span> sbp )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取指定小队蓝图属性包中的第一个实体蓝图属性包。【功能：获取小队首个实体蓝图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (206) </b></td>
+            </tr>
+          </table>
+        </p><a name="SBP_IsOfRace"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SBP_IsOfRace( <span class="arg">String</span> pbgShortname, <span class="arg">ScarRacePBG</span> race )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队蓝图是否属于指定种族。【功能：检查小队蓝图种族归属】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaBlueprint.cpp] (990) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

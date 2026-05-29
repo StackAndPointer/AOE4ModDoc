@@ -1,0 +1,184 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;Territory</title>
+</head>
+<body>
+<span class="subtitle">scardoc;Territory</span><p>
+<a name="Group_scardoc;Territory"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;Territory</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="Territory_ContainsSectorID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Territory_ContainsSectorID( <span class="arg">SectorID</span> sectorID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果领地包含给定的扇区ID，则返回true。【功能：检查领地是否包含指定扇区】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaLibTerritory.cpp] (70) </b></td>
+            </tr>
+          </table>
+        </p><a name="Territory_FindClosestSectorToPoint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Territory_FindClosestSectorToPoint( <span class="arg">Position</span> pos3D )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回距离给定ScarPosition最近的扇区生成器点的扇区ID。【功能：查找距离指定位置最近的扇区】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaLibTerritory.cpp] (63) </b></td>
+            </tr>
+          </table>
+        </p><a name="Territory_GetAdjacentSectors"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Territory_GetAdjacentSectors( <span class="arg">SectorID</span> sectorID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回与给定扇区ID相邻的扇区ID表。【功能：获取相邻扇区列表】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaLibTerritory.cpp] (100) </b></td>
+            </tr>
+          </table>
+        </p><a name="Territory_GetPrimaryEntityInSector"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Territory_GetPrimaryEntityInSector( <span class="arg">SectorID</span> sectorID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回给定扇区中的主要实体（如果存在），否则返回nil。【功能：获取扇区内的主要实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaLibTerritory.cpp] (93) </b></td>
+            </tr>
+          </table>
+        </p><a name="Territory_GetSectorContainingPoint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Territory_GetSectorContainingPoint( <span class="arg">Position</span> pos3D )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回包含给定ScarPosition的扇区。【功能：获取包含指定位置的扇区】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaLibTerritory.cpp] (52) </b></td>
+            </tr>
+          </table>
+        </p><a name="Territory_GetSectorCreatorEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Territory_GetSectorCreatorEntity( <span class="arg">SectorID</span> sectorID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据扇区ID获取该扇区的创建者实体。【功能：获取扇区创建者实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaLibTerritory.cpp] (85) </b></td>
+            </tr>
+          </table>
+        </p><a name="Territory_GetSectorGeneratorPointOnTerrain"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Territory_GetSectorGeneratorPointOnTerrain( <span class="arg">SectorID</span> sectorID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回给定扇区的生成器点，吸附到地形表面。【功能：获取扇区在地形上的生成点】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaLibTerritory.cpp] (37) </b></td>
+            </tr>
+          </table>
+        </p><a name="Territory_GetSectorOwnerID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Territory_GetSectorOwnerID( <span class="arg">SectorID</span> sectorID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取扇区所有者的ID。【功能：获取扇区所有者ID】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaLibTerritory.cpp] (78) </b></td>
+            </tr>
+          </table>
+        </p><a name="Territory_IsHexagonTerritory"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Territory_IsHexagonTerritory(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果领地是六边形领地，则返回true。【功能：检查领地是否为六边形类型】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaLibTerritory.cpp] (116) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

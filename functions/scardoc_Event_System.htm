@@ -1,0 +1,310 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;Event System</title>
+</head>
+<body>
+<span class="subtitle">scardoc;Event System</span><p>
+<a name="Group_scardoc;Event System"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;Event System</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="Event_CreateAND"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Event_CreateAND( <span class="arg">Function</span> callback, <span class="arg">Table</span> data, <span class="arg">Table</span> events, <span class="arg">Real</span> delay )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建一个回调事件，当所有指定事件都被触发时触发。【功能：创建AND逻辑事件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameConditionalRules.cpp] (2556) </b></td>
+            </tr>
+          </table>
+        </p><a name="Event_Death"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Event_Death( <span class="arg">Function</span> callback, <span class="arg">EGroupID</span> group, <span class="arg">ALL_UNITS/ANY_MEMBER/ANY_SQUAD</span> selection, <span class="arg">Boolean</span> repeat, <span class="arg">Boolean</span> requireAllEntitiesDead, <span class="arg">Table</span> data )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当特定对象死亡时，使用数据调用给定的回调函数。【功能：对象死亡事件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameConditionalRules.cpp] (2348) </b></td>
+            </tr>
+          </table>
+        </p><a name="Event_EncounterCanSeePlayerSquads"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Event_EncounterCanSeePlayerSquads( <span class="arg">Function</span> callback, <span class="arg">Table</span> data, <span class="arg">SGroupID</span> encounter, <span class="arg">PlayerID</span> player, <span class="arg">Real</span> delay )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当遭遇战中的任意小队能看到玩家拥有的任意小队时，使用数据调用给定的回调函数。【功能：遭遇战视野检测事件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameConditionalRules.cpp] (839) </b></td>
+            </tr>
+          </table>
+        </p><a name="Event_EnterProximity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Event_EnterProximity( <span class="arg">Function</span> callback, <span class="arg">Table</span> data, <span class="arg">ConstTargetHandle</span> target, <span class="arg">Boolean</span> arequireAll, <span class="arg">Marker</span> location, <span class="arg">REAL</span> range, <span class="arg">Boolean</span> repeat, <span class="arg">Boolean</span> triggerOnEnter )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当目标进入范围时，使用数据调用给定的回调函数。【功能：进入范围事件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameConditionalRules.cpp] (1517) </b></td>
+            </tr>
+          </table>
+        </p><a name="Event_ExitProximity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Event_ExitProximity( <span class="arg">Function</span> callback, <span class="arg">Table</span> data, <span class="arg">ConstTargetHandle</span> target, <span class="arg">Boolean</span> arequireAll, <span class="arg">Marker</span> location, <span class="arg">REAL</span> range, <span class="arg">Boolean</span> repeat, <span class="arg">Boolean</span> triggerOnEnter )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当目标离开范围时，使用数据调用给定的回调函数。【功能：离开范围事件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameConditionalRules.cpp] (1535) </b></td>
+            </tr>
+          </table>
+        </p><a name="Event_GroupCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Event_GroupCount( <span class="arg">Function</span> callback, <span class="arg">Table</span> data, <span class="arg">EGroupID</span> / SGroup group, <span class="arg">Integer</span> amount (value to be compared against), <span class="arg">Boolean</span> repeat )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当对象数量匹配请求条件时，使用数据调用给定的回调函数。【功能：对象数量检测事件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameConditionalRules.cpp] (1876) </b></td>
+            </tr>
+          </table>
+        </p><a name="Event_GroupIsDeadOrRetreating"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Event_GroupIsDeadOrRetreating( <span class="arg">Function</span> callback, <span class="arg">Table</span> data, <span class="arg">EGroupID</span> / SGroup group, <span class="arg">Real</span> delay )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当组死亡（为空）时，使用数据调用给定的回调函数。【功能：组死亡或撤退事件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameConditionalRules.cpp] (2472) </b></td>
+            </tr>
+          </table>
+        </p><a name="Event_GroupLeftAlive"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Event_GroupLeftAlive( <span class="arg">Function</span> callback, <span class="arg">Table</span> data, <span class="arg">EGroupID</span> / SGroup group, <span class="arg">Integer</span> amount, <span class="arg">Real</span> delay )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当组中剩余实体数量降至指定数量以下时，使用数据调用给定的回调函数。【功能：组存活数量事件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameConditionalRules.cpp] (1039) </b></td>
+            </tr>
+          </table>
+        </p><a name="Event_IsEngaged"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Event_IsEngaged( <span class="arg">Function</span> callback, <span class="arg">Table</span> data, <span class="arg">Real</span> attackTime, <span class="arg">Real</span> delay )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当组正在攻击或在最近attackTime秒内受到攻击时，使用数据调用给定的回调函数。【功能：交战状态事件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameConditionalRules.cpp] (713) </b></td>
+            </tr>
+          </table>
+        </p><a name="Event_IsOutOfCombat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Event_IsOutOfCombat( <span class="arg">Function</span> callback, <span class="arg">Table</span> data, <span class="arg">EGroupID</span> / SGroup group, <span class="arg">Real</span> attackTime, <span class="arg">Real</span> delay )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当组在最近attackTime秒内未参与战斗时，使用数据调用给定的回调函数。【功能：脱离战斗事件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameConditionalRules.cpp] (926) </b></td>
+            </tr>
+          </table>
+        </p><a name="Event_IsSelected"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Event_IsSelected( <span class="arg">Function</span> callback, <span class="arg">Table</span> data )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当目标元素被选中时的回调。【功能：选中事件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameConditionalRules.cpp] (118) </b></td>
+            </tr>
+          </table>
+        </p><a name="Event_IsUnderAttack"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Event_IsUnderAttack( <span class="arg">Function</span> callback, <span class="arg">Table</span> data, <span class="arg">SGroupID</span> = SGroup, <span class="arg">EGroupID</span> = EGroup, <span class="arg">Real</span> attackTime, <span class="arg">PlayerID</span> player, <span class="arg">Real</span> delay )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当sgroup或egroup在最近attackTime秒内受到攻击时，使用数据调用给定的回调函数。【功能：受攻击事件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameConditionalRules.cpp] (484) </b></td>
+            </tr>
+          </table>
+        </p><a name="Event_PlayerCanSeeElement"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Event_PlayerCanSeeElement( <span class="arg">Function</span> callback, <span class="arg">Table</span> data, <span class="arg">PlayerID</span> team, <span class="arg">SGroupID</span> element )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当指定玩家能看到该元素时，使用数据调用给定的回调函数。【功能：玩家视野事件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameConditionalRules.cpp] (304) </b></td>
+            </tr>
+          </table>
+        </p><a name="Event_Proximity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Event_Proximity( <span class="arg">Function</span> callback, <span class="arg">Table</span> data, <span class="arg">ConstTargetHandle</span> target, <span class="arg">Marker</span> location, <span class="arg">REAL</span> range, <span class="arg">Real</span> delay )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当目标进入位置时，使用数据调用给定的回调函数。【功能：接近位置事件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameConditionalRules.cpp] (215) </b></td>
+            </tr>
+          </table>
+        </p><a name="Event_SGroupCountMember"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Event_SGroupCountMember( <span class="arg">Function</span> callback, <span class="arg">Table</span> data, <span class="arg">SGroupID</span> group, <span class="arg">Integer</span> amount (value to be compared against), <span class="arg">Boolean</span> repeat )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当小队中剩余成员数量匹配请求条件时，使用数据调用给定的回调函数。【功能：小队成员数量事件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameConditionalRules.cpp] (1702) </b></td>
+            </tr>
+          </table>
+        </p><a name="Event_WhileInProximity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Event_WhileInProximity( <span class="arg">Function</span> callback, <span class="arg">Table</span> data, <span class="arg">ConstTargetHandle</span> target, <span class="arg">Boolean</span> arequireAll, <span class="arg">Marker</span> location, <span class="arg">REAL</span> range, <span class="arg">Boolean</span> repeat, <span class="arg">Boolean</span> triggerOnEnter )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当目标保持在范围内时，使用数据调用给定的回调函数（每隔interval秒调用一次）。【功能：持续范围内事件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\gamecore\public\gamecore\lua\lualibs\scenario\LuaLibGameConditionalRules.cpp] (1553) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

@@ -1,0 +1,312 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;Music</title>
+</head>
+<body>
+<span class="subtitle">scardoc;Music</span><p>
+<a name="Group_scardoc;Music"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;Music</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="Music_GetDefaultMovement"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Music_GetDefaultMovement(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取"默认音乐乐章"。这是当前默认值，随时可以调用【功能：获取默认音乐乐章】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\music.scar] (43) </b></td>
+            </tr>
+          </table>
+        </p><a name="Music_GetMusicEventIntensityString"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Music_GetMusicEventIntensityString( <span class="arg">String</span> music event (see Cardinal.scar for event enums) )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将引擎指定的数值强度值转换为字符串形式的音乐事件等级【功能：将音乐强度数值转换为字符串】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\music.scar] (198) </b></td>
+            </tr>
+          </table>
+        </p><a name="Music_GetMusicEventIntensityValue"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Music_GetMusicEventIntensityValue( <span class="arg">Value</span> of intensity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将字符串形式的音乐事件等级转换为引擎指定的数值强度值【功能：将音乐强度字符串转换为数值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\music.scar] (215) </b></td>
+            </tr>
+          </table>
+        </p><a name="Music_LockIntensity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Music_LockIntensity( <span class="arg">Real</span> level , <span class="arg">Real</span> OPT_duration )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将音乐强度锁定到指定级别，持续指定时长（如果省略时长，音乐将无限期播放，直到调用Music_UnlockIntensity）【功能：锁定音乐强度】</p>
+                <p>You can chain several level/duration pairs together to create a playlist of sorts. To do this, just use more parameters: Music_LockIntensity(level1, duration1, level2, duration2, ...)</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\music.scar] (74) </b></td>
+            </tr>
+          </table>
+        </p><a name="Music_PlayDefaultMovement"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Music_PlayDefaultMovement(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在"默认音乐乐章"播放音乐【功能：播放默认音乐乐章】</p>
+                <p>Set current music movement with Music_SetDefaultMovement</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\music.scar] (50) </b></td>
+            </tr>
+          </table>
+        </p><a name="Music_PlayMovement"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Music_PlayMovement( <span class="arg">String</span> movement )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>立即播放指定乐章——适用于NIS（非交互式序列）等场景【功能：播放指定音乐乐章】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\music.scar] (59) </b></td>
+            </tr>
+          </table>
+        </p><a name="Music_PlayStinger"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Music_PlayStinger( <span class="arg">String</span> Stinger )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>播放Stinger音频事件。Wwise事件应处理闪避、结束等逻辑【功能：播放短促音乐片段】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\music.scar] (260) </b></td>
+            </tr>
+          </table>
+        </p><a name="Music_PostCombat_End"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Music_PostCombat_End(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>战斗结束后播放简短的结尾段落，然后进入静默状态【功能：播放战斗结束音乐尾声】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\music.scar] (306) </b></td>
+            </tr>
+          </table>
+        </p><a name="Music_RestartAfterObjective"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Music_RestartAfterObjective( <span class="arg">Real</span> duration )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在特定条件后重新启动音乐【功能：目标完成后重启音乐】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\music.scar] (192) </b></td>
+            </tr>
+          </table>
+        </p><a name="Music_SetDefaultMovement"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Music_SetDefaultMovement( <span class="arg">String</span> newMovement )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置"默认音乐乐章"。这是当前默认值，随时可以调用【功能：设置默认音乐乐章】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\music.scar] (37) </b></td>
+            </tr>
+          </table>
+        </p><a name="Music_SetIntensityAfterObjective"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Music_SetIntensityAfterObjective( <span class="arg">Real</span> delay, <span class="arg">Integer</span> level, <span class="arg">Real</span> duration )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在特定条件后重新启动音乐【功能：目标完成后设置音乐强度】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\music.scar] (229) </b></td>
+            </tr>
+          </table>
+        </p><a name="Music_Stop"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Music_Stop(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>停止所有当前正在播放的音乐【功能：停止所有音乐】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\music.scar] (265) </b></td>
+            </tr>
+          </table>
+        </p><a name="Music_StopAfterObjective"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Music_StopAfterObjective( <span class="arg">Real</span> delay )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>目标完成后停止音乐并使声音进入静默状态【功能：目标完成后停止音乐】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\music.scar] (171) </b></td>
+            </tr>
+          </table>
+        </p><a name="Music_StopLong"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Music_StopLong(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>停止所有当前正在播放的音乐（长渐出）【功能：停止所有音乐（长渐出）】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\music.scar] (283) </b></td>
+            </tr>
+          </table>
+        </p><a name="Music_StopMedium"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Music_StopMedium(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>停止所有当前正在播放的音乐（中等渐出）【功能：停止所有音乐（中等渐出）】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\music.scar] (274) </b></td>
+            </tr>
+          </table>
+        </p><a name="Music_UnlockIntensity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Music_UnlockIntensity(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>解锁音乐强度并恢复为由游戏进程驱动【功能：解锁音乐强度】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\music.scar] (135) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

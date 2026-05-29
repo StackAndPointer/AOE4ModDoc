@@ -1,0 +1,2931 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;Player</title>
+</head>
+<body>
+<span class="subtitle">scardoc;Player</span><p>
+<a name="Group_scardoc;Player"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;Player</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="Player_AddAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_AddAbility( <span class="arg">Player&amp;</span> player, <span class="arg">ScarAbilityPBG</span> pAbilityPBG )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为玩家添加一个技能。【功能：添加技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1178) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_AddAbilityLockoutZone"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_AddAbilityLockoutZone( <span class="arg">Player&amp;</span> player, <span class="arg">ScarAbilityPBG</span> abilityPBG, <span class="arg">MarkerID</span> marker )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>指定一个标记区域，在该区域内无法使用技能。此功能仅适用于需要用光标选择世界中位置的技能（如空降地点选择）。【功能：设置技能禁用区域】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (945) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_AddResource"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_AddResource( <span class="arg">PlayerID</span> playerId, <span class="arg">Integer</span> resourceType, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为玩家增加资源（累加），而非直接设置资源值。【功能：增加单一资源】</p>
+                <p>Player::AddResourceReason, the resource add reason enum, can be nil, RES_Other, RES_Gift, RES_Resourcing, RES_Refund, RES_RefundOnDeath</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (467) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_AddResources"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_AddResources( <span class="arg">PlayerID</span> playerId, <span class="arg">Table</span> resources )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为玩家增加多种资源（累加），而非直接设置资源值。【功能：增加多种资源】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (483) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_AddSquadsToSGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_AddSquadsToSGroup( <span class="arg">PlayerID</span> playerId, <span class="arg">String</span> squadgroupName )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将指定玩家的所有小队收集到一个由你命名的小队组中。【功能：收集玩家小队到小队组】</p>
+                <p>Squads will be added to given squad group.  If the given squad group does not exist it will be created.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (498) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_AddUnspentCommandPoints"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_AddUnspentCommandPoints( <span class="arg">Player&amp;</span> player, <span class="arg">Real</span> points )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>给予玩家新的指挥点数供其使用。【功能：增加指挥点数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (799) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_AreSquadsNearMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_AreSquadsNearMarker( <span class="arg">PlayerID</span> playerid, <span class="arg">MarkerID</span> marker )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果玩家的任意小队位于标记附近，则返回true。【功能：检测小队是否在标记附近】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (993) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_CanCastAbilityOnEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_CanCastAbilityOnEntity( <span class="arg">PlayerID</span> player, <span class="arg">ScarAbilityPBG</span> abilityPBG, <span class="arg">EntityID</span> targetEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>测试玩家当前是否可以对目标实体使用技能。【功能：检测能否对实体使用技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1039) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_CanCastAbilityOnPlayer"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_CanCastAbilityOnPlayer( <span class="arg">PlayerID</span> player, <span class="arg">ScarAbilityPBG</span> abilityPBG, <span class="arg">PlayerID</span> targetPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>测试玩家当前是否可以对目标玩家使用技能。【功能：检测能否对玩家使用技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1019) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_CanCastAbilityOnPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_CanCastAbilityOnPosition( <span class="arg">PlayerID</span> player, <span class="arg">ScarAbilityPBG</span> abilityPBG, <span class="arg">Position</span> targetPosition )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>测试玩家当前是否可以对目标位置使用技能。【功能：检测能否对位置使用技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1079) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_CanCastAbilityOnSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_CanCastAbilityOnSquad( <span class="arg">PlayerID</span> player, <span class="arg">ScarAbilityPBG</span> abilityPBG, <span class="arg">SquadID</span> targetSquad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>测试玩家当前是否可以对目标小队使用技能。【功能：检测能否对小队使用技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1059) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_CanConstruct"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_CanConstruct( <span class="arg">PlayerID</span> player, <span class="arg">PropertyBagGroup</span> pbg )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>测试玩家是否能够建造指定的蓝图。【功能：检测能否建造蓝图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1099) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_CanConstructOnPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_CanConstructOnPosition( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroupid, <span class="arg">Entity</span> ebp, <span class="arg">EGroupID</span> targetid, <span class="arg">Position</span> OPT_Facing )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果玩家可以在指定位置和朝向建造指定实体，则返回TRUE，否则返回FALSE。【功能：检测能否在指定位置建造】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (423) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_CanPlaceStructureOnPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_CanPlaceStructureOnPosition( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">Position</span> position, <span class="arg">Position</span> facing )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查指定组的玩家是否可以在指定位置和朝向角度放置实体。【功能：检测能否放置建筑】</p>
+                <p>ebp is the structureBlueprint that must be a valid building that can be constructed by the sgroup.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1250) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_CanSeeEGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_CanSeeEGroup( <span class="arg">PlayerID</span> playerid, <span class="arg">EGroupID</span> egroup, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果玩家可以看到实体组中的全部或任意实体，则返回true。【功能：检测能否看到实体组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (745) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_CanSeeEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_CanSeeEntity( <span class="arg">PlayerID</span> player, <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果玩家可以看到指定实体（在战争迷雾中已揭示），则返回true。【功能：检测能否看到实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (745) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_CanSeePosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_CanSeePosition( <span class="arg">PlayerID</span> player, <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果玩家可以看到指定位置，则返回true。【功能：检测能否看到位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (758) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_CanSeeSGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_CanSeeSGroup( <span class="arg">PlayerID</span> playerid, <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果玩家可以看到小队组中的全部或任意小队，则返回true。【功能：检测能否看到小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (760) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_CanSeeSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_CanSeeSquad( <span class="arg">PlayerID</span> player, <span class="arg">SquadID</span> squad, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果玩家可以看到指定小队中的全部或任意单位（在战争迷雾中已揭示），则返回true。【功能：检测能否看到小队】</p>
+                <p>Set all to true to check that ALL units are visible or set to false to check for ANY.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (752) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_ClearArea"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_ClearArea( <span class="arg">PlayerID</span> player, <span class="arg">MarkerID</span> marker, <span class="arg">Boolean</span> invulnerable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将玩家在标记区域内的所有单位移出该区域，并可在移动过程中使其暂时无敌。【功能：清空区域内单位】</p>
+                <p>You can replace the marker with a position and a range - i.e. Player_ClearArea(player, pos, range, invulnerable)</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (1012) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_ClearAvailabilities"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_ClearAvailabilities( <span class="arg">Player&amp;</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清除玩家的物品、命令和建造菜单的可用性设置。【功能：清除可用性设置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (938) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_ClearPopCapOverride"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_ClearPopCapOverride( <span class="arg">Player&amp;</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清除人口上限覆盖设置，使修正器可以重新生效。【功能：清除人口上限覆盖】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (980) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_ClearStateModelEnumTableTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_ClearStateModelEnumTableTarget( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清除玩家状态模型中对应给定键和表行索引（从0开始）的目标句柄值。【功能：清除状态模型表目标值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1566) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_ClearStateModelTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_ClearStateModelTarget( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清除玩家状态模型中对应给定键的目标句柄值。【功能：清除状态模型目标值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1471) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_CompleteUpgrade"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_CompleteUpgrade( <span class="arg">Player&amp;</span> pPlayer, <span class="arg">ScarUpgradePBG</span> pUpgradePBG )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为玩家完成升级。【功能：完成升级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1158) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_FindFirstEnemyPlayer"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_FindFirstEnemyPlayer( <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>搜索世界中的玩家列表，返回第一个敌方玩家的ID。【功能：查找首个敌方玩家】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (957) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_FindFirstNeutralPlayer"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_FindFirstNeutralPlayer( <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>搜索世界中的玩家列表，返回第一个中立玩家的ID。【功能：查找首个中立玩家】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (963) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_FromId"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_FromId( <span class="arg">Integer</span> id )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据地图编辑器提供的玩家ID返回对应的玩家对象。【功能：根据ID获取玩家】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (116) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetAbilityBPCost"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetAbilityBPCost( <span class="arg">PlayerID</span> pPlayer, <span class="arg">PropertyBagGroup</span> pbg )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定技能的修改后成本，包含该玩家添加的所有修正。【功能：获取技能蓝图成本】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (294) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetAIType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetAIType( <span class="arg">Player&amp;</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果指定玩家是AI，则返回其AI类型。【功能：获取AI类型】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1128) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetAll"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetAll( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> OPT_sgroup, <span class="arg">EGroupID</span> OPT_egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建或清除包含玩家所有单位和建筑的组。默认组名为sg_allsquads和eg_allentities。【功能：获取玩家所有单位和建筑】</p>
+                <p>Fills an SGroup with all of the given player's squads, and an EGroup with all the player's entities. If you don't provide and groups, then it defaults to using sg_allsquads and eg_allentities.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (512) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetAllEntities"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetAllEntities( <span class="arg">Player&amp;</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回一个包含玩家所有实体（包括小队中的实体）的sim::EntityGroupObs对象。【功能：获取所有实体】</p>
+                <p>This function returns a 'global' entity group with the name '__Player%dEntities', where %d is the player ID.  This means that you should never need to destroy it./n However, if you do destroy it, it will be recreated the next time this function is called.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (580) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetAllEntitiesFromType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetAllEntitiesFromType( <span class="arg">PlayerID</span> player, <span class="arg">String</span> unitType )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回一个包含玩家所有指定单位类型（由实体的type_ext定义）实体的实体组，包括非小队实体。【功能：按类型获取所有实体】</p>
+                <p>This function returns a new EGroup to allow tracking of different types.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (633) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetAllEntitiesNearMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetAllEntitiesNearMarker( <span class="arg">PlayerID</span> playerid, <span class="arg">EGroupID</span> egroup, <span class="arg">MarkerID/Pos/SectorID</span> position, <span class="arg">Real</span> OPT_range )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将玩家所有位于标记附近、位置附近或领土区域内的实体收集到一个实体组中。实体组会预先清空。【功能：获取标记附近的所有实体】</p>
+                <p>You can override a marker's normal proximity by specifying a range.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (706) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetAllSquadsNearMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetAllSquadsNearMarker( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">MarkerID/Pos/SectorID</span> position, <span class="arg">Real</span> OPT_range )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将玩家所有位于标记附近、位置附近或领土区域内的小队收集到一个小队组中。小队组会预先清空。【功能：获取标记附近的所有小队】</p>
+                <p>You can override a marker's normal proximity by specifying a range.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (668) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetBuildingID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetBuildingID( <span class="arg">PlayerID</span> player, <span class="arg">Integer</span> entitytypes/unit_types )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回表中列出的第一个玩家拥有的建筑的实体ID。【功能：获取建筑ID】</p>
+                <p>This only looks at completed buildings</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (387) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetBuildingsCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetBuildingsCount( <span class="arg">PlayerID</span> playerId )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回该玩家拥有的建筑总数。【功能：获取建筑数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (402) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetBuildingsCountExcept"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetBuildingsCountExcept( <span class="arg">PlayerID</span> playerId, <span class="arg">Integer</span> exceptions )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回该玩家拥有的建筑总数（排除指定类型）。【功能：获取建筑数量（排除指定）】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (409) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetBuildingsCountOnly"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetBuildingsCountOnly( <span class="arg">PlayerID</span> playerId, <span class="arg">Integer</span> ebplist )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回该玩家拥有的指定类型建筑数量。【功能：获取指定建筑数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (416) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetBuildingUnderConstructionID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetBuildingUnderConstructionID( <span class="arg">PlayerID</span> player, <span class="arg">Integer</span> entitytypes/unit_types )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回表中列出的第一个玩家正在建造的建筑的实体ID。【功能：获取在建建筑ID】</p>
+                <p>This only looks at under construction buildings</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (395) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetCurrentPopulation"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetCurrentPopulation( <span class="arg">Player&amp;</span> player, <a href="enum_list.htm#CapType">CapType</a> capType )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取当前人口数。使用capType CT_Personnel获取当前小队容量，CT_Vehicle获取当前载具容量，CT_Medic获取当前医疗容量。【功能：获取当前人口】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (765) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetCurrentPopulationCap"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetCurrentPopulationCap( <span class="arg">Player&amp;</span> player, <a href="enum_list.htm#CapType">CapType</a> capType )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取当前人口上限。使用capType CT_Personnel获取当前小队容量上限，或CT_VehicleCap获取当前载具容量上限。【功能：获取当前人口上限】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (772) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetDisplayName"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetDisplayName( <span class="arg">Player&amp;</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回玩家的UI显示名称。【功能：获取玩家显示名称】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (823) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetEntities"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetEntities( <span class="arg">Player&amp;</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回一个包含玩家所有实体（不包括小队中的实体）的sim::EntityGroupObs对象。【功能：获取非小队实体】</p>
+                <p>This function returns a 'global' entity group with the name '__Player%dEntities', where %d is the player ID.  This means that you should never need to destroy it./n However, if you do destroy it, it will be recreated the next time this function is called.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (548) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetEntitiesEGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetEntitiesEGroup( <span class="arg">Player&amp;</span> player, <span class="arg">EGroupID</span> group )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取玩家当前所有实体并加载到指定的实体组中。【功能：获取实体到实体组】</p>
+                <p>Gets all the player's current entities and loads them into the specified egroup. The egroup is cleared before being loaded.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (606) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetEntitiesFromBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetEntitiesFromBlueprint( <span class="arg">PlayerID</span> player, <span class="arg">String</span> unitType )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回一个包含玩家所有指定实体蓝图（EBP）实体的实体组，不包括小队实体。【功能：按蓝图获取实体】</p>
+                <p>This function returns a new EGroup to allow tracking of different types.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (615) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetEntitiesFromBlueprintInArea"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetEntitiesFromBlueprintInArea( <span class="arg">PlayerID</span> player, <span class="arg">EBP</span> blueprint, <span class="arg">Position/Marker</span> position, <span class="arg">Real</span> OPT_distance )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回一个包含玩家所有指定实体蓝图（EBP）且在指定区域内的实体的实体组，不包括小队实体。区域可由带有邻近形状的标记定义，或由位置和距离定义。【功能：按蓝图和区域获取实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (607) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetEntitiesFromType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetEntitiesFromType( <span class="arg">PlayerID</span> player, <span class="arg">String</span> unitType )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回一个包含玩家所有指定类型（由实体的type_ext定义）实体的实体组，不包括小队实体。【功能：按类型获取实体】</p>
+                <p>This function returns a new EGroup to allow tracking of different types.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (571) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetEntitiesFromTypeInArea"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetEntitiesFromTypeInArea( <span class="arg">PlayerID</span> player, <span class="arg">String</span> unitType, <span class="arg">Position/Marker</span> position, <span class="arg">Real</span> OPT_distance )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回一个包含玩家所有指定类型（由实体的type_ext定义）且在指定区域内的实体的实体组，不包括小队实体。区域可由带有邻近形状的标记定义，或由位置和距离定义。【功能：按类型和区域获取实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (589) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetEntitiesInArea"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetEntitiesInArea( <span class="arg">PlayerID</span> player, <span class="arg">Position/Marker</span> position, <span class="arg">Real</span> OPT_distance )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回一个包含玩家在指定区域内所有实体的实体组，不包括小队实体。区域可由带有邻近形状的标记定义，或由位置和距离定义。【功能：按区域获取实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (597) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetEntityBPCost"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetEntityBPCost( <span class="arg">PlayerID</span> player, <span class="arg">PropertyBagGroup</span> pbg )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定实体的修改后成本，包含该玩家添加的所有修正。【功能：获取实体蓝图成本】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (538) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetEntityConcentration"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetEntityConcentration( <span class="arg">PlayerID</span> player, <span class="arg">Boolean</span> OPT_popcapOnly, <span class="arg">Table</span> OPT_includeBlueprints, <span class="arg">Table</span> OPT_excludeBlueprints, <span class="arg">Boolean</span> OPT_bLeastConcentrated, <span class="arg">MarkerID/Table</span> OPT_onlyInThisMarker )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找玩家拥有的实体的最大（或最小）聚集区域。【功能：获取实体聚集区域】</p>
+                <p>This function is slow, so don't call it very often</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (1108) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetEntityCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetEntityCount( <span class="arg">Player&amp;</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回玩家当前拥有的实体数量。【功能：获取实体数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (259) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetEntityCountByUnitType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetEntityCountByUnitType( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> unitTypeString )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定单位类型的实体数量。【功能：按单位类型获取实体数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (265) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetEntityName"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetEntityName( <span class="arg">Player&amp;</span> player, <span class="arg">Integer</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回玩家当前拥有的指定实体的名称。【功能：获取实体名称】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (302) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetID( <span class="arg">Player&amp;</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回玩家的ID。【功能：获取玩家ID】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (793) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetMaxPopulationCap"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetMaxPopulationCap( <span class="arg">Player&amp;</span> player, <a href="enum_list.htm#CapType">CapType</a> capType )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取最大人口上限。使用capType CT_Personnel获取最大小队容量上限，或CT_VehicleCap获取最大载具容量上限。【功能：获取最大人口上限】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (779) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetMaxPopulationCapOverride"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetMaxPopulationCapOverride( <span class="arg">Player&amp;</span> player, <a href="enum_list.htm#CapType">CapType</a> capType )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取包含覆盖设置的最大人口上限。使用capType CT_Personnel获取最大小队容量上限，或CT_VehicleCap获取最大载具容量上限。如果没有覆盖设置，则返回默认最大人口上限。【功能：获取含覆盖的最大人口上限】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (787) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetNumGatheringSquads"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetNumGatheringSquads( <span class="arg">Player&amp;</span> player, <span class="arg">Integer</span> type )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回当前正在采集指定类型资源的小队数量。【功能：获取采集资源的小队数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (622) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetNumStrategicPoints"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetNumStrategicPoints( <span class="arg">Player&amp;</span> p )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回该玩家拥有的战略点数量（不包括目标点）。【功能：获取战略点数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (636) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetNumVictoryPoints"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetNumVictoryPoints( <span class="arg">Player&amp;</span> p )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回该玩家拥有的战略目标数量。【功能：获取胜利点数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (660) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetPopulationPercentage"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetPopulationPercentage( <span class="arg">PlayerID</span> playerid, <span class="arg">Integer</span> OPT_captype )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取当前人员或载具人口占当前最大容量的百分比。captype为CT_Personnel或CT_Vehicle。【功能：获取人口百分比】</p>
+                <p>If MaxPopulation is 0, returns 1.0 captype is CT_Personnel by default.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (854) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetRace"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetRace( <span class="arg">Player&amp;</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定玩家的种族。【功能：获取玩家种族】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (176) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetRaceName"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetRaceName( <span class="arg">Player&amp;</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定玩家的种族名称（始终为英文）。【功能：获取种族名称】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (160) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetRelationship"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetRelationship( <span class="arg">PlayerID</span> player1, <span class="arg">PlayerID</span> player2 )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>已弃用，请使用Player_ObserveRelationship代替。【功能：获取关系（已弃用）】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (200) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetResource"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetResource( <span class="arg">Player&amp;</span> player, <span class="arg">Integer</span> type )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定玩家拥有的资源数量。【功能：获取资源数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (446) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetResourceRate"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetResourceRate( <span class="arg">Player&amp;</span> player, <span class="arg">Integer</span> type )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定玩家每秒获取的资源数量。【功能：获取资源获取速率】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (471) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetResources"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetResources( <span class="arg">Player&amp;</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定玩家拥有的所有资源列表。【功能：获取所有资源】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (465) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetSlotIndex"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetSlotIndex( <span class="arg">Player&amp;</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回该玩家的大厅槽位索引，从1开始。【功能：获取大厅槽位索引】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (137) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetSquadBPCost"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetSquadBPCost( <span class="arg">PlayerID</span> pPlayer, <span class="arg">PropertyBagGroup</span> pbg )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定单位的修改后成本，包含该玩家添加的所有修正。【功能：获取小队蓝图成本】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (288) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetSquadConcentration"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetSquadConcentration( <span class="arg">PlayerID</span> player, <span class="arg">Boolean</span> OPT_popcapOnly, <span class="arg">Table</span> OPT_includeBlueprints, <span class="arg">Table</span> OPT_excludeBlueprints, <span class="arg">Boolean</span> OPT_bLeastConcentrated, <span class="arg">MarkerID/Table</span> OPT_onlyInThisMarker )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找玩家拥有的小队的最大（或最小）聚集区域。【功能：获取小队聚集区域】</p>
+                <p>This function is slow, so don't call it very often</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (1100) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetSquadCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetSquadCount( <span class="arg">Player&amp;</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回玩家当前拥有的小队数量。【功能：获取小队数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (282) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetSquads"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetSquads( <span class="arg">Player&amp;</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回一个包含玩家所有单位的小队组观察对象。【功能：获取所有小队】</p>
+                <p>This function returns a 'global' squad group with the name '__Player%dSquads', where %d is the player ID.  This means that you should never need to destroy it./n However, if you do destroy it, it will be recreated the next time this function is called.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (512) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetSquadsFromType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetSquadsFromType( <span class="arg">PlayerID</span> player, <span class="arg">String</span> unitType )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回一个包含玩家所有指定单位类型（由小队的type_ext定义）小队的小队组。【功能：按类型获取小队】</p>
+                <p>This function returns a new SGroup.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (650) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetStartingPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetStartingPosition( <span class="arg">Player&amp;</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回该玩家的起始位置。【功能：获取起始位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (131) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetStateModelBool"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetStateModelBool( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从玩家状态模型中返回对应给定键的布尔值。【功能：获取状态模型布尔值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1292) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetStateModelEntityTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetStateModelEntityTarget( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从玩家状态模型中返回对应给定键的实体值。【功能：获取状态模型实体目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1330) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetStateModelEnumTableBool"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetStateModelEnumTableBool( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从玩家状态模型中返回对应给定键和表行索引（从0开始）的布尔值。【功能：获取状态模型表布尔值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1359) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetStateModelEnumTableEntityTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetStateModelEnumTableEntityTarget( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从玩家状态模型中返回对应给定键和表行索引（从0开始）的实体值。【功能：获取状态模型表实体目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1403) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetStateModelEnumTableFloat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetStateModelEnumTableFloat( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从玩家状态模型中返回对应给定键和表行索引（从0开始）的浮点数值。【功能：获取状态模型表浮点数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1373) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetStateModelEnumTableInt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetStateModelEnumTableInt( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从玩家状态模型中返回对应给定键和表行索引（从0开始）的整数值。【功能：获取状态模型表整数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1366) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetStateModelEnumTablePlayerTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetStateModelEnumTablePlayerTarget( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从玩家状态模型中返回对应给定键和表行索引（从0开始）的玩家值。【功能：获取状态模型表玩家目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1387) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetStateModelEnumTableSquadTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetStateModelEnumTableSquadTarget( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从玩家状态模型中返回对应给定键和表行索引（从0开始）的小队值。【功能：获取状态模型表小队目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1395) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetStateModelEnumTableVector3f"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetStateModelEnumTableVector3f( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从玩家状态模型中返回对应给定键和表行索引（从0开始）的三维向量值。【功能：获取状态模型表三维向量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1380) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetStateModelFloat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetStateModelFloat( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从玩家状态模型中返回对应给定键的浮点数值。【功能：获取状态模型浮点数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1304) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetStateModelInt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetStateModelInt( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从玩家状态模型中返回对应给定键的整数值。【功能：获取状态模型整数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1298) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetStateModelPlayerTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetStateModelPlayerTarget( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从玩家状态模型中返回对应给定键的玩家值。【功能：获取状态模型玩家目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1316) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetStateModelSquadTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetStateModelSquadTarget( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从玩家状态模型中返回对应给定键的小队值。【功能：获取状态模型小队目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1323) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetStateModelVector3f"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetStateModelVector3f( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从玩家状态模型中返回对应给定键的三维向量值。【功能：获取状态模型三维向量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1310) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetStrategicPointCaptureProgress"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetStrategicPointCaptureProgress( <span class="arg">PlayerID</span> player, <span class="arg">EntityID</span> strategicPoint )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回一个值（-1.0到1.0），表示该点接近被提供玩家的队伍控制的程度。【功能：获取战略点占领进度】</p>
+                <p>Progress between -1.0 and 0 means an enemy has progress toward owning a point.  Values between 0 and 1.0 represent progress being made toward capture. 1.0 is a team controlled point.  -1.0 is an enemy controlled point.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (733) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetTeam"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetTeam( <span class="arg">Player&amp;</span> p )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取玩家所在的队伍。【功能：获取玩家队伍】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (183) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetTotalPopulation"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetTotalPopulation( <span class="arg">Player</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取总人口数，包括人员、载具和医疗单位。【功能：获取总人口】</p>
+                <p>Directly uses the C++ API Player_GetCurrentPopulation to get the current population for CT_Personnel, CT_Vehicle and CT_Medic.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (874) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetUIColour"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetUIColour( <span class="arg">Player&amp;</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回玩家相对于本地机器的UI颜色。通过.r .g .b .a访问，值范围为0-255。【功能：获取玩家UI颜色】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (147) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetUnitCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetUnitCount( <span class="arg">Player&amp;</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回玩家当前拥有的单位数量。【功能：获取单位数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (253) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetUpgradeBPCost"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetUpgradeBPCost( <span class="arg">PlayerID</span> player, <span class="arg">ScarUpgradePBG</span> upgradePBG )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回升级的成本。【功能：获取升级蓝图成本】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1002) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetUpgradeBPCostByResource"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetUpgradeBPCostByResource( <span class="arg">PlayerID</span> player, <span class="arg">ScarUpgradePBG</span> upgradePBG, <span class="arg">Integer</span> type )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回升级在指定资源上的成本。【功能：按资源类型获取升级成本】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (986) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GetUpgradeTimeCost"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GetUpgradeTimeCost( <span class="arg">ScarUpgradePBG</span> upgradePBG )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回升级的未修改时间成本（秒）。【功能：获取升级时间成本】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1010) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_GiftResource"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_GiftResource( <span class="arg">Player&amp;</span> player, <span class="arg">Integer</span> type, <span class="arg">Real</span> amount )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置指定玩家的赠送资源数量。正数表示玩家接收资源，负数表示玩家发送资源。忽略收入上限和资源共享。【功能：赠送资源】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (411) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_HasAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_HasAbility( <span class="arg">Player&amp;</span> player, <span class="arg">ScarAbilityPBG</span> pAbilityPBG )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>测试玩家是否拥有某个技能。【功能：检测是否拥有技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1184) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_HasBuilding"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_HasBuilding( <span class="arg">PlayerID</span> player, <span class="arg">Integer</span> entitytypes/unit_types )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果玩家拥有表中列出的任何建筑，则返回true。【功能：检测是否拥有建筑】</p>
+                <p>This only looks at completed buildings - use Player_HasBuildingUnderConstruction to see if the player is building something</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (364) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_HasBuildingsExcept"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_HasBuildingsExcept( <span class="arg">PlayerID</span> playerId, <span class="arg">Integer</span> exceptions/unit_types )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果玩家拥有任何建筑（排除指定类型），则返回true。【功能：检测是否拥有建筑（排除指定）】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (372) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_HasBuildingUnderConstruction"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_HasBuildingUnderConstruction( <span class="arg">PlayerID</span> player, <span class="arg">Integer</span> entitytypes/unit_types )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果玩家拥有表中列出的任何正在建造的建筑，则返回true。【功能：检测是否有在建建筑】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (379) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_HasCapturingSquadNearStrategicPoint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_HasCapturingSquadNearStrategicPoint( <span class="arg">PlayerID</span> player, <span class="arg">EntityID</span> strategicPoint )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果指定玩家有单位可以在指定战略点的可占领区域内进行占领，则返回true。【功能：检测是否有单位可占领战略点】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (685) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_HasEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_HasEntity( <span class="arg">Player&amp;</span> player, <span class="arg">ScarEntityPBG</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>测试玩家是否拥有指定PBG的任何实体。【功能：检测是否拥有指定实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1201) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_HasMapEntryPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_HasMapEntryPosition( <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回玩家是否有地图入口位置。【功能：检测是否有地图入口位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1106) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_HasUpgrade"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_HasUpgrade( <span class="arg">PlayerID</span> pPlayer, <span class="arg">ScarUpgradePBG</span> upgradePBG )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果玩家已购买指定升级，则返回true。【功能：检测是否拥有升级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (830) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_IsAbilityActive"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_IsAbilityActive( <span class="arg">Player&amp;</span> player, <span class="arg">ScarAbilityPBG</span> abilityPBG )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据传入的玩家技能是否在玩家上激活，返回true或false。【功能：检测技能是否激活】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (817) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_IsAlive"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_IsAlive( <span class="arg">Player&amp;</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果玩家仍存活则返回true，如果玩家已死亡则返回false。如果playerIdx是无效索引则会报错。【功能：检测玩家是否存活】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (241) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_IsAllied"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_IsAllied( <span class="arg">PlayerID</span> playerId1, <span class="arg">PlayerID</span> playerId2 )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果玩家之间是盟友关系则返回true，否则返回false。【功能：检测是否为盟友】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (353) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_IsHuman"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_IsHuman( <span class="arg">Player&amp;</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回玩家是否由人类控制（本地或远程）、未死亡、且未被AI取代。【功能：检测是否为人类玩家】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1134) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_IsSurrendered"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_IsSurrendered( <span class="arg">Player&amp;</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果玩家已投降则返回true，否则返回false。如果playerIdx是无效索引则会报错。【功能：检测玩家是否投降】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (247) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_IsValid"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_IsValid( <span class="arg">Integer</span> id )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查ID是否对应一个有效的玩家。【功能：检测玩家ID是否有效】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1578) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_NumUpgradeComplete"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_NumUpgradeComplete( <span class="arg">Player&amp;</span> player, <span class="arg">ScarUpgradePBG</span> upgradePBG )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回该玩家已完成的升级数量。【功能：获取已完成升级数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (807) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_ObserveRelationship"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_ObserveRelationship( <span class="arg">PlayerID</span> observer, <span class="arg">PlayerID</span> target )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取观察者对目标的关系。【功能：获取玩家关系】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (207) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_ObserveReputation"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_ObserveReputation( <span class="arg">PlayerID</span> observer, <span class="arg">PlayerID</span> target )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取观察者对目标的声望。【功能：获取玩家声望】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (214) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_OwnsEGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_OwnsEGroup( <span class="arg">Player</span> player, <span class="arg">EGroupID</span> egroup, <span class="arg">Boolean</span> OPT_all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果指定玩家拥有实体组中的全部或任意实体，则返回true。【功能：检测是否拥有实体组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (918) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_OwnsEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_OwnsEntity( <span class="arg">PlayerID</span> playerid, <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果指定玩家拥有某个实体，则返回true。【功能：检测是否拥有实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (936) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_OwnsSGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_OwnsSGroup( <span class="arg">Player</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> OPT_all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果指定玩家拥有小队组中的全部或任意小队，则返回true。【功能：检测是否拥有小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (954) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_OwnsSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_OwnsSquad( <span class="arg">PlayerID</span> playerid, <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果指定玩家拥有某个小队，则返回true。【功能：检测是否拥有小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (972) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_RemoveAbilityLockoutZone"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_RemoveAbilityLockoutZone( <span class="arg">Player&amp;</span> player, <span class="arg">ScarAbilityPBG</span> abilityPBG, <span class="arg">MarkerID</span> marker )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除之前设置为禁用区域的标记。【功能：移除技能禁用区域】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (951) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_RemoveAllUpgrades"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_RemoveAllUpgrades( <span class="arg">Player&amp;</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除玩家的所有升级。【功能：移除所有升级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1172) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_RemoveUpgrade"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_RemoveUpgrade( <span class="arg">Player&amp;</span> player, <span class="arg">ScarUpgradePBG</span> upgrade )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除玩家的一个升级。【功能：移除升级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1166) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_ResetAbilityCooldowns"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_ResetAbilityCooldowns( <span class="arg">Player&amp;</span> player, <span class="arg">ScarAbilityPBG</span> ability )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>重置玩家拥有的每个单位以及玩家本身的技能冷却时间。【功能：重置技能冷却】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1207) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_ResetResource"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_ResetResource( <span class="arg">Player&amp;</span> player, <span class="arg">Integer</span> type )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将指定玩家的资源数量重置为零。【功能：重置资源】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (313) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_RestrictAddOnList"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_RestrictAddOnList( <span class="arg">PlayerID</span> playerid, <span class="arg">Table</span> addonlist )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>限制一个附加组件列表。【功能：限制附加组件】</p>
+                <p>list should contain an array of strings to restrict.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (886) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_RestrictBuildingList"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_RestrictBuildingList( <span class="arg">PlayerID</span> playerid, <span class="arg">Table</span> blueprintlist )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>限制一个建筑列表。【功能：限制建筑】</p>
+                <p>list should contain an array of strings to restrict.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (897) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_RestrictResearchList"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_RestrictResearchList( <span class="arg">Player</span> playerid, <span class="arg">String</span> list )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>限制一个研究项目列表。【功能：限制研究项目】</p>
+                <p>list should contain an array of strings to restrict.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (908) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetAbilityAvailability"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetAbilityAvailability( <span class="arg">PlayerID</span> player, <span class="arg">Integer</span> bp, <span class="arg">Integer</span> availability )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置技能的可用性。可用性可以是ITEM_LOCKED（锁定）、ITEM_UNLOCKED（解锁）、ITEM_REMOVED（移除）或ITEM_DEFAULT（默认）。【功能：设置技能可用性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (1061) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetAllCommandAvailabilityInternal"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetAllCommandAvailabilityInternal( <span class="arg">Player&amp;</span> player, <a href="enum_list.htm#Availability">Availability</a> availability, <span class="arg">String</span> reason )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置所有实体、小队和玩家命令的可用性。【功能：设置所有命令可用性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (910) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetCommandAvailability"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetCommandAvailability( <span class="arg">PlayerID</span> player, <span class="arg">Integer</span> command, <span class="arg">Integer</span> availability )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置实体、小队和玩家命令的可用性。可用性可以是ITEM_LOCKED（锁定）、ITEM_UNLOCKED（解锁）、ITEM_REMOVED（移除）或ITEM_DEFAULT（默认）。【功能：设置命令可用性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (1079) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetConstructionMenuAvailability"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetConstructionMenuAvailability( <span class="arg">PlayerID</span> player, <span class="arg">String</span> menuname, <span class="arg">Integer</span> availability )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置建造菜单的可用性。可用性可以是ITEM_LOCKED（锁定）、ITEM_UNLOCKED（解锁）、ITEM_REMOVED（移除）或ITEM_DEFAULT（默认）。【功能：设置建造菜单可用性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (1085) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetDefaultSquadMoodMode"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetDefaultSquadMoodMode( <span class="arg">Player&amp;</span> player, <span class="arg">SquadCombatBehaviourMoodMode</span> mood )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置默认小队情绪模式，可被小队级别的情绪模式设置覆盖。【功能：设置默认小队情绪模式】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (872) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetEntityProductionAvailability"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetEntityProductionAvailability( <span class="arg">PlayerID</span> player, <span class="arg">Integer</span> bp, <span class="arg">Integer</span> availability )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置实体生产项目的可用性。可用性可以是ITEM_LOCKED（锁定）、ITEM_UNLOCKED（解锁）、ITEM_REMOVED（移除）或ITEM_DEFAULT（默认）。【功能：设置实体生产可用性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (1073) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetMaxCapPopulation"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetMaxCapPopulation( <span class="arg">PlayerID</span> playerid, <span class="arg">Integer</span> captype, <span class="arg">Integer</span> newcap )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置玩家当前的人员或载具最大容量上限。captype为CT_Personnel或CT_Vehicle（暂不支持调整医疗容量）。【功能：设置最大人口容量】</p>
+                <p>Note that any modifiers that adjust the current max cap will be applied on top of this.  Also note, this is only adjusting the max cap, not the current cap, you will have to call Player_SetMaxPopulation to adjust the current max population to do this.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (815) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetMaxPopulation"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetMaxPopulation( <span class="arg">PlayerID</span> playerid, <span class="arg">Integer</span> captype, <span class="arg">Integer</span> newcap )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置玩家当前的人员或载具容量。captype为CT_Personnel或CT_Vehicle（暂不支持调整医疗容量）。【功能：设置人口容量】</p>
+                <p>Note that any modifiers that adjust the current cap will be applied on top of this.  Also note, the current cap cannot go higher than the max cap.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (776) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetPopCapOverride"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetPopCapOverride( <span class="arg">Player&amp;</span> player, <span class="arg">Real</span> personnel )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置一个人口上限覆盖值，忽略任何修正器。【功能：设置人口上限覆盖】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (969) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetRelationship"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetRelationship( <span class="arg">PlayerID</span> observer, <span class="arg">PlayerID</span> target, <span class="arg">Relation</span> relationship )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置观察者对目标的关系。如果关系与当前声望不匹配，声望将被更改以匹配关系。【功能：设置玩家关系】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (222) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetReputation"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetReputation( <span class="arg">PlayerID</span> observer, <span class="arg">PlayerID</span> target, <span class="arg">BaseType</span> reputation )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置观察者对目标的声望。如果声望与当前关系不匹配，关系将被更改以匹配声望。【功能：设置玩家声望】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (233) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetResource"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetResource( <span class="arg">Player&amp;</span> player, <span class="arg">Integer</span> type, <span class="arg">Real</span> amt )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置指定玩家的资源数量。忽略收入上限和资源共享。【功能：设置资源】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (362) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetResourceInternal"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetResourceInternal( <span class="arg">Player&amp;</span> player, <span class="arg">Integer</span> type, <span class="arg">Real</span> amt, <span class="arg">AddResourceReason</span> reason )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置指定玩家的资源数量（内部函数）。忽略收入上限和资源共享。【功能：设置资源（内部）】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (341) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetResources"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetResources( <span class="arg">Player&amp;</span> player, <span class="arg">ResourceAmount</span> resourceAmount )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置指定玩家的所有资源数量。忽略收入上限和资源共享。【功能：设置所有资源】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (399) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetSquadProductionAvailability"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetSquadProductionAvailability( <span class="arg">PlayerID</span> player, <span class="arg">Integer</span> bp, <span class="arg">Integer</span> availability )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置小队生产项目的可用性。可用性可以是ITEM_LOCKED（锁定）、ITEM_UNLOCKED（解锁）、ITEM_REMOVED（移除）或ITEM_DEFAULT（默认）。【功能：设置小队生产可用性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (1067) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetStateModelBool"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetStateModelBool( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key, <span class="arg">Boolean</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在玩家状态模型中设置对应给定键的布尔值。【功能：设置状态模型布尔值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1429) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetStateModelEntityTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetStateModelEntityTarget( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key, <span class="arg">EntityID</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在玩家状态模型中设置对应给定键的实体目标句柄值。【功能：设置状态模型实体目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1465) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetStateModelEnumTableBool"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetStateModelEnumTableBool( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex, <span class="arg">Boolean</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在玩家状态模型中设置对应给定键和表行索引（从0开始）的布尔值。【功能：设置状态模型表布尔值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1501) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetStateModelEnumTableEntityTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetStateModelEnumTableEntityTarget( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex, <span class="arg">EntityID</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在玩家状态模型中设置对应给定键和表行索引（从0开始）的实体目标句柄值。【功能：设置状态模型表实体目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1559) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetStateModelEnumTableFloat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetStateModelEnumTableFloat( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在玩家状态模型中设置对应给定键和表行索引（从0开始）的浮点数值。【功能：设置状态模型表浮点数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1515) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetStateModelEnumTableInt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetStateModelEnumTableInt( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex, <span class="arg">Integer</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在玩家状态模型中设置对应给定键和表行索引（从0开始）的整数值。【功能：设置状态模型表整数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1508) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetStateModelEnumTablePlayerTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetStateModelEnumTablePlayerTarget( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex, <span class="arg">PlayerID</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在玩家状态模型中设置对应给定键和表行索引（从0开始）的玩家目标句柄值。【功能：设置状态模型表玩家目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1537) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetStateModelEnumTableSquadTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetStateModelEnumTableSquadTarget( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex, <span class="arg">SquadID</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在玩家状态模型中设置对应给定键和表行索引（从0开始）的小队目标句柄值。【功能：设置状态模型表小队目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1548) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetStateModelEnumTableVector3f"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetStateModelEnumTableVector3f( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex, <span class="arg">Position</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在玩家状态模型中设置对应给定键和表行索引（从0开始）的三维向量值。【功能：设置状态模型表三维向量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1526) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetStateModelFloat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetStateModelFloat( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在玩家状态模型中设置对应给定键的浮点数值。【功能：设置状态模型浮点数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1441) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetStateModelInt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetStateModelInt( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key, <span class="arg">Integer</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在玩家状态模型中设置对应给定键的整数值。【功能：设置状态模型整数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1435) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetStateModelPlayerTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetStateModelPlayerTarget( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key, <span class="arg">PlayerID</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在玩家状态模型中设置对应给定键的玩家目标句柄值。【功能：设置状态模型玩家目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1453) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetStateModelSquadTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetStateModelSquadTarget( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key, <span class="arg">SquadID</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在玩家状态模型中设置对应给定键的小队目标句柄值。【功能：设置状态模型小队目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1459) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetStateModelVector3f"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetStateModelVector3f( <span class="arg">Player&amp;</span> player, <span class="arg">String</span> key, <span class="arg">Position</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在玩家状态模型中设置对应给定键的三维向量值。【功能：设置状态模型三维向量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1447) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_SetUpgradeAvailability"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_SetUpgradeAvailability( <span class="arg">PlayerID</span> player, <span class="arg">Integer</span> bp, <span class="arg">Integer</span> availability )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置升级的可用性。可用性可以是ITEM_LOCKED（锁定）、ITEM_UNLOCKED（解锁）、ITEM_REMOVED（移除）或ITEM_DEFAULT（默认）。【功能：设置升级可用性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (1055) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_StopAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_StopAbility( <span class="arg">PlayerID</span> player, <span class="arg">ScarAbilityPBG</span> ability, <span class="arg">Boolean</span> bIsEarlyExit )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>立即停止一个正在进行的技能。【功能：停止技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (1192) </b></td>
+            </tr>
+          </table>
+        </p><a name="Player_StopEarningActionPoints"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Player_StopEarningActionPoints( <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>阻止玩家获得任何行动点数（以及指挥点数）。【功能：停止获得行动点数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\player.scar] (1044) </b></td>
+            </tr>
+          </table>
+        </p><a name="Team_GetRelationship"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Team_GetRelationship( <span class="arg">Integer</span> team1, <span class="arg">Integer</span> team2 )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回两个队伍之间的关系。【功能：获取队伍关系】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaPlayer.cpp] (194) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

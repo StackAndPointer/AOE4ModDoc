@@ -1,0 +1,226 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;Camera</title>
+</head>
+<body>
+<span class="subtitle">scardoc;Camera</span><p>
+<a name="Group_scardoc;Camera"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;Camera</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="Camera_CatromSplinePanOverTime"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Camera_CatromSplinePanOverTime( <span class="arg">Variable</span> var, <span class="arg">Integer</span> seconds, <span class="arg">Boolean</span> keepQueue, <span class="arg">Boolean</span> controlRotation )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将摄像机沿由实体/标记/位置/实体组/小队组/小队对象组成的样条曲线移动，在指定秒数内完成。【功能：摄像机样条曲线移动】</p>
+                <p>The camera will move from the position that was in front of it in the pan queue along the positions provided. Catmull-Rom interpolation between points is used</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\camera.scar] (108) </b></td>
+            </tr>
+          </table>
+        </p><a name="Camera_CyclePositions"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Camera_CyclePositions( <span class="arg">Table</span> list, <span class="arg">Boolean</span> OPT_pan, <span class="arg">Real</span> OPT_panRate, <span class="arg">ScarFn</span> OPT_callback )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将摄像机移动经过一系列位置列表。【功能：摄像机位置循环移动】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\camera.scar] (245) </b></td>
+            </tr>
+          </table>
+        </p><a name="Camera_Follow"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Camera_Follow( <span class="arg">Variable</span> var )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置摄像机跟随一个小队组/小队/实体组/实体。【功能：摄像机跟随目标】</p>
+                <p>The camera will follow them until the player takes control again.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\camera.scar] (222) </b></td>
+            </tr>
+          </table>
+        </p><a name="Camera_LinearSplinePanOverTime"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Camera_LinearSplinePanOverTime( <span class="arg">Variable</span> var, <span class="arg">Integer</span> seconds, <span class="arg">Boolean</span> keepQueue, <span class="arg">Boolean</span> controlRotation )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将摄像机沿由实体/标记/位置/实体组/小队组/小队对象组成的样条曲线移动，在指定秒数内完成。【功能：摄像机线性样条移动】</p>
+                <p>The camera will move from the position that was in front of it in the pan queue along the positions provided. Linear interpolation between points is used</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\camera.scar] (100) </b></td>
+            </tr>
+          </table>
+        </p><a name="Camera_MoveTo"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Camera_MoveTo( <span class="arg">Variable</span> var, <span class="arg">Boolean</span> pan, <span class="arg">Real</span> panRate, <span class="arg">Boolean</span> keepInputLocked, <span class="arg">Boolean</span> resetToDefault )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>以给定速度将摄像机移动到实体/标记/位置/实体组/小队组/小队。【功能：摄像机移动到目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\camera.scar] (115) </b></td>
+            </tr>
+          </table>
+        </p><a name="Camera_MoveToIfClose"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Camera_MoveToIfClose( <span class="arg">Variable</span> var )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果目标在附近，则轻微调整摄像机焦点至实体/小队/小队组/实体组/位置/标记。【功能：条件性摄像机移动】</p>
+                <p>This function can be called through a CTRL object in NISlets.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\camera.scar] (199) </b></td>
+            </tr>
+          </table>
+        </p><a name="Camera_PanOverTimeRelative"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Camera_PanOverTimeRelative( <span class="arg">Position</span> delta, <span class="arg">Integer</span> seconds, <span class="arg">Boolean</span> keepQueue )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将摄像机从当前位置移动一定距离，在指定时间内完成。【功能：摄像机相对距离移动】</p>
+                <p>The position used is the position the camera will be in after completing the movement(s) queued in front.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\camera.scar] (40) </b></td>
+            </tr>
+          </table>
+        </p><a name="Camera_PanOverTimeTo"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Camera_PanOverTimeTo( <span class="arg">Variable</span> var, <span class="arg">Integer</span> seconds, <span class="arg">Boolean</span> keepQueue )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将摄像机移动到实体/标记/位置/实体组/小队组/小队，在指定秒数内完成。【功能：摄像机定时移动到目标】</p>
+                <p>The camera will move from the position that was in front of it in the queue.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\camera.scar] (57) </b></td>
+            </tr>
+          </table>
+        </p><a name="Camera_ResetRotation"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Camera_ResetRotation(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将摄像机重置为默认旋转角度。【功能：重置摄像机旋转】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\camera.scar] (32) </b></td>
+            </tr>
+          </table>
+        </p><a name="Camera_RotateRelative"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Camera_RotateRelative( <span class="arg">Real</span> angle )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>相对于当前旋转角度旋转摄像机，单位为度。【功能：摄像机相对旋转】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\camera.scar] (26) </b></td>
+            </tr>
+          </table>
+        </p><a name="Camera_RotateTo"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Camera_RotateTo( <span class="arg">Real</span> angle )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将摄像机旋转到指定角度，单位为度。【功能：摄像机旋转到指定角度】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\camera.scar] (19) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

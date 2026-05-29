@@ -1,0 +1,698 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;Core</title>
+</head>
+<body>
+<span class="subtitle">scardoc;Core</span><p>
+<a name="Group_scardoc;Core"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;Core</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="Core_AddPlayerToTeam"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_AddPlayerToTeam( <span class="arg">PlayerID</span> player, <span class="arg">Team</span> teams_table )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>让玩家加入指定队伍【功能：玩家加入队伍】</p>
+                <p>Will remove the player from his previous team.  If you pass in nil for newTeam, will add to a new empty team</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (1012) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_Compare"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_Compare( <span class="arg">Number</span> value1, <span class="arg">Number</span> value2, <span class="arg">COMPARISON</span> comparator )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>使用指定的比较器比较两个值【功能：值比较】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (1133) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_GetActiveTeamCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_GetActiveTeamCount(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回剩余未淘汰的队伍数量【功能：获取存活队伍数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (687) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_GetPlayerName"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_GetPlayerName( <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定玩家的名称【功能：获取玩家名称】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (557) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_GetPlayersTableEntry"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_GetPlayersTableEntry( <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回PLAYERS表中指定条目的表引用【功能：获取玩家表条目引用】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (571) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_GetPlayersTableEntryFromIndex"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_GetPlayersTableEntryFromIndex( <span class="arg">Integer</span> playerIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回PLAYERS表中指定索引的表引用【功能：按索引获取玩家表条目引用】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (584) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_GetPlayerTeamsEntry"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_GetPlayerTeamsEntry( <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回玩家TEAMS表中条目的表引用【功能：获取玩家队伍表条目引用】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (611) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_GetTeamsEntryFromIndex"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_GetTeamsEntryFromIndex( <span class="arg">Integer</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回Teams表中对应给定teamIndex的条目【功能：按索引获取队伍表条目】</p>
+                <p>NOTE: Use the teams table's .id entry - not the actual index of the table.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (623) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_IsModuleRegistered"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_IsModuleRegistered( <span class="arg">String</span> name )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果模块已注册用于委托调用则返回true，如果委托调用被禁用则返回false，如果模块不在模块注册表中则返回nil【功能：检查模块注册状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (477) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_IsPlayerEliminated"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_IsPlayerEliminated( <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果玩家已被淘汰则返回true【功能：检查玩家淘汰状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (969) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_IsPlayerOnPlayerTeam"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_IsPlayerOnPlayerTeam(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果两个指定玩家在同一队伍则返回true【功能：检查玩家同队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (1001) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_IsPlayersTableEntryValid"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_IsPlayersTableEntryValid( <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果PLAYERS表包含指定玩家则返回true【功能：验证玩家表条目有效性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (597) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_IsTeamEliminated"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_IsTeamEliminated( <span class="arg">Team</span> teams_table )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果队伍已被淘汰则返回true。当队伍中所有玩家都被淘汰时，该队伍被视为淘汰【功能：检查队伍淘汰状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (979) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_IsTeamsEntryIndexValid"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_IsTeamsEntryIndexValid( <span class="arg">Integer</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果teamIndex是Teams表中的有效索引则返回true【功能：验证队伍索引有效性】</p>
+                <p>NOTE: Use the teams table's .id entry - not the actual index of the table.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (637) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_OnGameOver"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_OnGameOver(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>调用此函数通知其他模块（通过其***_OnGameOver()回调）比赛即将结束【功能：游戏结束通知】</p>
+                <p>Modules typically implement this for cleanup purposes (i.e. remove rules and UI elements) prior to the match end UI.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (993) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_RegisterModule"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_RegisterModule( <span class="arg">String</span> name )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>注册脚本模块用于委托调用。名称应为该模块中所有委托函数使用的前缀。需要在模块脚本的*全局*作用域中调用，使用模块的前缀名称；使用此函数代替Scar_AddInit【功能：注册模块】</p>
+                <p>For example, if you call Core_RegisterModule("MySystem") then any delegate functions in your script such as "MySystem_OnGameSetup" or "MySystem_OnInit" will be called at the appropriate time during the game initialization process (after the Project delegates but before the Mission delegates).</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (445) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_RemovePlayerFromPlayersTable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_RemovePlayerFromPlayersTable( <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从玩家表和队伍表中移除玩家【功能：移除玩家】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (649) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_RevealFOWOnEliminationEnabled"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_RevealFOWOnEliminationEnabled(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回"淘汰时显示战争迷雾"比赛选项的值【功能：获取淘汰显示迷雾选项】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (1117) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_SetDefaultDefeatPresentation"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_SetDefaultDefeatPresentation( <span class="arg">Table</span> presentationTable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置被淘汰玩家的默认展示表【功能：设置失败展示】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (947) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_SetDefaultVictoriousPresentation"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_SetDefaultVictoriousPresentation( <span class="arg">function</span> presentationFunction )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置获胜玩家的默认展示函数【功能：设置胜利展示】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (866) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_SetMutualPlayerRelationship"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_SetMutualPlayerRelationship( <span class="arg">PlayerID</span> player1, <span class="arg">PlayerID</span> player2, <span class="arg">Integer</span> relationship )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置两个玩家之间的关系【功能：设置玩家关系】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (704) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_SetMutualRelationship"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_SetMutualRelationship( <span class="arg">PlayerID/Table</span> player/teams_table, <span class="arg">PlayerID/Table</span> player/teams_table, <span class="arg">Relationship</span> relationship )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置两个条目之间的关系【功能：设置条目关系】</p>
+                <p>NOTE: You should generally be setting Team to Team only. Valid Relationships: R_NEUTRAL, R_ALLY, R_ENEMY, R_UNDEFINED</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (717) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_SetPlayerDefeated"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_SetPlayerDefeated( <span class="arg">PlayerID</span> player, <span class="arg">function</span> presentationFunction, <span class="arg">winReason</span> reason )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将玩家设置为失败状态【功能：设置玩家失败】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (888) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_SetPlayerVictorious"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_SetPlayerVictorious( <span class="arg">PlayerID</span> player, <span class="arg">function</span> presentationFunction, <span class="arg">winReason</span> reason )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将玩家设置为比赛获胜者【功能：设置玩家胜利】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (788) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_SetTeamDefeated"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_SetTeamDefeated( <span class="arg">Team</span> teams_table, <span class="arg">Table</span> presentationTable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置队伍是否失败【功能：设置队伍失败】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (954) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_SetTeamVictorious"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_SetTeamVictorious( <span class="arg">Team</span> teams_table, <span class="arg">function</span> presentationFunction, <span class="arg">winReason</span> reason )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将队伍设置为比赛获胜者【功能：设置队伍胜利】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (874) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_UnregisterModule"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_UnregisterModule( <span class="arg">String</span> name )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从委托调用系统中移除脚本模块【功能：注销模块】</p>
+                <p>This is usually used for a module to remove itself if it decided it isn't needed (i.e. a game mode that isn't relevant given the map). Please don't have modules removing each other!</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (460) </b></td>
+            </tr>
+          </table>
+        </p><a name="Core_WinnerlessGameOver"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Core_WinnerlessGameOver( <span class="arg">function</span> presentationFunction, <span class="arg">winReason</span> reason )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将游戏设置为没有明确获胜者的游戏结束状态【功能：无胜者结束游戏】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\core.scar] (833) </b></td>
+            </tr>
+          </table>
+        </p><a name="Event_Delay"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Event_Delay( <span class="arg">Real</span> seconds )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>暂停指定的时间。此函数必须仅在NISlet事件中从CTRL对象调用【功能：事件延迟】</p>
+                <p>See Event_Start for more information on NISlet events.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\scar\Scar.cpp] (1684) </b></td>
+            </tr>
+          </table>
+        </p><a name="Event_IsBeingSkipped"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Event_IsBeingSkipped(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果事件正在被跳过则返回true【功能：检查事件跳过】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\scar\Scar.cpp] (1665) </b></td>
+            </tr>
+          </table>
+        </p><a name="Event_Skip"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Event_Skip(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>立即完成事件执行（所有Wait()调用将被忽略）【功能：跳过事件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\scar\Scar.cpp] (1659) </b></td>
+            </tr>
+          </table>
+        </p><a name="Event_Start"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Event_Start( <span class="arg">LuaFunction</span> eventFunction, <span class="arg">Integer</span> int )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启动事件。事件将在本帧所有规则评估完成后才会启动【功能：启动事件】</p>
+                <p>We allow saving events in multiplayer so please don't put any non-UI events in multiplayer Running events are not saved at all.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\scar\Scar.cpp] (1644) </b></td>
+            </tr>
+          </table>
+        </p><a name="Event_StartEx"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Event_StartEx( <span class="arg">LuaFunction</span> eventFunction, <span class="arg">Integer</span> int, <span class="arg">LuaFunction</span> onComplete )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>以与Event_Start相同的方式启动事件，但在事件结束时调用用户定义的函数【功能：启动事件并回调】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\scar\Scar.cpp] (1650) </b></td>
+            </tr>
+          </table>
+        </p><a name="Scar_AddInit"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Scar_AddInit( <span class="arg">LuaFunction</span> f )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向SCAR系统注册初始化函数【功能：注册初始化函数】</p>
+                <p>This init function will be called when scar is started up.\n **Important: Make sure you do not register two functions with the same name; the init function names should be unique.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\scar\Scar.cpp] (1560) </b></td>
+            </tr>
+          </table>
+        </p><a name="Scar_InitComplete"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Scar_InitComplete(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>让Lua通知游戏初始化已完成【功能：标记初始化完成】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\scar\Scar.cpp] (1608) </b></td>
+            </tr>
+          </table>
+        </p><a name="Scar_InitExists"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Scar_InitExists( <span class="arg">LuaFunction</span> f )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果存在初始化函数则返回true【功能：检查初始化函数存在】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\scar\Scar.cpp] (1599) </b></td>
+            </tr>
+          </table>
+        </p><a name="Scar_RemoveInit"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Scar_RemoveInit( <span class="arg">LuaFunction</span> f )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>注销通过Scar_AddInit注册的初始化函数【功能：注销初始化函数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\scar\Scar.cpp] (1587) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

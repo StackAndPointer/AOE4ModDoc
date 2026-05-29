@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - 函数列表</title>
+<style>
+.func-index {
+  column-count: 3;
+  column-gap: 24px;
+  padding: 16px;
+}
+.func-category {
+  break-inside: avoid;
+  margin-bottom: 20px;
+  padding: 16px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(60,64,67,0.15);
+}
+.func-category-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a73e8;
+  margin-bottom: 12px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #e8f0fe;
+}
+.func-link {
+  display: block;
+  padding: 6px 10px;
+  margin-bottom: 4px;
+  background: #f8f9fa;
+  border-radius: 4px;
+  color: #202124;
+  text-decoration: none;
+  font-size: 13px;
+  transition: all 0.15s ease;
+}
+.func-link:hover {
+  background: #e8f0fe;
+  color: #1a73e8;
+}
+@media screen and (max-width: 900px) {
+  .func-index { column-count: 2; }
+}
+@media screen and (max-width: 600px) {
+  .func-index { column-count: 1; }
+}
+</style>
+</head>
+<body>
+<span class="subtitle">函数列表</span>
+<p>以下是所有SCAR函数的分类索引，点击分类名称查看详细函数列表。</p>
+
+<div class="func-index">
+  <div class="func-category">
+    <div class="func-category-title">🤖 AI相关函数</div>
+    <a href="functions/AI_Production_Scoring_Functions.htm" class="func-link">AI生产评分函数</a>
+    <a href="functions/AI_StateModel_Functions.htm" class="func-link">AI状态模型函数</a>
+    <a href="functions/AI_Tactics.htm" class="func-link">AI战术</a>
+  </div>
+
+  <div class="func-category">
+    <div class="func-category-title">🎯 核心系统函数</div>
+    <a href="functions/scardoc_Core.htm" class="func-link">核心函数</a>
+    <a href="functions/scardoc_Entity.htm" class="func-link">实体函数</a>
+    <a href="functions/scardoc_Squad.htm" class="func-link">小队函数</a>
+    <a href="functions/scardoc_Player.htm" class="func-link">玩家函数</a>
+    <a href="functions/scardoc_EGroup.htm" class="func-link">实体组函数</a>
+    <a href="functions/scardoc_SGroup.htm" class="func-link">小队组函数</a>
+    <a href="functions/scardoc_World.htm" class="func-link">世界函数</a>
+    <a href="functions/Game.htm" class="func-link">游戏函数</a>
+  </div>
+
+  <div class="func-category">
+    <div class="func-category-title">🗺️ 地图与视野函数</div>
+    <a href="functions/scardoc_FOW.htm" class="func-link">战争迷雾</a>
+    <a href="functions/scardoc_Territory.htm" class="func-link">领地函数</a>
+    <a href="functions/scardoc_Marker.htm" class="func-link">标记函数</a>
+    <a href="functions/scardoc_Proximity.htm" class="func-link">邻近检测</a>
+  </div>
+
+  <div class="func-category">
+    <div class="func-category-title">🎮 界面与表现函数</div>
+    <a href="functions/scardoc_UI.htm" class="func-link">用户界面</a>
+    <a href="functions/scardoc_Presentation.htm" class="func-link">表现层</a>
+    <a href="functions/scardoc_Camera.htm" class="func-link">摄像机</a>
+    <a href="functions/scardoc_Objectives.htm" class="func-link">目标系统</a>
+  </div>
+
+  <div class="func-category">
+    <div class="func-category-title">🔊 音效与资源函数</div>
+    <a href="functions/scardoc_Sound.htm" class="func-link">声音函数</a>
+    <a href="functions/scardoc_ResourceLoading.htm" class="func-link">资源加载</a>
+    <a href="functions/Blueprints.htm" class="func-link">蓝图函数</a>
+  </div>
+
+  <div class="func-category">
+    <div class="func-category-title">⚙️ 系统与工具函数</div>
+    <a href="functions/scardoc_Event_System.htm" class="func-link">事件系统</a>
+    <a href="functions/scardoc_Timer.htm" class="func-link">计时器</a>
+    <a href="functions/scardoc_RuleSystem.htm" class="func-link">规则系统</a>
+    <a href="functions/scardoc_Modifiers.htm" class="func-link">修改器</a>
+    <a href="functions/scardoc_Command.htm" class="func-link">命令系统</a>
+    <a href="functions/scardoc_ID.htm" class="func-link">ID函数</a>
+
+    <a href="functions/scardoc_Prefab_System.htm" class="func-link">预制件系统</a>
+  </div>
+
+  <div class="func-category">
+    <div class="func-category-title">🔧 调试与开发函数</div>
+    <a href="functions/scardoc_Debug.htm" class="func-link">调试函数</a>
+    <a href="functions/DebugRender.htm" class="func-link">调试渲染</a>
+    <a href="functions/Console.htm" class="func-link">控制台</a>
+    <a href="functions/scardoc_Cheat_Menu.htm" class="func-link">作弊菜单</a>
+    <a href="functions/scardoc_DesignerLib.htm" class="func-link">设计者库</a>
+  </div>
+
+  <div class="func-category">
+    <div class="func-category-title">📦 其他函数</div>
+    <a href="functions/scardoc_Training_Goals.htm" class="func-link">训练/目标</a>
+    <a href="functions/scardoc_Xbox.htm" class="func-link">Xbox函数</a>
+    <a href="functions/Other.htm" class="func-link">其他函数</a>
+  </div>
+</div>
+
+</body>
+</html>

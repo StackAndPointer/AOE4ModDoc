@@ -1,0 +1,4424 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;Entity</title>
+</head>
+<body>
+<span class="subtitle">scardoc;Entity</span><p>
+<a name="Group_scardoc;Entity"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;Entity</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="Entity_ActiveCommandIs"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_ActiveCommandIs( <span class="arg">EntityID</span> entity, <a href="enum_list.htm#EntityCommandType">EntityCommandType</a> cmdtype )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果当前活动命令是我们指定的类型，则返回true。【功能：检查活动命令类型】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (978) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_AddAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_AddAbility( <span class="arg">EntityID</span> entity, <span class="arg">ScarAbilityPBG</span> ability )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>允许实体使用此技能。【功能：添加技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2298) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_AddResource"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_AddResource( <span class="arg">EntityID</span> entity, <span class="arg">Integer</span> type, <span class="arg">Real</span> amount )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向实体添加特定数量的特定资源类型。【功能：添加资源】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2958) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_AdjustAbilityCooldown"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_AdjustAbilityCooldown( <span class="arg">EntityID</span> entity, <span class="arg">Integer</span> tickAmount )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>推进技能冷却时间。【功能：调整技能冷却】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2312) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_BuildCycleList"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_BuildCycleList(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>基于当前标记的实体构建循环列表。【功能：构建循环列表】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (761) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_CalcConstructionPlacement"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_CalcConstructionPlacement( <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">PlayerID</span> ructingPlayer, <span class="arg">Position</span> inputPosition )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回如果建造命令指向给定世界位置时，给定蓝图(ebp)将被放置的位置。忽略战争迷雾和未探索区域的检查，因为脚本经常需要在玩家看不到的地方生成实体。返回包含以下字段的表：- ScarPosition position：建筑将被放置的位置 - ScarPosition heading：建筑将被放置的朝向。您可以通过将位置和朝向相加来创建注视位置。- Boolean success：建造放置是否成功。【功能：计算建造放置位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3379) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_CalculatePassableSpawnPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_CalculatePassableSpawnPosition( <span class="arg">EntityID</span> entity, <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>传入一个实体和位置，将该位置解析为开放空间位置。如果该位置不空闲，返回的位置将尝试是靠近原始位置的最近位置。【功能：计算可行走生成位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (437) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_CanAttackNow"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_CanAttackNow( <span class="arg">EntityID</span> attacker, <span class="arg">Position</span> target )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体是否可以在不移动或转身的情况下攻击目标。【功能：检查是否可以立即攻击】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2205) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_CancelProductionQueueItem"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_CancelProductionQueueItem( <span class="arg">EntityID</span> entity, <span class="arg">Integer</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>取消生产队列中的一个项目。索引0是当前正在生产的项目。【功能：取消生产队列项目】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1123) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_CanCurrentlyBeDamaged"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_CanCurrentlyBeDamaged( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查实体当前是否可以被伤害。【功能：检查是否可被伤害】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1421) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_CanLoadSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_CanLoadSquad( <span class="arg">EntityID</span> entity, <span class="arg">SquadID</span> squad, <span class="arg">Boolean</span> assumeEmpty, <span class="arg">Boolean</span> assumeVisible )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查实体是否可以装载小队。【功能：检查装载能力】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1844) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_CanSeeEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_CanSeeEntity( <span class="arg">EntityID</span> entity, <span class="arg">EntityID</span> target )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果目标实体与源实体之间的距离小于其实体的视野距离，则返回true。不进行视线(LOS)或战争迷雾(FOW)检查。【功能：检查是否能看到实体】</p>
+                <p>Try Player_CanSeeEntity() if you care about LOS or FOW.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1385) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_CanSeeSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_CanSeeSquad( <span class="arg">EntityID</span> entity, <span class="arg">SquadID</span> target )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果目标小队与源实体之间的距离小于其实体的视野距离，则返回true。不进行视线(LOS)或战争迷雾(FOW)检查。【功能：检查是否能看到小队】</p>
+                <p>Try Player_CanSeeSquad() if you care about LOS or FOW.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1401) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_CanTargetEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_CanTargetEntity( <span class="arg">Entity&amp;</span> entity, <span class="arg">Entity&amp;</span> target, <span class="arg">Boolean</span> checkFOW )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查实体是否可以瞄准并攻击另一个实体。【功能：检查攻击目标能力】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1415) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_ClearPendingDeathFlag"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_ClearPendingDeathFlag( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>手动清除待死亡标志。应在战役领袖复活时使用。【功能：清除待死亡标志】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (961) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_ClearPostureSuggestion"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_ClearPostureSuggestion( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清除之前对实体做出的任何姿态建议。【功能：清除姿态建议】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2505) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_ClearStateModelEnumTableTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_ClearStateModelEnumTableTarget( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清除实体状态模型中对应给定键和表行索引(从0开始)的TargetHandle值。【功能：清除状态模型目标句柄】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2926) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_ClearStateModelTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_ClearStateModelTarget( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清除实体状态模型中对应给定键的TargetHandle值。【功能：清除状态模型目标句柄】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2830) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_ClearTagDebug"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_ClearTagDebug(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清除用于调试的标记实体。【功能：清除调试标记实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (767) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_CompleteUpgrade"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_CompleteUpgrade( <span class="arg">EntityID</span> pEntity, <span class="arg">ScarUpgradePBG</span> upgradePBG )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>立即向给定实体添加升级。【功能：添加升级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1956) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_ConvertBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_ConvertBlueprint( <span class="arg">Entity&amp;</span> entity, <span class="arg">PropertyBagGroup</span> pbg )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将实体的蓝图转换为指定的蓝图。【功能：转换蓝图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3218) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_Create"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_Create( <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">PlayerID</span> player, <span class="arg">Position</span> pos, <span class="arg">Boolean</span> snapToTerrain )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在给定位置创建实体并将其分配给给定玩家。此函数不会生成实体，因此您需要调用Entity_Spawn来显示此实体。【功能：创建实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (267) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_CreateFacing"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_CreateFacing( <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">PlayerID</span> player, <span class="arg">Position</span> pos, <span class="arg">Position</span> toward, <span class="arg">Boolean</span> snapToTerrain )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在给定位置创建面向目标位置的实体，并将其分配给给定玩家。此函数不会生成实体，因此您需要调用Entity_Spawn来显示此实体。【功能：创建面向目标的实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (235) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_CycleDebug"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_CycleDebug(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>循环遍历为原始标记实体构建的现有列表。【功能：循环遍历实体列表】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (755) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_DeSpawn"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_DeSpawn( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在当前位置取消生成实体。【功能：取消生成实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (532) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_Destroy"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_Destroy( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从世界中移除实体并销毁它。【功能：销毁实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (366) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_DisableCancelConstructionCommand"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_DisableCancelConstructionCommand( <span class="arg">EntityID</span> entity, <span class="arg">Boolean</span> disable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>强制禁用取消建造命令，意味着您无法取消此建造。【功能：禁用取消建造】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3348) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_DoBurnDamage"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_DoBurnDamage( <span class="arg">EntityID</span> entity, <span class="arg">Real</span> val, <span class="arg">Boolean</span> ignoreMaxDamagePerSecond )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>按值调整实体的燃烧等级。【功能：调整燃烧等级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2516) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_EnableAttention"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_EnableAttention( <span class="arg">EntityID</span> entity, <span class="arg">Boolean</span> attentive )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置实体是否注意其周围环境。【功能：设置环境感知】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2254) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_EnableProductionQueue"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_EnableProductionQueue( <span class="arg">EntityID</span> entity, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置实体是否可以生产任何东西（包括升级）。【功能：设置生产能力】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1052) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_EnableStrategicPoint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_EnableStrategicPoint( <span class="arg">EntityID</span> entity, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置战略点是否处于活动状态。【功能：设置战略点状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (993) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_ExtensionCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_ExtensionCount(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体扩展总数。【功能：获取扩展数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2408) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_ExtensionEnabled"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_ExtensionEnabled( <span class="arg">EntityID</span> pEntity, <span class="arg">ComponentDependencyIndex</span> extID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体启用了特定扩展，则返回true。【功能：检查扩展是否启用】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2432) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_ExtensionExecuting"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_ExtensionExecuting( <span class="arg">EntityID</span> pEntity, <span class="arg">ComponentDependencyIndex</span> extID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体上的指定扩展每帧更新，则返回true。【功能：检查扩展是否每帧更新】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2452) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_ExtensionName"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_ExtensionName( <span class="arg">EntityID</span> pEntity, <span class="arg">ComponentDependencyIndex</span> extID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体上给定扩展的字符串名称。【功能：获取扩展名称】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2416) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_ForceConstruct"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_ForceConstruct( <span class="arg">EntityID</span> e )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>强制建造此实体，但仅当它是建筑时有效。【功能：强制建造建筑】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1440) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_ForceSelfConstruct"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_ForceSelfConstruct( <span class="arg">EntityID</span> e )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果是建筑，强制建筑自我建造。【功能：强制自我建造】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1450) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_FromID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_FromID( <span class="arg">Integer</span> id )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从任务编辑器ID获取实体。【功能：通过编辑器ID获取实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (403) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetActiveCommand"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetActiveCommand( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回当前活动的实体命令。【功能：获取活动命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (967) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetAttackTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetAttackTarget( <span class="arg">EntityID</span> entity, <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找实体目标。如果找到，目标小队将添加到sgroup中。建筑等实体目标将被忽略。【功能：查找实体目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1272) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetAttackTargetEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetAttackTargetEntity( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回给定实体所瞄准的实体。【功能：获取目标实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1290) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetAttackTargetSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetAttackTargetSquad( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回给定实体所瞄准的小队。【功能：获取目标小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1299) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetBlueprint( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体的蓝图。【功能：获取实体蓝图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (611) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetBuildingProgress"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetBuildingProgress( <span class="arg">EntityID</span> pEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回给定实体的建造进度（范围为[0.0, 1.0]）。如果实体不是建筑，则返回0.0。【功能：获取建造进度】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1428) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetCoverValue"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetCoverValue( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取实体站立位置的掩体安全值。安全值是-0.5到0.5之间的数字。【功能：获取掩体安全值】</p>
+                <p>Higher value means better cover. If the entity doesn't have cover_ext, value of 0 would be returned</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1896) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetDebugEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetDebugEntity(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取当前标记的调试实体。【功能：获取调试实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (773) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetFenceEntityCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetFenceEntityCount( <span class="arg">PropertyBagGroup</span> ebp, <span class="arg">Position</span> startPos, <span class="arg">Position</span> endPos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回如果此蓝图(ebp)在围栏中建造将放置的实体数量。【功能：获取围栏实体数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3040) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetFilledHoldSquadSlots"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetFilledHoldSquadSlots( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回HoldExtInfo中驻扎小队的已填充槽位数量。【功能：获取已填充槽位数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1868) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetHeading"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetHeading( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体的朝向。朝向目前是一个包含三个条目(x, y, z)的lua表。【功能：获取实体朝向】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (480) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetHealth"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetHealth( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体的生命值。【功能：获取生命值】</p>
+                <p>Health will be zero for entities with no health extension.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (864) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetHealthMax"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetHealthMax( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体的最大生命值。【功能：获取最大生命值】</p>
+                <p>Max health will be zero for entities with no health extension.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (871) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetHealthPercentage"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetHealthPercentage( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回生命值百分比，考虑可破坏建筑。【功能：获取生命值百分比】</p>
+                <p>Health will be zero for entities with no health extension, health max equals to zero</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (878) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetID( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体在世界中的唯一ID。【功能：获取实体唯一ID】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (739) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetInvulnerable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetInvulnerable( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查实体是否无敌。【功能：检查无敌状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\entity.scar] (43) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetInvulnerableMinCap"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetInvulnerableMinCap( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>以百分比形式返回无敌点。【功能：获取无敌百分比】</p>
+                <p>For units, retrieve the percentage value of hitpoints below which the entity would become invulnerable to both critical hit and damage For buildings, retrieve the percentage value of healthy below which no more panels could be destroyed</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1680) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetLastAttacker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetLastAttacker( <span class="arg">EntityID</span> entity, <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找此实体的最后一个小队攻击者。如果找到，小队将添加到sgroup中。【功能：查找最后攻击者】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1314) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetLastAttackers"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetLastAttackers( <span class="arg">EntityID</span> entity, <span class="arg">SGroupID</span> group, <span class="arg">Real</span> timeSeconds )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找在指定秒数内攻击此实体的小队攻击者。sgroup将被清除，然后找到的任何小队将添加到sgroup中。建筑攻击者将被忽略。【功能：查找小队攻击者】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1328) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetLastEntityAttackers"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetLastEntityAttackers( <span class="arg">EntityID</span> entity, <span class="arg">EGroupID</span> group, <span class="arg">Real</span> timeSeconds )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找在指定秒数内攻击此实体的实体攻击者。sgroup将被清除，然后找到的任何小队将添加到sgroup中。建筑攻击者将被忽略。【功能：查找实体攻击者】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1359) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetMaxCaptureCrewSize"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetMaxCaptureCrewSize( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从可重新乘员的实体获取最大占领乘员数量。【功能：获取最大乘员数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1944) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetMaxHoldSquadSlots"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetMaxHoldSquadSlots( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回HoldExtInfo中驻扎小队的指定槽位数量。【功能：获取槽位数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1857) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetMeleeBlocksPerAttacks"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetMeleeBlocksPerAttacks( <span class="arg">Entity</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体每次攻击将执行的格挡次数。【功能：获取格挡次数】</p>
+                <p>For each numAttacks melee attacks the entity receives, it will block a random numBlocks of them. Block rate is numBlocks / numAttacks</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3099) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetNumInteractors"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetNumInteractors( <span class="arg">EntityID</span> entity, <span class="arg">String</span> interactionType )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回通过交互系统连接到实体的实体数量。【功能：获取连接实体数量】</p>
+                <p>interactionType should match one of the values defined in the `interaction_type` attribute enum</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1801) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetOffsetPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetOffsetPosition( <span class="arg">EntityID</span> entity, <span class="arg">Integer</span> offset, <span class="arg">Real</span> distance )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回相对于实体当前位置和朝向的位置。有关'offset'参数的说明，请参见ScarUtil.scar。【功能：获取相对位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\entity.scar] (80) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetOnFireHealthPercentThreshold"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetOnFireHealthPercentThreshold( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取实体可以被点燃的生命值百分比。【功能：获取可点燃生命值百分比】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2555) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetPlayerOwner"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetPlayerOwner( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回给定实体的玩家所有者。实体必须不由世界拥有。【功能：获取实体所有者】</p>
+                <p>Use World_OwnsEntity to make sure entity is not owned by the world before calling this function</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (539) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetPosition( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体的位置。位置目前是一个包含三个条目(x, y, z)的lua表。【功能：获取实体位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (430) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetProductionQueueItem"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetProductionQueueItem( <span class="arg">EntityID</span> entity, <span class="arg">Integer</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回具有索引的生产队列项目的蓝图。【功能：获取生产项目蓝图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1062) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetProductionQueueItemType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetProductionQueueItemType( <span class="arg">EntityID</span> entity, <span class="arg">Integer</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回具有索引的生产队列项目的生产类型(PITEM_Upgrade, PITEM_Spawn, PITEM_SquadUpgrade, PITEM_SquadReinforce, PITEM_PlayerUpgrade)。【功能：获取生产类型】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1093) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetProductionQueueSize"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetProductionQueueSize( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体生产队列中的项目数量。【功能：获取生产队列长度】</p>
+                <p>It is an error to call this function on an entity that does not have a production queue.\n Use Entity_HasProductionQueue to check that the entity has a queue.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1020) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetProjectileBlocksPerAttacks"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetProjectileBlocksPerAttacks( <span class="arg">Entity</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体每次攻击将执行的格挡次数。【功能：获取格挡次数】</p>
+                <p>For each numAttacks projectile attacks the entity receives, it will block a random numBlocks of them. Block rate is numBlocks / numAttacks</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3135) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetRallyPointPositions"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetRallyPointPositions( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回给定实体上设置的每个集合点的位置表。表中的条目命名为"position1"、"position2"等。【功能：获取集合点位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3462) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetRangedBlocksPerAttacks"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetRangedBlocksPerAttacks( <span class="arg">Entity</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体每次攻击将执行的格挡次数。【功能：获取格挡次数】</p>
+                <p>For each numAttacks ranged attacks the entity receives, it will block a random numBlocks of them. Block rate is numBlocks / numAttacks</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3117) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetRemainingResourceDepositAmount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetRemainingResourceDepositAmount( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取给定实体的剩余资源数量。【功能：获取剩余资源】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2932) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetResource"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetResource( <span class="arg">EntityID</span> entity, <span class="arg">Integer</span> resourceType )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体拥有的特定资源数量。【功能：获取资源数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2995) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetSightInnerHeight"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetSightInnerHeight( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回此实体的内部视野高度。【功能：获取内部视野高度】</p>
+                <p>Height will be zero for entities without a sight extension</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (836) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetSightInnerRadius"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetSightInnerRadius( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回此实体的内部视野半径。【功能：获取内部视野半径】</p>
+                <p>Radius will be zero for entities without a sight extension</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (808) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetSightOuterHeight"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetSightOuterHeight( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回此实体的外部视野高度。【功能：获取外部视野高度】</p>
+                <p>Height will be zero for entities without a sight extension</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (850) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetSightOuterRadius"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetSightOuterRadius( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回此实体的外部视野半径。【功能：获取外部视野半径】</p>
+                <p>Radius will be zero for entities without a sight extension</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (822) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetSquad( <span class="arg">EntityID</span> pEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回传递实体的所属小队。（可能为nullptr）。【功能：获取实体所属小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1601) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetSquadsHeld"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetSquadsHeld( <span class="arg">EntityID</span> pEntity, <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将实体驻扎的小队添加到SGroup中。【功能：添加驻扎小队到组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2056) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetStateModelBool"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetStateModelBool( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体状态模型中返回对应给定键的布尔值。【功能：获取状态模型布尔值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2649) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetStateModelEntityTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetStateModelEntityTarget( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体状态模型中返回对应给定键的实体值。【功能：获取状态模型实体值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2687) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetStateModelEnumTableBool"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetStateModelEnumTableBool( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体状态模型中返回对应给定键和表行索引(从0开始)的布尔值。【功能：获取状态模型表布尔值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2717) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetStateModelEnumTableEntityTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetStateModelEnumTableEntityTarget( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体状态模型中返回对应给定键和表行索引(从0开始)的实体值。【功能：获取状态模型表实体值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2761) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetStateModelEnumTableFloat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetStateModelEnumTableFloat( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体状态模型中返回对应给定键和表行索引(从0开始)的浮点值。【功能：获取状态模型表浮点值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2731) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetStateModelEnumTableInt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetStateModelEnumTableInt( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体状态模型中返回对应给定键和表行索引(从0开始)的整数值。【功能：获取状态模型表整数值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2724) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetStateModelEnumTablePlayerTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetStateModelEnumTablePlayerTarget( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体状态模型中返回对应给定键和表行索引(从0开始)的玩家值。【功能：获取状态模型表玩家值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2745) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetStateModelEnumTableSquadTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetStateModelEnumTableSquadTarget( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体状态模型中返回对应给定键和表行索引(从0开始)的小队值。【功能：获取状态模型表小队值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2753) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetStateModelEnumTableVector3f"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetStateModelEnumTableVector3f( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体状态模型中返回对应给定键和表行索引(从0开始)的Vector3f值。【功能：获取状态模型表向量值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2738) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetStateModelFloat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetStateModelFloat( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体状态模型中返回对应给定键的浮点值。【功能：获取状态模型浮点值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2661) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetStateModelInt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetStateModelInt( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体状态模型中返回对应给定键的整数值。【功能：获取状态模型整数值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2655) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetStateModelPlayerTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetStateModelPlayerTarget( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体状态模型中返回对应给定键的玩家值。【功能：获取状态模型玩家值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2673) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetStateModelSquadTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetStateModelSquadTarget( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体状态模型中返回对应给定键的小队值。【功能：获取状态模型小队值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2680) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetStateModelVector3f"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetStateModelVector3f( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体状态模型中返回对应给定键的Vector3f值。【功能：获取状态模型向量值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2667) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetStateTreeTargeting_EntityTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetStateTreeTargeting_EntityTarget( <span class="arg">Entity&amp;</span> entity, <span class="arg">String</span> type, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体StateTree EntityTargetingExt中返回具有给定类型和键的实体值。【功能：获取StateTree实体目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3249) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetStateTreeTargeting_PlayerTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetStateTreeTargeting_PlayerTarget( <span class="arg">Entity&amp;</span> entity, <span class="arg">String</span> type, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体StateTree EntityTargetingExt中返回具有给定类型和键的玩家值。【功能：获取StateTree玩家目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3235) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetStateTreeTargeting_SquadTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetStateTreeTargeting_SquadTarget( <span class="arg">Entity&amp;</span> entity, <span class="arg">String</span> type, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体StateTree EntityTargetingExt中返回具有给定类型和键的小队值。【功能：获取StateTree小队目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3242) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetStateTreeTargeting_Vector3f"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetStateTreeTargeting_Vector3f( <span class="arg">Entity&amp;</span> entity, <span class="arg">String</span> type, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体StateTree EntityTargetingExt中返回具有给定类型和键的Vector3f值。【功能：获取StateTree向量目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3228) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetStrategicPointSecureCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetStrategicPointSecureCount( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回当前占领此战略点的实体或小队数量。【功能：获取战略点占领数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1788) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetTargetingType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetTargetingType( <span class="arg">Entity&amp;</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取实体的瞄准类型 - 自动、手动或无。【功能：获取瞄准类型】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3083) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetWeaponBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetWeaponBlueprint( <span class="arg">EntityID</span> entity, <span class="arg">Integer</span> hardPointIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回武器硬点（从0开始索引）。【功能：获取武器硬点】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2379) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_GetWeaponHardpointCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_GetWeaponHardpointCount( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体拥有的硬点数量。【功能：获取硬点数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2350) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_HandleAllAsserts"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_HandleAllAsserts(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>对每个实体调用EntityAssertHandler的HandleAssert。【功能：实体断言处理】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (387) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_HasAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_HasAbility( <span class="arg">EntityID</span> entity, <span class="arg">ScarAbilityPBG</span> ability )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>测试实体是否拥有技能。【功能：检查是否拥有技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2338) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_HasBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_HasBlueprint( <span class="arg">EntityID</span> entity, <span class="arg">EBP/EntityType/Table</span> blueprints )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查实体是否属于指定的任何蓝图或实体类型。【功能：检查实体类型】</p>
+                <p>Blueprint can be a single Blueprint, a single EntityType, or a table of multiple Blueprints or EntityTypes. If you want to see if an entity has ALL of a set of EntityTypes, then wrap them all in a sub-table.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (729) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_HasProductionQueue"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_HasProductionQueue( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体拥有生产队列，则返回true。【功能：检查是否有生产队列】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1033) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_HasUpgrade"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_HasUpgrade( <span class="arg">EntityID</span> pEntity, <span class="arg">ScarUpgradePBG</span> upgradePBG )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体已购买指定升级，则返回true。【功能：检查是否已购买升级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1971) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_InstantCaptureStrategicPoint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_InstantCaptureStrategicPoint( <span class="arg">EntityID</span> entity, <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>战略点将被供应玩家的队伍立即占领。【功能：立即占领战略点】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1728) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_InstantConvertBuildingToFieldSupport"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_InstantConvertBuildingToFieldSupport( <span class="arg">EntityID</span> building, <span class="arg">PlayerID</span> owner )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>立即将建筑转换为野战支援设施。【功能：转换为野战支援】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1832) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_InstantRevertOccupiedBuilding"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_InstantRevertOccupiedBuilding( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>恢复被占领的建筑。【功能：恢复被占领建筑】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1820) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsAbilityActive"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsAbilityActive( <span class="arg">EntityID</span> entity, <span class="arg">ScarAbilityPBG</span> pbg )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果技能处于活动状态，则返回true。【功能：检查技能是否活动】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1977) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsActive"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsActive( <span class="arg">EntityID</span> pEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体存活且已生成，则返回true。【功能：检查实体是否存活已生成】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1618) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsAlive"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsAlive( <span class="arg">EntityID</span> pEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体仍然存活，则返回true。【功能：检查实体是否存活】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1612) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsAttacking"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsAttacking( <span class="arg">EntityID</span> entity, <span class="arg">Real</span> time )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体在指定时间内正在攻击，则返回true。【功能：检查是否正在攻击】</p>
+                <p>Time is in seconds</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1265) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsBuilding"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsBuilding( <span class="arg">EntityID</span> e )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果给定实体是建筑，则返回true。【功能：检查是否为建筑】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1472) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsBurnable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsBurnable( <span class="arg">EntityID</span> e )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体可以被点燃，则返回true。【功能：检查是否可点燃】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1460) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsBurning"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsBurning( <span class="arg">EntityID</span> e )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果给定实体正在燃烧（着火的建筑或带有burn_exts的非建筑），则返回true。【功能：检查是否正在燃烧】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1466) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsCamouflaged"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsCamouflaged( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体是否处于伪装状态。【功能：检查是否伪装】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2193) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsCapturableBuilding"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsCapturableBuilding( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体是可占领的建筑，则返回true。【功能：检查是否可占领建筑】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1722) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsCasualty"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsCasualty( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体是伤亡单位则返回true，否则返回false。【功能：检查是否为伤亡单位】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2270) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsCuttable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsCuttable( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回此实体是否可切割。【功能：检查是否可切割】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2136) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsDemolitionReady"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsDemolitionReady( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回此实体的爆破炸药是否已准备好引爆。【功能：检查爆破炸药是否就绪】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2093) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsDoingAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsDoingAbility( <span class="arg">EntityID</span> entity, <span class="arg">ScarAbilityPBG</span> pbg )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体当前正在执行给定技能，则返回true。【功能：检查是否正在执行技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2103) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsEBPBuilding"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsEBPBuilding( <span class="arg">ScarEntityPBG</span> ebp )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果给定蓝图是建筑，则返回true。【功能：检查蓝图是否为建筑】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1478) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsEBPObjCover"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsEBPObjCover( <span class="arg">ScarEntityPBG</span> ebp )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果给定蓝图是物体掩体，则返回true。【功能：检查蓝图是否为物体掩体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1484) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsEBPOfType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsEBPOfType( <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">String</span> type )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果给定蓝图属于给定类型，则返回true。类型定义在type_ext/unit_type_list中。【功能：检查蓝图类型】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1511) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsHardpointActive"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsHardpointActive( <span class="arg">EntityID</span> entity, <span class="arg">Integer</span> hardPointIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回硬点是否处于活动状态（从0开始索引）。【功能：检查硬点是否活动】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2362) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsHoldingAny"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsHoldingAny( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查实体是否驻扎了任何东西。【功能：检查是否有驻扎】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1851) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsInBackground"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsInBackground( <span class="arg">EntityID</span> pEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体是否在背景中。【功能：检查是否在背景中】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2622) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsInCover"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsInCover( <span class="arg">EntityID</span> entityId )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体在掩体中，则返回true。【功能：检查是否在掩体中】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\entity.scar] (10) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsInfantry"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsInfantry( <span class="arg">EntityID</span> pEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体是否为步兵单位。【功能：检查是否为步兵】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2009) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsInHold"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsInHold( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查实体是否在驻扎状态。【功能：检查是否在驻扎中】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1879) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsInvincible"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsInvincible( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回此实体是否无敌。无敌实体永远不会受到伤害，也永远不会死亡。【功能：检查是否无敌】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1631) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsInvulnerable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsInvulnerable( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取实体是否处于无敌状态。【功能：检查无敌状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1643) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsMoving"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsMoving( <span class="arg">EntityID</span> pEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体是否正在移动。【功能：检查是否正在移动】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1997) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsOfType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsOfType( <span class="arg">EntityID</span> entity, <span class="arg">String</span> type )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>确定此实体是否属于给定类型。类型定义在type_ext/unit_type_list中。【功能：确定实体类型】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1491) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsOnWalkableWall"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsOnWalkableWall( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体当前是否在可行走的墙上。【功能：检查是否在墙上】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3269) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsPartOfSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsPartOfSquad( <span class="arg">EntityID</span> pEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体是小队的一部分，则返回true。【功能：检查是否属于小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1595) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsPlane"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsPlane( <span class="arg">EntityID</span> pEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体是否为飞机（拥有飞行扩展）。【功能：检查是否为飞机】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2015) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsPlannedStructure"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsPlannedStructure( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体是否为计划中的结构。【功能：检查是否为计划结构】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2021) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsProducingSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsProducingSquad( <span class="arg">EntityID</span> entity, <span class="arg">ScarSquadPBG</span> pbg )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回给定实体是否正在生产特定小队蓝图。【功能：检查是否正在生产小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2027) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsProductionQueueAvailable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsProductionQueueAvailable( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体拥有生产队列且队列可用，则返回true。【功能：检查生产队列是否可用】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1040) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsResourceGenerator"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsResourceGenerator( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体是资源生成器且有剩余资源，则返回true。【功能：检查是否有剩余资源】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2587) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsSlotItem"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsSlotItem( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体是槽位物品，则返回true。【功能：检查是否为槽位物品】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1917) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsSpawned"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsSpawned( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体已生成，则返回true。【功能：检查是否已生成】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1624) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsStartingPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsStartingPosition( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体是起始位置，则返回true。【功能：检查是否为起始位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1716) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsStrategicPoint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsStrategicPoint( <span class="arg">EntityID</span> pEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体是战略点，则返回true。【功能：检查是否为战略点】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1704) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsStrategicPointCapturedBy"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsStrategicPointCapturedBy( <span class="arg">EntityID</span> entity, <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果战略点被提供玩家的队伍占领，则返回true。【功能：检查战略点是否被占领】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1763) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsSyncWeapon"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsSyncWeapon( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体是团队武器，则返回true。【功能：检查是否为团队武器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1910) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsUnderAttack"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsUnderAttack( <span class="arg">EntityID</span> entity, <span class="arg">Real</span> time )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体正在被攻击，则返回true。【功能：检查是否被攻击】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1222) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsUnderAttackByPlayer"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsUnderAttackByPlayer( <span class="arg">EntityID</span> entity, <span class="arg">PlayerID</span> pAttackerOwner, <span class="arg">Real</span> time )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体正在被特定玩家攻击，则返回true。【功能：检查是否被特定玩家攻击】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1308) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsUnderAttackFromDirection"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsUnderAttackFromDirection( <span class="arg">EntityID</span> entity, <span class="arg">Integer</span> offset, <span class="arg">Real</span> timeSeconds )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体从特定方向被攻击（8种偏移类型，参见ScarUtil.scar），则返回true。【功能：检查攻击方向】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1228) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsUnderConstruction"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsUnderConstruction( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体正在建造中，则返回true。【功能：检查是否在建造中】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2481) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsUnderRepair"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsUnderRepair( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体正在被修理，则返回true。【功能：检查是否在修理中】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2469) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsValid"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsValid( <span class="arg">Integer</span> id )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查世界中是否可以找到具有给定ID的实体。【功能：检查实体是否存在】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (418) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsVaultable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsVaultable( <span class="arg">EntityID</span> pEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体是否可以被翻越。【功能：检查是否可翻越】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2050) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsVehicle"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsVehicle( <span class="arg">EntityID</span> pEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回实体是否为载具。【功能：检查是否为载具】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2003) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_IsVictoryPoint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_IsVictoryPoint( <span class="arg">EntityID</span> pEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果entityID是胜利点，则返回true。【功能：检查是否为胜利点】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1692) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_Kill"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_Kill( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>杀死实体。将生命值设为0，并触发死亡效果。【功能：杀死实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (931) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_NotifyOnPlayerDemolition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_NotifyOnPlayerDemolition( <span class="arg">Entity</span> entity, <span class="arg">LuaFunction</span> function )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当实体被玩家点击实体旁边的"引爆我"按钮销毁时调用函数。【功能：设置引爆回调】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\entity.scar] (68) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_OverrideScreenName"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_OverrideScreenName( <span class="arg">EntityID</span> entity, <span class="arg">String</span> overrideName )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>覆盖作为第一个参数提供的实体实例的实体蓝图UI屏幕名称。Loc_GetString可用于获取本地化字符串作为第二个参数传入。【功能：覆盖实体UI名称】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3495) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_Population"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_Population( <span class="arg">EntityID</span> entity, <a href="enum_list.htm#CapType">CapType</a> type )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取实体人口成本，使用CT_Personnel、CT_Vehicle、CT_Medic作为人口类型。【功能：获取人口成本】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2577) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_QueueProductionItemByPBG"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_QueueProductionItemByPBG( <span class="arg">EntityID</span> entity, <a href="enum_list.htm#ProductionItemType">ProductionItemType</a> itemType, <span class="arg">PropertyBagGroup</span> pbg )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将提供的pbg推入实体的生产队列，并返回是否成功添加。还需要为pbg指定itemType(PITEM_Upgrade, PITEM_Spawn, PITEM_SquadUpgrade, PITEM_SquadReinforce, PITEM_PlayerUpgrade)。【功能：添加生产项目】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1168) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_RagDoll"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_RagDoll( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>触发布娃娃骨骼驱动。【功能：触发布娃娃效果】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3284) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_RemoveAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_RemoveAbility( <span class="arg">EntityID</span> entity, <span class="arg">ScarAbilityPBG</span> ability )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除之前通过Entity_AddAbility添加的技能。您无法移除静态技能（来自AE: ability_ext）。【功能：移除技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2324) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_RemoveBoobyTraps"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_RemoveBoobyTraps( <span class="arg">EntityID</span> pEntityTarget )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除此实体上的所有诡雷。【功能：移除诡雷】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2148) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_RemoveDemolitions"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_RemoveDemolitions( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除实体上的所有爆破炸药。【功能：移除爆破炸药】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2183) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_RemoveUpgrade"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_RemoveUpgrade( <span class="arg">EntityID</span> entity, <span class="arg">ScarUpgradePBG</span> upgrade )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从实体移除升级。【功能：移除升级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1988) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_RequiresSlottedSplineUpdateAfterBlueprintConversion"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_RequiresSlottedSplineUpdateAfterBlueprintConversion( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果在蓝图转换后应该使用包含此实体的egroup调用Misc_UpdateSlottedSplinesContainingEGroupAfterBlueprintConversion，则返回true。使用该函数时请确保将所有实体批量处理以减少重复工作。【功能：检查是否需要更新槽位样条】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3277) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_ResetMeleeBlocksPerAttacks"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_ResetMeleeBlocksPerAttacks( <span class="arg">Entity&amp;</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将近战格挡率重置为AE调优值。【功能：重置近战格挡率】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3188) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_ResetProjectileBlocksPerAttacks"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_ResetProjectileBlocksPerAttacks( <span class="arg">Entity&amp;</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将投射物格挡率重置为AE调优值。【功能：重置投射物格挡率】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3208) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_ResetRangedBlocksPerAttacks"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_ResetRangedBlocksPerAttacks( <span class="arg">Entity&amp;</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将远程格挡率重置为AE调优值。【功能：重置远程格挡率】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3198) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_RestoreTargetingType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_RestoreTargetingType( <span class="arg">Entity&amp;</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将瞄准类型恢复为ebp中的默认值。【功能：恢复默认瞄准类型】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3072) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetAnimatorAction"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetAnimatorAction( <span class="arg">EntityID</span> pEntity, <span class="arg">String</span> actionName )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>触发实体的动画动作。请仅用于简单动画。【功能：触发动画动作】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1564) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetAnimatorActionParameter"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetAnimatorActionParameter( <span class="arg">EntityID</span> pEntity, <span class="arg">String</span> actionParameterName, <span class="arg">String</span> actionParameterValue )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置实体的动画动作参数。请仅用于简单动画。【功能：设置动画动作参数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1554) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetAnimatorEvent"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetAnimatorEvent( <span class="arg">EntityID</span> pEntity, <span class="arg">String</span> eventName )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置实体的动画事件。请仅用于简单动画。【功能：设置动画事件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1541) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetAnimatorState"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetAnimatorState( <span class="arg">EntityID</span> pEntity, <span class="arg">String</span> stateMachineName, <span class="arg">String</span> stateName )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置实体状态机的动画状态。请仅用于简单动画。【功能：设置动画状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1574) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetAnimatorVariable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetAnimatorVariable( <span class="arg">EntityID</span> pEntity, <span class="arg">String</span> variableName, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置实体的动画变量值。请仅用于简单动画。【功能：设置动画变量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1585) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetBackground"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetBackground( <span class="arg">EntityID</span> pEntity, <span class="arg">Boolean</span> isInBackground )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将实体设置为在背景或前景中。默认情况下，所有实体都在前景中。【功能：设置实体层级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2616) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetBurnExtEnabled"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetBurnExtEnabled( <span class="arg">EGroupID</span> unit, <span class="arg">Boolean</span> enabled )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用或禁用小队/实体的BurnExt扩展。【功能：启用/禁用燃烧扩展】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\entity.scar] (87) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetCrushable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetCrushable( <span class="arg">EntityID</span> entity, <span class="arg">Boolean</span> crushable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>覆盖实体的可碾压行为。【功能：覆盖可碾压行为】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2229) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetCrushMode"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetCrushMode( <span class="arg">EntityID</span> entity, <a href="enum_list.htm#CrushMode">CrushMode</a> mode )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>更改给定实体的碾压模式。实体必须拥有碾压扩展。【功能：更改碾压模式】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2235) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetDemolitions"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetDemolitions( <span class="arg">PlayerID</span> player, <span class="arg">EntityID</span> entity, <span class="arg">Integer</span> numcharges )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果此实体设置为可爆破，则完全为其配置爆破设施。'player'是拥有爆破设施并可以引爆它们的玩家。【功能：配置爆破设施】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2110) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetEnableCasualty"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetEnableCasualty( <span class="arg">Boolean</span> enable, <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用或禁用伤亡文本。【功能：启用/禁用伤亡文本】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2276) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetExtEnabled"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetExtEnabled( <span class="arg">EntityID</span> entity, <span class="arg">String</span> extID, <span class="arg">Boolean</span> enabled )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用/禁用实体上的扩展。【功能：启用/禁用扩展】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2402) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetHeading"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetHeading( <span class="arg">EntityID</span> entity, <span class="arg">Position</span> pos, <span class="arg">Boolean</span> bInterpolate )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置实体的朝向。朝向目前是一个包含三个条目(x, y, z)的lua表。【功能：设置实体朝向】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (496) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetHeadingGroundSnapOptional"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetHeadingGroundSnapOptional( <span class="arg">EntityID</span> entity, <span class="arg">Position</span> pos, <span class="arg">Boolean</span> bSnapToGround, <span class="arg">Boolean</span> bInterpolate )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置实体的朝向。朝向目前是一个包含三个条目(x, y, z)的lua表。【功能：设置实体朝向】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (486) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetHealth"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetHealth( <span class="arg">EntityID</span> entity, <span class="arg">Real</span> healthPercent )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置实体的生命值。healthPercent必须在[0.0, 1.0]范围内。【功能：设置生命值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (889) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetInvulnerable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetInvulnerable( <span class="arg">EntityID</span> entity, <span class="arg">Boolean</span> enable, <span class="arg">Real</span> reset_time )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置实体的无敌状态。重置时间以秒为单位。如果设置了，无敌状态将在此时长后过期。【功能：设置无敌状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\entity.scar] (26) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetInvulnerableMinCap"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetInvulnerableMinCap( <span class="arg">EntityID</span> entity, <span class="arg">Real</span> minHealthPercentage, <span class="arg">Real</span> resetTime )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当生命值低于最小生命值百分比时，使实体对物理伤害无敌。【功能：设置最小无敌生命值】</p>
+                <p>percentage of 0.0 means entity is vulnerable; percentage of 1.0 sets the entity in god mode resetTime is the time in seconds that vulnerability will be restored.; zero time for reset time means the buff will last forever</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1657) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetLockCurrentTierVisuals"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetLockCurrentTierVisuals( <span class="arg">EntityID</span> entity, <span class="arg">Boolean</span> lockVisuals )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置TierExt中的lockCurrentTierVisuals标志，这样当实体进行蓝图转换时不会更新视觉资源。必须在蓝图转换之前调用。【功能：锁定当前层级视觉效果】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3359) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetMeleeBlocksPerAttacks"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetMeleeBlocksPerAttacks( <span class="arg">Entity</span> entity, <span class="arg">Integer</span> blocks, <span class="arg">Integer</span> attacks )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置实体每次攻击将执行的格挡次数。【功能：设置格挡次数】</p>
+                <p>For each numAttacks melee attacks the entity receives, it will block a random numBlocks of them. Block rate is numBlocks / numAttacks</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3152) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetOnFire"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetOnFire( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>点燃一个物体（也适用于建筑）。【功能：点燃实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2533) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetPlayerOwner"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetPlayerOwner( <span class="arg">EntityID</span> entity, <span class="arg">PlayerID</span> owner )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>更改给定小队的所有者。【功能：更改所有者】</p>
+                <p>This function doesn't work with strategic/capturable point</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (556) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetPosition( <span class="arg">EntityID</span> entity, <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置实体的位置。位置目前是一个包含三个条目(x, y, z)的lua表。【功能：设置实体位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (445) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetPositionWithinCell"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetPositionWithinCell( <span class="arg">EntityID</span> entity, <span class="arg">Position</span> desiredPosition )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果实体与期望位置在同一单元格，尝试将实体位置设置到该位置。如果单元格靠近不可通行区域，则将其设置到单元格中心。【功能：设置单元格内位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (456) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetProjectileBlocksPerAttacks"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetProjectileBlocksPerAttacks( <span class="arg">Entity</span> entity, <span class="arg">Integer</span> blocks, <span class="arg">Integer</span> attacks )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置实体每次攻击将执行的格挡次数。【功能：设置格挡次数】</p>
+                <p>For each numAttacks projectile attacks the entity receives, it will block a random numBlocks of them. Block rate is numBlocks / numAttacks</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3178) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetProjectileCanExplode"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetProjectileCanExplode( <span class="arg">EntityID</span> projectile, <span class="arg">Boolean</span> canExplode )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置投射物是否可以爆炸。【功能：设置投射物爆炸】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2075) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetRangedBlocksPerAttacks"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetRangedBlocksPerAttacks( <span class="arg">Entity</span> entity, <span class="arg">Integer</span> blocks, <span class="arg">Integer</span> attacks )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置实体每次攻击将执行的格挡次数。【功能：设置格挡次数】</p>
+                <p>For each numAttacks ranged attacks the entity receives, it will block a random numBlocks of them. Block rate is numBlocks / numAttacks</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3165) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetRecrewable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetRecrewable( <span class="arg">EntityID</span> entity, <span class="arg">Boolean</span> capturable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置实体在被遗弃时是否可重新乘员。【功能：设置可重新乘员】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1924) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetRemainingResourceDepositAmount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetRemainingResourceDepositAmount( <span class="arg">EntityID</span> entity, <span class="arg">Real</span> amount )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置给定实体的剩余资源数量。【功能：设置剩余资源】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2945) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetResource"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetResource( <span class="arg">EntityID</span> entity, <span class="arg">Integer</span> type, <span class="arg">Real</span> amount )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为实体设置特定数量的特定资源类型。【功能：设置资源数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2975) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetSharedProductionQueue"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetSharedProductionQueue( <span class="arg">EntityID</span> entity, <span class="arg">Boolean</span> shared )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在建筑上启用共享团队生产（队友可以使用他们的资源建造）。【功能：启用共享生产】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1153) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetShowSilhouette"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetShowSilhouette( <span class="arg">EntityID</span> entity, <span class="arg">Boolean</span> show )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当实体在其他物体后面时显示或隐藏实体的轮廓。【功能：设置轮廓显示】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1211) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetStateModelBool"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetStateModelBool( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key, <span class="arg">Boolean</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在实体状态模型中设置对应给定键的布尔值。【功能：设置状态模型布尔值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2788) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetStateModelEntityTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetStateModelEntityTarget( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key, <span class="arg">EntityID</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在实体状态模型中设置对应给定键的实体TargetHandle值。【功能：设置状态模型实体目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2824) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetStateModelEnumTableBool"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetStateModelEnumTableBool( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex, <span class="arg">Boolean</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在实体状态模型中设置对应给定键和表行索引(从0开始)的布尔值。【功能：设置状态模型表布尔值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2861) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetStateModelEnumTableEntityTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetStateModelEnumTableEntityTarget( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex, <span class="arg">EntityID</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在实体状态模型中设置对应给定键和表行索引(从0开始)的实体TargetHandle值。【功能：设置状态模型表实体目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2919) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetStateModelEnumTableFloat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetStateModelEnumTableFloat( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在实体状态模型中设置对应给定键和表行索引(从0开始)的浮点值。【功能：设置状态模型表浮点值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2875) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetStateModelEnumTableInt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetStateModelEnumTableInt( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex, <span class="arg">Integer</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在实体状态模型中设置对应给定键和表行索引(从0开始)的整数值。【功能：设置状态模型表整数值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2868) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetStateModelEnumTablePlayerTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetStateModelEnumTablePlayerTarget( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex, <span class="arg">PlayerID</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在实体状态模型中设置对应给定键和表行索引(从0开始)的玩家TargetHandle值。【功能：设置状态模型表玩家目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2897) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetStateModelEnumTableSquadTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetStateModelEnumTableSquadTarget( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex, <span class="arg">SquadID</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在实体状态模型中设置对应给定键和表行索引(从0开始)的小队TargetHandle值。【功能：设置状态模型表小队目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2908) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetStateModelEnumTableVector3f"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetStateModelEnumTableVector3f( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex, <span class="arg">Position</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在实体状态模型中设置对应给定键和表行索引(从0开始)的Vector3f值。【功能：设置状态模型表向量值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2886) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetStateModelFloat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetStateModelFloat( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在实体状态模型中设置对应给定键的浮点值。【功能：设置状态模型浮点值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2800) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetStateModelInt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetStateModelInt( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key, <span class="arg">Integer</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在实体状态模型中设置对应给定键的整数值。【功能：设置状态模型整数值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2794) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetStateModelPlayerTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetStateModelPlayerTarget( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key, <span class="arg">PlayerID</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在实体状态模型中设置对应给定键的玩家TargetHandle值。【功能：设置状态模型玩家目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2812) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetStateModelSquadTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetStateModelSquadTarget( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key, <span class="arg">SquadID</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在实体状态模型中设置对应给定键的小队TargetHandle值。【功能：设置状态模型小队目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2818) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetStateModelVector3f"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetStateModelVector3f( <span class="arg">EntityID</span> entity, <span class="arg">String</span> key, <span class="arg">Position</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在实体状态模型中设置对应给定键的Vector3f值。【功能：设置状态模型向量值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2806) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetStayBurningWhileInvulnerable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetStayBurningWhileInvulnerable( <span class="arg">EntityID</span> entity, <span class="arg">Boolean</span> shouldStayBurning )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置一个标志，告诉建筑在无敌时继续燃烧（用于氛围效果）。【功能：设置无敌时持续燃烧】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2567) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetStrategicPointNeutral"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetStrategicPointNeutral( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将战略点设置为中立（不属于任何队伍）。【功能：设置战略点中立】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1746) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetStrategicPointReticuleVisible"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetStrategicPointReticuleVisible( <span class="arg">EntityID</span> entity, <span class="arg">Boolean</span> visible )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置战略点的标线是否可见。【功能：设置战略点标线可见性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1008) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetTargetingType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetTargetingType( <span class="arg">Entity&amp;</span> entity, <span class="arg">TargetingType</span> type )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置瞄准此实体的允许方法。【功能：设置瞄准方法】</p>
+                <p>Targeting_Automatic: allow auto and manual targeting Targeting_Manual: only allow manual targeting Targeting_None: do not allow targeting</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (3059) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SetWorldOwned"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SetWorldOwned( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>使实体变为中立。【功能：使实体中立】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (587) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SimHide"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SimHide( <span class="arg">EntityID</span> entity, <span class="arg">Boolean</span> hide )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在模拟中显示/隐藏实体。【功能：模拟显示/隐藏】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2264) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SnapToGridAndGround"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SnapToGridAndGround( <span class="arg">EntityID</span> entity, <span class="arg">Boolean</span> interpolate )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将实体吸附到网格和地面。【功能：吸附到网格和地面】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (467) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_Spawn"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_Spawn( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在当前位置生成实体。【功能：生成实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (502) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SpawnDoNotAddPathfindingAndCollision"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SpawnDoNotAddPathfindingAndCollision( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在当前位置生成实体，不添加寻路和碰撞。【功能：生成实体（无寻路碰撞）】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (526) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SpawnToward"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SpawnToward( <span class="arg">EntityID</span> entity, <span class="arg">Position</span> pos, <span class="arg">Position</span> toward, <span class="arg">String</span> spawnType )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在给定位置生成实体。【功能：在指定位置生成实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (508) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_StopAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_StopAbility( <span class="arg">EntityID</span> entity, <span class="arg">ScarAbilityPBG</span> ability, <span class="arg">Boolean</span> bIsEarlyExit )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>突然停止活动技能。【功能：停止技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2289) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_StopFire"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_StopFire( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>扑灭物体上的火焰（也适用于建筑）。【功能：扑灭火焰】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2545) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SuggestPosture"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SuggestPosture( <span class="arg">EntityID</span> entity, <span class="arg">Integer</span> posture, <span class="arg">Real</span> duration )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向实体建议一个姿态，持续传递的时长。【功能：建议姿态】</p>
+                <p>Posture of 0 is prone, 1 is kneel/crouch, and 2 is standing.  Duration is in seconds, negative means indefinite.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2494) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_SupportsDemolition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_SupportsDemolition( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回此实体是否已设置为可以放置爆破炸药。【功能：检查是否支持爆破】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (2087) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_TagDebug"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_TagDebug( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>标记实体用于调试。【功能：标记调试实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (749) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_UnloadAllFromHold"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_UnloadAllFromHold( <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>卸载此实体驻扎的所有内容。【功能：卸载所有驻扎内容】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (1885) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_VisHide"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_VisHide( <span class="arg">EntityID</span> pEntity, <span class="arg">Boolean</span> bHide )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>视觉上隐藏或显示实体。【功能：视觉显示/隐藏】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\luaentity.cpp] (779) </b></td>
+            </tr>
+          </table>
+        </p><a name="Entity_WarpToPos"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Entity_WarpToPos( <span class="arg">EntityID</span> entity, <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>立即将实体传送到新位置。【功能：传送实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\entity.scar] (17) </b></td>
+            </tr>
+          </table>
+        </p><a name="Misc_DoesPositionHaveAssociatedDistrict"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Misc_DoesPositionHaveAssociatedDistrict( <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查给定位置是否有关联的区域。【功能：检查位置区域】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaMisc.cpp] (130) </b></td>
+            </tr>
+          </table>
+        </p><a name="Misc_DoWeaponHitEffectOnPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Misc_DoWeaponHitEffectOnPosition( <span class="arg">Position</span> pos, <span class="arg">ScarWeaponPBG</span> weaponPBG, <span class="arg">Boolean</span> penetrated )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在地面产生武器命中效果。【功能：地面武器命中效果】</p>
+                <p>WeaponID is the property bag group id; if penetrated is set to false, deflection effect would be played instead</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaMisc.cpp] (44) </b></td>
+            </tr>
+          </table>
+        </p><a name="Misc_FindDepositsCloseToSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Misc_FindDepositsCloseToSquad( <span class="arg">EGroupID</span> group, <span class="arg">SquadID</span> squad, <span class="arg">Real</span> searchRange )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找小队指定范围内的资源点。【功能：查找附近资源点】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaMisc.cpp] (67) </b></td>
+            </tr>
+          </table>
+        </p><a name="Misc_FindDepositsOfTypeCloseToPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Misc_FindDepositsOfTypeCloseToPosition( <span class="arg">ResourceType</span> resourceType, <span class="arg">EBP</span> gathererEBP, <span class="arg">Position</span> position, <span class="arg">Number</span> searchRange )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找位置指定范围内给定类型的资源点，可由提供的采集者蓝图(gathererEBP)采集。【功能：查找指定类型资源点】</p>
+                <p>Returns an egroup of resource deposits named "eg_Misc_FindNearbyDepositOfType_result", sorted by proximity to the position</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaMisc.cpp] (97) </b></td>
+            </tr>
+          </table>
+        </p><a name="Misc_GetDistrictGeneratorFromPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Misc_GetDistrictGeneratorFromPosition( <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回生成包含给定位置区域的实体。与Misc_DoesPositionHaveAssociatedDistrict一起使用。【功能：获取区域生成实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaMisc.cpp] (170) </b></td>
+            </tr>
+          </table>
+        </p><a name="Misc_GetDistrictValueFromPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Misc_GetDistrictValueFromPosition( <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回包含给定位置区域的区域值。与Misc_DoesPositionHaveAssociatedDistrict一起使用。【功能：获取区域值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaMisc.cpp] (149) </b></td>
+            </tr>
+          </table>
+        </p><a name="Misc_UpdateSlottedSplinesContainingEGroupAfterBlueprintConversion"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Misc_UpdateSlottedSplinesContainingEGroupAfterBlueprintConversion( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>更新槽位样条系统以处理给定EGroup中的实体已完成蓝图转换的事实。从脚本转换槽位样条实体后必须调用此函数。【功能：更新槽位样条系统】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaMisc.cpp] (195) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

@@ -1,0 +1,2935 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;SGroup</title>
+</head>
+<body>
+<span class="subtitle">scardoc;SGroup</span><p>
+<a name="Group_scardoc;SGroup"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;SGroup</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="Cmd_StopSquadsExcept"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_StopSquadsExcept( <span class="arg">SGroupID</span> sgroup1, <span class="arg">Boolean</span> OPT_stopCapture, <span class="arg">Boolean</span> OPT_stopBuild )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>传入一个小队组并命令其"停止"。传入布尔值控制是否停止占领和建造行为。【功能：命令小队组停止行动】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3246) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_CompleteUpgrade"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_CompleteUpgrade( <span class="arg">EGroupID</span> egroup, <span class="arg">Integer</span> upgrade )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>立即为指定实体组中的所有实体添加一个升级。【功能：立即完成实体组升级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3941) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_FilterCamouflaged"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_FilterCamouflaged( <span class="arg">EGroupID</span> sgroup, <span class="arg">Integer</span> filtertype , <span class="arg">EGroupID</span> OPT_splitEGroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>过滤实体组，使用FILTER_REMOVE移除或FILTER_KEEP保留当前处于伪装状态（包括潜行）的实体。【功能：过滤伪装状态的实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3218) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_RestoreTargetingType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_RestoreTargetingType( <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将此实体组中实体的目标类型恢复为其各自的默认值（如其EBP中所定义）。【功能：恢复实体默认目标类型】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3966) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_SetBurnExtEnabled"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_SetBurnExtEnabled( <span class="arg">EGroupID</span> egroup, <span class="arg">Boolean</span> enabled )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用或禁用燃烧扩展功能。【功能：设置燃烧扩展开关】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3978) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_SetRemainingResourceDepositAmount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_SetRemainingResourceDepositAmount(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将实体组中所有实体的资源储量设置为指定数量。【功能：设置实体资源储量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3988) </b></td>
+            </tr>
+          </table>
+        </p><a name="EGroup_SetTargetingType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 EGroup_SetTargetingType( <span class="arg">EGroupID</span> egroup, <span class="arg">TargetingType</span> targetingType )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置此实体组中实体可被目标锁定的方式。【功能：设置实体目标锁定类型】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3954) </b></td>
+            </tr>
+          </table>
+        </p><a name="Misc_IsEGroupOnScreen"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Misc_IsEGroupOnScreen( <span class="arg">EGroupID</span> group, <span class="arg">Real</span> percent, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>测试实体组中任意或全部实体当前是否在屏幕上（非严格检测）。【功能：检测实体组是否在屏幕上】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3868) </b></td>
+            </tr>
+          </table>
+        </p><a name="Misc_IsSGroupOnScreen"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Misc_IsSGroupOnScreen( <span class="arg">SGroupID</span> group, <span class="arg">Real</span> percent, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>测试小队组中任意或全部小队当前是否在屏幕上（非严格检测）。【功能：检测小队组是否在屏幕上】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3858) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_Add"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_Add( <span class="arg">SGroupID</span> group, <span class="arg">SquadID</span> squadron )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队组中尚未包含该小队，则将其添加到组末尾。【功能：向小队组添加小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (844) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_AddAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_AddAbility( <span class="arg">SGroupID</span> sgroup, <span class="arg">Integer</span> ability )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为小队组中的所有小队添加一个技能。【功能：为小队组添加技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3804) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_AddGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_AddGroup( <span class="arg">SGroupID</span> group, <span class="arg">SGroupID</span> grouptoadd )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>与EGroup_AddGroup相同。注意：不能混合使用小队组和实体组。【功能：将一个组添加到另一个组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (822) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_AddGroups"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_AddGroups( <span class="arg">SGroupID</span> sgroup, <span class="arg">Table</span> groupList )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将多个小队组列表添加到现有组中。【功能：批量添加多个小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1752) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_AddLeaders"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_AddLeaders( <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为组中所有可以接受队长的小队添加队长。【功能：为小队添加队长】</p>
+                <p>This function will bypass all cost and queue prereqs</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2323) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_AddResource"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_AddResource( <span class="arg">SGroupID</span> sgroup, <span class="arg">ResourceType</span> resource, <span class="arg">Integer</span> amount )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为小队增加指定类型的资源数量。【功能：为小队增加资源】</p>
+                <p>If SGroup contains multiple squads, it will add for all</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2363) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_AddSlotItemToDropOnDeath"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_AddSlotItemToDropOnDeath( <span class="arg">SGroupID</span> groupid, <span class="arg">Integer</span> itemid, <span class="arg">Real</span> drop_chance, <span class="arg">Boolean</span> exclusive )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>添加到小队被消灭时掉落的槽位物品列表中。【功能：设置小队死亡掉落物品】</p>
+                <p>Drop chance is percentage chance the item will drop (0.0-1.0) exlusive means the squad would only drop this item, thus erasing all previous items in list example:	local item = Util_GetSlotItemID( "slot_item/allies_m9bazooka.lua" ) SGroup_AddSlotItemToDropOnDeath( squadid, item, false )</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2611) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_CanCastAbilityOnEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_CanCastAbilityOnEntity( <span class="arg">SGroupID</span> caster, <span class="arg">Integer</span> ability, <span class="arg">EntityID</span> target_entity, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>测试组中任意或全部小队是否可以对目标实体施放该技能。【功能：检测是否可对实体施放技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3830) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_CanCastAbilityOnPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_CanCastAbilityOnPosition( <span class="arg">SGroupID</span> caster, <span class="arg">Integer</span> ability, <span class="arg">Position</span> position, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>测试组中任意或全部小队是否可以在目标位置施放该技能。【功能：检测是否可在位置施放技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3848) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_CanCastAbilityOnSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_CanCastAbilityOnSquad( <span class="arg">SGroupID</span> caster, <span class="arg">Integer</span> ability, <span class="arg">SquadID</span> target_squad, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>测试组中任意或全部小队是否可以对目标小队施放该技能。【功能：检测是否可对小队施放技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3839) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_CanInstantReinforceNow"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_CanInstantReinforceNow( <span class="arg">SGroupID</span> group, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果组中任意或全部小队现在可以增援，则返回true。【功能：检测是否可立即增援】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2927) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_CanSeeEGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_CanSeeEGroup( <span class="arg">SGroupID</span> sgroup, <span class="arg">EGroupID</span> targetegroup, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Returns true if ALL or ANY entities in a group can see ALL or ANY entities in a given egroup. </p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1955) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_CanSeeSGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_CanSeeSGroup( <span class="arg">SGroupID</span> sgroup, <span class="arg">SGroupID</span> targetsgroup, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果组中全部或任意小队能看到目标小队组中全部或任意小队，则返回true。【功能：检测小队组是否能看到另一小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1943) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_Clear"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_Clear( <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从组中移除所有实体。【功能：清空小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (816) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_ClearPostureSuggestion"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_ClearPostureSuggestion( <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清除之前对小队做出的任何姿态建议。【功能：清除小队姿态建议】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (1106) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_Compare"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_Compare( <span class="arg">SGroupID</span> group1, <span class="arg">SGroupID</span> group2 )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果两个组的内容相等则返回true。实体的顺序不重要。【功能：比较两个小队组是否相等】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (838) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_CompleteEntityUpgrade"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_CompleteEntityUpgrade( <span class="arg">SGroupID</span> sgroup, <span class="arg">UpgradeID</span> upgrade )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为小队组中的所有小队实体应用一个升级。【功能：完成小队实体升级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3383) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_CompleteUpgrade"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_CompleteUpgrade( <span class="arg">SGroupID</span> sgroup, <span class="arg">Integer</span> upgrade )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>立即为指定小队组中的所有小队添加一个升级。【功能：立即完成小队组升级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3929) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_ContainsBlueprints"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_ContainsBlueprints( <span class="arg">SGroupID</span> sgroup, <span class="arg">BP/Table</span> blueprints, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查组是否包含全部或任意指定的蓝图。【功能：检查小队组是否包含指定蓝图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2161) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_ContainsSGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_ContainsSGroup( <span class="arg">SGroupID</span> group1, <span class="arg">SGroupID</span> group2, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队组1包含小队组2中的任意或全部小队，则返回true。【功能：检查小队组是否包含另一小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (1064) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_ContainsSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_ContainsSquad( <span class="arg">SGroupID</span> group, <span class="arg">Integer</span> SquadID, <span class="arg">Boolean</span> includeDespawned )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队组包含指定的小队ID，则返回true。【功能：检查小队组是否包含指定小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (1038) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_Count"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_Count( <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回组中已生成和未生成小队的总数。【功能：获取小队组中小队总数】</p>
+                <p>NOTE: SGroup_Count does not count the individual soldiers in an SGroup.  For that, use SGroup_TotalMembersCount</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (786) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_CountAlliedSquads"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_CountAlliedSquads( <span class="arg">SGroupID</span> group, <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队组中与传入玩家同盟关系匹配的小队数量。【功能：统计同盟小队数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (810) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_CountBlueprints"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_CountBlueprints( <span class="arg">SGroupID</span> sgroup, <span class="arg">String</span> sbp )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定小队组中具有指定蓝图或类型的所有小队总数。【功能：统计指定蓝图小队数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3306) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_CountDeSpawned"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_CountDeSpawned( <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回组中未生成小队的数量。【功能：统计未生成小队数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (798) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_CountEnemySquads"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_CountEnemySquads( <span class="arg">SGroupID</span> group, <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队组中与传入玩家敌对关系匹配的小队数量。【功能：统计敌方小队数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (804) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_CountPopulation"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_CountPopulation( <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>通过遍历每个小队来计算小队组的总人口成本。【功能：统计小队组人口成本】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1837) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_CountSpawned"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_CountSpawned( <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回组中已生成小队的数量。【功能：统计已生成小队数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (792) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_Create"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_Create( <span class="arg">String</span> name )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回一个具有指定名称的新小队组。【功能：创建新的小队组】</p>
+                <p>Squad groups are used for all units and vehicles.  You can issue orders such as move and attack to an entire squad group. If you want a group for buildings or objects such as trees, use an sim::EntityGroupObs instead.\n Note that you cannot create sgroups with duplicate names.\n To be safe, you can check if the SGroup you want to create exists using SGroup_Exists( )</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (717) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_CreateIfNotFound"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_CreateIfNotFound( <span class="arg">String</span> name )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据名称查找小队组。如果不存在则用给定名称创建一个新的。【功能：查找或创建小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1987) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_CreateKickerMessage"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_CreateKickerMessage( <span class="arg">SGroupID</span> group, <span class="arg">PlayerID</span> player, <span class="arg">String</span> textid )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在小队组的每个小队上创建并向玩家显示提示消息。【功能：创建小队提示消息】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2943) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_CreateUnique"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_CreateUnique( <span class="arg">String</span> OPT_prefix )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回一个具有唯一名称的小队组，名称以'prefix'参数为前缀。【功能：创建唯一命名的小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1738) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_CreateUniqueWithPrefix"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_CreateUniqueWithPrefix( <span class="arg">String</span> prefix )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回一个具有自动生成唯一名称的新小队组，可选择以传入的字符串为前缀。【功能：创建带前缀的唯一小队组】</p>
+                <p>Use this if you want to create a new SGroup but don't necessarily care about the name.\n Squad groups are used for all units and vehicles.  You can issue orders such as move and attack to an entire squad group.\n</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (743) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_DeSpawn"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_DeSpawn( <span class="arg">SGroupID</span> groupid )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>取消生成组中所有已生成的小队。【功能：取消生成小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2438) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_Destroy"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_Destroy( <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>手动销毁不再需要的组。【功能：销毁小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (760) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_DestroyAllInMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_DestroyAllInMarker( <span class="arg">SGroupID</span> sgroup, <span class="arg">MarkerID</span> marker )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>销毁组中靠近指定标记的所有项目。【功能：销毁标记附近的组内项目】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2295) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_DestroyAllSquads"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_DestroyAllSquads( <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>销毁组中所有已生成和未生成的小队。【功能：销毁组内所有小队】</p>
+                <p>Be careful not to confuse this with SGroup_Destroy which destroys the group and NOT the squads it contains.  This function will destroy spawned and despawned items in a group</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2145) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_DisableCombatPlans"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_DisableCombatPlans( <span class="arg">SGroupID</span> groupID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>禁用小队组中小队当前的所有战斗计划。【功能：禁用小队战斗计划】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3460) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_Duplicate"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_Duplicate( <span class="arg">SGroupID</span> sgroup1, <span class="arg">SGroupID</span> sgroup2 )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>复制小队组。在sgroup2中创建sgroup1的副本。如有必要，函数会先清空sgroup2。【功能：复制小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3275) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_EnableAttention"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_EnableAttention( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> attentive )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置实体是否注意其周围环境。【功能：设置小队环境感知】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3768) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_EnableMinimapIndicator"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_EnableMinimapIndicator( <span class="arg">SGroupID</span> group, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用或禁用小队组中所有小队的小地图指示器。【功能：设置小地图指示器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2880) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_EnableSurprise"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_EnableSurprise( <span class="arg">SGroupID</span> groupid, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用或禁用小队组的突袭功能。【功能：设置突袭功能开关】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2693) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_EnableUIDecorator"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_EnableUIDecorator( <span class="arg">SGroupID</span> group, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用或禁用小队组中所有小队的UI装饰器。【功能：设置UI装饰器开关】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2861) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_Exists"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_Exists( <span class="arg">String</span> name )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果具有指定名称的小队组存在，则返回true。【功能：检查小队组是否存在】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (935) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_FaceEachOther"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_FaceEachOther( <span class="arg">SGroupID</span> sgroup1, <span class="arg">SGroupID</span> sgroup2 )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>使两个小队组相互面向对方。【功能：使两个小队组相互面向】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2381) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_FaceMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_FaceMarker( <span class="arg">SGroupID</span> sgroup, <span class="arg">MarkerID</span> marker )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>使小队组面向一个标记。【功能：使小队组面向标记】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2411) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_Filter"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_Filter( <span class="arg">SGroupID</span> sgroup, <span class="arg">SBP/SquadType/Table</span> blueprint, <span class="arg">Integer</span> filtertype, <span class="arg">SGroupID</span> OPT_splitSGroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>按蓝图过滤小队组。【功能：按蓝图过滤小队组】</p>
+                <p>A table of blueprints can be specified if you want to filter on more than one type. Setting filtertype to FILTER_KEEP results in the group only containing squads of the types listed in the blueprint table. Setting filtertype to FILTER_REMOVE will strip those same squads out and leave those that aren't of the types listed. Setting splitSGroup will move any squads being KEEP or REMOVE to it.  This SGroup will NOT be cleared beforehand. SquadTypes can also be used in place of Blueprints. If you want a squad to match a bunch of SquadTypes at the same time (i.e. AND instead of OR) then they can be listed together in a sub-table.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2976) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_FilterByProximity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_FilterByProximity( <span class="arg">SGroupID</span> sgroup, <span class="arg">Pos</span> position, <span class="arg">Integer</span> filtertype, <span class="arg">Real</span> OPT_OPT_range, <span class="arg">SGroupID</span> OPT_OPT_splitSGroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据距离过滤小队组。使用FILTER_KEEP保留受影响的单位，或使用FILTER_REMOVE移除它们。将invertPosition设为TRUE可影响位置外的单位。【功能：按距离过滤小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3065) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_FilterCamouflaged"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_FilterCamouflaged( <span class="arg">SGroupID</span> sgroup, <span class="arg">Integer</span> filtertype , <span class="arg">SGroupID</span> OPT_splitSGroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>过滤小队组，使用FILTER_REMOVE移除或FILTER_KEEP保留当前处于伪装状态（包括潜行）的单位。【功能：过滤伪装状态的单位】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3159) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_FilterCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_FilterCount( <span class="arg">SGroupID</span> sgroup1, <span class="arg">Integer</span> groupSize, <span class="arg">SGroupID</span> OPT_splitSGroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>传入一个组，将其过滤到指定数量。【功能：按数量过滤小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3095) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_FilterOnScreen"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_FilterOnScreen( <span class="arg">SGroupID</span> egroup, <span class="arg">Real</span> percent, <span class="arg">Integer</span> filtertype )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据单位是否在屏幕上过滤小队组。百分比指的是考虑的屏幕区域（0.8是一个好值——不会包含正好在屏幕边缘的东西）。【功能：按屏幕可见性过滤小队组】</p>
+                <p>Setting filtertype to FILTER_KEEP results in the group only containing those squads that are on screen.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3189) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_FilterSpawned"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_FilterSpawned( <span class="arg">SGroupID</span> sgroup, <span class="arg">Integer</span> filtertype, <span class="arg">SGroupID</span> OPT_splitSGroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据已生成/未生成状态过滤小队组。使用FILTER_KEEP保留已生成单位（因此移除未生成的），或使用FILTER_REMOVE移除已生成单位（保留未生成的）。【功能：按生成状态过滤小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3016) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_FilterThreat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_FilterThreat( <span class="arg">SGroupID</span> sgroup, <span class="arg">LuaTable</span> tableSBPs, <span class="arg">Boolean</span> OPT_bEmpty )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>搜索小队组并找到表中第一个威胁（从前往后搜索），然后移除所有其他SBP。【功能：按威胁过滤小队组】</p>
+                <p>Optional parameter bEmpty can be set to true, will clear the SGroup if none of the SBPS in the table are found.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3121) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_FilterVisibleToPlayer"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_FilterVisibleToPlayer( <span class="arg">SGroupID</span> sgroup, <span class="arg">Integer</span> filtertype, <span class="arg">SGroupID</span> OPT_splitSGroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据对玩家的可见性过滤小队组。使用FILTER_KEEP保留可见单位，或使用FILTER_REMOVE移除可见单位。【功能：按玩家可见性过滤小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3037) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_ForEach"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_ForEach( <span class="arg">SGroupID</span> sgroup, <span class="arg">StackVarFunction</span> f )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为组中的每个项目调用一个Lua函数。函数将接收(groupid, itemindex, itemid)参数，应返回true以中断或false以继续。【功能：遍历小队组执行函数】</p>
+                <p>function Rule_Test( )\n \tlocal DespawnSquad = function( sgroupid, itemindex, squadID )\n \t\tSquad_Despawn( squadID )\n \tend\n\n \tSGroup_ForEach( SGroup_FromName("sg_Squads"), DespawnSquad )\n end\n\n This functions iterates over spawned squads only.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (1032) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_ForEachAllOrAny"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_ForEachAllOrAny( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> all, <span class="arg">StackVarFunction</span> f )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为组中的每个项目调用一个Lua函数。函数将接收(groupid, itemindex, itemid)参数，应返回一个布尔值。【功能：遍历小队组执行条件函数】</p>
+                <p>Only use this to TEST conditions on squads. DO NOT use this to perform operations on all squads, since it may not call your function on all squads (due to short circuit evaluation). This is used for checking if ALL or ANY items in a group match a given predicate. (eg. Are all items in a group chaos marines)\n This functions iterates over spawned squads only.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (994) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_ForEachAllOrAnyEx"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_ForEachAllOrAnyEx( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> all, <span class="arg">StackVarFunction</span> f, <span class="arg">Boolean</span> spawned, <span class="arg">Boolean</span> despawned )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>与SGroup_ForEachAllOrAny相同，但可以选择遍历已生成小队、未生成小队或两者。【功能：扩展遍历小队组执行条件函数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (954) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_ForEachEx"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_ForEachEx( <span class="arg">SGroupID</span> sgroup, <span class="arg">StackVarFunction</span> f, <span class="arg">Boolean</span> spawned, <span class="arg">Boolean</span> despawned )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>与SGroup_ForEach相同，但可以选择遍历已生成小队、未生成小队或两者。【功能：扩展遍历小队组执行函数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (1001) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_FromName"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_FromName( <span class="arg">String</span> name )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>根据名称查找小队组。【功能：按名称查找小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (769) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetAvgHealth"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetAvgHealth( <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队组中所有单位的平均生命值比例。【功能：获取小队组平均生命值】</p>
+                <p>It now uses the same health measure that's used by the UI, so it does take into account fallen members of a squad</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2023) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetAvgHealthPercentageWithShields"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetAvgHealthPercentageWithShields( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> includeBonuses )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队组中小队的平均生命值比例，包括护盾强度。【功能：获取小队组平均生命值（含护盾）】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3900) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetAvgLoadout"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetAvgLoadout( <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回组中所有小队的平均装载量百分比[0.0, 1.0]。【功能：获取小队组平均装载量】</p>
+                <p>Example: A group of squads with loadouts of 4/8 and 1/1 would return 0.75</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2074) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetAvgShieldPercentage"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetAvgShieldPercentage( <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队组中小队的平均护盾强度（百分比）。【功能：获取小队组平均护盾强度】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3878) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetClosestSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetClosestSquad( <span class="arg">SGroupID</span> sgroupid, <span class="arg">Marker/Pos</span> position )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取小队组中最接近指定位置的小队。【功能：获取最近的小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2473) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetDeSpawnedSquadAt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetDeSpawnedSquadAt( <span class="arg">SGroupID</span> group, <span class="arg">Integer</span> int )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回组中指定位置的未生成小队。【功能：获取指定位置的未生成小队】</p>
+                <p>This is a one-based index (use index 1 to get the first squad in the group.) It is an error if index &gt; SGroup_CountDeSpawned().</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (899) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetGarrisonedBuildingEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetGarrisonedBuildingEntity( <span class="arg">SGroupID</span> groupid )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取小队组中任意小队驻扎的建筑实体ID。【功能：获取驻扎建筑的实体ID】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2629) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetHoldEGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetHoldEGroup( <span class="arg">SGroupID</span> sgroup, <span class="arg">EGroupID</span> EGroupHold )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取小队组可能占据的所有实体，并将它们添加到EGroupHold中。【功能：获取小队组占据的实体组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3611) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetHoldSGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetHoldSGroup( <span class="arg">SGroupID</span> sgroup, <span class="arg">SGroupID</span> SGroupHold )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取小队组可能占据的所有小队，并将它们添加到SGroupHold中。【功能：获取小队组占据的小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3627) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetInvulnerable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetInvulnerable( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查小队组中全部或任意小队的无敌状态。【功能：检查小队无敌状态】</p>
+                <p>Set all param to true to check for ALL or set to false to check for ANY.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2242) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetLastAttacker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetLastAttacker( <span class="arg">SGroupID</span> SGroupVictim, <span class="arg">SGroupID</span> SGroupAttacker, <span class="arg">Real</span> OPT_seconds )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取小队组中所有小队的最后攻击者，并将其存储在SGroupAttacker中。【功能：获取最后攻击者】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3538) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetLoadedVehicleSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetLoadedVehicleSquad( <span class="arg">SGroupID</span> groupid )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取小队组中任意小队所载入的载具小队ID。【功能：获取载具小队ID】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2661) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetName"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetName( <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定小队组的名称。【功能：获取小队组名称】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (942) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetNumSlotItem"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetNumSlotItem( <span class="arg">SGroupID</span> group, <span class="arg">Integer</span> itemID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取小队组中小队拥有的相同ID槽位物品数量。【功能：获取槽位物品数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2564) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetOffsetPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetOffsetPosition( <span class="arg">SGroupID</span> sgroup, <span class="arg">Integer</span> offset, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回相对于小队当前位置/方向的偏移位置（一定距离外）。关于'offset'参数的说明请参见ScarUtil.scar。【功能：获取偏移位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3598) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetPosition( <span class="arg">SGroupID</span> group )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队组的中心位置。【功能：获取小队组中心位置】</p>
+                <p>Despawned squads are ignored.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (917) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetRandomSpawnedSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetRandomSpawnedSquad( <span class="arg">SGroupID</span> sgroupid )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从小队组中随机获取一个已生成的小队。【功能：随机获取已生成小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2453) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetResource"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetResource( <span class="arg">SGroupID</span> sgroup, <span class="arg">ResourceType</span> resource )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取小队的指定类型资源数量。【功能：获取小队资源数量】</p>
+                <p>If SGroup contains multiple squads, it will be the total of all</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2335) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetSequence"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetSequence( <span class="arg">String</span> name )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>构建一个按序列命名的小队组ID表。例如，名称"sg_killer"将找到组"sg_killer1"、"sg_killer2"等，直到找不到组为止。【功能：获取序列命名的小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3417) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetSpawnedSquadAt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetSpawnedSquadAt( <span class="arg">SGroupID</span> group, <span class="arg">Integer</span> int )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回组中指定位置的已生成小队。【功能：获取指定位置的已生成小队】</p>
+                <p>This is a one-based index (use index 1 to get the first squad in the group.) It is an error if index &gt; SGroup_CountSpawned().</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (879) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetSpread"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetSpread( <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回组中最远单位到组中心的距离。【功能：获取小队组分布范围】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3393) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetSquadAt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetSquadAt( <span class="arg">SGroupID</span> group, <span class="arg">Integer</span> int )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回组中指定位置的小队。【功能：获取指定位置的小队】</p>
+                <p>This is a one-based index (use index 1 to get the first squad in the group.) It is an error if index &gt; SGroup_Count().</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (859) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetSquadsHeld"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetSquadsHeld( <span class="arg">SGroupID</span> sgroup, <span class="arg">SGroupID</span> sgroupRecipient )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回包含小队组中任意小队所容纳的所有小队的小队组。【功能：获取被容纳的小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3583) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetVeterancyExperience"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetVeterancyExperience( <span class="arg">SGroupID</span> groupid )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取小队组中第一个小队的老兵经验值。【功能：获取老兵经验值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2724) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_GetVeterancyRank"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_GetVeterancyRank( <span class="arg">SGroupID</span> groupid )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取小队组中第一个小队的老兵等级。【功能：获取老兵等级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2708) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_HasAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_HasAbility( <span class="arg">SGroupID</span> sgroup, <span class="arg">Integer</span> ability, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>测试组中任意或全部单位是否具有指定技能。【功能：检测小队是否拥有技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3812) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_HasLeader"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_HasLeader( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查小队组中全部或任意小队是否有队长。【功能：检测小队是否有队长】</p>
+                <p>Set all param to true to check for ALL or set to false to check for ANY.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2279) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_HasSquadBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_HasSquadBlueprint( <span class="arg">SGroupID</span> sgroup, <span class="arg">SBP/SquadType/Table</span> blueprint, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查组中全部或任意小队是否具有特定蓝图。【功能：检测小队是否拥有指定蓝图】</p>
+                <p>The blueprint can be a table of blueprints or types (see Squad_HasBlueprint() for details)</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2182) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_HasTeamWeapon"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_HasTeamWeapon( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队组中任意或全部小队携带某种班组武器，则返回true。【功能：检测小队是否携带班组武器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2523) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_HasUpgrade"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_HasUpgrade( <span class="arg">SGroupID</span> sgroup, <span class="arg">UpgradeID</span> upgrade, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队组中任意或全部小队是否具有指定升级。【功能：检测小队是否拥有升级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3369) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_Hide"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_Hide( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> hide )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>隐藏或显示小队组中所有小队的所有实体。【功能：隐藏或显示小队组】</p>
+                <p>Bool should be true to hide, false to show</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2804) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IncreaseVeterancyExperience"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IncreaseVeterancyExperience( <span class="arg">SGroupID</span> groupid, <span class="arg">Real</span> experience, <span class="arg">Boolean</span> OPT_silent, <span class="arg">Boolean</span> OPT_applyModifiers )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>增加小队组中所有小队的老兵经验。可以进行静默晋升（无声音/UI）。可以跳过修改器，直接控制获得的经验值。【功能：增加老兵经验值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2764) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IncreaseVeterancyRank"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IncreaseVeterancyRank( <span class="arg">SGroupID</span> groupid, <span class="arg">Integer</span> OPT_numranks, <span class="arg">Boolean</span> OPT_silent )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>增加小队组中所有小队的老兵等级。默认增加1级。可以进行静默晋升（无声音/UI，例如：任务开始时批量提升等级）。【功能：增加老兵等级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2740) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_Intersection"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_Intersection( <span class="arg">SGroupID</span> group, <span class="arg">SGroupID</span> grouptointersect )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>与EGroup_Intersection相同。注意：不能混合使用小队组和实体组。【功能：获取小队组交集】</p>
+                <p>Only squads that are in both groups will be added to 'group'.\n The contents of 'grouptointersect' will not be changed.\n Example: group = (1,2,3,4,5,6)  grouptointersect = (2,4,6,8,10)   --&gt; group will now equal (2,4,6)</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (832) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsAlive"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsAlive( <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果命名小队组不为空且其平均生命值> 0.0，则返回true。【功能：检测小队组是否存活】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2006) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsAttackMoving"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsAttackMoving( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队组中任意或全部小队正在进行攻击移动，则返回true。【功能：检测小队是否在攻击移动】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3342) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsCamouflaged"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsCamouflaged( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队组中任意或全部小队处于伪装状态，则返回true。【功能：检测小队是否在伪装】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1824) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsCapturing"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsCapturing( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> ALL )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查小队组中任意或全部小队是否正在占领。【功能：检测小队是否在占领】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3679) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsConstructingBuilding"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsConstructingBuilding( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果组中全部或任意小队当前正在建造建筑，则返回true。【功能：检测小队是否在建造建筑】</p>
+                <p>Set all to true to check for ALL or set to false to check for ANY</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3710) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsDoingAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsDoingAbility( <span class="arg">SGroupID</span> sgroupid, <span class="arg">AbilityID</span> ability, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队组中任意或全部成员是否正在执行技能。【功能：检测小队是否在执行技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3754) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsDoingAttack"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsDoingAttack( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> all, <span class="arg">Real</span> time )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果全部或任意小队在指定时间内正在攻击，则返回true。【功能：检测小队是否在攻击】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1927) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsDugIn"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsDugIn( <span class="arg">SGroupID</span> group, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队组中任意或全部小队已挖掘掩体（或正在挖掘中），则返回true。【功能：检测小队是否已挖掘掩体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2844) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsEmpty"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsEmpty( <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果命名小队组为空，则返回true。【功能：检测小队组是否为空】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1998) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsFemale"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsFemale( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果任意或全部小队为女性单位，则返回true。【功能：检测小队是否为女性单位】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1811) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsHoldingAny"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsHoldingAny( <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队组中是否有任何实体容纳了任何东西。【功能：检测小队是否容纳了东西】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3568) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsIdle"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsIdle( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> ALL )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查小队组中任意或全部小队是否处于空闲状态。【功能：检测小队是否空闲】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3692) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsInCover"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsInCover( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> OPT_all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队组中处于掩体中的成员百分比。或者，指定ANY或ALL作为第二个参数以返回true/false。【功能：检测小队是否在掩体中】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1852) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsInfiltrated"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsInfiltrated( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果组中全部或任意小队已渗透，则返回true。【功能：检测小队是否已渗透】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1971) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsInHoldEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsInHoldEntity( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> ALL )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查小队组中任意或全部小队是否驻扎在实体（建筑）中。【功能：检测小队是否驻扎在建筑中】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3502) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsInHoldSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsInHoldSquad( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> ALL )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查小队组中任意或全部小队是否驻扎在小队（运输载具）中。【功能：检测小队是否在运输载具中】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3519) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsMoving"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsMoving( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队组中任意或全部小队正在移动，则返回true。【功能：检测小队是否在移动】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2956) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsOnScreen"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsOnScreen( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> group, <span class="arg">Boolean</span> all, <span class="arg">Real</span> OPT_percent )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果组中任意或全部（使用这些关键字）小队出现在屏幕上，则返回true。可以传入屏幕百分比进行检查，0.8表示占据屏幕80%的居中矩形区域。【功能：检测小队是否在屏幕上】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3324) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsReinforcing"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsReinforcing( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果组中全部或任意小队当前正在请求增援，则返回true。【功能：检测小队是否在请求增援】</p>
+                <p>Set all to true to check for ALL or set to false to check for ANY</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3648) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsRetreating"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsRetreating( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队组中任意或全部小队当前正在撤退，则返回true。【功能：检测小队是否在撤退】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1785) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsSettingDemolitions"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsSettingDemolitions( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果任意或全部小队正在设置爆破，则返回true。【功能：检测小队是否在设置爆破】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1798) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsUnderAttack"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsUnderAttack( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> all, <span class="arg">Real</span> time )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果全部或任意小队在指定时间内受到攻击，则返回true。【功能：检测小队是否受到攻击】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1898) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsUnderAttackByPlayer"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsUnderAttackByPlayer( <span class="arg">SGroupID</span> group, <span class="arg">PlayerID</span> attackerplayer, <span class="arg">Real</span> duration )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查小队是否受到玩家攻击。【功能：检测小队是否受玩家攻击】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2584) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsUnderAttackFromDirection"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsUnderAttackFromDirection( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> all, <span class="arg">Integer</span> offset, <span class="arg">Real</span> time )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果全部或任意小队在指定时间内受到来自某方向的攻击，则返回true。方向类型请参见ScarUtil.scar。可以传入方向表。【功能：检测小队是否受某方向攻击】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1910) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsUpgrading"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsUpgrading( <span class="arg">SGroupID</span> sgroup, <span class="arg">Integer</span> blueprint, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果组中全部或任意小队当前正在升级，则返回true。如果不关心升级内容，可以传入nil作为upgradeid。【功能：检测小队是否在升级】</p>
+                <p>Set all to true to check for ALL or set to false to check for ANY</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3662) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsUsingAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsUsingAbility( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> ALL )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查小队组中任意或全部小队是否正在使用技能。【功能：检测小队是否在使用技能】</p>
+                <p>Does not check WHAT ability a squad is using.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3719) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_IsValid"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_IsValid( <span class="arg">Integer</span> sgroupID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查小队组是否仍然存在，无需名称。【功能：检测小队组是否有效】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (705) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_Kill"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_Kill( <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>杀死小队组中的所有小队。这是"自然"死亡，与SGroup_DestroyAllSquads()不同，后者使它们直接消失。【功能：杀死小队组中所有小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3355) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_Remove"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_Remove( <span class="arg">SGroupID</span> group, <span class="arg">SquadID</span> squadron )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从组中移除一个小队。【功能：从小队组移除小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (850) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_RemoveAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_RemoveAbility( <span class="arg">SGroupID</span> sgroup, <span class="arg">Integer</span> ability )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除之前由SGroup_AddAbility添加的技能。不能移除静态技能（来自AE: squad_ability_ext）。【功能：移除小队技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3823) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_RemoveGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_RemoveGroup( <span class="arg">SGroupID</span> group, <span class="arg">SGroupID</span> grouptoremove )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从第一个小队组中移除第二个小队组中包含的所有小队。SGroup2保持不变。【功能：从组中移除另一组的小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2822) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_RemoveUpgrade"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_RemoveUpgrade( <span class="arg">SGroupID</span> sgroup, <span class="arg">Integer</span> upgrade )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从小队组中移除升级。【功能：移除小队组升级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3782) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_ReSpawn"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_ReSpawn( <span class="arg">SGroupID</span> groupid )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>重新生成组中所有未生成的小队。【功能：重新生成小队组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2423) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_RestoreCombatPlans"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_RestoreCombatPlans( <span class="arg">SGroupID</span> sgroupID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>恢复小队组中小队当前的所有战斗计划。【功能：恢复小队战斗计划】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3481) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_RewardActionPoints"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_RewardActionPoints( <span class="arg">SGroupID</span> sgroup, <span class="arg">Real</span> actionpoint )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>给予小队行动点数。【功能：给予小队行动点数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3726) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_SetAnimatorAction"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_SetAnimatorAction( <span class="arg">SGroupID</span> sgroupid, <span class="arg">String</span> actionName )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>触发小队组的动画动作。请仅用于简单动画。【功能：触发小队组动画动作】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3740) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_SetAnimatorEvent"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_SetAnimatorEvent( <span class="arg">SGroupID</span> sgroupid, <span class="arg">String</span> eventName )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>触发小队组的动画事件。请仅用于简单动画。【功能：触发小队组动画事件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3747) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_SetAnimatorState"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_SetAnimatorState( <span class="arg">SGroupID</span> sgroupid, <span class="arg">String</span> stateMachineName, <span class="arg">String</span> stateName )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置小队组状态机的动画状态。请仅用于简单动画。【功能：设置小队组动画状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3733) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_SetAutoTargetting"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_SetAutoTargetting( <span class="arg">SGroupID</span> group, <span class="arg">Integer</span> hardpoint, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置武器是否自动锁定目标。【功能：设置武器自动目标锁定】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2513) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_SetAvgHealth"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_SetAvgHealth( <span class="arg">SGroupID</span> sgroup, <span class="arg">Real</span> healthpercent )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将小队组中每个小队的生命值设置为指定百分比[0.0, 1.0]。【功能：设置小队组平均生命值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2056) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_SetAvgMorale"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_SetAvgMorale( <span class="arg">SGroupID</span> sgroup, <span class="arg">Real</span> moralepercent )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将小队组中每个小队的士气设置为指定百分比[0.0, 1.0]。【功能：设置小队组平均士气】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2108) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_SetCrushable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_SetCrushable( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> crushable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>覆盖小队组的可碾压行为。【功能：设置小队组可碾压状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3761) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_SetInvulnerable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_SetInvulnerable( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> enabled, <span class="arg">Real</span> OPT_reset_time )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用/禁用整个小队组的无敌状态。使用true和false进行简单开关，或使用0.0到1.0之间的数字精确控制小队在不再承受伤害前可承受的伤害量。【功能：设置小队组无敌状态】</p>
+                <p>The optional reset_time is used to automatically remove invulnerability after a set time. If invulnerable, both health damage is disabled.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2214) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_SetMoodMode"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_SetMoodMode( <span class="arg">SGroupID</span> group, <span class="arg">Integer</span> mode )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置士兵情绪模式。模式可以是MM_Auto、MM_ForceCalm或MM_ForceTense。【功能：设置士兵情绪模式】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2911) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_SetPlayerOwner"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_SetPlayerOwner( <span class="arg">SGroupID</span> sgroup, <span class="arg">PlayerID</span> owner )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>更改小队组中已生成和未生成小队的玩家所有者。【功能：更改小队组所有者】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2125) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_SetRecrewable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_SetRecrewable( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> recrewable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置小队组中所有小队在被遗弃时是否可重新操作。【功能：设置小队可重新操作状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3795) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_SetResource"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_SetResource( <span class="arg">SGroupID</span> sgroup, <span class="arg">ResourceType</span> resource, <span class="arg">Integer</span> amount )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置小队的指定类型资源数量。【功能：设置小队资源数量】</p>
+                <p>If SGroup contains multiple squads, it will set for all</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2351) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_SetSelectable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_SetSelectable( <span class="arg">SGroupID</span> sgroupid, <span class="arg">Boolean</span> selectable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置小队组中小队的玩家可选择状态。【功能：设置小队可选择状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2500) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_SetTeamWeaponCapturable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_SetTeamWeaponCapturable( <span class="arg">SGroupID</span> group, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置小队中的班组武器是否可被捕获。【功能：设置班组武器可捕获状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2896) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_SetVeterancyDisplayVisibility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_SetVeterancyDisplayVisibility( <span class="arg">SGroupID</span> groupid, <span class="arg">Boolean</span> visible )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置指定小队组中小队的游戏内老兵标识可见性。【功能：设置老兵标识可见性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2788) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_SetWorldOwned"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_SetWorldOwned( <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>使小队组变为中立。【功能：设置小队组为中立】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3775) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_Single"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_Single( <span class="arg">SGroupID</span> groupID, <span class="arg">squadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建一个包含单个小队的小队组。【功能：创建单小队组】</p>
+                <p>Creates an SGroup containing just one squad, creating the group if it doesn't exist and clearing it if it does. It returns the name of the SGroup.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3440) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_SnapFaceEachOther"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_SnapFaceEachOther( <span class="arg">SGroupID</span> sgroup1, <span class="arg">SGroupID</span> sgroup2 )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>使两个小队组立即相互面向对方。【功能：使两个小队组立即相互面向】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (2396) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_SuggestPosture"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_SuggestPosture( <span class="arg">SGroupID</span> sgroup, <span class="arg">Integer</span> posture, <span class="arg">Real</span> duration )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队组建议一个姿态，持续指定时间。【功能：建议小队组姿态】</p>
+                <p>Posture of 0 is prone, 1 is kneel/crouch, and 2 is standing.  Duration is in seconds, negative means indefinite.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\simulation\public\simulation\lua\lualibs\unsorted\LuaGroup.cpp] (1091) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_TotalMembersCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_TotalMembersCount( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> dontCountTeamWeapons )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回指定小队组中所有小队的所有成员总数。【功能：获取小队组总成员数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (3289) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_WarpToMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_WarpToMarker( <span class="arg">SGroupID</span> sgroup, <span class="arg">MarkerID</span> marker )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>立即将小队组的所有成员传送至标记位置。【功能：传送小队组至标记】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1775) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_WarpToPos"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_WarpToPos( <span class="arg">SGroupID</span> sgroup, <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>立即将小队组的所有成员传送至新位置。【功能：传送小队组至位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\groups.scar] (1761) </b></td>
+            </tr>
+          </table>
+        </p><a name="Util_Grab"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Util_Grab( <span class="arg">Boolean</span> subselect )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取选中的小队/实体并以组的形式返回。仅在-dev模式下有效。【功能：获取选中的小队/实体组】</p>
+                <p>Tries to return an SGroup first. If it's empty, it will return an EGroup. (Both types can't be selected at the same time)</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (2504) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

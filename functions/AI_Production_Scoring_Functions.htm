@@ -1,0 +1,1199 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - AI Production Scoring Functions</title>
+</head>
+<body>
+<span class="subtitle">AI Production Scoring Functions</span><p>
+<a name="Group_AI Production Scoring Functions"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>AI Production Scoring Functions</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="AIProductionScoring_AlliedCombatFitness"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_AlliedCombatFitness( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> minFitness, <span class="arg">Real</span> maxFitness, <span class="arg">Integer</span> aiArmyType, <span class="arg">Boolean</span> highFitnessIsGood )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Create a AlliedCombatFitness scoring function. </p>
+                <p>Returns 1.0 to 0.0, based on how the allied combat fitness is. 1.0 if the allied fitness is at or below minFitness, 0.0 if fitness is above the maxFitness, smooth transition in between. If highFitnessIsGood, returns 0.0 to 1.0 instead. 0.0 if at or below minFitness and 1.0 if at or above maxFitness.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (666) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIProductionScoring_AlliedCombatFitnessVsStrongestEnemy"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_AlliedCombatFitnessVsStrongestEnemy( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> minFitness, <span class="arg">Real</span> maxFitness, <span class="arg">Integer</span> aiArmyType, <span class="arg">Boolean</span> highFitnessIsGood )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Create a AlliedCombatFitness scoring function (versus strongest enemy). </p>
+                <p>Returns 1.0 to 0.0, based on how the allied combat fitness is. 1.0 if the fitness is at or below minFitness, 0.0 if fitness is above the maxFitness, smooth transition in between. If highFitnessIsGood, returns 0.0 to 1.0 instead. 0.0 if at or below minFitness and 1.0 if at or above maxFitness.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (697) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIProductionScoring_AlliedCombatFitnessVsWeakestEnemy"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_AlliedCombatFitnessVsWeakestEnemy( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> minFitness, <span class="arg">Real</span> maxFitness, <span class="arg">Integer</span> aiArmyType, <span class="arg">Boolean</span> highFitnessIsGood )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建盟军战斗力评分函数（对抗最弱敌人）。【功能：评估盟军对抗最弱敌人时的战斗能力】</p>
+                <p>Returns 1.0 to 0.0, based on how the allied combat fitness is. 1.0 if the fitness is at or below minFitness, 0.0 if fitness is above the maxFitness, smooth transition in between. If highFitnessIsGood, returns 0.0 to 1.0 instead. 0.0 if at or below minFitness and 1.0 if at or above maxFitness.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (728) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_AmountOfResourceNeeded"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_AmountOfResourceNeeded( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> maxResources )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Create an AmountOfResourceNeeded scoring function. </p>
+                <p>If this building is a dropoff, this returns a value between 0 and 1 indicating how much of that resources is needed. Any amount &gt;= maxResources will result in a value of 1.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (932) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIProductionScoring_CanPushProductionScoringFunction"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_CanPushProductionScoringFunction( <span class="arg">PlayerID</span> aiPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查当前是否是创建评分函数的适当时机。【功能：判断是否可以推送生产评分函数】</p>
+                <p>Score functions should only be made within functions referenced by ProductionGroups</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (61) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_ClampedScoringFunction"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_ClampedScoringFunction( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> min, <span class="arg">Real</span> max, <span class="arg">ScoringFunction*</span> innerScoringFunction )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Create a ClampedScoringFunction scoring function. </p>
+                <p>Clamps the returned value of the inner scoring function</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (755) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIProductionScoring_CounterScore"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_CounterScore( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> baseScoreContributuion )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Create a CounterScore scoring function </p>
+                <p>If a item is a chosen counter it will get the score = (baseScoreContributuion + (1 - baseScoreContributuion) * counter score)</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (134) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIProductionScoring_DeficiencyScore"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_DeficiencyScore( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> weight )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建资源匮乏评分函数。【功能：评估资源短缺程度】</p>
+                <p>Returns positive score if drop off is required to either serve gathering of a resource or improve existing gathering</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (532) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_EntityCombatUpgrade"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_EntityCombatUpgrade( <span class="arg">PlayerID</span> aiPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建实体战斗升级评分函数。【功能：评估单位战斗升级的价值】</p>
+                <p>Returns positive score if entity's combat fitness is improved. The aforementioned entity is the entity that the upgrade is being produce on.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (571) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_GroupNotProducedRecently"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_GroupNotProducedRecently( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> timePeriodSeconds )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Create an GroupNotProducedRecently scoring function. </p>
+                <p>Returns 1.0f if any item in group was not produced within the time period supplied, 0.0f otherwise</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (861) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIProductionScoring_HasProductionQueue"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_HasProductionQueue( <span class="arg">PlayerID</span> aiPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建拥有生产队列评分函数。【功能：检查是否存在生产队列】</p>
+                <p>HasProductionQueue returns 0 or 1 if the production queue for the item is found. Useful to ensure this items score isnt propagated to its requirements</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (274) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_IncreaseOverTime"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_IncreaseOverTime( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> minGameTime, <span class="arg">Real</span> increasePerSecond )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Create a MinimumGameTime scoring function. </p>
+                <p>minGameTime is time from start in seconds. Returns 0.0 until minGameTime has passed, 1.0f after.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (387) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIProductionScoring_InversePercentOfResourcesOwned"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_InversePercentOfResourcesOwned( <span class="arg">PlayerID</span> aiPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建资源拥有比例反向评分函数。【功能：反向评估玩家拥有的资源百分比】</p>
+                <p>InversedPercentOfResourcesOwned returns 1 - the value from PercentOfResourcesOwned</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (262) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_InverseRandomIntScore"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_InverseRandomIntScore( <span class="arg">PlayerID</span> aiPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建反向随机整数评分函数。【功能：生成反向随机整数值用于评分】</p>
+                <p>Returns either 0.0f or 1.0f (inverse of RandomIntScore) based on a random number picked at the start of the game</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (910) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_IslandNeedingExpansionBase"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_IslandNeedingExpansionBase( <span class="arg">PlayerID</span> aiPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Create an IslandNeedingExpansionBase scoring function. </p>
+                <p>Returns 1.0f if there is an island requiring an expansion base</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (834) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIProductionScoring_LackOfSecuredResourceDeposits"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_LackOfSecuredResourceDeposits( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">ResourceType</span> resourceType, <span class="arg">Real</span> scarceAmount, <span class="arg">Real</span> wellOffAmount )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建缺乏安全资源点评分函数。【功能：评估安全资源点的匮乏程度】</p>
+                <p>Returns between 0 and 1, 1 if the total sum of secured resource deposits is less or equal to scarce amount, 0 if the amount is equal to or greater than well off amount, lerps in between</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (808) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_LowResourceIncome"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_LowResourceIncome( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> resourceIncomePerSecond )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建低资源收入评分函数。【功能：评估资源收入是否过低】</p>
+                <p>Returns 1 when income per second is lower than amount, otherwise returns 0.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (942) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_LuaScoringFunction"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_LuaScoringFunction( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">LuaFunction</span> scoringFunction )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建Lua评分函数。【功能：使用Lua脚本自定义评分逻辑】</p>
+                <p>Takes a reference to a lua function. Lua function will be called and passed AIPlayer and Pbg. Lua function is expected to return a value &gt;= 0.0 DO NOT call any methods that do stuff to the AIPlayer in your referenced lua function. The referenced lua function must exist within the player's lua context</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (608) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_MaximumGameTime"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_MaximumGameTime( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> maxGameTime )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建最大游戏时间评分函数。【功能：评估游戏时间是否超过最大值】</p>
+                <p>minGameTime is time from start in seconds. Returns 1.0 until maxGameTime has passed, 0.0f after.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (373) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_MaxPopCapPercentage"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_MaxPopCapPercentage( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> targetPopulationPercentageAlive, <span class="arg">Boolean</span> groupPopulation )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Create a MaxPopCapPercentage scoring function </p>
+                <p>targetPopulationPercentageAlive should be in range 0.0 -&gt; 1.0. Return 1.0f as long as the combined population of the production item /group does not exceed a percentage of the player's max pop cap. If groupPopulation == true then all members of the item's Production Group are counted towards the current population to be compared against the target population.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (785) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIProductionScoring_MaxScoringFunction"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_MaxScoringFunction( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">vector&lt; ScoringFunction*&gt;</span> innerScoringFunction )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Create a MaxScoringFunction scoring function. </p>
+                <p>Returns the max value of the inner scoring functions</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (768) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIProductionScoring_MaxWeaponDamage"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_MaxWeaponDamage( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> maxDamage )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建最大武器伤害评分函数。【功能：评估单位武器最大伤害】</p>
+                <p>Units max weapon damage is normalized by max damage. (returns between 0.0 and 1.0)</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (398) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_MilitaryPlayerUpgrade"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_MilitaryPlayerUpgrade( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> upgradeExponent )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建军事玩家升级评分函数。【功能：评估军事升级的价值】</p>
+                <p>Quantifies how a player upgrade will improve the current army's combat fitness. Result = 1 - (1  - combat_fitness_improvment)^upgradeExponent</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (351) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_MinimumGameTime"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_MinimumGameTime( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> minGameTime )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建最小游戏时间评分函数。【功能：评估游戏时间是否达到最小值】</p>
+                <p>minGameTime is time from start in seconds. Returns 0.0 until minGameTime has passed, 1.0f after.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (362) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_MinimumTeamControlledSacredSites"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_MinimumTeamControlledSacredSites( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Integer</span> targetAmount )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建团队控制圣地最小数量评分函数。【功能：评估团队控制的圣地数量是否达到最小值】</p>
+                <p>Takes an integer as target amount of sacred sites the provided player's team should be controlling and returns 1.0 if the team meets the requirements</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (433) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_MultipleProduced"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_MultipleProduced( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> additionalFactor )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建多重生产评分函数。【功能：评估多次生产的数量】</p>
+                <p>Item will get a score of 1 +(additionalFactor * number of additional produced)</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (145) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_MultiplyListScoringFunction"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_MultiplyListScoringFunction( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">vector&lt; ScoringFunction*&gt;</span> innerScoringFunction )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建乘法列表评分函数。【功能：将多个评分函数的结果相乘】</p>
+                <p>Takes a list of scoring functions and multiplies them together. This scoring function can be paired with MaxScoringFunction to generate OR scoring expressions, such as Max(IslandNeedingExpansionBase, (ProductionQueueContention * TimeToAcquire))</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (989) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_NavalTransportRequired"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_NavalTransportRequired( <span class="arg">PlayerID</span> aiPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Create a NavalTransportRequired scoring function. </p>
+                <p>Returns 0.0 -&gt; 1.0, depending on strategic island decisions that would require transport</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (824) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIProductionScoring_NotProducedEver"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_NotProducedEver( <span class="arg">PlayerID</span> aiPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Create an NotProducedEver scoring function. </p>
+                <p>Returns 1.0f has never been produced, 0.0f if it has been produced</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (878) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIProductionScoring_NotProducedRecently"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_NotProducedRecently( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> timePeriodSeconds )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Create an NotProducedRecently scoring function. </p>
+                <p>Returns 1.0f if the item was not produced within the time period supplied, 0.0f otherwise</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (844) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIProductionScoring_NoUpgradeProductionBlockedByThisProduction"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_NoUpgradeProductionBlockedByThisProduction( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">String</span> type )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Create a IsUpgradeProductionTypeBlockedByThisProduction scoring function. </p>
+                <p>Returns 1 if AI is not trying to build another upgrade, which is being blocked by the current production type</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (556) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIProductionScoring_OneStructureFromGroupAtATime"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_OneStructureFromGroupAtATime( <span class="arg">PlayerID</span> aiPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建一次仅生产组中一个建筑评分函数。【功能：确保同一组建筑一次只生产一个】</p>
+                <p>Returns 1.0f if this is the first structure planned to be built in the group or if no items in the group are planned. 0.0f otherwise</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (888) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_OnlyProduceOneAtATime"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_OnlyProduceOneAtATime( <span class="arg">PlayerID</span> aiPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建一次仅生产一个评分函数。【功能：确保一次只生产一个单位】</p>
+                <p>Returns 0.0 while another item of the same type is being produced</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (508) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_PercentOfResourcesOwned"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_PercentOfResourcesOwned( <span class="arg">PlayerID</span> aiPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建资源拥有百分比评分函数。【功能：评估玩家拥有的资源百分比】</p>
+                <p>PercentOfResourcesOwned returns a value between 0 and 1 representing the amount of the player's relevant resources that would be consumed to produce the build item. Returns 1 if the build item requires more resources than the player has.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (251) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_PlannedPlacementScore"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_PlannedPlacementScore( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> minPlacementScore )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Create a PlannedPlacementScore scoring function. </p>
+                <p>Returns the value of the planned placement, returns 0.0 if no planned placement Will return 0.0 if placement score is below minPlacementScore. Set minPlacementScore &lt; 0.0 to ignore this minimum filtering.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (314) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIProductionScoring_PlannedPlacementScoreIsMoreThan"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_PlannedPlacementScoreIsMoreThan( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> minPlacementScore )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建计划放置评分大于某值评分函数。【功能：检查计划放置评分是否超过指定值】</p>
+                <p>Returns 1 if placement score is more than min value, otherwise returns 0.0 Will return 0.0 if placement score is invalid</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (328) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_PlannedPlacementScoreValid"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_PlannedPlacementScoreValid( <span class="arg">PlayerID</span> aiPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建计划放置评分有效评分函数。【功能：验证计划放置评分是否有效】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (339) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_PlayerGatheringUpgrade"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_PlayerGatheringUpgrade( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> improvementScalingFactor, <span class="arg">Real</span> approxDistToDeposit )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建玩家采集升级评分函数。【功能：评估采集升级的价值】</p>
+                <p>Result is gatheringImprovment * improvementScalingFactor</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (288) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_PlayersAndCapturePointsOnDifferentIslands"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_PlayersAndCapturePointsOnDifferentIslands( <span class="arg">PlayerID</span> aiPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建玩家与占领点位于不同岛屿评分函数。【功能：评估玩家与占领点是否位于不同岛屿】</p>
+                <p>Returns 1.0 if there are capture points separated by water on the map</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (421) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_PlayersOnDifferentIslands"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_PlayersOnDifferentIslands( <span class="arg">PlayerID</span> aiPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建玩家位于不同岛屿评分函数。【功能：评估玩家是否位于不同岛屿】</p>
+                <p>Returns 1.0 if any players are on different pathfinding islands, 0 if they are all on the same island</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (410) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_PopCapGenerator"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_PopCapGenerator( <span class="arg">PlayerID</span> aiPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建人口上限生成器评分函数。【功能：评估人口上限生成建筑的价值】</p>
+                <p>Returns 1.0 score if the item generates required pop cap</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (619) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_PopulationPercentage"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_PopulationPercentage( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> targetPopulationPercentageAlive, <span class="arg">Real</span> scoreDropOffFactor, <span class="arg">Boolean</span> groupPopulation, <span class="arg">Boolean</span> useSquadPopulation )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建人口百分比评分函数。【功能：评估当前人口占总人口的百分比】</p>
+                <p>targetPopulationPercentageAlive should be in range 0.0 -&gt; 1.0. Score will approach zero as an item's population (as a percentage of the global population) approaches the target, i.e. score =  1.0f - (currentPercentage / target)^dropOffFactor;  The global population is number of squads or structures belonging to the player alive. If groupPopulation == true then all members of the item's Production Group are counted towards the current population to be compared against the global population. if useSquadPopulation == true, number of squads will be used in calculation instead of checking if the item pbg corresponds to a squad or building</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (111) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_PresenceOfEnemyTypes"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_PresenceOfEnemyTypes( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> weights, <span class="arg">Boolean</span> squadTypes )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建敌方类型存在评分函数。【功能：评估敌方特定类型单位的存在情况】</p>
+                <p>Every time a unit type is observed it's weight is added to the return value of this scoring function. if squadTypes == false, then entity types assumed. Max return value is 1.0</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (479) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_PresenceOfMyTypes"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_PresenceOfMyTypes( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> weights, <span class="arg">Boolean</span> squadTypes )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Create a PresenceOfMyTypes scoring function </p>
+                <p>Every time a unit type is observed it's weight is added to the return value of this scoring function. if squadTypes == false, then entity types assumed. Max return value is 1.0</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (490) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIProductionScoring_PresenceOfUpgradeableSquads"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_PresenceOfUpgradeableSquads( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> weight )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建可升级小队存在评分函数。【功能：评估是否存在可升级的小队】</p>
+                <p>For each player squad that this upgrade applies to the score is increased by the weight to a max of 1.0.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (497) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_ProductionQueueContention"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_ProductionQueueContention( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> contentionThreshold, <span class="arg">Real</span> normalFactor )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建生产队列竞争评分函数。【功能：评估生产队列的竞争程度】</p>
+                <p>Returns a score of productionQueueContention / normalFactor. productionQueueContention is the number of contentions recorded for the associated item (which is a production building), normalFactor is clamped &gt;= 1</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (634) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_RandomChoiceFromRange"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_RandomChoiceFromRange( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Integer</span> iterations, <span class="arg">Integer</span> range, <span class="arg">Integer</span> choice )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建范围内随机选择评分函数。【功能：从指定范围内随机选择一个值】</p>
+                <p>Returns either 0.0f or 1.0f based on if the choice from the range is hit game</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (921) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_RandomIntScore"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_RandomIntScore( <span class="arg">PlayerID</span> aiPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建随机整数评分函数。【功能：生成随机整数值用于评分】</p>
+                <p>Returns either 0.0f or 1.0f based on a random number picked at the start of the game</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (899) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_RemainingPersonnelPopCap"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_RemainingPersonnelPopCap( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> requiredRemainingPop )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建剩余人员人口上限评分函数。【功能：评估剩余的人员人口上限空间】</p>
+                <p>Returns 1.0f if there is enough remaining personnel pop cap, 0.0f otherwise</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (954) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_ResourceGeneratorScore"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_ResourceGeneratorScore( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> depletionTimeThreshold )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Create a ResourceGeneratorScore scoring function. </p>
+                <p>Gives positive score if the item produces required resources</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (647) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIProductionScoring_ScarcityAndDeficiencyScore"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_ScarcityAndDeficiencyScore( <span class="arg">PlayerID</span> aiPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Create a DropOffScore scoring function. </p>
+                <p>Returns positive score if drop off is required to either serve gathering of a resource or improve existing gathering</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (520) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIProductionScoring_ShouldConsiderDeepwaterFishDeposits"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_ShouldConsiderDeepwaterFishDeposits( <span class="arg">PlayerID</span> aiPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建是否考虑深海鱼点评分函数。【功能：评估是否应该考虑深海鱼资源点】</p>
+                <p>Returns 1.0 if there are any fish deposits on the map</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (178) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_ShouldConsiderLimitedNaval"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_ShouldConsiderLimitedNaval( <span class="arg">PlayerID</span> aiPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Create an AIShouldConsiderLimitedNaval scoring function. </p>
+                <p>Returns 1.0 if there are large bodies of water on the map</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (167) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIProductionScoring_ShouldConsiderNaval"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_ShouldConsiderNaval( <span class="arg">PlayerID</span> aiPlayer )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建是否考虑海军评分函数。【功能：评估是否应该考虑海军生产】</p>
+                <p>Returns 1.0 if players start on different islands or there are large bodies of water on the map</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (156) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_ShouldNotConsiderNaval"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_ShouldNotConsiderNaval( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Boolean</span> shouldIncludeLimitedNaval )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>若非海军地图则返回1，否则返回0。【功能：判断当前地图是否不需要海军】</p>
+                <p>If shouldIncludeLimitedNaval is true, limited naval maps return 1, otherwise limited naval maps return 0</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (1002) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_StrategicIntention"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_StrategicIntention( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> weights )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Create a StrategicIntention scoring function </p>
+                <p>Weights table format: { ["weight name"] = weight, } The score is the sum of current intention values * weight, divided by the sum of weights Ex: (currentSiegeIntention* siegeIntentionWeight)/siegeIntentionWeight</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (193) </b></td>
+            </tr>
+          </table>
+        </p><a name="AIProductionScoring_TierUpgrade"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_TierUpgrade( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> weight )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建等级升级评分函数。【功能：评估等级升级的价值】</p>
+                <p>For each player squad that this upgrade applies to the score is increased by the weight to a max of 1.0.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (299) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_TimeToAcquire"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_TimeToAcquire( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Real</span> maxTimeSeconds, <span class="arg">Boolean</span> includeTimeToGather, <span class="arg">Boolean</span> includeTimeToBuildThis, <span class="arg">Boolean</span> includeTimeToBuildRequirements )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建获取时间评分函数。【功能：评估获取某物品所需的时间】</p>
+                <p>TimeToAcquire returns values between 0 and 1 and penalizes things that need lots of resources or prerequisites to be produced. Score will approach 0.01 as the time to build something approaches maxTimeSeconds. Time to build something is the sum of the time to gather the outstanding resources, time to build the item, and time to build the requirements of the item</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (237) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_TradeRouteExistsScore"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_TradeRouteExistsScore( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Boolean</span> landRoute )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建贸易路线存在评分函数。【功能：评估贸易路线是否存在及其价值】</p>
+                <p>Returns 0.0 if no safe trade routes exist, 1.0 otherwise.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (582) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_UnderCountLimit"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_UnderCountLimit( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Integer</span> maxAlive, <span class="arg">Integer</span> maxEverProduced, <span class="arg">Boolean</span> groupPopulation )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建数量低于限制评分函数。【功能：检查单位数量是否低于限制】</p>
+                <p>Keeps an item within limits. If groupPopulation == true then all members of the item's Production Group are counted towards the current population to be compared against the limit.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (76) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_UnderCountLimitFromStateModel"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_UnderCountLimitFromStateModel( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">String</span> keyMaxAlive )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建状态模型数量低于限制评分函数。【功能：从状态模型检查单位数量是否低于限制】</p>
+                <p>Keeps an item within limits. If groupPopulation == true then all members of the item's Production Group are counted towards the current population to be compared against the limit.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (90) </b></td>
+            </tr>
+          </table>
+		</p><a name="AIProductionScoring_VehicleUnderCountLimit"></a><p>
+		  <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 AIProductionScoring_VehicleUnderCountLimit( <span class="arg">PlayerID</span> aiPlayer, <span class="arg">Boolean</span> groupPopulation, <span class="arg">Boolean</span> maxCap )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建载具数量低于限制评分函数。【功能：检查载具数量是否低于限制】</p>
+                <p>Keeps an item within limits. If groupPopulation == true then all members of the item's Production Group are counted towards the current vehicle (Chinese official) population to be compared against the limit.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\ai\public\ai\lua\lualibs\LuaLibAIProductionScoring.cpp] (973) </b></td>
+            </tr>
+          </table>
+		</p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

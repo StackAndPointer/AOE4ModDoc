@@ -1,0 +1,609 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;FOW</title>
+</head>
+<body>
+<span class="subtitle">scardoc;FOW</span><p>
+<a name="Group_scardoc;FOW"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;FOW</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="__declspec"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 __declspec(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>用于从游戏过渡到全部揭示状态【功能：过渡到全揭示】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (422) </b></td>
+            </tr>
+          </table>
+        </p><a name="__declspec"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 __declspec(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Use to reveal all Entities in FoW </p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (536) </b></td>
+            </tr>
+          </table>
+        </p><a name="__declspec"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 __declspec( <span class="arg">Real</span> duration )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Use to transition from game to RevealAll </p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (551) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_ForceRevealAllUnblockedAreas"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_ForceRevealAllUnblockedAreas(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为所有玩家揭示除障碍物外的战争迷雾。不创建幽灵，如果撤销则幽灵将不存在。【功能：揭示非障碍迷雾】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (373) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_PlayerExploreAll"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_PlayerExploreAll( <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为单个玩家探索整个地图。（注意使用位置。例如，如果在第一个tick之前使用，状态树可能会在第一个tick时改变实体的视觉，因此幽灵的视觉将无法反映该实体。）【功能：单玩家全图探索】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (465) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_PlayerRevealAll"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_PlayerRevealAll( <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为指定玩家揭示战争迷雾【功能：指定玩家迷雾揭示】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (310) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_PlayerRevealArea"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_PlayerRevealArea( <span class="arg">PlayerID</span> player, <span class="arg">Position</span> pos, <span class="arg">Real</span> radius, <span class="arg">Real</span> durationSecs )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在指定持续时间内为指定玩家揭示一个圆形区域【功能：定时圆形区域揭示】</p>
+                <p>Pass in a duration of -1 for indefinite duration ( or until unreveal is called on the same position )</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (122) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_PlayerRevealSGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_PlayerRevealSGroup( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> group, <span class="arg">Real</span> radius, <span class="arg">Real</span> durationSecs )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在指定持续时间内为玩家揭示战争迷雾中的小队组【功能：定时小队组迷雾揭示】</p>
+                <p>Pass in a duration of -1 for indefinite duration ( until the squads are dead or UnReveal is called )</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (271) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_PlayerUnExploreAll"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_PlayerUnExploreAll( <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>取消单个玩家的整个地图探索【功能：取消单玩家全图探索】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (477) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_PlayerUnRevealAll"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_PlayerUnRevealAll( <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>用于撤销指定玩家的FOW_RevealAll操作【功能：撤销指定玩家全揭示】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (322) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_PlayerUnRevealArea"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_PlayerUnRevealArea( <span class="arg">PlayerID</span> player, <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>取消指定玩家之前揭示的圆形区域【功能：取消玩家圆形区域揭示】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (138) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_PlayerUnRevealSGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_PlayerUnRevealSGroup( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> group )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>取消之前向玩家揭示的小队组【功能：取消小队组揭示】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (293) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_RevealAll"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_RevealAll(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为所有玩家揭示战争迷雾【功能：全玩家迷雾揭示】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (334) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_RevealArea"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_RevealArea( <span class="arg">Position</span> pos, <span class="arg">Real</span> radius, <span class="arg">Real</span> durationSecs )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在指定持续时间内为所有存活玩家揭示一个圆形区域【功能：全玩家定时圆形区域揭示】</p>
+                <p>Pass in a duration of -1 for indefinite duration ( or until unreveal is called at the same position )</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (75) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_RevealEGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_RevealEGroup( <span class="arg">EGroupID</span> group, <span class="arg">Real</span> radius, <span class="arg">Real</span> durationSecs )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在指定持续时间内为所有存活玩家揭示战争迷雾中的实体组【功能：全玩家定时实体组揭示】</p>
+                <p>Pass in a duration of -1 for indefinite duration ( until the entities are dead or UnReveal is called )</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (207) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_RevealEGroupOnly"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_RevealEGroupOnly( <span class="arg">EGroupID</span> group, <span class="arg">Real</span> durationSeconds )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在指定持续时间内为存活玩家揭示战争迷雾中的实体组【功能：存活玩家定时实体组揭示】</p>
+                <p>Pass in a duration of -1 for an indefinite duration.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1149) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_RevealEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_RevealEntity( <span class="arg">EntityID</span> entity, <span class="arg">Real</span> radius, <span class="arg">Real</span> durationSecs )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在指定持续时间内为所有存活玩家揭示战争迷雾中的实体【功能：全玩家定时实体揭示】</p>
+                <p>Pass in a duration of -1 for indefinite duration ( until the entity is dead or UnReveal is called with the same entity )</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (152) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_RevealMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_RevealMarker( <span class="arg">MarkerID</span> marker, <span class="arg">Real</span> duration )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在指定时间内，在标记位置揭示一个与标记邻近范围大小相同的区域。传入-1表示无限持续时间。每个区域只应调用一次。【功能：标记区域定时揭示】</p>
+                <p>This function will reveal the FOW for ALL alive players. This does not work with markers with rectangular proximity type</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1110) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_RevealSGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_RevealSGroup( <span class="arg">SGroupID</span> group, <span class="arg">Real</span> radius, <span class="arg">Real</span> durationSecs )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在指定持续时间内为所有存活玩家揭示战争迷雾中的小队组【功能：全玩家定时小队组揭示】</p>
+                <p>Pass in a duration of -1 for indefinite duration ( until the squads are dead or UnReveal is called )</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (239) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_RevealSGroupOnly"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_RevealSGroupOnly( <span class="arg">SGroupID</span> group, <span class="arg">Real</span> durationSeconds )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在指定持续时间内为存活玩家揭示战争迷雾中的小队组【功能：存活玩家定时小队组揭示】</p>
+                <p>Pass in a duration of -1 for an indefinite duration.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1157) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_RevealSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_RevealSquad( <span class="arg">SquadID</span> squad, <span class="arg">Real</span> radius, <span class="arg">Real</span> durationSecs )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在指定持续时间内为所有存活玩家揭示战争迷雾中的小队【功能：全玩家定时小队揭示】</p>
+                <p>Pass in a duration of -1 for indefinite duration ( until the squad is dead or UnReveal is called with the same squad )</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (180) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_RevealTerritory"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_RevealTerritory( <span class="arg">PlayerID</span> player, <span class="arg">Integer</span> sectorID, <span class="arg">Real</span> durationSecs, <span class="arg">Boolean</span> mustOwn )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向玩家揭示一个领地【功能：领地揭示】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (393) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_UIRevealAll"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_UIRevealAll(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>通过禁用战争迷雾渲染来为所有玩家揭示迷雾，而不触发游戏模拟中的战争迷雾【功能：UI层迷雾揭示】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (520) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_UIUnRevealAll"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_UIUnRevealAll(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>用于撤销FOW_UIRevealAll操作【功能：撤销UI全揭示】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (530) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_UIUnRevealAll_Transition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_UIUnRevealAll_Transition( <span class="arg">Real</span> duration )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>用于过渡到游戏【功能：过渡到游戏】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (562) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_UIUnRevealAllEntities"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_UIUnRevealAllEntities(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>用于取消揭示战争迷雾中的所有实体【功能：取消迷雾实体揭示】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (545) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_UndoForceRevealAllUnblockedAreas"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_UndoForceRevealAllUnblockedAreas(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>用于撤销FOW_ForceRevealAllUnblockedAreas操作【功能：撤销强制揭示非障碍区域】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (383) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_UnExploreAll"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_UnExploreAll(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>取消所有玩家的整个地图探索【功能：取消全玩家全图探索】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (445) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_UnRevealAll"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_UnRevealAll(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>用于撤销FOW_RevealAll操作【功能：撤销全揭示】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (352) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_UnRevealArea"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_UnRevealArea( <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>取消所有存活玩家之前揭示的圆形区域【功能：取消全玩家圆形区域揭示】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (100) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_UnRevealMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_UnRevealMarker( <span class="arg">MarkerID</span> marker )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>取消在标记位置揭示的与标记邻近范围大小相同的区域。每个区域只应调用一次。【功能：取消标记区域揭示】</p>
+                <p>This does not work with markers with rectangular proximity type</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\scarutil.scar] (1132) </b></td>
+            </tr>
+          </table>
+        </p><a name="FOW_UnRevealTerritory"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 FOW_UnRevealTerritory( <span class="arg">PlayerID</span> player, <span class="arg">Integer</span> sectorID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>取消揭示一个领地区域【功能：取消领地揭示】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaFOW.cpp] (408) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

@@ -1,0 +1,225 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;Prefab System</title>
+</head>
+<body>
+<span class="subtitle">scardoc;Prefab System</span><p>
+<a name="Group_scardoc;Prefab System"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;Prefab System</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="Prefab_ApplyDefaults"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prefab_ApplyDefaults( <span class="arg">String</span> instance_data, <span class="arg">Table</span> prefab_schema )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将预制件架构中列出的默认值应用到实例数据。任何未在实例数据中明确包含的项目将从架构中获取默认值。【功能：应用预制件默认值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\prefabs.scar] (301) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prefab_DoAction"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prefab_DoAction( <span class="arg">String</span> instance_data, <span class="arg">String</span> actionName, <span class="arg">Var</span> OPT_param1, <span class="arg">Var</span> OPT_param2... )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在实例上调用指定名称的动作函数，确保调用正确版本的预制件类型。实例可以是字符串，函数会自动转换。【功能：执行预制件动作】</p>
+                <p>Example: Calling the "Trigger" action on an instance that is a PlaneCrash prefab will look for a function called "PlaneCrash_Trigger"</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\prefabs.scar] (434) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prefab_ForcePostInit"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prefab_ForcePostInit(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>完成已通过Prefab_Init()初始化的预制件实例的最终初始化。这会在预制件初始化后一帧自动调用，但如有需要可以提前强制执行。【功能：强制完成预制件初始化】</p>
+                <p>If you are creating prefabs and using them in the same frame, call this function once, after all the Prefab_Inits, but before you start using them. This will force the post-initialization to occur early.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\prefabs.scar] (268) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prefab_GetAllOfType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prefab_GetAllOfType( <span class="arg">String</span> instance_data, <span class="arg">Table</span> prefab_schema )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回匹配实例类型的所有当前预制件的表。【功能：获取指定类型的所有预制件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\prefabs.scar] (312) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prefab_GetInstance"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prefab_GetInstance( <span class="arg">String</span> instance )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回给定实例的实例数据，可通过多种方法指定。【功能：获取预制件实例数据】</p>
+                <p>This normalizes your instance data. You can pass in the instance name as a string, a data table with an instance subtable (i.e. the input params from an event function) or a real instance data table, and it normalizes the format and returns you the instance data table.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\prefabs.scar] (336) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prefab_Init"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prefab_Init( <span class="arg">Table</span> instance_data )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>初始化特定的预制件实例。在许多情况下，这是您需要做的全部操作（详见具体预制件的文档）。【功能：初始化预制件实例】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\prefabs.scar] (209) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prefab_IsValid"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prefab_IsValid( <span class="arg">String</span> instance )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回字符串是否为有效的预制件。【功能：检查预制件有效性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\prefabs.scar] (361) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prefab_Reset"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prefab_Reset( <span class="arg">String</span> instance_data )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>停止并重新启动预制件实例，从WB导出的预制件中获取新的实例数据。这用于测试和调试目的，而非任务脚本中使用。【功能：重置预制件实例】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\prefabs.scar] (402) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prefab_Stop"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prefab_Stop( <span class="arg">String</span> instance_data )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>停止预制件实例继续运行。【功能：停止预制件实例】</p>
+                <p>If the prefab has a prefabName_Stop() function, that will be called. Also, all events with the instance as the data parameter will be removed.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\prefabs.scar] (378) </b></td>
+            </tr>
+          </table>
+        </p><a name="Prefab_Trigger"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Prefab_Trigger( <span class="arg">String</span> instance_data )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>触发指定的预制件。【功能：触发预制件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\prefabs.scar] (499) </b></td>
+            </tr>
+          </table>
+        </p><a name="PrefabHelper_StandardTriggerSystem"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 PrefabHelper_StandardTriggerSystem( <span class="arg">String</span> instance_data, <span class="arg">String</span> action_name, <span class="arg">Table</span> trigger_parameters )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将此辅助函数添加到预制件的Init函数中，以实现标准触发区域功能。【功能：添加标准触发系统辅助功能】</p>
+                <p>It will call a Trigger function in your prefab when appropriate. Your schema needs to include the standard elements: trigger_enable, ignore_planes, trigger_player, trigger_zone and delay</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\prefabs.scar] (765) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

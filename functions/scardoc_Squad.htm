@@ -1,0 +1,3954 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;Squad</title>
+</head>
+<body>
+<span class="subtitle">scardoc;Squad</span><p>
+<a name="Group_scardoc;Squad"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;Squad</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="separated"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 separated( <span class="arg">or</span> not, <span class="arg">SGroupID</span> smallvector&lt;SGroup, <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> spawnedOnly, <span class="arg">Real</span> idealSquadRadius )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>尝试对小队进行分组，返回彼此之间至少相隔理想小队范围的分组。【功能：小队分组】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2167) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_CalculateClusterSeparation"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_CalculateClusterSeparation( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> spawnedOnly, <span class="arg">Integer</span> numClusters )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>尝试将给定的小队列表分组为集群，并返回这些集群之间的平均距离。如果发生任何错误则返回-1。【功能：计算集群间距】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2079) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_FacePosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_FacePosition( <span class="arg">SGroupID</span> sgroup, <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>类似于Squad_FacePosition。所有小队将面向同一方向，由最靠近中心的小队决定方向。【功能：小队组朝向位置】</p>
+                <p>This function works on spawned squads only.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1990) </b></td>
+            </tr>
+          </table>
+        </p><a name="SGroup_SnapFacePosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 SGroup_SnapFacePosition( <span class="arg">SGroupID</span> sgroup, <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>类似于SGroup_FacePosition，但没有插值。所有小队将面向同一方向，由最靠近中心的小队决定方向。【功能：小队组瞬间朝向位置】</p>
+                <p>This function works on spawned squads only.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2027) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_AddAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_AddAbility( <span class="arg">SquadID</span> squad, <span class="arg">ScarAbilityPBG</span> ability )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>允许小队使用此技能。【功能：添加技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2593) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_AddAllResources"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_AddAllResources( <span class="arg">SquadID</span> squad, <span class="arg">Real</span> amount )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将指定数量的所有类型资源添加到指定小队，具体添加到SquadResourceExt。【功能：添加所有资源】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2793) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_AddSlotItemToDropOnDeath"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_AddSlotItemToDropOnDeath( <span class="arg">SquadID</span> squad, <span class="arg">ScarSlotItemPBG</span> pbg, <span class="arg">Real</span> dropChance, <span class="arg">Boolean</span> exclusive )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>添加到小队被消灭时掉落的槽位物品列表。【功能：添加死亡掉落物品】</p>
+                <p>Drop chance is percentage chance the item will drop (0.0-1.0) exlusive means the squad would only drop this item, thus erasing all previous items in list example:	local item = Util_GetSlotItemID( "slot_item/allies_m9bazooka.lua" ) Squad_AddSlotItemToDropOnDeath( squadid, item, false )</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1640) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_AdjustAbilityCooldown"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_AdjustAbilityCooldown( <span class="arg">SquadID</span> squad, <span class="arg">Integer</span> tickAmount )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>推进技能冷却时间。【功能：调整技能冷却】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2624) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_CanAttackEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_CanAttackEntity( <span class="arg">SquadID</span> attacker, <span class="arg">EntityID</span> target, <span class="arg">Boolean</span> checkFOW, <span class="arg">Boolean</span> checkVis )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查小队是否可以攻击目标。【功能：检查攻击能力】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (401) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_CanCaptureStrategicPoint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_CanCaptureStrategicPoint( <span class="arg">SquadID</span> squad, <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队可以占领战略点则返回true。【功能：检查占领战略点能力】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1525) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_CanCaptureTeamWeapon"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_CanCaptureTeamWeapon( <span class="arg">SquadID</span> pSquad, <span class="arg">EntityID</span> pEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队可以夺取实体同步武器则返回true。【功能：检查夺取班组武器能力】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1537) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_CanCastAbilityOnEGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_CanCastAbilityOnEGroup( <span class="arg">SquadID</span> caster, <span class="arg">Integer</span> ability, <span class="arg">EGroupID</span> target_egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>测试小队是否可以被命令对目标EGroup的任何成员使用此技能。【功能：检查对实体组施放技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\squad.scar] (237) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_CanCastAbilityOnEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_CanCastAbilityOnEntity( <span class="arg">SquadID</span> castingSquad, <span class="arg">ScarAbilityPBG</span> abilityPBG, <span class="arg">EntityID</span> targetEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>测试小队是否可以被命令对目标实体使用此技能。【功能：检查对实体施放技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1787) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_CanCastAbilityOnPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_CanCastAbilityOnPosition( <span class="arg">SquadID</span> castingSquad, <span class="arg">ScarAbilityPBG</span> abilityPBG, <span class="arg">Position</span> targetPos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>测试小队是否可以被命令在目标位置使用此技能。【功能：检查对位置施放技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1827) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_CanCastAbilityOnSGroup"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_CanCastAbilityOnSGroup( <span class="arg">SquadID</span> caster, <span class="arg">Integer</span> ability, <span class="arg">SGroupID</span> target_sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>测试小队是否可以被命令对目标SGroup的任何成员使用此技能。【功能：检查对小队组施放技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\squad.scar] (228) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_CanCastAbilityOnSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_CanCastAbilityOnSquad( <span class="arg">SquadID</span> castingSquad, <span class="arg">ScarAbilityPBG</span> abilityPBG, <span class="arg">SquadID</span> targetSquad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>测试小队是否可以被命令对目标小队使用此技能。【功能：检查对小队施放技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1807) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_CancelProductionQueueItem"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_CancelProductionQueueItem( <span class="arg">SquadID</span> squad, <span class="arg">Integer</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>取消生产队列中的项目。索引0是当前正在生产的项目。【功能：取消生产队列项目】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2544) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_CanHold"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_CanHold( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查小队是否可以容纳任何小队。【功能：检查驻扎能力】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1713) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_CanInstantReinforceNow"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_CanInstantReinforceNow( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队可以立即增援则返回true。【功能：检查即时增援能力】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1014) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_CanLoadSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_CanLoadSquad( <span class="arg">SquadID</span> squad, <span class="arg">SquadID</span> loadthis, <span class="arg">Boolean</span> assumeEmpty, <span class="arg">Boolean</span> assumeVisible )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查小队是否可以装载另一个小队。【功能：检查装载能力】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1719) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_CanPickupSlotItem"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_CanPickupSlotItem( <span class="arg">SquadID</span> pSquad, <span class="arg">EntityID</span> pEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队可以拾取实体槽位物品则返回true。【功能：检查拾取槽位物品能力】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1531) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_CanRecrew"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_CanRecrew( <span class="arg">SquadID</span> pSquad, <span class="arg">EntityID</span> pEntity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队可以重新操作该实体则返回true。【功能：检查重新操作能力】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1543) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_CanSeeEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_CanSeeEntity( <span class="arg">SquadID</span> squad, <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果目标实体与源小队之间的距离小于小队的视距则返回true。不进行视线或战争迷雾检查。【功能：检查视野内实体】</p>
+                <p>Try Player_CanSeeEntity() if you care about LOS or FOW.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1269) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_CanSeeSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_CanSeeSquad( <span class="arg">SquadID</span> squad, <span class="arg">SquadID</span> target )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果目标小队与源小队之间的距离小于小队的视距则返回true。不进行视线或战争迷雾检查。【功能：检查视野内小队】</p>
+                <p>Try Player_CanSeeSquad() if you care about LOS or FOW.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1285) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_CanTargetEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_CanTargetEntity( <span class="arg">Squad&amp;</span> squad, <span class="arg">Entity&amp;</span> target, <span class="arg">Boolean</span> checkFOW )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查小队是否可以瞄准并攻击给定实体。【功能：检查瞄准实体能力】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1299) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_CanTargetSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_CanTargetSquad( <span class="arg">Squad&amp;</span> squad, <span class="arg">Squad&amp;</span> target, <span class="arg">Boolean</span> checkFOW )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查小队是否可以瞄准并攻击给定目标小队中至少一个实体。【功能：检查瞄准小队能力】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1305) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_ClearPostureSuggestion"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_ClearPostureSuggestion( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清除之前对小队做出的任何姿态建议。【功能：清除姿态建议】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2991) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_ClearStateModelEnumTableTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_ClearStateModelEnumTableTarget( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清除小队状态模型中对应给定键和表行索引（从0开始）的目标句柄值。【功能：清除状态模型枚举表目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3475) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_ClearStateModelTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_ClearStateModelTarget( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清除小队状态模型中对应给定键的目标句柄值。【功能：清除状态模型目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3259) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_CompleteUpgrade"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_CompleteUpgrade( <span class="arg">SquadID</span> pSquad, <span class="arg">ScarUpgradePBG</span> upgradePBG )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>立即为给定小队添加升级。【功能：完成升级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2248) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_Count"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_Count( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队中当前的单位数量（包括已生成和已取消生成的！！）。【功能：获取小队单位数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (302) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_CreateAndSpawnToward"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_CreateAndSpawnToward( <span class="arg">ScarSquadPBG</span> sbp, <span class="arg">PlayerID</span> player, <span class="arg">Integer</span> loadoutCount, <span class="arg">Position</span> pos, <span class="arg">Position</span> toward )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>创建一个小队，生成它并将其分配给玩家。【功能：创建并朝向生成小队】</p>
+                <p>This will create a squad of size 'loadoutCount' and of unit type 'unit_base' (from squad blueprint)\n Note: loadoutCount will be clipped to loadoutMin and loadoutMax from the squad blueprint. A loudoutCount of zero means create the whole squad as is.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (646) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_DeSpawn"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_DeSpawn( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在当前位置取消生成整个小队。【功能：取消生成小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (292) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_Destroy"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_Destroy( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从世界中移除小队并销毁它。【功能：销毁小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (239) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_EnableProductionQueue"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_EnableProductionQueue( <span class="arg">SquadID</span> squad, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置小队是否可以生产任何东西（包括升级）。【功能：启用生产队列】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2468) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_EnableSurprise"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_EnableSurprise( <span class="arg">SquadID</span> squad, <span class="arg">Boolean</span> enable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用或禁用给定小队的突袭功能。【功能：启用突袭功能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1257) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_ExtensionCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_ExtensionCount(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队扩展总数。【功能：获取扩展数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2881) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_ExtensionEnabled"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_ExtensionEnabled( <span class="arg">SquadID</span> pSquad, <span class="arg">ComponentDependencyIndex</span> extID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队启用了特定扩展则返回true。【功能：检查扩展是否启用】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2904) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_ExtensionName"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_ExtensionName( <span class="arg">SquadID</span> pSquad, <span class="arg">ComponentDependencyIndex</span> extID )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队上给定扩展的字符串名称。【功能：获取扩展名称】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2888) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_FacePosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_FacePosition( <span class="arg">SquadID</span> squad, <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置小队中所有单位的旋转以面向该位置。【功能：面向位置】</p>
+                <p>The center of the squad will face the position and all other troops will use the same rotation as the from center vector.\n\n This function works on spawned squads only.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1962) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_FaceSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_FaceSquad( <span class="arg">SquadID</span> squad1, <span class="arg">SquadID</span> squad2 )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>让两个小队互相面向。此函数仅适用于已生成的小队。【功能：小队互相对视】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1969) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_FindCover"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_FindCover( <span class="arg">SquadID</span> squad, <span class="arg">Position</span> pos, <span class="arg">Real</span> coverSearchRadius )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>尝试在位置的一定半径内寻找掩体。如果未找到掩体，则返回用于搜索的位置。【功能：寻找掩体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2433) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_FindCoverCompareCurrent"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_FindCoverCompareCurrent( <span class="arg">SquadID</span> squad, <span class="arg">Position</span> pos, <span class="arg">Real</span> coverSearchRadius, <span class="arg">Real</span> maxPathDistanceFromGoal, <span class="arg">Boolean</span> compareToCurrentCover )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>尝试在位置的一定半径内寻找掩体，行进最大距离到达那里，并可能与当前位置的掩体进行比较。如果未找到掩体，则返回用于搜索的位置。【功能：寻找并比较掩体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2386) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_FromID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_FromID( <span class="arg">Integer</span> id )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从任务编辑器ID获取小队。【功能：从ID获取小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (454) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetActiveUpgrades"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetActiveUpgrades( <span class="arg">Squad&amp;</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回此小队拥有的所有活动升级。【功能：获取活动升级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2276) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetAttackTargets"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetAttackTargets( <span class="arg">SquadID</span> squad, <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找小队成员当前或强制的目标。sgroup被清空，找到的任何攻击目标小队被添加到sgroup。建筑物等实体目标被忽略。【功能：获取攻击目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1233) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetBlueprint( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队的蓝图（来自属性编辑器）。【功能：获取小队蓝图】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (427) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetDestination"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetDestination( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队正在移动，返回其目的地。重要：只有在Squad_HasDestination返回true时才能调用此函数。【功能：获取目的地】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2351) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetFirstEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetFirstEntity( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取小队中的第一个实体（索引0）。【功能：获取第一个实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (328) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetHeading"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetHeading( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队中已生成单位的平均朝向。朝向目前是一个包含三个条目（x、y、z）的lua表。【功能：获取朝向】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (257) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetHealth"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetHealth( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队的当前生命值。【功能：获取生命值】</p>
+                <p>The current health of the squad is the total health of each entity in that squad.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (798) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetHealthMax"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetHealthMax( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队的最大生命值。【功能：获取最大生命值】</p>
+                <p>The max health of a squad is the max health of each entity in that squad.  This means that the max health of a squad may change when entities are added or removed from the squad.\n\n</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (807) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetHealthPercentage"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetHealthPercentage( <span class="arg">SquadID</span> squad, <span class="arg">Boolean</span> bIncludeBonuses )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回原始小队剩余的生命值百分比，计入死亡（例如：3名步枪兵的小队将是50%生命值，因为它们开始时有6名成员）。注意：这是UI使用的相同百分比。【功能：获取生命值百分比】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (816) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetHealthPercentageWithShields"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetHealthPercentageWithShields( <span class="arg">SquadID</span> squad, <span class="arg">Boolean</span> includeBonuses )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队剩余生命值的百分比。【功能：获取含护盾生命值百分比】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (830) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetHoldEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetHoldEntity( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取小队驻扎在哪栋建筑（实体）中。【功能：获取驻扎建筑】</p>
+                <p>Error if squad is not garrisoned in a building Please use Squad_IsInHold() to check first</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1652) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetHoldSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetHoldSquad( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取小队驻扎在哪辆载具（小队）中。【功能：获取驻扎载具】</p>
+                <p>Error if squad is not garrisoned in a vehicle squad Please use Squad_IsInHold() to check first</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1666) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetID( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回包含此小队唯一ID的整数。【功能：获取小队ID】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (444) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetInvulnerable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetInvulnerable( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查小队是否无敌。【功能：检查无敌状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\squad.scar] (113) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetInvulnerableEntityCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetInvulnerableEntityCount( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回无敌成员的数量。【功能：获取无敌成员数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1434) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetInvulnerableMinCap"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetInvulnerableMinCap( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队生命值下限或小队成员中最高的无敌下限百分比。【功能：获取无敌下限】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1395) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetLastAttacker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetLastAttacker( <span class="arg">SquadID</span> squad, <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找对此小队的最后一个小队攻击者。如果找到，该小队被添加到sgroup。【功能：获取最后攻击者】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1175) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetLastAttackers"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetLastAttackers( <span class="arg">SquadID</span> squad, <span class="arg">SGroupID</span> group, <span class="arg">Real</span> timeSeconds )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找在指定秒数内攻击此小队的小队攻击者。sgroup被清空，然后找到的任何小队被添加到sgroup。建筑攻击者被忽略。【功能：获取最近攻击者】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1202) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetLastEntityAttacker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetLastEntityAttacker( <span class="arg">SquadID</span> squad, <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>查找对此小队的最后一个实体攻击者。如果找到，该实体被添加到egroup。【功能：获取最后实体攻击者】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1188) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetMax"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetMax( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队允许的最大单位数量。【功能：获取最大单位数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (308) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetMaxEntityDropOffDistance"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetMaxEntityDropOffDistance( <span class="arg">SquadID</span> targetSquad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果存在且实体有状态模型扩展，返回小队中所有实体的resourceDropOffDistance状态模型值之和。否则返回0.0f。【功能：获取最大资源卸载距离】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3553) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetMinArmor"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetMinArmor( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队的当前最小护甲值。【功能：获取最小护甲】</p>
+                <p>The current armor of the squad is the minimum armor amongst all entities in that squad.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (873) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetNumSlotItem"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetNumSlotItem( <span class="arg">SquadID</span> squad, <span class="arg">ScarSlotItemPBG</span> pbg )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取小队拥有的具有相同ID的槽位物品数量。【功能：获取槽位物品数量】</p>
+                <p>example:	local item = Util_GetSlotItemID( "slot_item/allies_m1918_bar.lua" ) Squad_GetNumSlotItem( squadid, item )</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1561) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetOffsetPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetOffsetPosition( <span class="arg">SquadID</span> squad, <span class="arg">Integer</span> offset, <span class="arg">Real</span> distance )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回相对于小队当前位置和方向的位置。有关'offset'参数的说明，请参阅ScarUtil.scar。【功能：获取偏移位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\squad.scar] (172) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetPlayerOwner"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetPlayerOwner( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回给定小队的玩家所有者。小队不能由世界拥有。【功能：获取玩家所有者】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (363) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetPosition( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队中已生成单位的平均位置。位置目前是一个包含三个条目（x、y、z）的lua表。【功能：获取位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (250) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetPositionDeSpawned"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetPositionDeSpawned( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队中已取消生成和已生成单位的平均位置。【功能：获取含取消生成单位的位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (264) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetProductionQueueItem"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetProductionQueueItem( <span class="arg">SquadID</span> squad, <span class="arg">Integer</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回具有索引的生产队列项目的蓝图。【功能：获取生产队列项目】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2489) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetProductionQueueItemType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetProductionQueueItemType( <span class="arg">SquadID</span> squad, <span class="arg">Integer</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回具有索引的生产队列项目的生产类型（PITEM_Upgrade、PITEM_Spawn、PITEM_SquadUpgrade、PITEM_SquadReinforce、PITEM_PlayerUpgrade）。【功能：获取生产队列项目类型】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2517) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetProductionQueueSize"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetProductionQueueSize( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队生产队列中的项目数量。【功能：获取生产队列大小】</p>
+                <p>It is an error to call this function on a squad that does not have a production queue.\n Use Squad_HasProductionQueue to check that the squad has a queue.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2476) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetRace"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetRace( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回给定小队的种族属性包组。【功能：获取种族】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (433) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetShieldPercentage"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetShieldPercentage( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队剩余护盾的百分比。【功能：获取护盾百分比】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (844) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetSlotItemAt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetSlotItemAt( <span class="arg">SquadID</span> squad, <span class="arg">Integer</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回槽位物品的ID。使用Squad_GetSlotItemCount确定小队有多少槽位物品。第一个索引是1。【功能：获取指定槽位物品】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1588) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetSlotItemCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetSlotItemCount( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回此小队有多少槽位物品。【功能：获取槽位物品总数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1574) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetSlotItemsTable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetSlotItemsTable( <span class="arg">SquadID</span> squadid )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回此小队当前拥有的槽位物品ID表。【功能：获取槽位物品表】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\squad.scar] (140) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetSquadDoingDisableOnSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetSquadDoingDisableOnSquad( <span class="arg">SquadID</span> pSquad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回使传递的小队进入禁用状态的小队。【功能：获取禁用来源小队】</p>
+                <p>Disable states are: knocked back, stunned, levitate, stasis</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1780) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetSquadsHeld"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetSquadsHeld( <span class="arg">SquadID</span> squad, <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>清空sgroup，然后将'squad'容纳的所有小队添加到其中。【功能：获取容纳的小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1734) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetStateModelBool"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetStateModelBool( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从小队的状态模型返回对应给定键的布尔值。【功能：获取状态模型布尔值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3078) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetStateModelEntityTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetStateModelEntityTarget( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从小队的状态模型返回对应给定键的实体值。【功能：获取状态模型实体目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3116) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetStateModelEnumTableBool"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetStateModelEnumTableBool( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从小队的状态模型返回对应给定键和表行索引（从0开始）的布尔值。【功能：获取状态模型枚举表布尔值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3146) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetStateModelEnumTableEntityTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetStateModelEnumTableEntityTarget( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从小队的状态模型返回对应给定键和表行索引（从0开始）的实体值。【功能：获取状态模型枚举表实体目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3190) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetStateModelEnumTableFloat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetStateModelEnumTableFloat( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从小队的状态模型返回对应给定键和表行索引（从0开始）的浮点值。【功能：获取状态模型枚举表浮点值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3160) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetStateModelEnumTableInt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetStateModelEnumTableInt( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从小队的状态模型返回对应给定键和表行索引（从0开始）的整数值。【功能：获取状态模型枚举表整数值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3153) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetStateModelEnumTablePlayerTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetStateModelEnumTablePlayerTarget( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从小队的状态模型返回对应给定键和表行索引（从0开始）的玩家值。【功能：获取状态模型枚举表玩家目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3174) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetStateModelEnumTableSquadTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetStateModelEnumTableSquadTarget( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从小队的状态模型返回对应给定键和表行索引（从0开始）的小队值。【功能：获取状态模型枚举表小队目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3182) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetStateModelEnumTableVector3f"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetStateModelEnumTableVector3f( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从小队的状态模型返回对应给定键和表行索引（从0开始）的Vector3f值。【功能：获取状态模型枚举表向量值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3167) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetStateModelFloat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetStateModelFloat( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从小队的状态模型返回对应给定键的浮点值。【功能：获取状态模型浮点值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3090) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetStateModelInt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetStateModelInt( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从小队的状态模型返回对应给定键的整数值。【功能：获取状态模型整数值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3084) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetStateModelPlayerTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetStateModelPlayerTarget( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从小队的状态模型返回对应给定键的玩家值。【功能：获取状态模型玩家目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3102) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetStateModelSquadTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetStateModelSquadTarget( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从小队的状态模型返回对应给定键的小队值。【功能：获取状态模型小队目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3109) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetStateModelVector3f"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetStateModelVector3f( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从小队的状态模型返回对应给定键的Vector3f值。【功能：获取状态模型向量值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3096) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetVehicleMobileDriverSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetVehicleMobileDriverSquad( <span class="arg">SquadID</span> pSquad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从载具小队获取移动驾驶员小队。【功能：获取载具驾驶员小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (504) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetVeterancy"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetVeterancy( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取当前小队经验等级。【功能：获取经验值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1892) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GetVeterancyRank"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GetVeterancyRank( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取当前小队经验等级。【功能：获取经验等级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1880) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GiveSlotItem"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GiveSlotItem( <span class="arg">SquadID</span> squad, <span class="arg">ScarSlotItemPBG</span> pbg )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将槽位物品给予小队。可能因槽位不足而失败。【功能：给予槽位物品】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1615) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_GiveSlotItemsFromTable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_GiveSlotItemsFromTable( <span class="arg">SquadID</span> squadid, <span class="arg">LuaTable</span> itemTable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将表中的所有槽位物品给予小队。该表应来自Squad_GetSlotItemsTable。【功能：从表给予槽位物品】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\squad.scar] (159) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_HasAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_HasAbility( <span class="arg">SquadID</span> squad, <span class="arg">ScarAbilityPBG</span> ability )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>测试小队是否拥有某技能。【功能：检查是否拥有技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2635) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_HasAcceptedCommands"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_HasAcceptedCommands( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队有已接受的命令将在接下来尝试执行则返回true。【功能：检查是否有已接受命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (900) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_HasActiveCommand"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_HasActiveCommand( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队当前有活动命令则返回true。【功能：检查是否有活动命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (941) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_HasBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_HasBlueprint( <span class="arg">SquadID</span> squad, <span class="arg">SBP/SquadType/Table</span> blueprints )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查小队是否属于指定的任何蓝图或小队类型。【功能：检查蓝图类型】</p>
+                <p>Blueprint can be a single Blueprint, a single SquadType, or a table of multiple Blueprints or SquadTypes. If you want to see if a squad has ALL of a set of SquadTypes, then wrap them all in a sub-table.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\squad.scar] (15) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_HasBuilding"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_HasBuilding( <span class="arg">SquadID</span> pSquad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果给定小队中有建筑（包括班组武器）则返回true。【功能：检查是否有建筑】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (498) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_HasDestination"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_HasDestination( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回此小队是否正在移动并有目的地，在发出移动请求的同一帧不会返回true。【功能：检查是否有目的地】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2332) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_HasEntityWithNInteractors"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_HasEntityWithNInteractors( <span class="arg">SquadID</span> targetSquad, <span class="arg">String</span> interactionTypeName, <span class="arg">Integer</span> minAttachedCount )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队是否包含至少有minAttachedCount个interactionTypeName类型附加交互物的实体。【功能：检查是否有N个交互物】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3530) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_HasHeavyWeapon"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_HasHeavyWeapon( <span class="arg">SquadID</span> pSquad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果给定小队有重型武器（非移动式架设武器）则返回true。【功能：检查是否有重型武器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (510) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_HasInfantry"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_HasInfantry( <span class="arg">SquadID</span> pSquad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果给定小队中至少有一个步兵单位（包括班组武器）则返回true。【功能：检查是否有步兵】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (486) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_HasProductionQueue"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_HasProductionQueue( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队有生产队列则返回true。【功能：检查是否有生产队列】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2462) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_HasSetupTeamWeapon"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_HasSetupTeamWeapon( <span class="arg">SquadID</span> pSquad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果给定小队已架设班组武器准备攻击则返回true。【功能：检查是否已架设班组武器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (520) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_HasSlotItem"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_HasSlotItem( <span class="arg">SquadID</span> squad, <span class="arg">SlotItemID</span> slotItem )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查小队是否有特定的槽位物品。【功能：检查是否有槽位物品】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\squad.scar] (123) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_HasTeamWeapon"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_HasTeamWeapon( <span class="arg">SquadID</span> pSquad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果给定小队有班组武器则返回true。【功能：检查是否有班组武器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (530) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_HasUpgrade"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_HasUpgrade( <span class="arg">SquadID</span> squad, <span class="arg">ScarUpgradePBG</span> pbg )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队已购买指定升级则返回true。【功能：检查是否有升级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2264) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_HasVehicle"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_HasVehicle( <span class="arg">SquadID</span> pSquad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果给定小队中有载具（包括班组武器）则返回true。【功能：检查是否有载具】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (492) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_HasWeaponHardpoint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_HasWeaponHardpoint( <span class="arg">SquadID</span> pSquad, <span class="arg">String</span> hardPointName )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果给定小队至少有一个实体拥有指定武器硬点则返回true。【功能：检查是否有武器硬点】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (536) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IncreaseVeterancy"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IncreaseVeterancy( <span class="arg">SquadID</span> squad, <span class="arg">Real</span> veterancy, <span class="arg">Boolean</span> silent, <span class="arg">Boolean</span> applyModifiers )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>增加当前小队经验值。【功能：增加经验值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1914) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IncreaseVeterancyRank"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IncreaseVeterancyRank( <span class="arg">SquadID</span> squad, <span class="arg">Integer</span> numranks, <span class="arg">Boolean</span> silent )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>提升当前小队经验等级。【功能：提升经验等级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1904) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_InstantSetupTeamWeapon"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_InstantSetupTeamWeapon( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>停止当前小队活动并立即架设班组武器（如果有的话）。【功能：立即架设班组武器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1933) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsAbilityActive_CS"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsAbilityActive_CS( <span class="arg">SquadID</span> squad, <span class="arg">ScarAbilityPBG</span> pbg )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果技能处于活动状态则返回true。【功能：检查技能是否活动】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1847) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsAlive"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsAlive( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查小队是否存活。【功能：检查是否存活】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (480) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsAttacking"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsAttacking( <span class="arg">SquadID</span> squad, <span class="arg">Real</span> time )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队中任何单位在指定时间内正在攻击则返回true。【功能：检查是否正在攻击】</p>
+                <p>Time is in seconds</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1156) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsAttackMoving"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsAttackMoving( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队当前正在攻击移动则返回true。【功能：检查是否攻击移动】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (995) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsCamouflaged"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsCamouflaged( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队中是否有任何实体处于伪装状态。【功能：检查是否伪装】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\squad.scar] (179) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsCapturing"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsCapturing( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队当前正在占领则返回true。【功能：检查是否正在占领】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (977) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsCasualty"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsCasualty( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队中任何已生成实体是伤亡者则返回true。【功能：检查是否有伤亡】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (961) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsConstructing"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsConstructing( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队当前正在建造则返回true。【功能：检查是否正在建造】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (983) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsDoingAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsDoingAbility( <span class="arg">SquadID</span> squad, <span class="arg">ScarAbilityPBG</span> pbg )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队当前正在执行给定技能则返回true。【功能：检查是否正在执行技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1869) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsFemale"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsFemale( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回传入的小队是否为女性。【功能：检查是否为女性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2300) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsGatheringResourceType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsGatheringResourceType( <span class="arg">SquadID</span> targetSquad, <span class="arg">Integer</span> type )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队是否包含正在执行特定单位角色的实体。【功能：检查是否正在采集资源】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3581) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsHoldingAny"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsHoldingAny( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查小队是否容纳了任何东西（用于载具）。【功能：检查是否容纳任何东西】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1707) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsHoldingPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsHoldingPosition( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队正在坚守位置则返回true。【功能：检查是否坚守位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3612) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsIdle"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsIdle( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队处于空闲状态则返回true。【功能：检查是否空闲】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2927) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsInBackground"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsInBackground( <span class="arg">SquadID</span> pSquad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队是否在后台。默认返回false（如果小队为空）。【功能：检查是否在后台】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2943) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsInCover"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsInCover( <span class="arg">SquadID</span> squadId, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队中所有或任何士兵处于掩体中则返回true。【功能：检查是否在掩体中】</p>
+                <p>Set all to true to check if all troopers are in cover or set to false to check if any.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\squad.scar] (68) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsInHoldEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsInHoldEntity( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查小队是否驻扎在实体（建筑）中。【功能：检查是否驻扎在建筑中】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1678) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsInHoldSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsInHoldSquad( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查小队是否装载在小队（载具）中。【功能：检查是否装载在载具中】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1695) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsInMeleeCombat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsInMeleeCombat( <span class="arg">SquadID</span> pSquad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队处于近战战斗中则返回true。【功能：检查是否近战】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1162) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsKnockedBack"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsKnockedBack( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队当前正在被击退则返回true。【功能：检查是否被击退】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1772) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsMoving"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsMoving( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队中任何单位当前正在移动则返回true。【功能：检查是否移动】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1149) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsOfType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsOfType( <span class="arg">SquadID</span> squad, <span class="arg">String</span> type )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>确定此小队是否属于给定类型。类型在squad_type_ext/squad_type_list中定义。【功能：检查小队类型】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3010) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsOnWalkableWall"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsOnWalkableWall( <span class="arg">SquadID</span> squad, <span class="arg">Boolean</span> all )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队的任何实体（all=false）或整个小队（all=true）在可行走城墙上则返回true。【功能：检查是否在城墙上】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3606) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsOwnedByPlayer"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsOwnedByPlayer( <span class="arg">SquadID</span> squad, <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果给定小队由给定玩家拥有则返回true。【功能：检查玩家所有权】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3625) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsReinforcing"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsReinforcing( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队当前正在增援则返回true。如果小队没有增援扩展，此函数将返回false。【功能：检查是否正在增援】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1008) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsRetreating"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsRetreating( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队正在撤退则返回true。【功能：检查是否撤退】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1001) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsSBPOfType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsSBPOfType( <span class="arg">ScarSquadPBG</span> sbp, <span class="arg">String</span> type )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果给定蓝图属于给定类型则返回true。类型在squad_type_ext/squad_type_list中定义。【功能：检查蓝图类型】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3034) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsSettingDemolitions"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsSettingDemolitions( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队当前正在放置炸药则返回true。【功能：检查是否放置炸药】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (989) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsSiege"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsSiege( <span class="arg">ScarSquadPBG</span> pbg )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果提供的小队蓝图是攻城单位则返回true。【功能：检查是否攻城单位】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3591) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsStunned"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsStunned( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队当前处于眩晕状态则返回true。【功能：检查是否眩晕】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1765) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsUnderAttack"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsUnderAttack( <span class="arg">SquadID</span> squad, <span class="arg">Real</span> time )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队中任何单位在指定时间内受到攻击则返回true。【功能：检查是否受攻击】</p>
+                <p>Time is in seconds</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1107) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsUnderAttackByPlayer"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsUnderAttackByPlayer( <span class="arg">SquadID</span> squad, <span class="arg">PlayerID</span> pAttackerOwner, <span class="arg">Real</span> time )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队受到来自特定玩家的敌人攻击则返回true。【功能：检查是否受特定玩家攻击】</p>
+                <p>Time is in seconds</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1169) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsUnderAttackFromDirection"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsUnderAttackFromDirection( <span class="arg">SquadID</span> squad, <span class="arg">Integer</span> offset, <span class="arg">Real</span> timeSeconds )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队从某个方向受到攻击则返回true（8种偏移类型，参见ScarUtil.scar）。【功能：检查攻击方向】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1113) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsUpgrading"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsUpgrading( <span class="arg">SquadID</span> squad, <span class="arg">ScarUpgradePBG</span> upgrade )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队当前正在升级特定东西则返回true。【功能：检查是否正在升级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1020) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsUpgradingAny"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsUpgradingAny( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>如果小队当前正在升级任何东西则返回true。【功能：检查是否正在升级任何东西】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1063) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_IsValid"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_IsValid( <span class="arg">Integer</span> id )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>检查是否可以在世界中找到具有给定ID的小队。【功能：检查小队有效性】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (469) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_Kill"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_Kill( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>杀死整个小队。将生命值设为0，并触发死亡效果。【功能：杀死小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (920) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_NumUpgradeComplete"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_NumUpgradeComplete( <span class="arg">SquadID</span> squad, <span class="arg">ScarUpgradePBG</span> upgradePBG )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回此小队拥有的升级数量。【功能：获取已完成升级数量】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2270) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_Population"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_Population( <span class="arg">SquadID</span> squad, <a href="enum_list.htm#CapType">CapType</a> type )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取小队人口消耗，使用CT_Personnel、CT_Vehicle、CT_Medic作为上限类型。【功能：获取人口消耗】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3000) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_RemoveAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_RemoveAbility( <span class="arg">SquadID</span> squad, <span class="arg">ScarAbilityPBG</span> ability )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除之前通过Squad_AddAbility添加的技能。不能移除静态技能（来自AE：squad_ability_ext）。【功能：移除技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2610) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_RemoveSlotItemAt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_RemoveSlotItemAt( <span class="arg">SquadID</span> squad, <span class="arg">Integer</span> index, <span class="arg">Boolean</span> bInstantWeaponChange )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从小队移除槽位物品。【功能：移除槽位物品】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1625) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_RemoveStateModelListBool"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_RemoveStateModelListBool( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Boolean</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除小队状态模型列表中对应给定键的布尔值。【功能：移除状态模型列表布尔值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3347) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_RemoveStateModelListEntityTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_RemoveStateModelListEntityTarget( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">EntityID</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除小队状态模型列表中对应给定键的实体目标句柄值。【功能：移除状态模型列表实体目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3383) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_RemoveStateModelListFloat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_RemoveStateModelListFloat( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除小队状态模型列表中对应给定键的浮点值。【功能：移除状态模型列表浮点值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3359) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_RemoveStateModelListInt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_RemoveStateModelListInt( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Integer</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除小队状态模型列表中对应给定键的整数值。【功能：移除状态模型列表整数值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3353) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_RemoveStateModelListPlayerTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_RemoveStateModelListPlayerTarget( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">PlayerID</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除小队状态模型列表中对应给定键的玩家目标句柄值。【功能：移除状态模型列表玩家目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3371) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_RemoveStateModelListSquadTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_RemoveStateModelListSquadTarget( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">SquadID</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除小队状态模型列表中对应给定键的小队目标句柄值。【功能：移除状态模型列表小队目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3377) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_RemoveStateModelListVector3f"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_RemoveStateModelListVector3f( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Position</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除小队状态模型列表中对应给定键的Vector3f值。【功能：移除状态模型列表向量值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3365) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_RemoveUpgrade"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_RemoveUpgrade( <span class="arg">SquadID</span> squad, <span class="arg">ScarUpgradePBG</span> upgrade )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从小队移除升级。【功能：移除升级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2583) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_RewardActionPoints"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_RewardActionPoints( <span class="arg">SquadID</span> squad, <span class="arg">Real</span> actionPoint )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>给予小队行动点数。【功能：奖励行动点数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2439) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SBPEntityAt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SBPEntityAt( <span class="arg">ScarSquadPBG</span> sbp, <span class="arg">Integer</span> index )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从小队蓝图中获取实体蓝图（从0开始索引）。【功能：获取蓝图实体】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (343) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SBPGetMax"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SBPGetMax( <span class="arg">ScarSquadPBG</span> sbp )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队蓝图中允许的最大单位数量。【功能：获取蓝图最大单位数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (318) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetAnimatorAction"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetAnimatorAction( <span class="arg">SquadID</span> squadid, <span class="arg">String</span> actionName )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>触发小队的动画动作。请仅用于简单动画。【功能：设置动画动作】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\squad.scar] (204) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetAnimatorEvent"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetAnimatorEvent( <span class="arg">SquadID</span> squadid, <span class="arg">String</span> actionName )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>触发小队的动画事件。请仅用于简单动画。【功能：设置动画事件】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\squad.scar] (215) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetAnimatorState"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetAnimatorState( <span class="arg">SquadID</span> squadid, <span class="arg">String</span> stateMachineName, <span class="arg">String</span> stateName )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置小队状态机的动画状态。请仅用于简单动画。【功能：设置动画状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\squad.scar] (193) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetBackground"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetBackground( <span class="arg">SquadID</span> pSquad, <span class="arg">Boolean</span> isInBackground )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将小队设置为在后台或前台。默认情况下，所有小队都在前台。【功能：设置前后台】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2917) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetExtEnabled"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetExtEnabled( <span class="arg">SquadID</span> pSquad, <span class="arg">String</span> extID, <span class="arg">Boolean</span> enabled )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>启用或禁用小队的UI扩展（控制与小队相关的所有UI元素）。【功能：设置扩展启用状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2875) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetHealth"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetHealth( <span class="arg">SquadID</span> squad, <span class="arg">Real</span> healthPercent )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置小队中所有单位的生命值。生命值必须在[0.0, 1.0]范围内。【功能：设置生命值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (851) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetInvulnerable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetInvulnerable( <span class="arg">SquadID</span> squad, <span class="arg">Boolean</span> enable, <span class="arg">Real</span> reset_time )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置小队的无敌状态。重置时间以秒为单位。如果为非负数，无敌状态将在该时间后过期。【功能：设置无敌状态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\squad.scar] (95) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetInvulnerableEntityCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetInvulnerableEntityCount( <span class="arg">SquadID</span> squad, <span class="arg">Integer</span> invEntityCount, <span class="arg">Real</span> resetTime )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当成员数量降至或低于指定数量时，使小队对物理伤害无敌。【功能：设置无敌成员数量阈值】</p>
+                <p>member count, 0 means squad is vulnerable; above 0 means number of alive entities will not go below this count resetTime is the time in seconds that vulnerability will be restored.; zero time for reset time means the buff will last forever</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1421) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetInvulnerableMinCap"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetInvulnerableMinCap( <span class="arg">SquadID</span> squad, <span class="arg">Real</span> minHealthPercentage, <span class="arg">Real</span> resetTime )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>使小队对物理伤害无敌。【功能：设置无敌下限】</p>
+                <p>percentage of 0.0 means squad is vulnerable; percentage of 1.0 sets the squad in god mode resetTime is the time in seconds that vulnerability will be restored.; zero time for reset time means the buff will last forever</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1366) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetMoodMode"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetMoodMode( <span class="arg">SquadID</span> squad, <span class="arg">SquadCombatBehaviourMoodMode</span> mood )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置士兵情绪模式。【功能：设置情绪模式】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2321) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetMoveType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetMoveType( <span class="arg">SquadID</span> squad, <span class="arg">ScarMoveTypePBG</span> movetypePBG )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置小队的移动类型。【功能：设置移动类型】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1549) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetPlayerOwner"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetPlayerOwner( <span class="arg">SquadID</span> squad, <span class="arg">PlayerID</span> owner )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>更改给定小队的所有者。【功能：设置玩家所有者】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (378) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetPosition( <span class="arg">SquadID</span> squad, <span class="arg">Position</span> pos, <span class="arg">Position</span> positionFacingToward )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将小队移动到新位置，并将小队成员吸附到网格单元格中心。【功能：设置位置】</p>
+                <p>`positionFacingToward` is passed in from the script as the position that they want the squad to face toward.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (742) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetPosition3D"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetPosition3D( <span class="arg">SquadID</span> squad, <span class="arg">Position</span> pos, <span class="arg">Position</span> toward )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将小队移动到任意新的3D位置。【功能：设置3D位置】</p>
+                <p>Note that the squad will still have the same properties, so any squad that snaps to the terrain (most land based squads) will interpolate to the terrain height immediately after this move. This function should really only be used for skimmers and other units that require the y axis to be specified. Use Squad_SetPosition() otherwise.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (758) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetRecrewable"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetRecrewable( <span class="arg">SquadID</span> squad, <span class="arg">Boolean</span> capturable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>设置小队内的实体在被遗弃时是否可重新操作。【功能：设置可重新操作】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2306) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetResource"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetResource( <span class="arg">SquadID</span> squad, <span class="arg">Integer</span> resourceType, <span class="arg">Real</span> newAmount )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>此函数使用小队资源而非实体资源。对于给予单位资源，最好使用Entity_AddResource（位于luaentity.cpp）。【功能：设置资源】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2808) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetStateModelBool"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetStateModelBool( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Boolean</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在小队的状态模型中设置对应给定键的布尔值。【功能：设置状态模型布尔值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3217) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetStateModelEntityTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetStateModelEntityTarget( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">EntityID</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在小队的状态模型中设置对应给定键的实体目标句柄值。【功能：设置状态模型实体目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3253) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetStateModelEnumTableBool"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetStateModelEnumTableBool( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex, <span class="arg">Boolean</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在小队的状态模型中设置对应给定键和表行索引（从0开始）的布尔值。【功能：设置状态模型枚举表布尔值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3414) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetStateModelEnumTableEntityTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetStateModelEnumTableEntityTarget( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex, <span class="arg">EntityID</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在小队的状态模型中设置对应给定键和表行索引（从0开始）的实体目标句柄值。【功能：设置状态模型枚举表实体目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3468) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetStateModelEnumTableFloat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetStateModelEnumTableFloat( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在小队的状态模型中设置对应给定键和表行索引（从0开始）的浮点值。【功能：设置状态模型枚举表浮点值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3428) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetStateModelEnumTableInt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetStateModelEnumTableInt( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex, <span class="arg">Integer</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在小队的状态模型中设置对应给定键和表行索引（从0开始）的整数值。【功能：设置状态模型枚举表整数值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3421) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetStateModelEnumTablePlayerTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetStateModelEnumTablePlayerTarget( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex, <span class="arg">PlayerID</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在小队的状态模型中设置对应给定键和表行索引（从0开始）的玩家目标句柄值。【功能：设置状态模型枚举表玩家目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3450) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetStateModelEnumTableSquadTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetStateModelEnumTableSquadTarget( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex, <span class="arg">SquadID</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在小队的状态模型中设置对应给定键和表行索引（从0开始）的小队目标句柄值。【功能：设置状态模型枚举表小队目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3457) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetStateModelEnumTableVector3f"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetStateModelEnumTableVector3f( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Integer</span> tableRowIndex, <span class="arg">Position</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在小队的状态模型中设置对应给定键和表行索引（从0开始）的Vector3f值。【功能：设置状态模型枚举表向量值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3439) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetStateModelFloat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetStateModelFloat( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Real</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在小队的状态模型中设置对应给定键的浮点值。【功能：设置状态模型浮点值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3229) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetStateModelInt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetStateModelInt( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Integer</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在小队的状态模型中设置对应给定键的整数值。【功能：设置状态模型整数值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3223) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetStateModelListBool"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetStateModelListBool( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Boolean</span> value, <span class="arg">Boolean</span> allowDuplicates )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在小队的状态模型列表中设置对应给定键的布尔值。【功能：设置状态模型列表布尔值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3305) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetStateModelListEntityTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetStateModelListEntityTarget( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">EntityID</span> value, <span class="arg">Boolean</span> allowDuplicates )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在小队的状态模型列表中设置对应给定键的实体目标句柄值。【功能：设置状态模型列表实体目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3341) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetStateModelListFloat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetStateModelListFloat( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Real</span> value, <span class="arg">Boolean</span> allowDuplicates )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在小队的状态模型列表中设置对应给定键的浮点值。【功能：设置状态模型列表浮点值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3317) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetStateModelListInt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetStateModelListInt( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Integer</span> value, <span class="arg">Boolean</span> allowDuplicates )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在小队的状态模型列表中设置对应给定键的整数值。【功能：设置状态模型列表整数值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3311) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetStateModelListPlayerTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetStateModelListPlayerTarget( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">PlayerID</span> value, <span class="arg">Boolean</span> allowDuplicates )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在小队的状态模型列表中设置对应给定键的玩家目标句柄值。【功能：设置状态模型列表玩家目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3329) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetStateModelListSquadTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetStateModelListSquadTarget( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">SquadID</span> value, <span class="arg">Boolean</span> allowDuplicates )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在小队的状态模型列表中设置对应给定键的小队目标句柄值。【功能：设置状态模型列表小队目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3335) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetStateModelListVector3f"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetStateModelListVector3f( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Position</span> value, <span class="arg">Boolean</span> allowDuplicates )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在小队的状态模型列表中设置对应给定键的Vector3f值。【功能：设置状态模型列表向量值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3323) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetStateModelPlayerTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetStateModelPlayerTarget( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">PlayerID</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在小队的状态模型中设置对应给定键的玩家目标句柄值。【功能：设置状态模型玩家目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3241) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetStateModelSquadTarget"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetStateModelSquadTarget( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">SquadID</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在小队的状态模型中设置对应给定键的小队目标句柄值。【功能：设置状态模型小队目标】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3247) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetStateModelVector3f"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetStateModelVector3f( <span class="arg">SquadID</span> squad, <span class="arg">String</span> key, <span class="arg">Position</span> value )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在小队的状态模型中设置对应给定键的Vector3f值。【功能：设置状态模型向量值】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (3235) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetVeterancyDisplayVisibility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetVeterancyDisplayVisibility( <span class="arg">SquadID</span> squad, <span class="arg">Boolean</span> visible )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>打开/关闭单位肖像经验等级星星的显示。【功能：设置经验等级显示】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1923) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SetWorldOwned"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SetWorldOwned( <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>使小队变为中立。【功能：设置为世界所有】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (415) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_Spawn"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_Spawn( <span class="arg">SquadID</span> squad, <span class="arg">Position</span> pos, <span class="arg">String</span> spawnType )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在给定位置生成整个小队。【功能：生成小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1519) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SpawnToward"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SpawnToward( <span class="arg">SquadID</span> squad, <span class="arg">Position</span> pos, <span class="arg">Position</span> toward, <span class="arg">String</span> spawnType )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>在给定位置生成整个小队。【功能：朝向生成小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1511) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_Split"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_Split( <span class="arg">SquadID</span> squad, <span class="arg">Integer</span> int )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将小队分成两部分。新小队的大小由传入的数字指定。【功能：分割小队】</p>
+                <p>The new squad size is specified by the number passed in.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (1313) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_StopAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_StopAbility( <span class="arg">SquadID</span> squad, <span class="arg">ScarAbilityPBG</span> ability, <span class="arg">Boolean</span> bIsEarlyExit )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>突然停止活动技能。【功能：停止技能】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2574) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_SuggestPosture"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_SuggestPosture( <span class="arg">SquadID</span> squad, <span class="arg">Integer</span> posture, <span class="arg">Real</span> duration )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队建议姿态，持续传入的时间。【功能：建议姿态】</p>
+                <p>Posture of 0 is prone, 1 is kneel/crouch, and 2 is standing.  Duration is in seconds, negative means indefinate.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (2981) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_TryFindClosestFreePosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_TryFindClosestFreePosition( <span class="arg">SquadID</span> squad, <span class="arg">Position</span> targetPosition )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>返回小队距离目标位置最近的空闲位置。【功能：查找最近空闲位置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaSquad.cpp] (776) </b></td>
+            </tr>
+          </table>
+        </p><a name="Squad_WarpToPos"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Squad_WarpToPos( <span class="arg">SquadID</span> squad, <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>立即将小队传送到新位置。【功能：传送小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\squad.scar] (86) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

@@ -1,0 +1,1930 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;Command</title>
+</head>
+<body>
+<span class="subtitle">scardoc;Command</span><p>
+<a name="Group_scardoc;Command"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;Command</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="Cmd_AbandonTeamWeapon"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_AbandonTeamWeapon( <span class="arg">SGroupID</span> sgroupid, <span class="arg">Boolean</span> OPT_preserveCrew, <span class="arg">Boolean</span> OPT_queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>命令小队组放弃当前装备的团队武器（如果他们拥有且可以放弃，由属性编辑器中的调优值决定）。【功能：命令小队放弃团队武器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1651) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_Ability"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_Ability( <span class="arg">EGroupID</span> user, <span class="arg">Integer</span> blueprint, <span class="arg">EGroupID</span> OPT_target, <span class="arg">Position</span> OPT_direction, <span class="arg">Boolean</span> OPT_skipCostPrereq, <span class="arg">Boolean</span> OPT_queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向玩家、实体组或小队组发送技能命令。如果技能需要额外参数，则提供这些参数。【功能：发送技能命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1226) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_AttachSquads"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_AttachSquads( <span class="arg">SGroupID</span> sgroup, <span class="arg">SGroupID</span> sgroupAttachee )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将sgroupnameAttachee中的小队附加到sgroupname。两个小队组都必须只包含一个小队。【功能：附加小队】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1409) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_Attack"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_Attack( <span class="arg">SGroupID</span> sgroup, <span class="arg">EGroupID</span> target, <span class="arg">Boolean</span> OPT_queued, <span class="arg">Boolean</span> OPT_stationary, <span class="arg">String</span> OPT_plan, <span class="arg">Boolean</span> OPT_check FOW )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队组下达攻击命令。【功能：下达攻击命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (653) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_AttackMove"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_AttackMove( <span class="arg">SGroupID</span> sgroup, <span class="arg">Position</span> targetposition, <span class="arg">Boolean</span> OPT_queued, <span class="arg">String</span> OPT_plan, <span class="arg">Real</span> OPT_coverSearchRadius, <span class="arg">Boolean</span> OPT_deleteOnArrival, <span class="arg">Boolean</span> OPT_splitCmd )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>命令小队组攻击移动到指定位置（任何可查询位置的对象）。可以排队执行，可以跟随计划，可以在指定半径内寻找掩体。【功能：攻击移动命令】</p>
+                <p>The sgroup can optionally be deleted on arriving within proximity of the marker or within a radius of 10 if there is no marker proximity.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (705) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_AttackMoveThenCapture"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_AttackMoveThenCapture( <span class="arg">SGroupID</span> attacker, <span class="arg">EGroupID</span> target, <span class="arg">Boolean</span> OPT_queued  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>命令攻击者小队组攻击移动到战略点目标；当战略点可被占领时，小队组将占领它。【功能：攻击移动后占领】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1556) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_CaptureTeamWeapon"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_CaptureTeamWeapon( <span class="arg">SGroupID</span> sgroupid, <span class="arg">EGroupID</span> targetid, <span class="arg">Boolean</span> OPT_queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>命令小队组捕获团队武器实体组。【功能：捕获团队武器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1611) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_Construct"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_Construct( <span class="arg">SGroupID</span> sgroupid, <span class="arg">Entity</span> blueprint, <span class="arg">EGroupID</span> targetid, <span class="arg">Position</span> OPT_Facing, <span class="arg">Boolean</span> OPT_queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>命令小队在指定位置建造建筑，或继续建造现有建筑。【功能：建造建筑】</p>
+                <p>The command also checks to see if a building already exists at the location, and the squad will continue building it, if it is of the correct type.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1816) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_DetonateDemolitions"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_DetonateDemolitions( <span class="arg">PlayerID</span> player, <span class="arg">EGroupID</span> target, <span class="arg">Boolean</span> OPT_queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>引爆建筑物的爆破装置。【功能：引爆爆破装置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1797) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_EjectOccupants"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_EjectOccupants( <span class="arg">EGroupID</span> fromgroupid, <span class="arg">Position</span> OPT_destination, <span class="arg">Boolean</span> OPT_queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>命令实体组或小队组驱逐其内部的乘员。如果未指定位置，乘员将停留在出口处。【功能：驱逐乘员】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (984) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_Garrison"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_Garrison( <span class="arg">SGroupID</span> fromsgroupid, <span class="arg">EGroupID</span> togroupid, <span class="arg">Boolean</span> OPT_overload, <span class="arg">Boolean</span> OPT_queued, <span class="arg">Boolean</span> OPT_instant )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>命令小队组进驻到组内随机实体或小队中。【功能：进驻命令】</p>
+                <p>overload is a flag that will allow the hold entity to ignore maximum slot check</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (932) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_HoldPosition"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_HoldPosition( <span class="arg">SGroupID</span> sgroup, <span class="arg">Boolean</span> OPT_location, <span class="arg">Boolean</span> OPT_queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>命令小队组在指定位置（或当前位置）坚守阵地。【功能：坚守阵地】</p>
+                <p>The location parameter can be a position (to hold position at that location), or a Boolean to enable/disable HoldPosition at the current location. If it's omitted entirely, it defaults to true.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (901) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_InstantReinforceUnit"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_InstantReinforceUnit( <span class="arg">SGroupID</span> sgroup, <span class="arg">Integer</span> count )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向组内所有小队发送即时增援命令。count表示要发送的命令数量。【功能：即时增援】</p>
+                <p>Note: This function bypasses pre-reqs, costs and the production queue</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1155) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_InstantSetupTeamWeapon"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_InstantSetupTeamWeapon( <span class="arg">SGroupID</span> sgroupid, <span class="arg">Boolean</span> OPT_queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>命令小队组立即架设团队武器，不播放动画。【功能：立即架设团队武器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1677) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_InstantUpgrade"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_InstantUpgrade( <span class="arg">EGroupID</span> target, <span class="arg">Integer</span> blueprint, <span class="arg">Integer</span> OPT_count )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向玩家、实体组或小队组发送即时升级命令。接受单个升级或升级表。【功能：即时升级】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1215) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_Move"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_Move( <span class="arg">SGroupID</span> sgroup, <span class="arg">EGroupID</span> position, <span class="arg">Boolean</span> OPT_queued, <span class="arg">Boolean</span> OPT_deleteOnArrival, <span class="arg">Position</span> OPT_facing, <span class="arg">Integer</span> OPT_offset, <span class="arg">Real</span> OPT_distance, <span class="arg">Real</span> OPT_coverSearchRadius, <span class="arg">Boolean</span> OPT_splitCmd )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将小队组移动到指定位置。【功能：移动小队】</p>
+                <p>Supports facing, 'offset' movement, and can find cover. The sgroup can optionally be deleted on arriving within proximity of the marker or within a radius of 10 if there is no marker proximity.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (41) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_MoveAwayFromPos"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_MoveAwayFromPos( <span class="arg">SGroupID</span> sgroup, <span class="arg">Pos</span> position, <span class="arg">Integer</span> radius, <span class="arg">Boolean</span> OPT_queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将小队组从某位置移出至指定半径之外。【功能：远离位置移动】</p>
+                <p>All squads in the group will move away from the centre position from its current position</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (411) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_MoveToAndDeSpawn"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_MoveToAndDeSpawn( <span class="arg">SGroupID</span> sgroup, <span class="arg">MarkerID</span> marker, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将小队组移动到指定标记点并取消生成。【功能：移动后取消生成】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1537) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_MoveToAndDestroy"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_MoveToAndDestroy( <span class="arg">SGroupID</span> sgroup, <span class="arg">MarkerID</span> marker, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将小队组移动到指定标记点并销毁它。【功能：移动后销毁】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1519) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_MoveToClosestMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_MoveToClosestMarker( <span class="arg">SGroupID</span> sgroup, <span class="arg">Table</span> markertable )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将小队组移动到标记ID列表/表中最近的标记点。【功能：移动到最近标记点】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1477) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_MoveToThenAttackMove"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_MoveToThenAttackMove( <span class="arg">SGroupID</span> sgroup, <span class="arg">EGroupID</span> position, <span class="arg">Integer</span> OPT_distance, <span class="arg">Boolean</span> OPT_ANY, <span class="arg">Boolean</span> OPT_queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将小队组移动到指定位置，接近目标后转为攻击移动。【功能：移动后攻击移动】</p>
+                <p>Squad will move to a position, once they're within 'distance', they will attack-move the rest of the way.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (223) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_MoveToThenCapture"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_MoveToThenCapture( <span class="arg">SGroupID</span> attacker, <span class="arg">EGroupID</span> target, <span class="arg">Boolean</span> OPT_queued  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>命令攻击者小队组攻击移动到战略点目标；当战略点可被占领时，小队组将占领它。【功能：移动后占领】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1583) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_RecrewVehicle"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_RecrewVehicle( <span class="arg">SGroupID</span> sgroupid, <span class="arg">EGroupID</span> targetid, <span class="arg">Boolean</span> OPT_queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>命令小队组重新驾驶被遗弃的载具。【功能：重新驾驶载具】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1631) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_ReinforceUnit"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_ReinforceUnit( <span class="arg">SGroupID</span> sgroup, <span class="arg">Integer</span> count )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向组内所有小队发送增援命令。count表示要发送的命令数量。【功能：增援单位】</p>
+                <p>Note: To reinforce squad bypassing the pre-reqs and costs use Cmd_InstantReinforceUnit.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1131) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_Retreat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_Retreat( <span class="arg">SGroupID</span> sgroup, <span class="arg">Position</span> OPT_location, <span class="arg">Boolean</span> OPT_deleteOnArrival, <span class="arg">Boolean</span> OPT_queued, <span class="arg">Boolean</span> OPT_saveEncounters, <span class="arg">Boolean</span> OPT_vulnerableRetreat )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>命令小队组撤退，可选择撤退到指定位置。【功能：撤退命令】</p>
+                <p>vulnerableRetreat will make retreating squads take more damage. The sgroup can optionally be deleted on arriving within proximity of the marker or within a radius of 10 if there is no marker proximity.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (747) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_RevertOccupiedBuilding"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_RevertOccupiedBuilding( <span class="arg">SGroupID</span> sgroupid, <span class="arg">EGroupID</span> targetid, <span class="arg">Boolean</span> OPT_queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>命令小队组恢复被占领的建筑。【功能：恢复被占领建筑】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1763) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_SetDemolitions"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_SetDemolitions( <span class="arg">SGroupID</span> sgroupid, <span class="arg">EGroupID</span> targetid, <span class="arg">Boolean</span> OPT_skipCostPrereq, <span class="arg">Boolean</span> OPT_queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>命令小队组在建筑物（实体组）上放置爆破炸药。如果实体组无法被引爆，或玩家负担不起爆破费用，则函数不执行任何操作。【功能：设置爆破装置】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1783) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_SetupTeamWeapon"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_SetupTeamWeapon( <span class="arg">SGroupID</span> sgroupid, <span class="arg">Boolean</span> OPT_queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>命令小队组架设团队武器，播放动画。【功能：架设团队武器】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1696) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_SquadCamouflageStance"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_SquadCamouflageStance( <span class="arg">SGroupID</span> sgroup, <span class="arg">CamouflageStanceID</span> stanceid )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向组内所有小队发送伪装姿态命令。stanceid应为Util_GetCamouflageStanceID(stancename)返回的数值。【功能：设置伪装姿态】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1105) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_SquadPath"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_SquadPath( <span class="arg">SGroupID</span> sgroup, <span class="arg">String</span> pathName, <span class="arg">Boolean</span> bFromClosest, <span class="arg">Integer</span> loop, <span class="arg">Boolean</span> bAttackMove, <span class="arg">Real</span> pauseTime, <span class="arg">Boolean</span> OPT_queued, <span class="arg">Boolean</span> OPT_bMoveForward )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队发送沿路径移动的命令。可以在每个路径点等待。【功能：路径移动】</p>
+                <p>loop can be: LOOP_NONE, LOOP_NORMAL, LOOP_TOGGLE_DIRECTION.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (472) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_SquadPatrolMarker"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_SquadPatrolMarker( <span class="arg">SGroupID</span> sgroup, <span class="arg">MarkerID</span> marker )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>使小队在标记点巡逻，攻击进入其半径范围内的任何敌人。如果用于圆形标记，半径必须至少为5。要停止小队巡逻标记点，请使用Cmd_Stop。【功能：标记点巡逻】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (511) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_StaggeredRetreat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_StaggeredRetreat( <span class="arg">SGroupID</span> sgroup, <span class="arg">Table</span> markers, <span class="arg">Integer</span> OPT_maxTries, <span class="arg">Boolean</span> OPT_vulnerableRetreat )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>以交错、逼真的方式撤退大量单位。【功能：交错撤退】</p>
+                <p>Each Squad in the sgroup will have a 1 in 3 chance to retreat.  After 10 seconds (or maxTries), all squads will be forced to retreat. Squads will delete on arrival at their retreat point. vulnerableRetreat will make retreating squads take more damage</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (829) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_Stop"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_Stop( <span class="arg">EGroupID</span> group )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向实体组或小队组发送停止命令。【功能：停止命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1444) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_Surrender"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_Surrender( <span class="arg">SGroupID</span> sgroupid , <span class="arg">Integer</span> OPT_actionpoints, <span class="arg">Position</span> OPT_exitpos, <span class="arg">Boolean</span> OPT_deleteAtExit, <span class="arg">Boolean</span> OPT_removeWeapon )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>命令小队投降，并奖励本地玩家相应数量的行动点数。【功能：投降命令】</p>
+                <p>Use the optional parameter to assign action points to override the default number.  The function automatically addresses squads that are in buildings or vehicles by ordering them out of the vehicle. The command will also overwrite the exit position as well, if you do not want the squads to exit at the map entry point.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1888) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_UngarrisonSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_UngarrisonSquad( <span class="arg">SGroupID</span> sgroupid, <span class="arg">Position</span> OPT_destination, <span class="arg">Boolean</span> OPT_queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>命令小队组离开其所在的建筑或载具。如果未指定位置，小队组将停留在出口处。【功能：撤离建筑/载具】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1043) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_Upgrade"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_Upgrade( <span class="arg">EGroupID</span> user, <span class="arg">Integer</span> blueprint, <span class="arg">Integer</span> OPT_count, <span class="arg">Boolean</span> OPT_instant )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向玩家、实体组或小队组发送升级命令。接受单个升级或升级表。【功能：升级命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (1167) </b></td>
+            </tr>
+          </table>
+        </p><a name="Cmd_WalkToAndThenRun"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Cmd_WalkToAndThenRun( <span class="arg">SGroupID</span> sgroup, <span class="arg">EGroupID</span> position, <span class="arg">Real</span> speedMultiplier, <span class="arg">Integer</span> OPT_distance = 10, <span class="arg">Boolean</span> OPT_ANY = ANY, <span class="arg">Boolean</span> OPT_queued = false )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>将小队的单位速度设置为乘数值，到达目标后恢复原速度，速度不能为0.0f。【功能：变速移动】</p>
+                <p>Squad will move to a position, once they're within 'distance', they will revert back to their original speed. ANY means any squad in the group within distance meets criteria, ALL means ALL squads. Queued means the command is queued if true as a command, rather than executing immediately.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\command.scar] (112) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_Entity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_Entity( <span class="arg">PlayerID</span> player, <span class="arg">EGroupID</span> egroup, <a href="enum_list.htm#EntityCommandType">EntityCommandType</a> entityCommand )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向实体组发送实体命令（CMD_DefaultAction、CMD_Stop、CMD_Destroy、CMD_BuildSquad、CMD_CancelProduction、CMD_RallyPoint、CMD_AttackForced）。【功能：实体命令】</p>
+                <p>Entity commands are mostly used for buildings etc.  If you need to issue commands to units, use the Squad_Command function.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1613) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_EntityAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_EntityAbility( <span class="arg">PlayerID</span> player, <span class="arg">EGroupID</span> egroup, <span class="arg">ScarAbilityPBG</span> abilityPBG, <span class="arg">Boolean</span> skipCostAndPrereq, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向实体发送实体技能命令（CMD_Ability）。【功能：实体技能命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1786) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_EntityBuildSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_EntityBuildSquad( <span class="arg">PlayerID</span> player, <span class="arg">EGroupID</span> egroup, <span class="arg">ScarSquadPBG</span> squadPbg )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向实体组发送带有自定义数据的小队命令。【功能：实体建造小队命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1745) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_EntityEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_EntityEntity( <span class="arg">PlayerID</span> player, <span class="arg">EGroupID</span> egroup, <a href="enum_list.htm#EntityCommandType">EntityCommandType</a> entityCommand, <span class="arg">EGroupID</span> target )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向实体组发送基于实体的命令。【功能：实体对实体命令】</p>
+                <p>Use this function to issue orders that require a entity to an entity group (eg. order a building to attack another building)\n See LocalCommand_Entity for a list of all the possible entityCommands.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1646) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_EntityExt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_EntityExt( <span class="arg">PlayerID</span> player, <span class="arg">EGroupID</span> egroup, <a href="enum_list.htm#EntityCommandType">EntityCommandType</a> entityCommand, <span class="arg">Integer</span> cmdparam, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队组发送带有自定义数据的小队命令。【功能：扩展实体命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1729) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_EntityPos"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_EntityPos( <span class="arg">PlayerID</span> player, <span class="arg">EGroupID</span> egroup, <a href="enum_list.htm#EntityCommandType">EntityCommandType</a> entityCommand, <span class="arg">Position</span> target )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向实体组发送位置命令。【功能：实体位置命令】</p>
+                <p>Use this function to issue orders that require a position to an entity group (eg. set a rally point for a building)\n See LocalCommand_Entity for a list of all the possible entityCommands.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1628) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_EntityPosAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_EntityPosAbility( <span class="arg">PlayerID</span> player, <span class="arg">EGroupID</span> egroup, <span class="arg">Position</span> pos, <span class="arg">ScarAbilityPBG</span> abilityPBG, <span class="arg">Boolean</span> skipCostAndPrereq, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向实体发送位置技能命令（CMD_Ability）。【功能：实体位置技能命令】</p>
+                <p>Use this function to issue ability orders that require a position to player</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1824) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_EntityPosDirAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_EntityPosDirAbility( <span class="arg">PlayerID</span> player, <span class="arg">EGroupID</span> egroup, <span class="arg">Position</span> pos, <span class="arg">Position</span> dir, <span class="arg">ScarAbilityPBG</span> abilityPBG, <span class="arg">Boolean</span> skipCostAndPrereq, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向实体发送位置/方向技能命令（CMD_Ability）。【功能：实体位置方向技能命令】</p>
+                <p>Use this function to issue ability orders that require a position and a direction to player</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1864) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_EntityPosSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_EntityPosSquad( <span class="arg">PlayerID</span> player, <span class="arg">EGroupID</span> egroup, <a href="enum_list.htm#EntityCommandType">EntityCommandType</a> entityCommand, <span class="arg">Position</span> target, <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向实体组发送双目标（位置和小队）命令。【功能：实体位置小队命令】</p>
+                <p>Use this function to issue orders that require a position and a squad to an entity group (eg. unloading squad from hold)\n See LocalCommand_Entity for a list of all the possible entityCommands.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1699) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_EntitySquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_EntitySquad( <span class="arg">PlayerID</span> player, <span class="arg">EGroupID</span> egroup, <a href="enum_list.htm#EntityCommandType">EntityCommandType</a> entityCommand, <span class="arg">SGroupID</span> target )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向实体组发送基于小队的命令。【功能：实体小队命令】</p>
+                <p>Use this function to issue orders that require a squad to an entity group (eg. order a building to attack a squad)\n See LocalCommand_Entity for a list of all the possible entityCommands.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1670) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_EntityTargetEntityAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_EntityTargetEntityAbility( <span class="arg">PlayerID</span> player, <span class="arg">EGroupID</span> egroup, <span class="arg">EntityID</span> entityTarget, <span class="arg">ScarAbilityPBG</span> abilityPBG, <span class="arg">Boolean</span> skipCostAndPrereq, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向实体发送以实体为目标的技能命令（CMD_Ability）。【功能：实体目标实体技能命令】</p>
+                <p>Use this function to issue ability orders that require an entity target to an entity</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1904) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_EntityTargetSquadAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_EntityTargetSquadAbility( <span class="arg">PlayerID</span> player, <span class="arg">EGroupID</span> egroup, <span class="arg">SquadID</span> squadTarget, <span class="arg">ScarAbilityPBG</span> abilityPBG, <span class="arg">Boolean</span> skipCostAndPrereq, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向实体发送以小队为目标的技能命令（CMD_Ability）。【功能：实体目标小队技能命令】</p>
+                <p>Use this function to issue ability orders that require an entity target to an entity</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1944) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_EntityUpgrade"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_EntityUpgrade( <span class="arg">PlayerID</span> player, <span class="arg">EGroupID</span> egroup, <span class="arg">ScarUpgradePBG</span> upgrade, <span class="arg">Boolean</span> instant, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向实体组发送带有自定义数据的小队命令。【功能：实体升级命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1766) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_Player"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_Player( <span class="arg">PlayerID</span> player, <span class="arg">PlayerID</span> dest, <a href="enum_list.htm#PlayerCommandType">PlayerCommandType</a> playerCommand )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向玩家发送玩家命令。【功能：玩家命令】</p>
+                <p>PCMD_Ability</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (519) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerAbility( <span class="arg">PlayerID</span> player, <span class="arg">PlayerID</span> dest, <span class="arg">ScarAbilityPBG</span> abilityPBG, <span class="arg">Boolean</span> skipCostAndPrereq )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向玩家发送玩家技能命令（PCMD_Ability）。【功能：玩家技能命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (597) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerEntity( <span class="arg">PlayerID</span> player, <span class="arg">PlayerID</span> dest, <a href="enum_list.htm#PlayerCommandType">PlayerCommandType</a> playerCommand, <span class="arg">EGroupID</span> target )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向玩家发送实体命令。【功能：玩家实体命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (553) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerExt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerExt( <span class="arg">PlayerID</span> player, <span class="arg">PlayerID</span> dest, <a href="enum_list.htm#PlayerCommandType">PlayerCommandType</a> playerCommand, <span class="arg">Integer</span> cmdparam, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向玩家发送带有自定义标志的玩家命令。【功能：扩展玩家命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (476) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerMultiTargetAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerMultiTargetAbility( <span class="arg">PlayerID</span> caster, <span class="arg">vector&lt;ConstTargetHandle&gt;</span> targets, <span class="arg">ScarAbilityPBG</span> abilityPBG, <span class="arg">Boolean</span> skipCostAndPrereq )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向玩家发送命令，对指定目标使用多目标技能。【功能：玩家多目标技能命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (699) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerPlaceAndConstructEntitiesPlanned"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerPlaceAndConstructEntitiesPlanned( <span class="arg">PlayerID</span> player, <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">Position</span> position, <span class="arg">Position</span> facingPos, <span class="arg">Boolean</span> queued, <span class="arg">Boolean</span> payOnApply )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>放置计划中的建筑结构。【功能：放置计划建筑】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (2143) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerPlaceAndConstructFencePlanned"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerPlaceAndConstructFencePlanned( <span class="arg">PlayerID</span> player, <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">Position</span> posStart, <span class="arg">Position</span> posEnd, <span class="arg">Boolean</span> queued, <span class="arg">Boolean</span> payOnApply )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>放置计划中的围栏。【功能：放置计划围栏】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (2178) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerPlaceAndConstructSlottedSplineConstructed"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerPlaceAndConstructSlottedSplineConstructed( <span class="arg">PlayerID</span> player, <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">Position</span> posStart, <span class="arg">Position</span> posEnd, <span class="arg">Boolean</span> queued, <span class="arg">Boolean</span> payOnApply )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>放置已建造的槽位样条。【功能：放置已建造槽位样条】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (2244) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerPlaceAndConstructSlottedSplinePlanned"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerPlaceAndConstructSlottedSplinePlanned( <span class="arg">PlayerID</span> player, <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">Position</span> posStart, <span class="arg">Position</span> posEnd, <span class="arg">Boolean</span> queued, <span class="arg">Boolean</span> payOnApply )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>放置计划中的槽位样条。【功能：放置计划槽位样条】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (2211) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerPos"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerPos( <span class="arg">PlayerID</span> player, <span class="arg">PlayerID</span> dest, <a href="enum_list.htm#PlayerCommandType">PlayerCommandType</a> playerCommand, <span class="arg">Position</span> pos )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向玩家发送位置命令。【功能：玩家位置命令】</p>
+                <p>Use this function to issue orders that require a position to player)\n See LocalCommand_Player for a list of all the possible playerCommands.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (536) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerPosAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerPosAbility( <span class="arg">PlayerID</span> player, <span class="arg">PlayerID</span> dest, <span class="arg">Position</span> pos, <span class="arg">ScarAbilityPBG</span> abilityPBG, <span class="arg">Boolean</span> skipCostAndPrereq )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向玩家发送位置技能命令（PCMD_Ability）。【功能：玩家位置技能命令】</p>
+                <p>Use this function to issue ability orders that require a position to player</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (631) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerPosDirAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerPosDirAbility( <span class="arg">PlayerID</span> player, <span class="arg">PlayerID</span> dest, <span class="arg">Position</span> pos, <span class="arg">Position</span> dir, <span class="arg">ScarAbilityPBG</span> abilityPBG, <span class="arg">Boolean</span> skipCostAndPrereq )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向玩家发送位置/方向技能命令（PCMD_Ability）。【功能：玩家位置方向技能命令】</p>
+                <p>Use this function to issue ability orders that require a position and a direction to player</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (666) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerPosExt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerPosExt( <span class="arg">PlayerID</span> player, <span class="arg">PlayerID</span> dest, <a href="enum_list.htm#PlayerCommandType">PlayerCommandType</a> playerCommand, <span class="arg">Position</span> pos, <span class="arg">Integer</span> cmdparam, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向玩家发送带有额外信息的位置命令。【功能：扩展玩家位置命令】</p>
+                <p>Use this function to issue orders that require a position to player\n See LocalCommand_Player for a list of all the possible playerCommands.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (579) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerSquadConstructBuilding"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerSquadConstructBuilding( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">Position</span> position, <span class="arg">Position</span> facingPos, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向玩家自身发送命令，命令小队组中的小队在指定位置和朝向建造建筑。【功能：玩家小队建造建筑】</p>
+                <p>structureBlueprint must be a valid building that can be constructed by the sgroup. This building would cost nothing and does not effect population and availability This is a special command for SCAR use</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (2281) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerSquadConstructBuildingCheat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerSquadConstructBuildingCheat( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">Position</span> position, <span class="arg">Position</span> facingPos, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向玩家自身发送命令，命令小队组中的小队在指定位置和朝向建造建筑（作弊模式）。【功能：玩家小队建造建筑（作弊）】</p>
+                <p>structureBlueprint must be a valid building that can be constructed by the sgroup. This building would cost nothing and does not effect population and availability This is a special command for SCAR use</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (2446) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerSquadConstructFence"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerSquadConstructFence( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">Position</span> posStart, <span class="arg">Position</span> posEnd, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向玩家自身发送命令，命令小队组中的小队从posStart到posEnd建造围栏。【功能：玩家小队建造围栏】</p>
+                <p>structureBlueprint must be a valid building that can be constructed by the sgroup. This building would cost nothing and does not effect population and availability This is a special command for SCAR use</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (2306) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerSquadConstructFenceCheat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerSquadConstructFenceCheat( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">Position</span> posStart, <span class="arg">Position</span> posEnd, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向玩家自身发送命令，命令小队组中的小队从posStart到posEnd建造围栏（作弊模式）。【功能：玩家小队建造围栏（作弊）】</p>
+                <p>structureBlueprint must be a valid building that can be constructed by the sgroup. This building would cost nothing and does not effect population and availability This is a special command for SCAR use</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (2466) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerSquadConstructField"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerSquadConstructField( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">Position</span> posStart, <span class="arg">Position</span> posEnd, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向玩家自身发送命令，命令小队组中的小队从posStart到posEnd建造农田。【功能：玩家小队建造农田】</p>
+                <p>structureBlueprint must be a valid building that can be constructed by the sgroup. This building would cost nothing and does not effect population and availability This is a special command for SCAR use</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (2329) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerSquadConstructFieldCheat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerSquadConstructFieldCheat( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">Position</span> posStart, <span class="arg">Position</span> posEnd, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向玩家自身发送命令，命令小队组中的小队从posStart到posEnd建造农田（作弊模式）。【功能：玩家小队建造农田（作弊）】</p>
+                <p>structureBlueprint must be a valid building that can be constructed by the sgroup. This building would cost nothing and does not effect population and availability This is a special command for SCAR use</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (2486) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerSquadConstructSlottedSpline"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerSquadConstructSlottedSpline( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">Position</span> posStart, <span class="arg">Position</span> posEnd, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从玩家向小队组发送命令，将ebp建造为从posStart到posEnd的槽位样条。【功能：玩家小队建造槽位样条】</p>
+                <p>structureBlueprint must be a valid building that can be constructed by the sgroup. This building costs nothing and does not effect population and availability This is a special command for SCAR use</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (2352) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerSquadConstructSlottedSplineCheat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerSquadConstructSlottedSplineCheat( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">Position</span> posStart, <span class="arg">Position</span> posEnd, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从玩家向小队组发送命令，将ebp建造为从posStart到posEnd的槽位样条（作弊模式）。【功能：玩家小队建造槽位样条（作弊）】</p>
+                <p>structureBlueprint must be a valid building that can be constructed by the sgroup. This building costs nothing and does not effect population and availability This is a special command for SCAR use</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (2505) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerSquadConstructSlottedSplineDependent"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerSquadConstructSlottedSplineDependent( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">Position</span> position, <span class="arg">Position</span> facingPos, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从玩家向小队组发送命令，将ebp建造为槽位样条依赖实体。【功能：玩家小队建造槽位样条依赖实体】</p>
+                <p>structureBlueprint must be a valid building that can be constructed by the sgroup. This building costs nothing and does not effect population and availability This is a special command for SCAR use</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (2381) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerSquadConstructSlottedSplineDependentCheat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerSquadConstructSlottedSplineDependentCheat( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">Position</span> position, <span class="arg">Position</span> facingPos, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从玩家向小队组发送命令，将ebp建造为槽位样条依赖实体（作弊模式）。【功能：玩家小队建造槽位样条依赖实体（作弊）】</p>
+                <p>structureBlueprint must be a valid building that can be constructed by the sgroup. This building costs nothing and does not effect population and availability This is a special command for SCAR use</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (2524) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerSquadConstructSlottedSplineReplacer"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerSquadConstructSlottedSplineReplacer( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">Position</span> position, <span class="arg">Position</span> facingPos, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从玩家向小队组发送命令，将ebp建造为槽位样条替换实体。【功能：玩家小队建造槽位样条替换实体】</p>
+                <p>structureBlueprint must be a valid building that can be constructed by the sgroup. This building costs nothing and does not effect population and availability This is a special command for SCAR use</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (2412) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerSquadConstructSlottedSplineReplacerCheat"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerSquadConstructSlottedSplineReplacerCheat( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">ScarEntityPBG</span> ebp, <span class="arg">Position</span> position, <span class="arg">Position</span> facingPos, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>从玩家向小队组发送命令，将ebp建造为槽位样条替换实体（作弊模式）。【功能：玩家小队建造槽位样条替换实体（作弊）】</p>
+                <p>structureBlueprint must be a valid building that can be constructed by the sgroup. This building costs nothing and does not effect population and availability This is a special command for SCAR use</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (2543) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_PlayerUpgrade"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_PlayerUpgrade( <span class="arg">PlayerID</span> player, <span class="arg">ScarUpgradePBG</span> upgrade, <span class="arg">Boolean</span> instant, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向玩家发送升级命令。【功能：玩家升级命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (494) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_Squad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_Squad( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <a href="enum_list.htm#SquadCommandType">SquadCommandType</a> squadCommand, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队组发送小队命令。【功能：小队命令】</p>
+                <p>SCMD_DefaultAction, SCMD_Move, SCMD_Stop, SCMD_Destroy, SCMD_BuildStructure, SCMD_Capture, SCMD_Attack, SCMD_ReinforceUnit, SCMD_Upgrade, SCMD_CancelProduction SCMD_AttackMove, SCMD_Ability SCMD_Load,SCMD_UnloadSquads, SCMD_DoPlan SCMD_SlotItemRemove, SCMD_InstantReinforceUnit, SCMD_InstantUpgrade</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1030) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadAbility( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">ScarAbilityPBG</span> abilityPBG, <span class="arg">Boolean</span> skipCostAndPrereq, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队发送技能命令（SCMD_Ability）。【功能：小队技能命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (775) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadAttackMovePos"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadAttackMovePos( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <a href="enum_list.htm#SquadCommandType">SquadCommandType</a> squadCommand, <span class="arg">Position</span> target, <span class="arg">String</span> planName, <span class="arg">Boolean</span> queued, <span class="arg">Boolean</span> split )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队组发送带有自定义数据的位置攻击移动命令。【功能：小队攻击移动命令】</p>
+                <p>WARNING: Element plans need to be reimplemented in state trees.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1300) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadEntity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadEntity( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <a href="enum_list.htm#SquadCommandType">SquadCommandType</a> squadCommand, <span class="arg">EGroupID</span> target, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队组发送实体命令。【功能：小队实体命令】</p>
+                <p>Use this function to isssue an entity-based command to a squad group.\n See LocalCommand_Squad for a list of all the possible squadCommands</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1215) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadEntityAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadEntityAbility( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">EGroupID</span> target, <span class="arg">ScarAbilityPBG</span> abilityPBG, <span class="arg">Boolean</span> skipCostAndPrereq, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队发送实体技能命令（SCMD_Ability）。【功能：小队实体技能命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (830) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadEntityAttack"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadEntityAttack( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">EGroupID</span> target, <span class="arg">Boolean</span> bCheckFOW, <span class="arg">Boolean</span> bStationary, <span class="arg">String</span> planName, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队组发送实体攻击命令。【功能：小队实体攻击命令】</p>
+                <p>Use this function to issue an entity-based command to a squad group with custom FOW check flag. (eg. order a squad to attack a building)\n planName is the name of the custom plan file to execute. Pass in empty string to use the default\n stationary flag uses SCMD_StationaryAttack instead where plan file is ignored and squad does not pursue its target See LocalCommand_Squad for a list of all the possible squadCommands WARNING: Element plans need to be reimplemented in state trees.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1367) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadEntityBool"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadEntityBool( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <a href="enum_list.htm#SquadCommandType">SquadCommandType</a> squadCommand, <span class="arg">EGroupID</span> target, <span class="arg">Boolean</span> cmdparam, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队组发送带有自定义布尔数据的实体命令。【功能：小队实体布尔命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1270) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadEntityExt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadEntityExt( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <a href="enum_list.htm#SquadCommandType">SquadCommandType</a> squadCommand, <span class="arg">EGroupID</span> target, <span class="arg">Integer</span> cmdparam, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队组发送带有自定义数据的实体命令。【功能：扩展小队实体命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1242) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadEntityLoad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadEntityLoad( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <a href="enum_list.htm#SquadCommandType">SquadCommandType</a> squadCommand, <span class="arg">EGroupID</span> target, <span class="arg">Boolean</span> bOverLoad, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队组发送带有小队装载参数的特殊小队命令。【功能：小队装载命令】</p>
+                <p>This is a special command for loading squads into building (entity) holds (SCMD_Load, SCMD_InstantLoad)</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (2593) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadExt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadExt( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <a href="enum_list.htm#SquadCommandType">SquadCommandType</a> squadCommand, <span class="arg">Integer</span> cmdparam, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队组发送带有自定义数据的小队命令。【功能：扩展小队命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (992) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadMovePos"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadMovePos( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">Position</span> target, <span class="arg">Boolean</span> queued, <span class="arg">Boolean</span> reverseMove, <span class="arg">Boolean</span> split, <span class="arg">Real</span> acceptableProximity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队组发送移动到位置命令。【功能：小队移动命令】</p>
+                <p>Use this function to issue move orders that require a position to a squad group</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1145) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadMovePosFacing"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadMovePosFacing( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">Position</span> target, <span class="arg">Position</span> facing, <span class="arg">Boolean</span> queued, <span class="arg">Boolean</span> reverseMove, <span class="arg">Boolean</span> split, <span class="arg">Real</span> acceptableProximity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队组发送移动并面向指定方向的命令。【功能：小队移动朝向命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1182) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadMultiTargetAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadMultiTargetAbility( <span class="arg">SquadID</span> caster, <span class="arg">vector&lt;ConstTargetHandle&gt;</span> targets, <span class="arg">ScarAbilityPBG</span> abilityPBG, <span class="arg">Boolean</span> skipCostAndPrereq, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队发送命令，对指定目标使用多目标技能。【功能：小队多目标技能命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (877) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadPath"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadPath( <span class="arg">PlayerID</span> pPlayer, <span class="arg">SGroupID</span> pSGroup, <span class="arg">String</span> pathName, <span class="arg">Integer</span> pathIndex, <span class="arg">Boolean</span> bFromClosest, <a href="enum_list.htm#LoopType">LoopType</a> loopType, <span class="arg">Boolean</span> bAttackMove, <span class="arg">Real</span> pauseTime, <span class="arg">Boolean</span> bMoveForward, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队发送巡逻命令（SCMD_Patrol）。【功能：小队巡逻命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (950) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadPos"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadPos( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <a href="enum_list.htm#SquadCommandType">SquadCommandType</a> squadCommand, <span class="arg">Position</span> target, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队组发送位置命令。【功能：小队位置命令】</p>
+                <p>Use this function to issue orders that require a position to a squad group (eg. order a squad to move to position, or attack position)\n See LocalCommand_Squad for a list of all the possible squadCommands.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1109) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadPosAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadPosAbility( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">Position</span> pos, <span class="arg">ScarAbilityPBG</span> abilityPBG, <span class="arg">Boolean</span> skipCostAndPrereq, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队发送位置技能命令（SCMD_Ability）。【功能：小队位置技能命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (812) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadPosExt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadPosExt( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <a href="enum_list.htm#SquadCommandType">SquadCommandType</a> squadCommand, <span class="arg">Position</span> target, <span class="arg">Integer</span> cmdparam, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队组发送带有自定义数据的位置命令。【功能：扩展小队位置命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1048) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadPositionAttack"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadPositionAttack( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">Position</span> target, <span class="arg">Boolean</span> bCheckFOW, <span class="arg">Boolean</span> bStationary, <span class="arg">String</span> planName, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队组发送位置攻击命令。【功能：小队位置攻击命令】</p>
+                <p>Use this function to issue an position-based command to a squad group with custom FOW check flag. (eg. order a squad to attack a building)\n planName is the name of the custom plan file to execute. Pass in empty string to use the default\n stationary flag uses SCMD_StationaryAttack instead where plan file is ignored and squad does not pursue its target See LocalCommand_Squad for a list of all the possible squadCommands WARNING: Element plans need to be reimplemented in state trees.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1338) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadRetreatPos"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadRetreatPos( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">Position</span> target, <span class="arg">Boolean</span> queued, <span class="arg">Boolean</span> allowNonInteractiveStages )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队组发送撤退位置命令。【功能：小队撤退位置命令】</p>
+                <p>Use this function to issue retreat order that require a position to a squad group</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1071) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadSetCombatStance"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadSetCombatStance( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <a href="enum_list.htm#StanceType">StanceType</a> stanceType, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队发送设置战斗姿态命令。【功能：设置战斗姿态】</p>
+                <p>Set the CombatStance for all the Squads in the SGroup. StanceTypes: STANCE_CeaseFire (don't shoot), STANCE_StandGround (don't move, just shoot), STANCE_Attack (move and shoot)</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1524) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadSetWeaponPreference"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadSetWeaponPreference( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <a href="enum_list.htm#WeaponPreference">WeaponPreference</a> weaponPreference, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队发送设置武器偏好命令。【功能：设置武器偏好】</p>
+                <p>Set the Weapon Preference for all the Squads in the SGroup. WeaponPreference: WP_Melee, WP_Ranged,</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1581) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadSquad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadSquad( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <a href="enum_list.htm#SquadCommandType">SquadCommandType</a> squadCommand, <span class="arg">SGroupID</span> target, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队组发送基于小队的命令。【功能：小队对小队命令】</p>
+                <p>Use this function to issue a squad-based command to a squad group. \n See LocalCommand_Squad for a list of all the possible squadCommands</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1443) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadSquadAbility"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadSquadAbility( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">SGroupID</span> target, <span class="arg">ScarAbilityPBG</span> abilityPBG, <span class="arg">Boolean</span> skipCostAndPrereq, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队发送小队技能命令（SCMD_Ability）。【功能：小队技能命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (854) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadSquadAttack"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadSquadAttack( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">SGroupID</span> target, <span class="arg">Boolean</span> bCheckFOW, <span class="arg">Boolean</span> bStationary, <span class="arg">String</span> planName, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队组发送基于小队的命令。【功能：小队攻击命令】</p>
+                <p>Use this function to issue a squad-based command to a squad group with special boolean flag. (eg. order a squad to attack another squad)\n If bCheckFOW is set to false, the squad would be able to attack other squads hidden in FOW \n planName is the name of the custom plan file to execute. Pass in empty string to use the default\n stationary flag uses SCMD_StationaryAttack instead where plan file is ignored and squad does not pursue its target See LocalCommand_Squad for a list of all the possible squadCommands WARNING: Element plans need to be reimplemented in state trees.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1478) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadSquadExt"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadSquadExt( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <a href="enum_list.htm#SquadCommandType">SquadCommandType</a> squadCommand, <span class="arg">SGroupID</span> target, <span class="arg">Integer</span> cmdparam, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队组发送带有自定义数据的小队命令。【功能：扩展小队对小队命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1413) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadSquadLoad"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadSquadLoad( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <a href="enum_list.htm#SquadCommandType">SquadCommandType</a> squadCommand, <span class="arg">SGroupID</span> target, <span class="arg">Boolean</span> bOverLoad, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队组发送带有小队装载参数的特殊小队命令。【功能：小队装载命令】</p>
+                <p>This is a special command for loading squads into vehicle (squad) holds (SCMD_Load, SCMD_InstantLoad)</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (2563) </b></td>
+            </tr>
+          </table>
+        </p><a name="LocalCommand_SquadUpgrade"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 LocalCommand_SquadUpgrade( <span class="arg">PlayerID</span> player, <span class="arg">SGroupID</span> sgroup, <span class="arg">ScarUpgradePBG</span> upgrade, <span class="arg">Boolean</span> instant, <span class="arg">Boolean</span> queued )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>向小队组发送升级命令。【功能：小队升级命令】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\source\runtime\presentation\public\presentation\lua\lualibs\unsorted\LuaCommand.cpp] (1007) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>

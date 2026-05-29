@@ -1,0 +1,845 @@
+<!--This file has been generated from function_list.xsl.  DO NOT EDIT.-->
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="../scardoc.css" rel="stylesheet" type="text/css" charset="utf-8">
+<title>ScarDoc - scardoc;RuleSystem</title>
+</head>
+<body>
+<span class="subtitle">scardoc;RuleSystem</span><p>
+<a name="Group_scardoc;RuleSystem"></a><table width="100%">
+          <tr>
+            <td width="100%" class="tabletitle"><b>scardoc;RuleSystem</b></td>
+          </tr>
+          <tr>
+            <td width="100%" class="tablesubtitle"><b>Functions</b></td>
+          </tr>
+        </table><a name="Rule_Add"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_Add( <span class="arg">LuaFunction</span> f , <span class="arg">Table</span> OPT_data, <span class="arg">EGroupID</span> OPT_group )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>添加一个每帧执行的规则。【功能：添加每帧执行的规则】</p>
+                <p>Returns the ID of the rule just added.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (25) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_AddEGroupEvent"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_AddEGroupEvent( <span class="arg">LuaFunction</span> rule, <span class="arg">EGroupID</span> egroup, <span class="arg">Integer</span> eventtype )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当'eventType'类型的事件在'egroup'中的实体上发生时，添加一个要执行的规则。【功能：为实体组添加事件触发规则】</p>
+                <p>Event types are: GE_EntityKilled, GE_EntityParadropComplete, GE_EntityCommandIssued, GE_ProjectileFired, GE_AbilityExecuted, GE_SpawnActionComplete</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (212) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_AddEntityEvent"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_AddEntityEvent( <span class="arg">LuaFunction</span> rule, <span class="arg">EntityID</span> entity, <span class="arg">Integer</span> eventtype )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当'eventType'类型的事件在'entity'上发生时，添加一个要执行的规则。【功能：为单个实体添加事件触发规则】</p>
+                <p>Event types are: GE_EntityKilled, GE_EntityParadropComplete, GE_EntityCommandIssued, GE_ProjectileFired, GE_AbilityExecuted, GE_SpawnActionComplete</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (200) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_AddEventFilter_EntityBlueprint"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_AddEventFilter_EntityBlueprint( <span class="arg">LuaFunction</span> rule, <span class="arg">RuleFilterContext</span> context, <span class="arg">RuleFilterOperator</span> op, <span class="arg">Array</span> includeTypes, <span class="arg">Array</span> excludeTypes )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为给定规则添加过滤器，使事件仅在以下情况下触发：上下文指向的实体的蓝图在includeTypes中且不在excludeTypes中。【功能：添加实体蓝图过滤器】</p>
+                <p>Valid contexts are dependent on the event this filter is applied to. When multiple filters exist op defines how the result of the previous filter is combined with this filter. Blueprint can be either a PBG or the name of a type (where in it acts the same as Rule_AddEventFilter_EntityType).</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (272) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_AddEventFilter_EntityPlayerOwner"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_AddEventFilter_EntityPlayerOwner( <span class="arg">LuaFunction</span> rule, <span class="arg">RuleFilterContext</span> context, <span class="arg">RuleFilterOperator</span> op, <span class="arg">Array</span> includeTypes, <span class="arg">Array</span> excludeTypes )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为给定规则添加过滤器，使事件仅在以下情况下触发：上下文指向的实体由includeTypes中的玩家拥有，且不在excludeTypes中。【功能：添加实体所属玩家过滤器】</p>
+                <p>Valid contexts are dependent on the event this filter is applied to. When multiple filters exist op defines how the result of the previous filter is combined with this filter.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (264) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_AddEventFilter_EntityType"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_AddEventFilter_EntityType( <span class="arg">LuaFunction</span> rule, <span class="arg">RuleFilterContext</span> context, <span class="arg">RuleFilterOperator</span> op, <span class="arg">Array</span> includeTypes, <span class="arg">Array</span> excludeTypes )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为给定规则添加过滤器，使事件仅在以下情况下触发：上下文指向的实体类型在includeTypes中且不在excludeTypes中。【功能：添加实体类型过滤器】</p>
+                <p>Valid contexts are dependent on the event this filter is applied to. When multiple filters exist op defines how the result of the previous filter is combined with this filter.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (248) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_AddEventFilter_StateModelBool"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_AddEventFilter_StateModelBool( <span class="arg">LuaFunction</span> rule, <span class="arg">RuleFilterContext</span> context, <span class="arg">RuleFilterOperator</span> op, <span class="arg">Array</span> includeTypes, <span class="arg">Array</span> excludeTypes )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>为给定规则添加过滤器，使事件仅在以下情况下触发：上下文指向的实体至少有一个来自includeTypes的true状态模型值，且没有来自excludeTypes的值。【功能：添加状态模型布尔值过滤器】</p>
+                <p>Valid contexts are dependent on the event this filter is applied to. When multiple filters exist op defines how the result of the previous filter is combined with this filter.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (256) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_AddGlobalEvent"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_AddGlobalEvent( <span class="arg">LuaFunction</span> rule, <span class="arg">Integer</span> eventtype )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当'eventType'类型的事件发生时添加一个要执行的规则，无论事件来源如何。【功能：添加全局事件触发规则】</p>
+                <p>Event types are: GE_PlayerBeingAttacked</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (236) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_AddInterval"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_AddInterval( <span class="arg">LuaFunction</span> f, <span class="arg">Real/Table</span> interval , <span class="arg">Table</span> OPT_data, <span class="arg">EGroupID</span> OPT_group )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>添加一个要执行的规则。可以包含启动延迟、规则调用之间的间隔以及规则被调用的次数。【功能：添加定时间隔执行规则】</p>
+                <p>interval can be a number (the interval between subsequent rule calls) or a table with the keys: "delay", "interval" and "count". Returns the ID of the rule just added.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (82) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_AddIntervalWithDelay"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_AddIntervalWithDelay(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>Rule_AddInterval的新改进版本，初始延迟仅为'delay'，而不是'delay + interval'。【功能：添加带延迟的定时间隔执行规则】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (65) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_AddOneShot"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_AddOneShot( <span class="arg">LuaFunction</span> rule, <span class="arg">Real</span> OPT_delay, <span class="arg">Table</span> OPT_data, <span class="arg">EGroupID</span> OPT_group )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>添加一个在'delay'秒后执行一次的规则。【功能：添加一次性延迟执行规则】</p>
+                <p>Returns the ID of the rule just added.</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (114) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_AddPlayerEvent"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_AddPlayerEvent( <span class="arg">LuaFunction</span> rule, <span class="arg">PlayerID</span> player, <span class="arg">Integer</span> eventtype )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当'eventType'类型的事件在'player'上发生时，添加一个要执行的规则。【功能：为玩家添加事件触发规则】</p>
+                <p>Event types are: GE_PlayerBeingAttacked, GE_PlayerCommandIssued, GE_AbilityExecuted, GE_UpgradeComplete, GE_ConstructionComplete, GE_BuildItemComplete, GE_PlayerKilled, GE_SpawnActionComplete, GE_AIPlayer_EncounterNotification</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (224) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_AddSGroupEvent"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_AddSGroupEvent( <span class="arg">LuaFunction</span> rule, <span class="arg">SGroupID</span> sgroup, <span class="arg">Integer</span> eventtype )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当'eventType'类型的事件在'sgroup'中的小队上发生时，添加一个要执行的规则。【功能：为小队组添加事件触发规则】</p>
+                <p>Event types are: GE_SquadKilled, GE_SquadPinned, GE_SquadParadropComplete, GE_SquadCommandIssued, GE_AbilityExecuted, GE_SpawnActionComplete</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (189) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_AddSquadEvent"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_AddSquadEvent( <span class="arg">LuaFunction</span> rule, <span class="arg">SquadID</span> squad, <span class="arg">Integer</span> eventtype )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当'eventType'类型的事件在'squad'上发生时，添加一个要执行的规则。【功能：为小队添加事件触发规则】</p>
+                <p>Event types are: GE_SquadKilled, GE_SquadPinned, GE_SquadParadropComplete, GE_SquadCommandIssued, GE_AbilityExecuted, GE_SpawnActionComplete</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (177) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_ChangeInterval"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_ChangeInterval( <span class="arg">LuaFunction</span> rule, <span class="arg">Real</span> interval )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>更改所有具有Lua函数f的规则的'interval'间隔秒数。【功能：修改规则执行间隔】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (134) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_ChangeIntervalWithID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_ChangeIntervalWithID( <span class="arg">Integer</span> id, <span class="arg">Real</span> interval )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>更改具有指定id的现有规则的'interval'间隔秒数。【功能：通过ID修改规则执行间隔】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (141) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_EnterProximity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_EnterProximity( <span class="arg">Function</span> f, <span class="arg">Boolean</span> all, <span class="arg">EGroupID</span> who, <span class="arg">Marker</span> where, <span class="arg">Integer</span> OPT_range, <span class="arg">Boolean</span> OPT_recur, <span class="arg">Table</span> OPT_data )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当一个组（SGroup/EGroup）足够接近某个位置时触发。【功能：进入范围触发规则】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (481) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_Exists"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_Exists( <span class="arg">LuaFunction</span> rule )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>测试具有Lua函数f的规则当前是否处于活动状态。【功能：检查规则是否存在】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (391) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_ExistsWithID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_ExistsWithID( <span class="arg">Integer</span> id )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>测试具有指定id的规则当前是否处于活动状态。仅适用于时间规则。【功能：通过ID检查规则是否存在】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (404) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_ExitProximity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_ExitProximity( <span class="arg">Function</span> f, <span class="arg">Boolean</span> all, <span class="arg">EGroupID</span> who, <span class="arg">Marker</span> where, <span class="arg">Integer</span> OPT_range, <span class="arg">Boolean</span> OPT_recur, <span class="arg">Table</span> OPT_data )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当一个组（SGroup/EGroup）离某个位置足够远时触发（该组必须先进入范围才能触发此规则）。【功能：离开范围触发规则】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (488) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_GetInterval"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_GetInterval( <span class="arg">LuaFunction</span> rule )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取所有具有Lua函数f的规则的'interval'间隔秒数。【功能：获取规则执行间隔】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (148) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_GetIntervalWithID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_GetIntervalWithID( <span class="arg">Integer</span> id )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取具有指定id的现有规则的'interval'间隔秒数。【功能：通过ID获取规则执行间隔】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (155) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_GetTime"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_GetTime( <span class="arg">LuaFunction</span> rule )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取所有具有Lua函数f的规则的'timer'计时器秒数。【功能：获取规则计时器时间】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (162) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_GetTimeWithID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_GetTimeWithID( <span class="arg">Integer</span> id )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>获取具有指定id的现有规则的'timer'计时器秒数。【功能：通过ID获取规则计时器时间】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (169) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_GroupCount"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_GroupCount( <span class="arg">Function</span> f, <span class="arg">EGroupID</span> group, <span class="arg">Comparison</span> comparison, <span class="arg">Integer</span> value, <span class="arg">Boolean</span> recur, <span class="arg">Table</span> data )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>比较操作为IS_LESS_THAN、IS_LESS_THAN_OR_EQUAL、IS_EQUAL、IS_NOT_EQUAL、IS_GREATER_THAN或IS_GREATER_THAN_OR_EQUAL之一。当组中的对象数量通过比较操作与值比较为true时触发。【功能：组数量比较触发规则】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (502) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_Pause"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_Pause( <span class="arg">LuaFunction</span> f )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>暂停所有具有Lua函数的规则。【功能：暂停指定规则】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (450) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_PauseAll"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_PauseAll( <span class="arg">Number</span> / Table groupsToIgnore )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>暂停所有当前活动的规则。忽略不可暂停的规则。【功能：暂停所有规则】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (416) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_PauseWithID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_PauseWithID( <span class="arg">Integer</span> id )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>暂停所有具有指定id的规则。仅适用于时间规则。【功能：通过ID暂停规则】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (466) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_Refresh"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_Refresh(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>刷新所有时间规则和事件规则。【功能：刷新所有规则】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (383) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_Remove"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_Remove( <span class="arg">LuaFunction</span> rule )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除所有当前活动的具有Lua函数f的规则（不会移除任何事件规则）。【功能：移除指定规则】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (337) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_RemoveAll"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_RemoveAll(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>终止所有规则。【功能：移除所有规则】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (356) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_RemoveEGroupEvent"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_RemoveEGroupEvent( <span class="arg">LuaFunction</span> rule, <span class="arg">EGroupID</span> egroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除'egroup'中实体的活动事件规则。【功能：移除实体组事件规则】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (303) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_RemoveEntityEvent"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_RemoveEntityEvent( <span class="arg">LuaFunction</span> rule, <span class="arg">EntityID</span> entity )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除'entity'的活动事件规则。【功能：移除实体事件规则】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (296) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_RemoveGlobalEvent"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_RemoveGlobalEvent( <span class="arg">LuaFunction</span> rule )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除已全局应用的活动事件规则。【功能：移除全局事件规则】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (320) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_RemoveMe"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_RemoveMe(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除当前正在执行的规则（仅在规则函数内部有效）。【功能：移除当前规则】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (327) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_RemovePlayerEvent"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_RemovePlayerEvent( <span class="arg">LuaFunction</span> rule, <span class="arg">PlayerID</span> player )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除'player'的活动事件规则。【功能：移除玩家事件规则】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (313) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_RemoveSGroupEvent"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_RemoveSGroupEvent( <span class="arg">LuaFunction</span> rule, <span class="arg">SGroupID</span> sgroup )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除'sgroup'中小队的活动事件规则。【功能：移除小队组事件规则】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (286) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_RemoveSquadEvent"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_RemoveSquadEvent( <span class="arg">LuaFunction</span> rule, <span class="arg">SquadID</span> squad )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除'squad'的活动事件规则。【功能：移除小队事件规则】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (279) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_RemoveWithID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_RemoveWithID( <span class="arg">Integer</span> id )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>移除具有指定id的当前活动规则（不会移除任何事件规则）。【功能：通过ID移除规则】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (346) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_Replace"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_Replace( <span class="arg">LuaFunction</span> oldf, <span class="arg">LuaFunction</span> newf )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>替换所有当前活动的具有Lua函数f的规则的函数回调（仅适用于时间规则）。【功能：替换规则回调函数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (365) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_ReplaceWithID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_ReplaceWithID( <span class="arg">Integer</span> id, <span class="arg">LuaFunction</span> newf )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>替换所有当前活动的具有指定id的规则的函数回调（仅适用于时间规则）。【功能：通过ID替换规则回调函数】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (374) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_Unpause"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_Unpause( <span class="arg">LuaFunction</span> f )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>取消暂停所有具有Lua函数的规则。【功能：取消暂停指定规则】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (458) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_UnpauseAll"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_UnpauseAll(  )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>取消暂停所有规则。【功能：取消暂停所有规则】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (442) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_UnpauseWithID"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_UnpauseWithID( <span class="arg">Integer</span> id )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>取消暂停所有具有指定id的规则。仅适用于时间规则。【功能：通过ID取消暂停规则】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (473) </b></td>
+            </tr>
+          </table>
+        </p><a name="Rule_WhileInProximity"></a><p>
+          <table width="100%" border="0">
+            <tr>
+              <td colspan="2"><span class="function"><span class="arg"></span>
+		 Rule_WhileInProximity( <span class="arg">Function</span> f, <span class="arg">Boolean</span> all, <span class="arg">EGroupID</span> who, <span class="arg">Marker</span> where, <span class="arg">Integer</span> OPT_range, <span class="arg">Real</span> OPT_interval, <span class="arg">Boolean</span> OPT_recur, <span class="arg">Table</span> OPT_data )
+	</span></td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td>
+                <p>当组在位置的范围内时，每隔interval秒触发一次。【功能：范围内持续触发规则】</p>
+              </td>
+            </tr>
+            <tr>
+              <td width="3%"> </td>
+              <td><em>Source: </em><b>[E:\P4Share\engine\assets\engine\scar\rulesystem.scar] (495) </b></td>
+            </tr>
+          </table>
+        </p>
+      </p>
+      <p> </p>
+      <p> </p>
+      <p></body>
+</html>
